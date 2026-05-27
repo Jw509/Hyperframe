@@ -1,0 +1,523 @@
+{
+  "comment": "FULL v3: fans = STATIC center-left crop (no pan), hard-cut to normal. fan1 (src 653-656.3) then skip the redundant next shot. fan2 retimed to the 3:46 camera-left moment (src 688-689.8, ~1.8s).",
+  "segments": [
+    {
+      "start": 21.014,
+      "end": 25.926,
+      "note": "(unnamed)",
+      "firstOfPack": true
+    },
+    {
+      "start": 27.262,
+      "end": 31.34,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 36.67,
+      "end": 38.289,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 43.028,
+      "end": 44.607,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 51.934,
+      "end": 53.879,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 84.732,
+      "end": 86.031,
+      "note": "(unnamed)",
+      "firstOfPack": true
+    },
+    {
+      "start": 88.396,
+      "end": 89.099,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 94.493,
+      "end": 100.351,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 104.454,
+      "end": 106.253,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 110.106,
+      "end": 119.526,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 134.801,
+      "end": 139.822,
+      "note": "(unnamed)",
+      "firstOfPack": true
+    },
+    {
+      "start": 153.024,
+      "end": 155.746,
+      "note": "(unnamed)",
+      "firstOfPack": true
+    },
+    {
+      "start": 161.761,
+      "end": 174.186,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 177.442,
+      "end": 179.374,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 201.802,
+      "end": 203.154,
+      "note": "(unnamed)",
+      "firstOfPack": true
+    },
+    {
+      "start": 206.432,
+      "end": 207.238,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 209.274,
+      "end": 211.167,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 215.797,
+      "end": 224.259,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 226.235,
+      "end": 229.584,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 235.945,
+      "end": 237.439,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 243.505,
+      "end": 244.256,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 247.201,
+      "end": 250.377,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 254.197,
+      "end": 257.238,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 261.346,
+      "end": 264.123,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 265.179,
+      "end": 267.595,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 272.627,
+      "end": 273.59,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 276.447,
+      "end": 278.584,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 283.153,
+      "end": 284.591,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 289.125,
+      "end": 290.633,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 297.914,
+      "end": 306.99,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 310.992,
+      "end": 315.937,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 334.78,
+      "end": 342.307,
+      "note": "(unnamed)",
+      "firstOfPack": true
+    },
+    {
+      "start": 346.455,
+      "end": 353.118,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 360.24,
+      "end": 363.725,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 390.097,
+      "end": 392.507,
+      "note": "(unnamed)",
+      "firstOfPack": true
+    },
+    {
+      "start": 394.114,
+      "end": 396.66,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 400.898,
+      "end": 403.872,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 412.067,
+      "end": 423.27,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 465.441,
+      "end": 468.267,
+      "note": "(unnamed)",
+      "firstOfPack": true
+    },
+    {
+      "start": 474.958,
+      "end": 476.957,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 479.839,
+      "end": 490.918,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 553.846,
+      "end": 555.327,
+      "note": "(unnamed)",
+      "firstOfPack": true
+    },
+    {
+      "start": 566.02,
+      "end": 574.79,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 579.917,
+      "end": 602.373,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 621.255,
+      "end": 625.471,
+      "note": "(unnamed)",
+      "firstOfPack": true
+    },
+    {
+      "start": 628.847,
+      "end": 638.34,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 653,
+      "end": 656.3,
+      "source": "landscape",
+      "cropX": "(iw-1080)/2-400",
+      "note": "fan1 static center-left"
+    },
+    {
+      "start": 662.124,
+      "end": 672.432,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 688,
+      "end": 689.8,
+      "source": "landscape",
+      "cropX": "(iw-1080)/2-400",
+      "note": "fan2 static center-left (the 3:46 camera-left moment)"
+    },
+    {
+      "start": 692.308,
+      "end": 694.098,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 697.538,
+      "end": 709.249,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 733.365,
+      "end": 734.929,
+      "note": "(unnamed)",
+      "firstOfPack": true
+    },
+    {
+      "start": 737.704,
+      "end": 738.559,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 742.058,
+      "end": 753.201,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 779.37,
+      "end": 786.854,
+      "note": "(unnamed)",
+      "firstOfPack": true
+    },
+    {
+      "start": 791.32,
+      "end": 794.927,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 799.275,
+      "end": 808.849,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 810.771,
+      "end": 822.844,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 823.537,
+      "end": 829.564,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 833.981,
+      "end": 836.631,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 856.692,
+      "end": 858.229,
+      "note": "(unnamed)",
+      "firstOfPack": true
+    },
+    {
+      "start": 868.424,
+      "end": 869.532,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 871.333,
+      "end": 873.638,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 875.85,
+      "end": 889.644,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 901.115,
+      "end": 903.221,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 917.454,
+      "end": 919.824,
+      "note": "(unnamed)",
+      "firstOfPack": true
+    },
+    {
+      "start": 923.1,
+      "end": 925.002,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 927.341,
+      "end": 942.332,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 964.164,
+      "end": 966.11,
+      "note": "(unnamed)",
+      "firstOfPack": true
+    },
+    {
+      "start": 975.319,
+      "end": 976.513,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 980.152,
+      "end": 981.636,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 988.442,
+      "end": 989.951,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 992.358,
+      "end": 1003.809,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 1017.919,
+      "end": 1019.211,
+      "note": "(unnamed)",
+      "firstOfPack": true
+    },
+    {
+      "start": 1025.874,
+      "end": 1027.736,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 1033.891,
+      "end": 1036.352,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 1047.586,
+      "end": 1079.378,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 1093.202,
+      "end": 1098.493,
+      "note": "(unnamed)",
+      "firstOfPack": true
+    },
+    {
+      "start": 1104.702,
+      "end": 1105.99,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 1109.546,
+      "end": 1123.184,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 1132.254,
+      "end": 1133.829,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 1140.051,
+      "end": 1144.298,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 1147.646,
+      "end": 1148.808,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 1153.761,
+      "end": 1162.131,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 1164.877,
+      "end": 1172.009,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    },
+    {
+      "start": 1173.957,
+      "end": 1182.393,
+      "note": "(unnamed)",
+      "firstOfPack": false
+    }
+  ]
+}

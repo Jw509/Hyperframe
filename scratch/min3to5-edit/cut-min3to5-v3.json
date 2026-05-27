@@ -1,0 +1,32 @@
+{
+  "comment": "v3: same as v2 but the pack-rip beat (was a 0.8s flash) is lengthened to ~2.0s to match how the pack rip is held at 1:12 in cut-portrait. Reveals still start on the live-cut IN-points (slide-up).",
+  "window": [180, 308],
+  "segments": [
+    { "start": 201.802, "end": 203.154, "note": "fan / cards" },
+    { "start": 206.132, "end": 207.238, "note": "card" },
+    { "start": 208.974, "end": 210.30,  "note": "card" },
+    { "start": 215.497, "end": 216.80,  "note": "refractor fan - slide up" },
+    { "start": 217.90,  "end": 219.10,  "note": "card" },
+    { "start": 220.30,  "end": 221.50,  "note": "card" },
+    { "start": 223.80,  "end": 225.80,  "note": "bowman pack rip (~2s, lands like 1:12)" },
+    { "start": 225.935, "end": 227.20,  "note": "card" },
+    { "start": 228.00,  "end": 229.20,  "note": "card" },
+    { "start": 235.645, "end": 236.95,  "note": "card" },
+    { "start": 243.205, "end": 244.256, "note": "card" },
+    { "start": 246.901, "end": 248.20,  "note": "card" },
+    { "start": 248.90,  "end": 250.10,  "note": "card" },
+    { "start": 253.897, "end": 255.20,  "note": "card" },
+    { "start": 256.00,  "end": 257.238, "note": "card" },
+    { "start": 261.046, "end": 262.35,  "note": "card" },
+    { "start": 262.90,  "end": 264.123, "note": "card" },
+    { "start": 264.879, "end": 266.18,  "note": "card" },
+    { "start": 272.327, "end": 273.59,  "note": "card" },
+    { "start": 276.147, "end": 277.45,  "note": "card" },
+    { "start": 282.853, "end": 284.15,  "note": "card" },
+    { "start": 288.825, "end": 290.13,  "note": "card" },
+    { "start": 297.614, "end": 298.90,  "note": "green card - slide up" },
+    { "start": 300.30,  "end": 301.60,  "note": "pink card" },
+    { "start": 304.10,  "end": 305.40,  "note": "gray card" },
+    { "start": 306.70,  "end": 308.00,  "note": "purple card" }
+  ]
+}

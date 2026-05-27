@@ -1,0 +1,29 @@
+{
+  "comment": "Style test, source minute 3-5 (180-300s) of bowmanchrome2025-portrait. Tight pack-rip/fan/~1.1s-card-hold rhythm. Dead lead-in 180-201s dropped (matches rough cut). Built from rough-cut beats + 5fps visual drill on the two long windows.",
+  "window": [180, 300],
+  "segments": [
+    { "start": 201.8, "end": 203.0, "note": "fan / cards" },
+    { "start": 206.1, "end": 207.2, "note": "card" },
+    { "start": 209.0, "end": 210.6, "note": "card" },
+    { "start": 214.6, "end": 216.0, "note": "refractor fan held up" },
+    { "start": 218.0, "end": 219.0, "note": "card" },
+    { "start": 220.4, "end": 221.4, "note": "card" },
+    { "start": 224.2, "end": 225.0, "note": "bowman pack rip" },
+    { "start": 226.0, "end": 227.2, "note": "card" },
+    { "start": 228.0, "end": 229.0, "note": "card" },
+    { "start": 235.6, "end": 236.8, "note": "card" },
+    { "start": 243.2, "end": 244.2, "note": "card" },
+    { "start": 247.0, "end": 248.2, "note": "card" },
+    { "start": 249.0, "end": 250.0, "note": "card" },
+    { "start": 254.0, "end": 255.2, "note": "card" },
+    { "start": 256.0, "end": 257.0, "note": "card" },
+    { "start": 261.2, "end": 262.4, "note": "card" },
+    { "start": 263.0, "end": 264.0, "note": "card" },
+    { "start": 265.0, "end": 266.2, "note": "card" },
+    { "start": 272.4, "end": 273.5, "note": "card" },
+    { "start": 276.2, "end": 277.4, "note": "card" },
+    { "start": 282.9, "end": 284.0, "note": "card" },
+    { "start": 288.9, "end": 290.1, "note": "card" },
+    { "start": 297.4, "end": 298.6, "note": "green card" }
+  ]
+}

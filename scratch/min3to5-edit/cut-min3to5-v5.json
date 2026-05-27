@@ -1,0 +1,28 @@
+{
+  "comment": "v5: fix the 'blink' transitions. Root cause: I over-split continuous fan/swap windows at points where the card was already settled, chopping out the thumb-slide. Fix: keep multi-card windows flowing (cut only on backbone slide-start IN-points so the slide motion plays), tight-cut only true single-card slide reveals. Window 180-348.",
+  "window": [180, 348],
+  "segments": [
+    { "start": 201.802, "end": 203.154, "note": "fan / cards" },
+    { "start": 206.132, "end": 207.238, "note": "card" },
+    { "start": 208.974, "end": 210.50,  "note": "first card (perfect transition into next)" },
+    { "start": 215.497, "end": 220.20,  "note": "fan+cards CONTINUOUS - natural slides, no blink" },
+    { "start": 225.935, "end": 229.00,  "note": "Harrison Wallace + next, continuous" },
+    { "start": 235.645, "end": 237.20,  "note": "card" },
+    { "start": 243.205, "end": 244.256, "note": "card" },
+    { "start": 246.901, "end": 250.10,  "note": "cards continuous" },
+    { "start": 253.897, "end": 256.90,  "note": "cards continuous" },
+    { "start": 261.046, "end": 263.90,  "note": "cards continuous" },
+    { "start": 264.879, "end": 266.80,  "note": "card" },
+    { "start": 272.327, "end": 273.59,  "note": "card" },
+    { "start": 276.147, "end": 278.20,  "note": "card" },
+    { "start": 282.853, "end": 284.40,  "note": "card" },
+    { "start": 288.825, "end": 290.40,  "note": "card" },
+    { "start": 297.614, "end": 298.90,  "note": "green card - slide up" },
+    { "start": 300.30,  "end": 301.60,  "note": "pink card" },
+    { "start": 304.10,  "end": 305.40,  "note": "gray card" },
+    { "start": 306.70,  "end": 308.00,  "note": "purple card" },
+    { "start": 310.692, "end": 314.80,  "note": "card(s) continuous - fixes after-34s blink" },
+    { "start": 334.78,  "end": 339.00,  "note": "cards continuous" },
+    { "start": 346.155, "end": 348.00,  "note": "card / fan" }
+  ]
+}

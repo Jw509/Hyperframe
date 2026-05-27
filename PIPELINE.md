@@ -43,6 +43,31 @@ Optional: `video-use` transcription needs an ElevenLabs key — copy `.env.examp
 
 ---
 
+## Cut style — LOCKED (2026-05-26, approved "absolute cinema")
+
+The fast-cut card-reveal rhythm, dialed in over bowmanchrome2025 and approved. **This is the style for every video.** Built with the `video-use` skill's visual drill-down (ffmpeg frame grids), not its audio path (footage is silent).
+
+**Source:** cut from the silent **portrait** source (`<slug>-portrait.mp4`). Baked-in keyframed pans (card follows, fan pan-lefts) ride through automatically as long as the segment covering them is kept.
+
+**Backbone:** start from the user's live cut list `briefs/cuts/<slug>.json` — that's the beat selection. Each segment's IN-point marks a reveal's thumb-slide start.
+
+**The rules (in priority order):**
+1. **Reveal = cut ON the thumb-slide.** Each card slides UP into frame (thumb pushes it up). The cut must land at the slide-start so the upward motion plays, then hold on the card. Cutting after the card is already up = a "blink" (bad).
+2. **+0.3s cut-in shift** on every card EXCEPT the first card of each pack (the first card is anchored to the pack-rip). I consistently read the slide ~0.3s early — shift the cut-in 0.3s later.
+3. **Keep fan / multi-card windows FLOWING.** Do NOT split a continuous swap/fan sequence into separate settled-card beats — that blinks. Cut only on real slide-starts and let the in-hand swaps play.
+4. **Land on the money-frame:** card held high, centered, fully readable (see reference photo in this thread). Hold ~0.9–1.3s. Feature/auto cards and pack-rips ~2s. Never <1s on something that matters.
+5. **Show every card. No audio.**
+6. **Fans that spread off-frame get a STATIC center-left crop** (re-cropped from the landscape source, ~X=−400) for that one cut, then a hard cut back to the normal angle — **NOT a moving pan**. Just center the camera on the fan, hold, cut back. Use the landscape-cropped moment where the action sits left.
+
+**Tooling (`scratch/min3to5-edit/`, generalize per slug):**
+- `make-full-cut.mjs <backbone.json> <out.json> [gapThreshold=12]` — applies the +0.3s rule and exempts the first card of each pack (a segment is first-of-pack when the gap before it > threshold; 12s ≈ the 20-pack box → 19 packs).
+- `render-cut.mjs <cuts.json> <portrait.mp4> <out.mp4>` — path-controlled trim+concat, video-only, libx264 crf19 @60fps. **Always output to a NON-destructive path** — never the working `<slug>-cut-portrait.mp4`.
+- Self-eval with ffmpeg `tile` frame grids (NOT `drawtext` — fontconfig segfaults in Git Bash; map grid cells by fixed fps/row math instead).
+
+**Reference output:** `cards/renders/bowmanchrome2025/full-stylecut-v3.mp4` (7:15, 86 cuts) — approved ("absolute cinema"); v1 was the approved base, v2/v3 added the static center-left fan fixes. Cut definition committed at `scratch/min3to5-edit/cut-FULL-v3.json` (renders themselves are gitignored — re-render with `render-cut-mixed.mjs`).
+
+---
+
 ## Current state (2026-05-25 — bowmanchrome2025 video)
 
 **Pipeline pivoted from "AI auto-detect cuts" → "user-driven cut editor + AI does crops/overlays".** After 12 iterations of failed auto-cut attempts (v1-v12) the user took over cut editing via a local HTML tool I built. This works much better — AI is good at framing/overlays/scripting, bad at judging editing taste.
