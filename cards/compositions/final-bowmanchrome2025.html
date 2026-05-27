@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Final Edit (Shorts) - bowmanchrome2025</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        width: 1080px;
+        height: 1920px;
+        background: #000;
+        overflow: hidden;
+        font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      #root {
+        position: relative;
+        width: 1080px;
+        height: 1920px;
+      }
+
+      #source-video {
+        position: absolute;
+        inset: 0;
+        width: 1080px;
+        height: 1920px;
+        object-fit: cover;
+        object-position: center center;
+      }
+
+      /* Compact sale card — no comp screenshot in this video, so the overlay
+         is just label + value. Pinned to the right edge, mid-screen. */
+      .sale-card {
+        position: absolute;
+        left: 836px;
+        top: 720px;
+        width: 204px;
+        padding: 20px 16px;
+        border-radius: 24px;
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(24px) saturate(140%);
+        -webkit-backdrop-filter: blur(24px) saturate(140%);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        box-shadow:
+          0 10px 26px rgba(0, 0, 0, 0.28),
+          inset 0 1px 0 rgba(255, 255, 255, 0.22);
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        opacity: 0;
+      }
+
+      .sale-card__label {
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 4px;
+        color: #ffffff;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+        text-shadow: 0 1px 7px rgba(0, 0, 0, 0.55);
+      }
+
+      .sale-card__label::before {
+        content: "";
+        display: inline-block;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: #d4a017;
+        box-shadow: 0 0 9px rgba(212, 160, 23, 0.75);
+      }
+
+      .sale-card__value {
+        font-size: 58px;
+        font-weight: 800;
+        color: #ffffff;
+        line-height: 1;
+        letter-spacing: -2px;
+        text-align: center;
+        text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
+      }
+
+      /* Persistent pack-cost / running-total tracker. */
+      .box-tracker {
+        position: absolute;
+        left: 40px;
+        top: 150px;
+        width: 200px;
+        padding: 14px 16px;
+        border-radius: 22px;
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(28px) saturate(140%);
+        -webkit-backdrop-filter: blur(28px) saturate(140%);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        box-shadow:
+          0 10px 24px rgba(0, 0, 0, 0.28),
+          inset 0 1px 0 rgba(255, 255, 255, 0.22);
+        opacity: 0;
+      }
+
+      .box-tracker__row {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .box-tracker__label {
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 4px;
+        color: rgba(255, 255, 255, 0.7);
+        text-transform: uppercase;
+        margin-bottom: 4px;
+        line-height: 1.25;
+      }
+
+      .box-tracker__value {
+        font-size: 30px;
+        font-weight: 800;
+        letter-spacing: -1px;
+        line-height: 1;
+        text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+      }
+
+      .box-tracker__value--cost { color: #f87171; }
+      .box-tracker__value--total { color: #4ade80; }
+
+      .box-tracker__divider {
+        height: 1px;
+        background: rgba(255, 255, 255, 0.15);
+        margin: 10px 0;
+      }
+
+      /* End recap card — climactic profit / loss reveal. */
+      .recap-card {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 380px;
+        padding: 28px 32px 32px;
+        border-radius: 28px;
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(28px) saturate(140%);
+        -webkit-backdrop-filter: blur(28px) saturate(140%);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        box-shadow:
+          0 14px 36px rgba(0, 0, 0, 0.35),
+          inset 0 1px 0 rgba(255, 255, 255, 0.22);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        opacity: 0;
+      }
+
+      .recap-card__label {
+        font-size: 17px;
+        font-weight: 600;
+        letter-spacing: 6px;
+        color: rgba(255, 255, 255, 0.7);
+        text-transform: uppercase;
+        margin-bottom: 4px;
+      }
+
+      .recap-card__value {
+        font-size: 58px;
+        font-weight: 800;
+        color: #ffffff;
+        line-height: 1;
+        letter-spacing: -2px;
+        margin-bottom: 22px;
+        text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
+      }
+
+      .recap-card__divider {
+        width: 70%;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.18);
+        margin: 0 0 22px;
+      }
+
+      .recap-card__profit-label {
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 8px;
+        color: #ffffff;
+        text-transform: uppercase;
+        margin-top: 6px;
+        margin-bottom: 6px;
+        text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+      }
+
+      .recap-card__profit {
+        font-size: 104px;
+        font-weight: 900;
+        color: #4ade80;
+        line-height: 1;
+        letter-spacing: -3px;
+        text-shadow: 0 4px 24px rgba(74, 222, 128, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="final-bowmanchrome2025"
+      data-width="1080"
+      data-height="1920"
+      data-start="0"
+      data-duration="95.85"
+    >
+      <video
+        id="source-video"
+        class="clip"
+        data-start="0"
+        data-duration="95.85"
+        data-track-index="0"
+        muted
+        playsinline
+        src="../sources/bowmanchrome2025/bowmanchrome2025-cut.mp4"
+      ></video>
+
+      <!-- Reveal 1: Stockton refractor money shot — src 13:57 / cut t=160.0
+           + 1.0s onset delay = 161.0 -->
+      <div id="title-1-card" class="sale-card clip" data-start="161.00" data-duration="4.70" data-track-index="1" data-money-shot="true">
+        <div class="sale-card__label">Recent sale</div>
+        <div class="sale-card__value">$75</div>
+      </div>
+
+      <!-- Reveal 2: Singleton blue auto — src 18:01 / cut t=243.0
+           + 1.0s onset delay = 244.0 -->
+      <div id="title-2-card" class="sale-card clip" data-start="244.00" data-duration="2.50" data-track-index="2">
+        <div class="sale-card__label">Recent sale</div>
+        <div class="sale-card__value">$40</div>
+      </div>
+
+      <!-- Persistent box-cost / running-total tracker.
+           Fades in just after intro (cut 3.70), holds until just before recap. -->
+      <div id="box-tracker" class="box-tracker clip" data-start="3.70" data-duration="246.30" data-track-index="3">
+        <div class="box-tracker__row">
+          <div class="box-tracker__label">Box cost</div>
+          <div class="box-tracker__value box-tracker__value--cost">$210</div>
+        </div>
+        <div class="box-tracker__divider"></div>
+        <div class="box-tracker__row">
+          <div class="box-tracker__label">Cards pulled<br>total</div>
+          <div class="box-tracker__value box-tracker__value--total" id="box-tracker-total">$0</div>
+        </div>
+      </div>
+
+      <!-- End recap. Starts at 247.0 (0.5s after Singleton fades), runs 7.0s
+           until end of composition (254.0). -->
+      <div id="recap-card" class="recap-card clip" data-start="247.00" data-duration="7.00" data-track-index="4">
+        <div class="recap-card__label">Box cost</div>
+        <div class="recap-card__value">$210</div>
+        <div class="recap-card__divider"></div>
+        <div class="recap-card__label">Total</div>
+        <div class="recap-card__value" id="recap-total">$0</div>
+        <div class="recap-card__divider"></div>
+        <div class="recap-card__profit-label" id="recap-profit-label">Profit</div>
+        <div class="recap-card__profit" id="recap-profit">+$0</div>
+      </div>
+
+      <!-- Audio fully removed per project rule "no audio". Source audio is
+           stripped via cut-source.mjs --no-audio. No SFX elements. -->
+
+
+      <script>
+        (function () {
+          const IN_DUR = 0.3;
+          const OUT_DUR = 0.4;
+          const POP_IN_DUR = 0.7;
+          const tl = gsap.timeline({ paused: true });
+
+          // Source video pre-zoomed slightly for vertical pan room.
+          gsap.set("#source-video", {
+            scale: 1.15,
+            transformOrigin: "center center",
+          });
+
+          // Sale cards live at the right edge.
+          gsap.set(".sale-card.clip", {
+            transformOrigin: "100% 0%",
+          });
+
+          // Per-reveal animation. Money shots get a scale-pop in; normal
+          // reveals get a slide in from off-screen right.
+          document.querySelectorAll(".sale-card.clip").forEach((el) => {
+            const start = Number(el.getAttribute("data-start"));
+            const dur = Number(el.getAttribute("data-duration"));
+            const isMoneyShot = el.getAttribute("data-money-shot") === "true";
+            const inDur = isMoneyShot ? POP_IN_DUR : IN_DUR;
+            const hold = dur - inDur - OUT_DUR;
+
+            if (isMoneyShot) {
+              tl.fromTo(
+                el,
+                { scale: 0.7, opacity: 0 },
+                { scale: 1, opacity: 1, duration: POP_IN_DUR, ease: "back.out(1.4)" },
+                start,
+              );
+              tl.to(
+                el,
+                { x: 320, opacity: 0, duration: OUT_DUR, ease: "power2.in" },
+                start + POP_IN_DUR + hold,
+              );
+            } else {
+              tl.fromTo(
+                el,
+                { x: 320, opacity: 0 },
+                { x: 0, opacity: 1, duration: IN_DUR, ease: "power3.out" },
+                start,
+              );
+              tl.to(
+                el,
+                { x: 320, opacity: 0, duration: OUT_DUR, ease: "power2.in" },
+                start + IN_DUR + hold,
+              );
+            }
+          });
+
+          // Box-cost tracker: slide + fade in just after intro.
+          const tracker = document.getElementById("box-tracker");
+          const totalEl = document.getElementById("box-tracker-total");
+          if (tracker && totalEl) {
+            tl.fromTo(
+              tracker,
+              { x: -50, opacity: 0 },
+              { x: 0, opacity: 1, duration: 0.6, ease: "power3.out" },
+              3.7,
+            );
+
+            // Read each reveal's start time + value from the DOM.
+            const reveals = Array.from(document.querySelectorAll(".sale-card.clip"))
+              .map((el) => ({
+                start: Number(el.getAttribute("data-start")),
+                value:
+                  parseFloat(
+                    el.querySelector(".sale-card__value").textContent.replace(/[^0-9.]/g, ""),
+                  ) || 0,
+              }))
+              .sort((a, b) => a.start - b.start);
+
+            const counterState = { value: 0 };
+            let runningTotal = 0;
+            reveals.forEach(({ start, value }) => {
+              const newTotal = runningTotal + value;
+              tl.to(
+                counterState,
+                {
+                  value: newTotal,
+                  duration: 0.6,
+                  ease: "power1.out",
+                  onUpdate: () => {
+                    totalEl.textContent = "$" + counterState.value.toFixed(0);
+                  },
+                },
+                start,
+              );
+              runningTotal = newTotal;
+            });
+
+            // Tracker fades out 0.4s before recap appears.
+            tl.to(
+              tracker,
+              { opacity: 0, duration: 0.4, ease: "power2.in" },
+              246.6,
+            );
+
+            // End recap.
+            const recapCard = document.getElementById("recap-card");
+            const recapTotalEl = document.getElementById("recap-total");
+            const recapProfitEl = document.getElementById("recap-profit");
+            const recapProfitLabel = document.getElementById("recap-profit-label");
+            const BOX_COST = 210;
+            const RECAP_START = 247.00;
+
+            if (recapCard && recapTotalEl && recapProfitEl) {
+              const finalTotal = runningTotal;
+              const profit = finalTotal - BOX_COST;
+              const isLoss = profit < 0;
+
+              if (isLoss) {
+                recapProfitEl.style.color = "#f87171";
+                recapProfitEl.style.textShadow =
+                  "0 4px 24px rgba(248, 113, 113, 0.45)";
+                recapProfitLabel.textContent = "Loss";
+              }
+
+              gsap.set(recapCard, {
+                xPercent: -50,
+                yPercent: -50,
+                transformOrigin: "center center",
+              });
+
+              // Profit row hidden initially.
+              gsap.set([recapProfitLabel, recapProfitEl], {
+                opacity: 0,
+                y: 16,
+              });
+
+              tl.fromTo(
+                recapCard,
+                { opacity: 0, scale: 0.88 },
+                { opacity: 1, scale: 1, duration: 0.7, ease: "back.out(1.4)" },
+                RECAP_START,
+              );
+
+              const recapTotalState = { value: 0 };
+              tl.to(
+                recapTotalState,
+                {
+                  value: finalTotal,
+                  duration: 1.4,
+                  ease: "power2.out",
+                  onUpdate: () => {
+                    recapTotalEl.textContent =
+                      "$" + recapTotalState.value.toFixed(0);
+                  },
+                },
+                RECAP_START + 0.4,
+              );
+
+              tl.to(
+                [recapProfitLabel, recapProfitEl],
+                {
+                  opacity: 1,
+                  y: 0,
+                  duration: 0.5,
+                  ease: "power3.out",
+                  stagger: 0.08,
+                },
+                RECAP_START + 1.85,
+              );
+
+              const recapProfitState = { value: 0 };
+              tl.to(
+                recapProfitState,
+                {
+                  value: profit,
+                  duration: 1.2,
+                  ease: "power2.out",
+                  onUpdate: () => {
+                    const v = recapProfitState.value;
+                    const sign = v >= 0 ? "+" : "-";
+                    recapProfitEl.textContent =
+                      sign + "$" + Math.abs(v).toFixed(0);
+                  },
+                },
+                RECAP_START + 2.1,
+              );
+            }
+          }
+
+          window.__timelines = window.__timelines || {};
+          window.__timelines["final-bowmanchrome2025"] = tl;
+        })();
+      </script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+{
+  "video": "selecthangerpack2024",
+  "orientations": [
+    "landscape"
+  ],
+  "cards": [
+    {
+      "value": "$3.25",
+      "label": "EST. VALUE",
+      "subtitle": "",
+      "holdSeconds": 1.8,
+      "comp_image": "maye.png"
+    },
+    {
+      "value": "$25",
+      "label": "EST. VALUE",
+      "subtitle": "",
+      "holdSeconds": 4,
+      "comp_image": "pq.png"
+    },
+    {
+      "value": "$1",
+      "label": "EST. VALUE",
+      "subtitle": "",
+      "holdSeconds": 1.8,
+      "comp_image": "mev.png"
+    },
+    {
+      "value": "$1.89",
+      "label": "EST. VALUE",
+      "subtitle": "",
+      "holdSeconds": 1.8,
+      "comp_image": "jal.png"
+    },
+    {
+      "value": "$1.89",
+      "label": "EST. VALUE",
+      "subtitle": "",
+      "holdSeconds": 1.8,
+      "comp_image": "ba.png"
+    },
+    {
+      "value": "$0.99",
+      "label": "EST. VALUE",
+      "subtitle": "",
+      "holdSeconds": 1.8,
+      "comp_image": "gro.png"
+    },
+    {
+      "value": "$2.99",
+      "label": "EST. VALUE",
+      "subtitle": "",
+      "holdSeconds": 1.8,
+      "comp_image": "pmo.png"
+    },
+    {
+      "value": "$1.35",
+      "label": "EST. VALUE",
+      "subtitle": "",
+      "holdSeconds": 1.8,
+      "comp_image": "bro.png"
+    },
+    {
+      "value": "$1.35",
+      "label": "EST. VALUE",
+      "subtitle": "",
+      "holdSeconds": 1.8,
+      "comp_image": "rdo.png"
+    },
+    {
+      "value": "$2.99",
+      "label": "EST. VALUE",
+      "subtitle": "",
+      "holdSeconds": 1.8,
+      "comp_image": "jdan.png"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "cards",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx --yes hyperframes@0.6.33 preview",
+    "check": "npx --yes hyperframes@0.6.33 lint && npx --yes hyperframes@0.6.33 validate && npx --yes hyperframes@0.6.33 inspect",
+    "render": "npx --yes hyperframes@0.6.33 render",
+    "render:cards": "node scripts/render-cards.mjs",
+    "publish": "npx --yes hyperframes@0.6.33 publish"
+  }
+}

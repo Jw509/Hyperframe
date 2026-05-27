@@ -1,0 +1,32 @@
+# ─── Heavy media (too large for GitHub; supplied/regenerated locally) ───
+# Raw capture footage, cut sources, and 1080p/portrait derivatives
+cards/sources/
+# Rendered MP4 outputs
+cards/renders/
+# Per-project working media (raw footage + exported clips)
+projects/
+# Stray top-level capture
+/selecthangerpack2024.mp4
+
+# ─── Scratch frame dumps & analysis media (throwaway, regenerable) ───
+# Keep the .mjs/.py/.json/.txt analysis scripts in scratch/, drop the media
+scratch/**/*.jpg
+scratch/**/*.jpeg
+scratch/**/*.png
+scratch/*.jpg
+scratch/*.jpeg
+scratch/*.png
+scratch/**/*.mp4
+scratch/**/*.mov
+scratch/*.mp4
+scratch/*.mov
+
+# ─── Local / machine-specific ───
+.claude/settings.local.json
+
+# ─── Dependencies & OS cruft ───
+node_modules/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log

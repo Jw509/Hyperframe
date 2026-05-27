@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Cut Editor — bowmanchrome2025</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: #1a1a1a; color: #eee; font-family: -apple-system, "Segoe UI", system-ui, sans-serif; height: 100%; }
+    #app { display: grid; grid-template-columns: 1fr 420px; gap: 16px; padding: 16px; height: 100vh; }
+
+    .left-panel { display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+    .right-panel { display: flex; flex-direction: column; gap: 12px; overflow: hidden; }
+
+    video { width: 100%; max-height: 50vh; background: #000; border-radius: 8px; }
+
+    .controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+    .controls button { background: #2d2d2d; border: 1px solid #444; color: #eee; padding: 8px 12px; border-radius: 6px; cursor: pointer; font-size: 14px; font-family: inherit; }
+    .controls button:hover { background: #3a3a3a; }
+    .controls button.primary { background: #4ade80; color: #000; border-color: #4ade80; font-weight: 700; }
+    .controls button.primary:hover { background: #22c55e; }
+    .controls button.danger { background: #ef4444; color: #fff; border-color: #ef4444; }
+    .controls button.warn { background: #f59e0b; color: #000; border-color: #f59e0b; }
+
+    .time-readout { font-family: ui-monospace, "Cascadia Code", Consolas, monospace; font-size: 18px; padding: 8px 12px; background: #2d2d2d; border-radius: 6px; min-width: 200px; text-align: center; }
+    .marks { display: flex; gap: 16px; font-family: ui-monospace, "Cascadia Code", Consolas, monospace; font-size: 14px; }
+    .marks .mark { background: #2d2d2d; padding: 6px 10px; border-radius: 4px; }
+    .marks .mark span { color: #888; margin-right: 6px; }
+
+    .segment-form { background: #2d2d2d; padding: 12px; border-radius: 8px; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .segment-form label { font-size: 12px; color: #aaa; text-transform: uppercase; letter-spacing: 1px; }
+    .segment-form input, .segment-form select { width: 100%; padding: 6px 8px; background: #1a1a1a; border: 1px solid #444; color: #eee; border-radius: 4px; font-family: inherit; font-size: 14px; }
+    .segment-form .full { grid-column: 1 / -1; }
+
+    .stats { display: flex; gap: 12px; font-size: 13px; color: #aaa; padding: 4px 8px; }
+    .stats span { color: #4ade80; font-weight: 600; }
+
+    .seg-list { flex: 1; overflow-y: auto; background: #2d2d2d; border-radius: 8px; padding: 8px; }
+    .seg-list h3 { margin: 0 0 10px; padding: 0 4px; font-size: 14px; color: #aaa; text-transform: uppercase; letter-spacing: 1px; }
+    .seg { background: #1a1a1a; padding: 8px 10px; border-radius: 6px; margin-bottom: 6px; cursor: pointer; border-left: 3px solid #444; }
+    .seg:hover { background: #222; }
+    .seg.active { border-left-color: #4ade80; background: #0d2415; }
+    .seg .seg-top { display: flex; justify-content: space-between; gap: 8px; font-family: ui-monospace, monospace; font-size: 13px; }
+    .seg .seg-note { font-size: 12px; color: #aaa; margin-top: 4px; word-break: break-word; }
+    .seg .seg-meta { display: flex; gap: 6px; margin-top: 4px; font-size: 11px; }
+    .seg .tag { padding: 1px 6px; border-radius: 3px; background: #444; }
+    .seg .tag.fan { background: #f59e0b; color: #000; }
+    .seg .tag.first-of-pack { background: #4ade80; color: #000; }
+    .seg .tag.headliner { background: #ef4444; color: #fff; }
+    .seg .pack { background: #3b82f6; color: #fff; padding: 1px 6px; border-radius: 3px; }
+    .seg .actions { display: flex; gap: 4px; margin-left: 8px; }
+    .seg .actions button { padding: 2px 6px; font-size: 11px; }
+
+    .help { font-size: 12px; color: #888; padding: 8px; line-height: 1.5; }
+    .help kbd { background: #444; padding: 2px 6px; border-radius: 3px; font-family: ui-monospace, monospace; font-size: 11px; color: #fff; }
+
+    #video-loader { padding: 8px 12px; background: #2d2d2d; border: 1px solid #444; border-radius: 6px; color: #eee; font-family: inherit; width: 100%; }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <div class="left-panel">
+      <input id="video-loader" type="text" placeholder="Video URL (defaults to portrait silent source)" value="cards/sources/bowmanchrome2025/bowmanchrome2025-portrait.mp4" />
+      <video id="player" controls preload="auto"></video>
+
+      <div class="time-readout">
+        <span id="time-current">0:00.00</span> / <span id="time-total">0:00.00</span>
+        <span style="color: #888; margin-left: 12px;">frame</span> <span id="frame-current" style="color: #4ade80;">0</span>
+        <span style="color: #888; margin-left: 18px;">Jump to:</span>
+        <input id="seek-input" type="text" placeholder="e.g. 6:45 or 405" style="width: 100px; padding: 4px 8px; margin-left: 6px; background: #1a1a1a; border: 1px solid #444; color: #eee; border-radius: 4px; font-family: ui-monospace, monospace; font-size: 14px;" />
+      </div>
+
+      <div class="marks">
+        <div class="mark"><span>CUT START</span><b id="mark-in">—</b></div>
+        <div class="mark"><span>CUT END</span><b id="mark-out">—</b></div>
+        <div class="mark"><span>DUR</span><b id="mark-dur">—</b></div>
+      </div>
+
+      <div class="controls">
+        <button id="step-back-frame" title="Back 1 frame (←)">‹‹ 1f</button>
+        <button id="step-back-sec" title="Back 1s (Shift+←)">‹‹ 1s</button>
+        <button id="play-pause" title="Play/Pause (Space)">⏯</button>
+        <button id="step-fwd-sec" title="Fwd 1s (Shift+→)">1s ››</button>
+        <button id="step-fwd-frame" title="Fwd 1 frame (→)">1f ››</button>
+        <button id="mark-in-btn" title="Set Cut Start at current frame (I)" class="warn">[I] Cut Start</button>
+        <button id="mark-out-btn" title="Set Cut End at current frame (O)" class="warn">[O] Cut End</button>
+        <button id="add-seg-btn" title="Add Cut to list (Enter)" class="primary">+ Add Cut</button>
+      </div>
+
+      <div class="segment-form">
+        <div class="full">
+          <label>Note (player name, "FAN SHOT", etc.)</label>
+          <input id="form-note" type="text" placeholder="e.g. Junior Vandross (Toledo)" />
+        </div>
+        <div>
+          <label>Pack #</label>
+          <input id="form-pack" type="number" min="1" max="20" value="1" />
+        </div>
+        <div>
+          <label>Tag</label>
+          <select id="form-tag">
+            <option value="">(common card)</option>
+            <option value="fan">fan</option>
+            <option value="first-of-pack">first-of-pack</option>
+            <option value="headliner">headliner (money shot)</option>
+            <option value="intro">intro</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="stats">
+        Cuts: <span id="stat-count">0</span> &nbsp;|&nbsp; Total length: <span id="stat-duration">0.00s</span>
+        &nbsp;|&nbsp; <span id="autosave-status" style="color: #888;">No saved progress</span>
+      </div>
+
+      <div class="help">
+        <b>How to add a cut:</b>
+        (1) scrub to the start frame and press <kbd>I</kbd> (Cut Start) &nbsp;
+        (2) scrub to the end frame and press <kbd>O</kbd> (Cut End) &nbsp;
+        (3) press <kbd>Enter</kbd> (Add Cut) — uses the Note / Pack / Tag form below
+        <br><br>
+        <b>Shortcuts:</b>
+        <kbd>Space</kbd> play/pause &nbsp;
+        <kbd>←</kbd> <kbd>→</kbd> step 1 frame &nbsp;
+        <kbd>Shift+←</kbd> <kbd>Shift+→</kbd> step 1s &nbsp;
+        <kbd>J</kbd> <kbd>K</kbd> <kbd>L</kbd> rewind / pause / fwd (3× speed)
+      </div>
+
+      <div class="controls">
+        <button id="load-json-btn">Load cuts JSON</button>
+        <input id="json-file-input" type="file" accept=".json" style="display:none" />
+        <button id="paste-json-btn">Paste JSON</button>
+        <button id="export-json-btn" class="primary">Export cuts JSON</button>
+        <button id="copy-json-btn">Copy JSON to clipboard</button>
+        <button id="clear-all-btn" class="danger">Clear all cuts</button>
+      </div>
+    </div>
+
+    <div class="right-panel">
+      <div class="seg-list" id="seg-list">
+        <h3>Cuts (sorted by source time)</h3>
+        <div id="seg-list-body"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // -----------------------------------------------------------------------
+    // State
+    // -----------------------------------------------------------------------
+    const FPS = 60;
+    const LS_KEY = "cut-editor:bowmanchrome2025";
+    const state = {
+      segments: [],
+      activeId: null,
+      markIn: null,
+      markOut: null,
+    };
+
+    // -----------------------------------------------------------------------
+    // localStorage autosave
+    // -----------------------------------------------------------------------
+    const autosaveStatus = document.getElementById("autosave-status");
+    function autosave() {
+      try {
+        localStorage.setItem(LS_KEY, JSON.stringify({
+          segments: state.segments,
+          savedAt: Date.now(),
+        }));
+        const now = new Date();
+        const hh = now.getHours().toString().padStart(2, "0");
+        const mm = now.getMinutes().toString().padStart(2, "0");
+        const ss = now.getSeconds().toString().padStart(2, "0");
+        autosaveStatus.textContent = `✓ Auto-saved ${hh}:${mm}:${ss}`;
+        autosaveStatus.style.color = "#4ade80";
+      } catch (e) {
+        autosaveStatus.textContent = `⚠ Autosave failed: ${e.message}`;
+        autosaveStatus.style.color = "#ef4444";
+      }
+    }
+    function restoreFromLocalStorage() {
+      try {
+        const raw = localStorage.getItem(LS_KEY);
+        if (!raw) return false;
+        const data = JSON.parse(raw);
+        if (!Array.isArray(data.segments) || data.segments.length === 0) return false;
+        state.segments = data.segments;
+        const savedAgo = data.savedAt ? `${Math.floor((Date.now() - data.savedAt) / 60000)} min ago` : "earlier";
+        autosaveStatus.textContent = `✓ Restored ${data.segments.length} cuts (saved ${savedAgo})`;
+        autosaveStatus.style.color = "#4ade80";
+        return true;
+      } catch (e) {
+        console.error("restoreFromLocalStorage:", e);
+        return false;
+      }
+    }
+
+    const video = document.getElementById("player");
+    const videoLoader = document.getElementById("video-loader");
+
+    function loadVideo(url) {
+      video.src = url;
+    }
+    videoLoader.addEventListener("change", () => loadVideo(videoLoader.value));
+    loadVideo(videoLoader.value);
+
+    // -----------------------------------------------------------------------
+    // Time helpers
+    // -----------------------------------------------------------------------
+    function fmtTime(t) {
+      if (!isFinite(t)) return "—";
+      const mm = Math.floor(t / 60);
+      const ss = (t % 60).toFixed(2).padStart(5, "0");
+      return `${mm}:${ss}`;
+    }
+    function fmtFrame(t) {
+      return Math.round(t * FPS);
+    }
+
+    // -----------------------------------------------------------------------
+    // Time readout & scrubbing
+    // -----------------------------------------------------------------------
+    const tCurrent = document.getElementById("time-current");
+    const tTotal = document.getElementById("time-total");
+    const fCurrent = document.getElementById("frame-current");
+    function tick() {
+      tCurrent.textContent = fmtTime(video.currentTime);
+      tTotal.textContent = fmtTime(video.duration);
+      fCurrent.textContent = fmtFrame(video.currentTime);
+    }
+    video.addEventListener("timeupdate", tick);
+    video.addEventListener("loadedmetadata", tick);
+    setInterval(tick, 100);
+
+    // -----------------------------------------------------------------------
+    // Frame stepping
+    // -----------------------------------------------------------------------
+    function stepFrame(d) { video.pause(); video.currentTime = Math.max(0, video.currentTime + d / FPS); }
+    function stepSec(d) { video.pause(); video.currentTime = Math.max(0, video.currentTime + d); }
+
+    document.getElementById("step-back-frame").onclick = () => stepFrame(-1);
+    document.getElementById("step-fwd-frame").onclick = () => stepFrame(1);
+    document.getElementById("step-back-sec").onclick = () => stepSec(-1);
+    document.getElementById("step-fwd-sec").onclick = () => stepSec(1);
+    document.getElementById("play-pause").onclick = () => video.paused ? video.play() : video.pause();
+
+    // Seek-to-time input. Accepts "M:SS", "M:SS.xx", or raw seconds.
+    document.getElementById("seek-input").addEventListener("keydown", (e) => {
+      if (e.key !== "Enter") return;
+      e.preventDefault();
+      const v = e.target.value.trim();
+      let t = 0;
+      if (v.includes(":")) {
+        const [m, s] = v.split(":");
+        t = (parseInt(m, 10) || 0) * 60 + parseFloat(s);
+      } else {
+        t = parseFloat(v);
+      }
+      if (!isFinite(t) || t < 0) return;
+      video.pause();
+      video.currentTime = t;
+      e.target.blur();
+    });
+
+    // -----------------------------------------------------------------------
+    // Mark IN/OUT
+    // -----------------------------------------------------------------------
+    const mIn = document.getElementById("mark-in");
+    const mOut = document.getElementById("mark-out");
+    const mDur = document.getElementById("mark-dur");
+    function setMarkIn(t) { state.markIn = t; mIn.textContent = t == null ? "—" : `${fmtTime(t)} (${t.toFixed(3)}s)`; updateDur(); }
+    function setMarkOut(t) { state.markOut = t; mOut.textContent = t == null ? "—" : `${fmtTime(t)} (${t.toFixed(3)}s)`; updateDur(); }
+    function updateDur() {
+      if (state.markIn != null && state.markOut != null) {
+        const d = state.markOut - state.markIn;
+        mDur.textContent = d.toFixed(3) + "s";
+        mDur.style.color = d > 0 ? "#4ade80" : "#ef4444";
+      } else {
+        mDur.textContent = "—";
+        mDur.style.color = "";
+      }
+    }
+    document.getElementById("mark-in-btn").onclick = () => setMarkIn(video.currentTime);
+    document.getElementById("mark-out-btn").onclick = () => setMarkOut(video.currentTime);
+
+    // -----------------------------------------------------------------------
+    // Segments
+    // -----------------------------------------------------------------------
+    const formNote = document.getElementById("form-note");
+    const formPack = document.getElementById("form-pack");
+    const formTag = document.getElementById("form-tag");
+    const segListBody = document.getElementById("seg-list-body");
+    const statCount = document.getElementById("stat-count");
+    const statDuration = document.getElementById("stat-duration");
+
+    function nextId() { return Math.random().toString(36).slice(2, 10); }
+
+    function addSegment() {
+      if (state.markIn == null || state.markOut == null || state.markOut <= state.markIn) {
+        alert("Set Cut Start (I) and Cut End (O) first — Cut End must be after Cut Start.");
+        return;
+      }
+      const seg = {
+        id: nextId(),
+        start: Number(state.markIn.toFixed(3)),
+        end: Number(state.markOut.toFixed(3)),
+        note: formNote.value.trim() || "(unnamed)",
+        pack: Number(formPack.value) || 1,
+        tag: formTag.value || undefined,
+      };
+      state.segments.push(seg);
+      sortSegments();
+      renderSegments();
+      // Reset marks but keep note/pack/tag for rapid entry
+      setMarkIn(null);
+      setMarkOut(null);
+      formNote.value = "";
+    }
+    document.getElementById("add-seg-btn").onclick = addSegment;
+
+    function sortSegments() {
+      state.segments.sort((a, b) => a.start - b.start);
+    }
+
+    function renderSegments() {
+      segListBody.innerHTML = "";
+      let totalDur = 0;
+      for (const seg of state.segments) {
+        const dur = seg.end - seg.start;
+        totalDur += dur;
+        const el = document.createElement("div");
+        el.className = "seg" + (seg.id === state.activeId ? " active" : "");
+        const tagHtml = seg.tag ? `<span class="tag ${seg.tag}">${seg.tag}</span>` : "";
+        const packHtml = seg.pack ? `<span class="pack">P${seg.pack}</span>` : "";
+        el.innerHTML = `
+          <div class="seg-top">
+            <span>${fmtTime(seg.start)} → ${fmtTime(seg.end)} <span style="color:#666">(${dur.toFixed(2)}s)</span></span>
+            <div class="actions">
+              <button data-act="del" data-id="${seg.id}" class="danger">×</button>
+            </div>
+          </div>
+          <div class="seg-note">${seg.note}</div>
+          <div class="seg-meta">${packHtml}${tagHtml}</div>
+        `;
+        el.addEventListener("click", (e) => {
+          if (e.target.closest("[data-act]")) return;
+          state.activeId = seg.id;
+          video.currentTime = seg.start;
+          video.pause();
+          renderSegments();
+        });
+        segListBody.appendChild(el);
+      }
+      segListBody.querySelectorAll('[data-act="del"]').forEach((b) => {
+        b.onclick = (e) => {
+          e.stopPropagation();
+          const id = b.dataset.id;
+          state.segments = state.segments.filter((s) => s.id !== id);
+          renderSegments();
+        };
+      });
+      statCount.textContent = state.segments.length;
+      statDuration.textContent = totalDur.toFixed(2) + "s";
+      autosave();
+    }
+
+    // -----------------------------------------------------------------------
+    // Import / Export
+    // -----------------------------------------------------------------------
+    function exportJSON() {
+      const out = {
+        comment: `Edited via cut-editor.html — ${state.segments.length} cuts, ${state.segments.reduce((s, x) => s + x.end - x.start, 0).toFixed(2)}s total.`,
+        segments: state.segments.map((s) => {
+          const o = { start: s.start, end: s.end, note: s.note };
+          if (s.pack) o.pack = s.pack;
+          if (s.tag) o.tag = s.tag;
+          return o;
+        }),
+      };
+      return JSON.stringify(out, null, 2);
+    }
+
+    function importJSON(text) {
+      try {
+        const obj = JSON.parse(text);
+        if (!obj.segments || !Array.isArray(obj.segments)) throw new Error("missing segments[]");
+        state.segments = obj.segments.map((s) => ({
+          id: nextId(),
+          start: s.start,
+          end: s.end,
+          note: s.note || "(unnamed)",
+          pack: s.pack,
+          tag: s.tag,
+        }));
+        sortSegments();
+        renderSegments();
+      } catch (e) {
+        alert("Bad JSON: " + e.message);
+      }
+    }
+
+    document.getElementById("export-json-btn").onclick = () => {
+      const blob = new Blob([exportJSON()], { type: "application/json" });
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      // Filename includes ISO timestamp + cut count so every export is unique
+      const d = new Date();
+      const stamp = `${d.getFullYear()}${(d.getMonth()+1).toString().padStart(2,'0')}${d.getDate().toString().padStart(2,'0')}-${d.getHours().toString().padStart(2,'0')}${d.getMinutes().toString().padStart(2,'0')}`;
+      a.download = `bowmanchrome2025-cuts-${stamp}-${state.segments.length}cuts.json`;
+      a.click();
+    };
+
+    document.getElementById("copy-json-btn").onclick = async () => {
+      await navigator.clipboard.writeText(exportJSON());
+      alert("Cuts JSON copied.");
+    };
+
+    document.getElementById("paste-json-btn").onclick = () => {
+      const txt = prompt("Paste cuts JSON here:");
+      if (txt) importJSON(txt);
+    };
+
+    document.getElementById("load-json-btn").onclick = () => document.getElementById("json-file-input").click();
+    document.getElementById("json-file-input").onchange = async (e) => {
+      const file = e.target.files[0];
+      if (file) importJSON(await file.text());
+    };
+
+    document.getElementById("clear-all-btn").onclick = () => {
+      if (confirm("Delete all cuts? This also clears the auto-saved backup.")) {
+        state.segments = [];
+        localStorage.removeItem(LS_KEY);
+        autosaveStatus.textContent = "No saved progress";
+        autosaveStatus.style.color = "#888";
+        renderSegments();
+      }
+    };
+
+    // -----------------------------------------------------------------------
+    // Keyboard shortcuts
+    // -----------------------------------------------------------------------
+    document.addEventListener("keydown", (e) => {
+      // Don't fire if typing in a text field
+      const t = e.target.tagName;
+      if (t === "INPUT" || t === "TEXTAREA" || t === "SELECT") return;
+
+      if (e.key === " ") { e.preventDefault(); video.paused ? video.play() : video.pause(); }
+      else if (e.key === "ArrowLeft" && e.shiftKey) { e.preventDefault(); stepSec(-1); }
+      else if (e.key === "ArrowRight" && e.shiftKey) { e.preventDefault(); stepSec(1); }
+      else if (e.key === "ArrowLeft") { e.preventDefault(); stepFrame(-1); }
+      else if (e.key === "ArrowRight") { e.preventDefault(); stepFrame(1); }
+      else if (e.key === "j" || e.key === "J") { video.playbackRate = 3; video.play(); video.currentTime = Math.max(0, video.currentTime - 0.5); }
+      else if (e.key === "k" || e.key === "K") { video.pause(); video.playbackRate = 1; }
+      else if (e.key === "l" || e.key === "L") { video.playbackRate = 3; video.play(); }
+      else if (e.key === "i" || e.key === "I") { setMarkIn(video.currentTime); }
+      else if (e.key === "o" || e.key === "O") { setMarkOut(video.currentTime); }
+      else if (e.key === "Enter") { addSegment(); }
+    });
+
+    // -----------------------------------------------------------------------
+    // Initial render — restore from localStorage if present
+    // -----------------------------------------------------------------------
+    restoreFromLocalStorage();
+    renderSegments();
+
+    // Warn if leaving page with unsaved (just-marked) state. The autosave
+    // captures segments, but if user has IN/OUT marks set but never pressed
+    // Add Cut, those are lost.
+    window.addEventListener("beforeunload", (e) => {
+      if (state.markIn != null || state.markOut != null) {
+        e.preventDefault();
+        e.returnValue = "You have unsaved IN/OUT marks. Press Enter to add the cut first.";
+      }
+    });
+  </script>
+</body>
+</html>

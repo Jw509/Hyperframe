@@ -1,0 +1,8 @@
+{
+  "name": "edithyper",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:edit": "node scripts/build-edit.mjs"
+  }
+}

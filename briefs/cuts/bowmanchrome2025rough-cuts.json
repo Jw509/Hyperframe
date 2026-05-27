@@ -1,0 +1,527 @@
+{
+  "comment": "Edited via cut-editor.html — 87 cuts, 447.86s total.",
+  "segments": [
+    {
+      "start": 21.014,
+      "end": 25.926,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 26.962,
+      "end": 31.34,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 36.37,
+      "end": 38.289,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 42.728,
+      "end": 44.607,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 51.634,
+      "end": 53.879,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 84.732,
+      "end": 86.031,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 88.096,
+      "end": 89.099,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 94.193,
+      "end": 100.351,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 104.154,
+      "end": 106.253,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 109.806,
+      "end": 119.526,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 134.801,
+      "end": 139.822,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 153.024,
+      "end": 155.746,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 161.461,
+      "end": 174.186,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 177.142,
+      "end": 179.374,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 201.802,
+      "end": 203.154,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 206.132,
+      "end": 207.238,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 208.974,
+      "end": 211.167,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 215.497,
+      "end": 224.259,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 225.935,
+      "end": 229.584,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 235.645,
+      "end": 237.439,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 243.205,
+      "end": 244.256,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 246.901,
+      "end": 250.377,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 253.897,
+      "end": 257.238,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 261.046,
+      "end": 264.123,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 264.879,
+      "end": 267.595,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 272.327,
+      "end": 273.59,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 276.147,
+      "end": 278.584,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 282.853,
+      "end": 284.591,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 288.825,
+      "end": 290.633,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 297.614,
+      "end": 306.99,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 310.692,
+      "end": 315.937,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 334.78,
+      "end": 342.307,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 346.155,
+      "end": 353.118,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 359.94,
+      "end": 363.725,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 390.097,
+      "end": 392.507,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 393.814,
+      "end": 396.66,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 400.598,
+      "end": 403.872,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 411.771,
+      "end": 413.86,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 465.441,
+      "end": 468.267,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 474.658,
+      "end": 476.957,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 479.539,
+      "end": 490.918,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 553.846,
+      "end": 555.327,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 565.72,
+      "end": 574.79,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 579.617,
+      "end": 602.373,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 621.255,
+      "end": 625.471,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 628.547,
+      "end": 638.34,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 650.381,
+      "end": 653.658,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 655.752,
+      "end": 658.447,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 661.824,
+      "end": 672.432,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 686.047,
+      "end": 688.191,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 692.008,
+      "end": 694.098,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 697.238,
+      "end": 709.249,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 733.365,
+      "end": 734.929,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 737.404,
+      "end": 738.559,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 741.758,
+      "end": 753.201,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 779.37,
+      "end": 786.854,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 791.02,
+      "end": 794.927,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 798.975,
+      "end": 808.849,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 810.471,
+      "end": 822.844,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 823.237,
+      "end": 829.564,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 833.681,
+      "end": 836.631,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 856.692,
+      "end": 858.229,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 868.124,
+      "end": 869.532,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 871.033,
+      "end": 873.638,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 875.55,
+      "end": 889.644,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 900.815,
+      "end": 903.221,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 917.454,
+      "end": 919.824,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 922.8,
+      "end": 925.002,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 927.041,
+      "end": 942.332,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 964.164,
+      "end": 966.11,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 975.019,
+      "end": 976.513,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 979.852,
+      "end": 981.636,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 988.142,
+      "end": 989.951,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 992.058,
+      "end": 1003.809,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 1017.919,
+      "end": 1019.211,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 1025.574,
+      "end": 1027.736,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 1033.591,
+      "end": 1036.352,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 1047.286,
+      "end": 1079.378,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 1093.202,
+      "end": 1098.493,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 1104.402,
+      "end": 1105.99,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 1109.246,
+      "end": 1123.184,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 1131.954,
+      "end": 1133.829,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 1139.751,
+      "end": 1144.298,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 1147.346,
+      "end": 1148.808,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 1153.461,
+      "end": 1162.131,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 1164.577,
+      "end": 1172.009,
+      "note": "(unnamed)",
+      "pack": 1
+    },
+    {
+      "start": 1173.657,
+      "end": 1182.393,
+      "note": "(unnamed)",
+      "pack": 1
+    }
+  ]
+}

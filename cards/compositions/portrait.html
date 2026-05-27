@@ -1,0 +1,209 @@
+<!doctype html>
+<html
+  lang="en"
+  data-resolution="portrait"
+  data-composition-variables='[
+    {"id":"value","type":"string","label":"Value text","default":"$120"},
+    {"id":"label","type":"string","label":"Top label","default":"EST. VALUE"},
+    {"id":"subtitle","type":"string","label":"Subtitle (optional)","default":""},
+    {"id":"holdSeconds","type":"number","label":"On-screen hold (s)","default":2.5},
+    {"id":"compImage","type":"string","label":"eBay sold screenshot (path)","default":""}
+  ]'
+>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Card Title Portrait - Hyperframes</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        width: 1080px;
+        height: 1920px;
+        background: transparent;
+        overflow: hidden;
+        font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      #root {
+        position: relative;
+        width: 1080px;
+        height: 1920px;
+      }
+
+      .card-callout {
+        position: absolute;
+        left: 50%;
+        bottom: 240px;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 32px 52px 36px;
+        background: rgba(10, 22, 40, 0.92);
+        border-top: 8px solid #d4a017;
+        border-bottom: 8px solid #d4a017;
+        opacity: 0;
+        min-width: 720px;
+      }
+
+      .label {
+        font-size: 30px;
+        font-weight: 600;
+        letter-spacing: 8px;
+        color: #d4a017;
+        text-transform: uppercase;
+        margin-bottom: 14px;
+      }
+
+      .value {
+        font-size: 168px;
+        font-weight: 800;
+        color: #ffffff;
+        line-height: 1;
+        letter-spacing: -3px;
+      }
+
+      .subtitle {
+        margin-top: 18px;
+        font-size: 28px;
+        font-weight: 400;
+        letter-spacing: 3px;
+        color: rgba(255, 255, 255, 0.72);
+        text-transform: uppercase;
+      }
+
+      .subtitle:empty { display: none; }
+
+      .comp-card {
+        position: absolute;
+        left: 50%;
+        bottom: 720px;
+        transform: translateX(-50%);
+        width: 880px;
+        max-height: 720px;
+        background: #ffffff;
+        padding: 20px;
+        box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+        border-top: 10px solid #d4a017;
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .comp-tag {
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 5px;
+        color: #0a1628;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+        text-align: left;
+      }
+
+      .comp-tag::after {
+        content: "EBAY · SOLD";
+        background: #d4a017;
+        color: #0a1628;
+        padding: 4px 10px;
+        margin-left: 10px;
+        font-size: 18px;
+        letter-spacing: 3px;
+      }
+
+      .comp-img {
+        flex: 1;
+        min-height: 0;
+        width: 100%;
+        object-fit: contain;
+        object-position: center;
+        background: #f3f4f6;
+      }
+
+      .comp-card.hidden { display: none; }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="card-title-portrait"
+      data-width="1080"
+      data-height="1920"
+      data-start="0"
+      data-duration="3.5"
+    >
+      <div id="comp-card" class="comp-card hidden clip" data-start="0" data-duration="3.5" data-track-index="1">
+        <div class="comp-tag">Proof of comp</div>
+        <img id="comp-img" class="comp-img" alt="eBay sold listing screenshot" />
+      </div>
+
+      <div id="card-callout" class="card-callout clip" data-start="0" data-duration="3.5" data-track-index="0">
+        <div class="label" id="label-el"></div>
+        <div class="value" id="value-el"></div>
+        <div class="subtitle" id="subtitle-el"></div>
+      </div>
+
+      <script>
+        (function () {
+          const hf = window.__hyperframes;
+          const vars = hf && typeof hf.getVariables === "function"
+            ? hf.getVariables()
+            : { value: "$120", label: "EST. VALUE", subtitle: "", holdSeconds: 2.5, compImage: "" };
+
+          document.getElementById("label-el").textContent = vars.label;
+          document.getElementById("value-el").textContent = vars.value;
+          document.getElementById("subtitle-el").textContent = vars.subtitle || "";
+
+          const compCard = document.getElementById("comp-card");
+          const compImg = document.getElementById("comp-img");
+          const hasComp = !!(vars.compImage && String(vars.compImage).trim());
+          if (hasComp) {
+            compImg.src = vars.compImage;
+            compCard.classList.remove("hidden");
+          }
+
+          const hold = Math.max(0.5, Number(vars.holdSeconds) || 2.5);
+          const inDur = 0.45;
+          const outDur = 0.35;
+          const compDelay = 0.25;
+          const total = inDur + hold + outDur;
+
+          const root = document.getElementById("root");
+          root.setAttribute("data-duration", total.toFixed(2));
+          document.getElementById("card-callout").setAttribute("data-duration", total.toFixed(2));
+          compCard.setAttribute("data-duration", total.toFixed(2));
+
+          const tl = gsap.timeline({ paused: true });
+          tl.fromTo(
+            "#card-callout",
+            { y: 60, opacity: 0 },
+            { y: 0, opacity: 1, duration: inDur, ease: "power3.out" },
+            0,
+          );
+          if (hasComp) {
+            tl.fromTo(
+              "#comp-card",
+              { y: -40, opacity: 0 },
+              { y: 0, opacity: 1, duration: inDur, ease: "power3.out" },
+              compDelay,
+            );
+            tl.to(
+              "#comp-card",
+              { y: -40, opacity: 0, duration: outDur, ease: "power2.in" },
+              inDur + hold,
+            );
+          }
+          tl.to(
+            "#card-callout",
+            { y: 60, opacity: 0, duration: outDur, ease: "power2.in" },
+            inDur + hold,
+          );
+
+          window.__timelines = window.__timelines || {};
+          window.__timelines["card-title-portrait"] = tl;
+        })();
+      </script>
+    </div>
+  </body>
+</html>

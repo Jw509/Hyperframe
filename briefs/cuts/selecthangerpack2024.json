@@ -1,0 +1,20 @@
+{
+  "comment": "v19 — adds non-comp quick flashes (Devonta Smith, Blake Corum, Dan Hampton, Tyler Lockett) and smooths Josh Allen half-motion. Total: 55.48s.",
+  "segments": [
+    { "start": 0.0,   "end": 0.5,   "note": "intro hint" },
+    { "start": 3.9,   "end": 5.0,   "note": "intro hint" },
+    { "start": 10.5,  "end": 12.6,  "note": "intro hint" },
+    { "start": 16.7,  "end": 21.2,  "note": "reveal 1 — Drake Maye $3.25 @ src 18.8" },
+    { "start": 25.8,  "end": 26.4,  "note": "Devonta Smith quick flash (non-comp)" },
+    { "start": 28.4,  "end": 29.0,  "note": "Blake Corum quick flash (non-comp)" },
+    { "start": 30.0,  "end": 36.2,  "note": "reveal 2 — Patrick Queen $25 money shot @ src 31.3" },
+    { "start": 43.0,  "end": 45.3,  "note": "reveal 3 — Mike Evans $1 comparable @ src 45.2" },
+    { "start": 62.6,  "end": 64.7,  "note": "reveal 4 part 1 — pre-Josh-Allen + motion start" },
+    { "start": 65.3,  "end": 66.2,  "note": "reveal 4 part 2 — Josh Allen finalized @ src 66.0 (cuts out half-motion pause)" },
+    { "start": 72.4,  "end": 74.7,  "note": "post-Josh-Allen tail (overlaps with reveal 4 overlay hold)" },
+    { "start": 77.5,  "end": 97.0,  "note": "reveals 5-10 rapid sequence (Bryan Anger onward)" },
+    { "start": 97.3,  "end": 97.9,  "note": "Dan Hampton quick flash (non-comp)" },
+    { "start": 98.7,  "end": 99.3,  "note": "Tyler Lockett quick flash (non-comp)" },
+    { "start": 100.0, "end": 108.78, "note": "tail — empty mat for recap to play over" }
+  ]
+}
