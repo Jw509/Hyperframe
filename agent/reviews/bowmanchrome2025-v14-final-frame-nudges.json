@@ -1,0 +1,24 @@
+{
+  "schema": "edithyper.reveal-review.v1",
+  "sourceReviewHtml": "scratch/reveal-detection-review/bowmanchrome2025-v13-frame-review/review.html",
+  "notes": [
+    "User reviewed v13 sheet: all corrected transitions look good except card 51 and card 75.",
+    "These are delta corrections from the observed frame position in the v13 sheet, not shift_to_frame corrections relative to the candidate frame."
+  ],
+  "reviews": [
+    {
+      "cardId": "card-051",
+      "action": "set_seconds",
+      "seconds": 747.2,
+      "revealEndSeconds": 748.8,
+      "note": "RJ Maryland: v13 sheet shows slide beginning at frame 1; user wants it around frame 4, so move reveal start 0.3s earlier."
+    },
+    {
+      "cardId": "card-075",
+      "action": "set_seconds",
+      "seconds": 1113.5,
+      "revealEndSeconds": 1114.6,
+      "note": "Gunner Stockton: v13 sheet shows slide beginning at frame 7; user wants it around frame 5, so move reveal start 0.2s later."
+    }
+  ]
+}

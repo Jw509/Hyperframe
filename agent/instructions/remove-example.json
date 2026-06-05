@@ -1,0 +1,13 @@
+{
+  "slug": "bowmanchrome2025",
+  "defaultTimeline": "source",
+  "instructions": [
+    {
+      "text": "Example only: at 2:15 source, skip/remove the segment containing this card",
+      "operation": "remove_segment",
+      "timeline": "source",
+      "at": "2:15",
+      "locked": true
+    }
+  ]
+}

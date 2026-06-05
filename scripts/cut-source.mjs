@@ -4,7 +4,7 @@
  * into a single MP4 with the audio preserved.
  *
  * Usage:
- *   node scripts/cut-source.mjs <slug>
+ *   node scripts/cut-source.mjs <slug> [--cut <cuts.json>] [--out <output.mp4>] [--out-suffix <suffix>]
  *
  * Reads segments from a JSON file at briefs/cuts/<slug>.json shaped like:
  *   { "segments": [{ "start": 0.0, "end": 0.5 }, ...] }
@@ -19,47 +19,90 @@ import { fileURLToPath } from "node:url";
 
 const FFMPEG =
   "C:/Users/J/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.1.1-full_build/bin/ffmpeg.exe";
+const FFPROBE = FFMPEG.replace(/ffmpeg(?:\.exe)?$/i, "ffprobe.exe");
 
 const here = dirname(fileURLToPath(import.meta.url));
 const projectRoot = resolve(here, "..");
 
 const args = process.argv.slice(2);
-const noAudio = args.includes("--no-audio");
-// --input <variant> picks which source file to cut from. Defaults to 1080p
-// landscape. Use "portrait" for the silent 9:16 source the cut editor uses.
-const inputIdx = args.indexOf("--input");
-const variant = inputIdx >= 0 ? args[inputIdx + 1] : "1080p";
-const slug = args.find((a, i) => !a.startsWith("--") && args[i - 1] !== "--input");
+let noAudio = args.includes("--no-audio");
+const valueFlags = new Set(["--input", "--cut", "--out", "--out-suffix"]);
+const optionValue = (name) => {
+  const index = args.indexOf(name);
+  return index >= 0 ? args[index + 1] : null;
+};
+
+// --input <variant|path> picks which source file to cut from. Defaults to
+// 1080p landscape. Use "portrait" for the silent 9:16 source the cut editor
+// uses, or pass an explicit project-relative/absolute video path.
+const inputOpt = optionValue("--input");
+const inputLooksLikePath = inputOpt
+  ? /[\\/]/.test(inputOpt) || /\.(mp4|mov|mkv|webm)$/i.test(inputOpt)
+  : false;
+const variant = inputLooksLikePath ? null : (inputOpt || "1080p");
+const positional = [];
+for (let i = 0; i < args.length; i++) {
+  const arg = args[i];
+  if (valueFlags.has(arg)) {
+    i++;
+    continue;
+  }
+  if (!arg.startsWith("--")) positional.push(arg);
+}
+const slug = positional[0];
 if (!slug) {
-  console.error("Usage: node scripts/cut-source.mjs <slug> [--no-audio] [--input <variant>]");
+  console.error("Usage: node scripts/cut-source.mjs <slug> [--no-audio] [--input <variant>] [--cut <cuts.json>] [--out <output.mp4>] [--out-suffix <suffix>]");
   console.error("  <variant> = '1080p' (landscape, default) or 'portrait' (9:16 silent)");
+  console.error("  <path> may be a project-relative or absolute source video path");
   process.exit(1);
 }
 
-const cutsPath = resolve(projectRoot, "briefs/cuts", `${slug}.json`);
+const cutsPath = optionValue("--cut")
+  ? resolve(projectRoot, optionValue("--cut"))
+  : resolve(projectRoot, "briefs/cuts", `${slug}.json`);
 if (!existsSync(cutsPath)) {
   console.error(`Cuts JSON not found: ${cutsPath}`);
   process.exit(1);
 }
 
-const sourcePath = resolve(
-  projectRoot,
-  "cards/sources",
-  slug,
-  `${slug}-${variant}.mp4`,
-);
+let sourcePath = inputLooksLikePath
+  ? resolve(projectRoot, inputOpt)
+  : resolve(
+      projectRoot,
+      "cards/sources",
+      slug,
+      `${slug}-${variant}.mp4`,
+    );
+if (!existsSync(sourcePath) && !inputOpt) {
+  const briefPath = resolve(projectRoot, "briefs", `${slug}.json`);
+  if (existsSync(briefPath)) {
+    const brief = JSON.parse(readFileSync(briefPath, "utf8"));
+    if (brief.source) {
+      const sourceFromBrief = String(brief.source).includes("/") || String(brief.source).includes("\\")
+        ? resolve(projectRoot, brief.source)
+        : resolve(projectRoot, "cards/sources", slug, brief.source);
+      if (existsSync(sourceFromBrief)) sourcePath = sourceFromBrief;
+    }
+  }
+}
 if (!existsSync(sourcePath)) {
   console.error(`Source not found: ${sourcePath}`);
+  if (inputOpt) {
+    console.error(`--input was provided, so no fallback source was used.`);
+  } else {
+    console.error(`Also checked briefs/${slug}.json source, if present.`);
+  }
   process.exit(1);
 }
+if (!noAudio && !hasAudioStream(sourcePath)) {
+  console.log("Source has no audio stream; rendering video-only.");
+  noAudio = true;
+}
 
-const outSuffix = variant === "1080p" ? "cut" : `cut-${variant}`;
-const outPath = resolve(
-  projectRoot,
-  "cards/sources",
-  slug,
-  `${slug}-${outSuffix}.mp4`,
-);
+const outSuffix = optionValue("--out-suffix") || (variant === "1080p" ? "cut" : `cut-${variant || "source"}`);
+const outPath = optionValue("--out")
+  ? resolve(projectRoot, optionValue("--out"))
+  : resolve(projectRoot, "cards/sources", slug, `${slug}-${outSuffix}.mp4`);
 
 const data = JSON.parse(readFileSync(cutsPath, "utf8"));
 const segments = data.segments;
@@ -129,3 +172,22 @@ const size = statSync(outPath).size;
 console.log(
   `\nDone. ${outPath}\n${(size / 1024 / 1024).toFixed(1)} MB, ${totalDur.toFixed(2)}s, ${segments.length} segments`,
 );
+
+function hasAudioStream(path) {
+  const result = spawnSync(FFPROBE, [
+    "-v",
+    "error",
+    "-select_streams",
+    "a",
+    "-show_entries",
+    "stream=index",
+    "-of",
+    "csv=p=0",
+    path,
+  ], { encoding: "utf8" });
+  if (result.status !== 0) {
+    const stderr = result.stderr?.trim();
+    throw new Error(`ffprobe failed while checking audio stream: ${stderr || `status=${result.status}`}`);
+  }
+  return result.stdout.trim().length > 0;
+}

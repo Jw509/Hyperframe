@@ -1,0 +1,10 @@
+{
+  "source": "<slug>.mp4",
+  "output_resolution": "1080p",
+  "output_fps": 60,
+  "intro_end": "0:08",
+  "box_cost": "$0",
+  "expected_packs": 0,
+  "cards_per_pack": 0,
+  "reveals": []
+}

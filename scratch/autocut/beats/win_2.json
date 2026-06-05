@@ -1,0 +1,13 @@
+{
+  "window": 2,
+  "start": 93,
+  "end": 145.3,
+  "segments": [
+    { "start": 93.8, "end": 98.3, "note": "Pack 1 cards slid out of wrapper, fronts fanned and held readable (pack-open reveal, flowing)" },
+    { "start": 109.4, "end": 116.3, "note": "Chrome parallel (red tab) slides up, examined, then swapped to chrome player card; fronts readable (flowing swap)" },
+    { "start": 117.6, "end": 126.5, "note": "Blue vertical card slides up centered, then continuous in-hand swapping of remaining pack-1 fronts (flowing fan)" },
+    { "start": 128.8, "end": 130.7, "note": "Last pack-1 cards flipped front-up once more before being set down" },
+    { "start": 137.7, "end": 141.5, "note": "Pack 2 cards slid out of wrapper, fronts fanned and held readable (pack-open reveal, flowing)" },
+    { "start": 142.2, "end": 145.2, "note": "Pack 2 cards held front-up and fanned to end of window (flowing)" }
+  ]
+}

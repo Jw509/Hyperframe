@@ -1,0 +1,13 @@
+{
+  "window": 6,
+  "start": 355.63,
+  "end": 429.07,
+  "segments": [
+    { "start": 357.7, "end": 359.9, "note": "Pack-rip moment: hands grab pack and tear the wrapper open, cards inside revealed (dynamic ~2s)." },
+    { "start": 367.3, "end": 369.0, "note": "Card 1 slides up from bottom: first card pulled from the pack (colored refractor/parallel), held centered." },
+    { "start": 370.5, "end": 372.6, "note": "Card 2 slides up: white-jersey parallel (later flipped to show its colored/refractor front) — slide-start at 370.5." },
+    { "start": 390.0, "end": 392.3, "note": "Feature chrome card slides up: shiny silver chrome card with yellow tab, the standout of this pack (examined at length) — ~2s hit hold." },
+    { "start": 402.3, "end": 404.1, "note": "Distinct player card brought to center: white-jersey player with red logo and yellow bottom border, readable." },
+    { "start": 416.4, "end": 418.4, "note": "Insert/hit slides up: 'MS 5' silver insert card, held high and readable — ~2s feature hold." }
+  ]
+}

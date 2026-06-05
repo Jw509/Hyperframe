@@ -1,4 +1,13 @@
 # ─── Heavy media (too large for GitHub; supplied/regenerated locally) ───
+# All video files stay local — never pushed (supplied/regenerated locally on each machine)
+*.mp4
+*.mov
+*.mkv
+*.m4v
+*.webm
+*.avi
+*.wmv
+*.flv
 # Raw capture footage, cut sources, and 1080p/portrait derivatives
 cards/sources/
 # Rendered MP4 outputs
@@ -23,6 +32,8 @@ scratch/*.mov
 
 # ─── Local / machine-specific ───
 .claude/settings.local.json
+agent/state/plans/*.json
+agent/state/plans/*.md
 
 # ─── Dependencies & OS cruft ───
 node_modules/

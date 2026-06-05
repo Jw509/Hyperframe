@@ -1,0 +1,88 @@
+{
+  "schema": "edithyper.reveal-review.v1",
+  "sourceReviewHtml": "scratch/reveal-detection-review/bowmanchrome2025-reviewed-needs-review/review.html",
+  "sourceReviewMarkdown": "scratch/reveal-detection-review/bowmanchrome2025-reviewed-needs-review/review.md",
+  "frameReference": {
+    "candidateFrame": 4,
+    "fps": 10,
+    "beforeSeconds": 0.25,
+    "note": "In the review grids, the proposed candidate is roughly frame 4. User reviewed the remaining pass-1 candidates."
+  },
+  "reviews": [
+    {
+      "cardId": "card-010",
+      "action": "needs_earlier",
+      "note": "User: too early/late wording aside, card is fully slid up by frame 5, so the reveal start must be earlier than this candidate."
+    },
+    {
+      "cardId": "card-018",
+      "action": "needs_earlier",
+      "note": "User: slide is halfway done by frame 4; candidate is too late and needs earlier source frames."
+    },
+    {
+      "cardId": "card-028",
+      "action": "manual_exception",
+      "note": "User repeated: do not worry about 28; weird flip reveal, keep as one-off/manual and do not include in detector review."
+    },
+    {
+      "cardId": "card-034",
+      "action": "bad_detection",
+      "note": "User: bad detection, no slide in the grid."
+    },
+    {
+      "cardId": "card-035",
+      "action": "needs_earlier",
+      "note": "User: frame 4 has the card slide almost finished; needs earlier source frames."
+    },
+    {
+      "cardId": "card-038",
+      "action": "bad_detection",
+      "note": "User: bad detection, no slide motion."
+    },
+    {
+      "cardId": "card-040",
+      "action": "manual_exception",
+      "note": "User: final card in pack; no slide shown, just setting card to the side. Do not use as slide training data."
+    },
+    {
+      "cardId": "card-046",
+      "action": "bad_detection",
+      "note": "User: no slide at all, bad detection."
+    },
+    {
+      "cardId": "card-052",
+      "action": "bad_detection",
+      "note": "User: bad detection; holding four cards."
+    },
+    {
+      "cardId": "card-067",
+      "action": "needs_later",
+      "note": "User: too late; needs another timing pass."
+    },
+    {
+      "cardId": "card-070",
+      "action": "bad_detection",
+      "note": "User: bad detection, no slide."
+    },
+    {
+      "cardId": "card-071",
+      "action": "bad_detection",
+      "note": "User: bad detection, no slide."
+    },
+    {
+      "cardId": "card-074",
+      "action": "needs_earlier",
+      "note": "User: slide is almost done in frame 1; needs earlier source frames."
+    },
+    {
+      "cardId": "card-075",
+      "action": "bad_detection",
+      "note": "User: bad detection, no slide."
+    },
+    {
+      "cardId": "card-076",
+      "action": "needs_earlier",
+      "note": "User: frame 1 has the only slide image and it is already over; needs earlier source frames."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "window": 12,
+  "start": 726.67,
+  "end": 773.2,
+  "segments": [
+    { "start": 729.5, "end": 731.7, "note": "pack-rip: hands grip and tear the pack, cards burst out (pack-rip moment)" },
+    { "start": 734.4, "end": 736.9, "note": "red-jersey player card #1 settles into hand, held readable (long-held feature card)" },
+    { "start": 748.07, "end": 750.0, "note": "white/light player card #2 up in hand, examined" },
+    { "start": 751.67, "end": 753.5, "note": "dark parallel player card #3 held in hand" },
+    { "start": 753.9, "end": 756.4, "note": "colorful refractor parallels fanned/swapped in hand (flowing)" },
+    { "start": 756.9, "end": 759.0, "note": "red player card #4 settles in hand, held readable" },
+    { "start": 763.97, "end": 768.9, "note": "continuous fan: card swaps into colorful/purple refractor parallels, shuffled in hand before set down (flowing)" }
+  ]
+}

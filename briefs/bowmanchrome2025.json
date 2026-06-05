@@ -4,6 +4,8 @@
   "output_fps": 60,
   "intro_end": "0:08",
   "box_cost": "$210",
+  "expected_packs": 20,
+  "cards_per_pack": 4,
   "reveals": [
     { "at": "13:57", "value": "$75", "money_shot": true,  "note": "Gunner Stockton Georgia QB pink/purple Stealth refractor - PLACEHOLDER value, confirm + edit" },
     { "at": "18:01", "value": "$40", "money_shot": false, "note": "Eric Singleton Jr Auburn blue sparkle AUTO - PLACEHOLDER value, confirm + edit" }

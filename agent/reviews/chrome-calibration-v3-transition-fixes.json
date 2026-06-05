@@ -1,0 +1,34 @@
+{
+  "schema": "edithyper.reveal-review.v1",
+  "sourceReviewHtml": "scratch/reveal-detection-review/chrome-calibration-v3-transition-fixes/review.html",
+  "frameReference": {
+    "candidateFrame": 11,
+    "fps": 10
+  },
+  "notes": [
+    "User review from chrome-calibration-v3-transition-fixes.",
+    "Frame 11 is the current calibrated start for each card.",
+    "card-005 is rejected because the sheet does not show Jakobi Meyers beginning to appear."
+  ],
+  "reviews": [
+    {
+      "cardId": "card-005",
+      "action": "bad_detection",
+      "note": "User: bad detection; the sheet does not even have Jakobi Meyers starting to be shown."
+    },
+    {
+      "cardId": "card-006",
+      "action": "shift_to_frame",
+      "frame": 13,
+      "revealEndSeconds": 163.929,
+      "note": "User: start frame 13, settle frame 25."
+    },
+    {
+      "cardId": "card-012",
+      "action": "shift_to_frame",
+      "frame": 17,
+      "revealEndSeconds": 256.62,
+      "note": "User: start frame 17, settle frame 27."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "window": 7,
+  "start": 429.07,
+  "end": 475.37,
+  "segments": [
+    { "start": 429.1, "end": 430.5, "note": "Window opens mid-hold: white checklist/paper cards held up steady and readable in left hand (carryover from prior pack)." },
+    { "start": 431.4, "end": 433.6, "note": "Gold/orange 'MS' chrome refractor slides up from bottom and settles centered; creator held it ~8s so it's a feature card -> ~2s hold." },
+    { "start": 440.1, "end": 445.3, "note": "Continuous in-hand flow: a checklist card is shown then a fan of chrome player refractors (purple/yellow) is swapped in hand without putting down -> one flowing segment, ends as hand lowers." },
+    { "start": 449.4, "end": 451.5, "note": "Second gold 'MS' chrome refractor slides up and settles centered; again held very long by creator -> feature ~2s hold." },
+    { "start": 472.6, "end": 475.37, "note": "Final beat: magenta/purple chrome refractor player card slides up into hand and is shown/turned, held to window end." }
+  ]
+}

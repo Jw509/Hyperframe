@@ -1,0 +1,18 @@
+{
+  "window": 5,
+  "start": 271.33,
+  "end": 355.63,
+  "segments": [
+    { "start": 281.6, "end": 283.5, "note": "Pack-rip moment: final tear of the foil wrapper, green card emerging from pack" },
+    { "start": 283.5, "end": 285.6, "note": "First card reveal: green base/parallel slides up and is held centered (sits still long after)" },
+    { "start": 300.0, "end": 301.9, "note": "Red/white card slides up into frame, held centered and readable" },
+    { "start": 305.5, "end": 307.5, "note": "Purple parallel/refractor slides up, held centered (colored parallel)" },
+    { "start": 309.6, "end": 315.8, "note": "Continuous fan: multiple colored parallels/refractors (purple, gold, blue) swapped in-hand — one flowing segment, not chopped" },
+    { "start": 321.8, "end": 324.0, "note": "Purple parallel settles and is held very steady/centered — distinct feature reveal" },
+    { "start": 335.6, "end": 337.6, "note": "Pack-rip moment: next foil pack torn open" },
+    { "start": 337.7, "end": 339.7, "note": "Purple 'P' parallel slides up out of the pack, held centered and readable" },
+    { "start": 344.5, "end": 346.4, "note": "Gold/yellow refractor parallel slides up, held centered" },
+    { "start": 349.7, "end": 351.6, "note": "White refractor card with player (red accents) slides up, held centered and readable" },
+    { "start": 352.3, "end": 354.3, "note": "Final card: yellow/gold-top parallel slides up, held centered before reaching for next" }
+  ]
+}

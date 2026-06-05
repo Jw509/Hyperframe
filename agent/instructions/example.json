@@ -1,0 +1,22 @@
+{
+  "slug": "bowmanchrome2025",
+  "defaultTimeline": "source",
+  "instructions": [
+    {
+      "text": "Example only: at 3:34 source, insert the missing card for 1.8s",
+      "operation": "insert_segment",
+      "timeline": "source",
+      "start": "3:34",
+      "duration": "1.8",
+      "note": "card: user-specified missing card",
+      "locked": true
+    },
+    {
+      "text": "Example only: at 2:15 source, skip/remove the segment containing this card",
+      "operation": "remove_segment",
+      "timeline": "source",
+      "at": "2:15",
+      "locked": true
+    }
+  ]
+}

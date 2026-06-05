@@ -1,0 +1,17 @@
+{
+  "window": 14,
+  "start": 819.73,
+  "end": 897.13,
+  "segments": [
+    { "start": 819.73, "end": 821.9, "note": "Orange/silver player card already held high at window start (slide-start precedes window); centered and readable" },
+    { "start": 822.73, "end": 827.0, "note": "Purple/colorful parallel slides UP from bottom, then continuous in-hand swap into a pink/orange refractor held high; flowing multi-card swap, no blink" },
+    { "start": 829.5, "end": 831.6, "note": "Light pink/white Bowman card slides up and is held centered/readable" },
+    { "start": 834.4, "end": 836.9, "note": "Vivid sunset/rainbow refractor (standout card) slides up and is held high; feature hold" },
+    { "start": 855.4, "end": 857.5, "note": "Pack-rip: new Bowman Chrome foil pack brought in and torn open" },
+    { "start": 874.4, "end": 876.5, "note": "Silver/gray card with red marks rotated up and presented flat, centered and readable" },
+    { "start": 881.0, "end": 883.2, "note": "New white/silver player card swapped up in-hand and held high" },
+    { "start": 884.4, "end": 886.9, "note": "Orange/colorful refractor card slides up and is held centered" },
+    { "start": 887.3, "end": 890.2, "note": "Continuous in-hand fan/shuffle of several cards (orange/white/colorful spread); flowing fan, kept as one segment" },
+    { "start": 892.7, "end": 894.0, "note": "Dark green-tinted foil/chrome card raised and briefly held high, readable" }
+  ]
+}

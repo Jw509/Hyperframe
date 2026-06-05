@@ -1,0 +1,21 @@
+{
+  "schema": "edithyper.reveal-review.v1",
+  "sourceReviewHtml": "scratch/reveal-detection-review/chrome-calibration-v4-card005-wide/review.html",
+  "frameReference": {
+    "candidateFrame": 9,
+    "fps": 8
+  },
+  "notes": [
+    "User review from chrome-calibration-v4-card005-wide.",
+    "Frame 9 is the old bad candidate. The wide sheet shows 1s before and 10s after the candidate."
+  ],
+  "reviews": [
+    {
+      "cardId": "card-005",
+      "action": "shift_to_frame",
+      "frame": 41,
+      "revealEndSeconds": 156.47,
+      "note": "User: card-005 start frame 41, settle frame 53."
+    }
+  ]
+}

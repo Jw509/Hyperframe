@@ -4,6 +4,8 @@
   "output_fps": 60,
   "intro_end": "0:08",
   "box_cost": "$19.99",
+  "expected_packs": 1,
+  "cards_per_pack": 10,
   "reveals": [
     { "at": "0:17", "value": "$3.25", "comp_image": "maye.png",  "money_shot": false },
     { "at": "0:29", "value": "$25",   "comp_image": "pq.png",    "money_shot": true  },

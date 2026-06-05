@@ -1,0 +1,43 @@
+{
+  "schema": "edithyper.reveal-review.v1",
+  "sourceReviewHtml": "scratch/reveal-detection-review/bowmanchrome2025-pass2-needs-review/review.html",
+  "sourceReviewMarkdown": "scratch/reveal-detection-review/bowmanchrome2025-pass2-needs-review/review.md",
+  "frameReference": {
+    "candidateFrame": 4,
+    "fps": 10,
+    "beforeSeconds": 0.25,
+    "note": "User reviewed the pass-2 remaining sheet and said every remaining candidate is still too late."
+  },
+  "reviews": [
+    {
+      "cardId": "card-010",
+      "action": "needs_earlier",
+      "note": "User: still too late."
+    },
+    {
+      "cardId": "card-018",
+      "action": "needs_earlier",
+      "note": "User: too late."
+    },
+    {
+      "cardId": "card-035",
+      "action": "needs_earlier",
+      "note": "User: too late."
+    },
+    {
+      "cardId": "card-067",
+      "action": "needs_earlier",
+      "note": "User: really late. Latest review overrides prior needs_later status."
+    },
+    {
+      "cardId": "card-074",
+      "action": "needs_earlier",
+      "note": "User: pretty late."
+    },
+    {
+      "cardId": "card-076",
+      "action": "needs_earlier",
+      "note": "User: way too late."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "window": 13,
+  "start": 773.2,
+  "end": 819.73,
+  "segments": [
+    { "start": 773.2, "end": 774.7, "note": "pack-rip moment: orange Bowman wrapper/sealed cards shown at top, then torn open" },
+    { "start": 778.4, "end": 786.5, "note": "first base card slides up (orange/white player), then continuous in-hand fan/swap of several Bowman base cards" },
+    { "start": 786.5, "end": 789.0, "note": "FEATURE: dark yellow/gold parallel slides up and is held long & centered (the showcase card of this window)" },
+    { "start": 797.6, "end": 799.8, "note": "second yellow/gold parallel (different player) slides up after the first is lowered" },
+    { "start": 801.3, "end": 803.5, "note": "orange/white base card slides up, held centered/readable" },
+    { "start": 807.4, "end": 809.2, "note": "silver/chrome base card slides up, held centered" },
+    { "start": 809.4, "end": 813.8, "note": "orange/white base card slides up; held and lightly swapped in-hand (flowing)" },
+    { "start": 814.0, "end": 819.6, "note": "orange/white base cards re-raised and fanned/swapped continuously to end of window (flowing)" }
+  ]
+}

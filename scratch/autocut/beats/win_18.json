@@ -1,0 +1,16 @@
+{
+  "window": 18,
+  "start": 1083.43,
+  "end": 1160.67,
+  "segments": [
+    { "start": 1086.3, "end": 1088.8, "note": "Pack-rip: next sealed Bowman pack lifted into frame top-right and shown before opening" },
+    { "start": 1097.8, "end": 1100.3, "note": "Card A reveal - red-accent chrome card slides up into hand, held and shown" },
+    { "start": 1100.4, "end": 1102.2, "note": "Card B reveal - gold/yellow parallel slides up (in-hand swap right after card A)" },
+    { "start": 1108.1, "end": 1109.7, "note": "Card C reveal - white-jersey player base card slides up after brief lowering" },
+    { "start": 1115.1, "end": 1116.7, "note": "Card D reveal - orange-accent card slides up, held vertical" },
+    { "start": 1120.5, "end": 1122.1, "note": "Card E reveal - refractor/parallel slides up, examined in-hand" },
+    { "start": 1130.2, "end": 1132.7, "note": "Pack-rip: following sealed pack lifted into frame and shown (after empty-mat gap)" },
+    { "start": 1143.0, "end": 1145.4, "note": "Card F reveal - dark player chrome card slides up out of the opened pack" },
+    { "start": 1151.9, "end": 1156.1, "note": "Feature card reveal - dark player card with red accents slides up and is admired/held long (likely the hit); held to window end" }
+  ]
+}

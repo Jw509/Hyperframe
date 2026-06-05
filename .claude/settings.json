@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node scratch/autocut/:*)",
+      "Bash(node scratch/:*)",
+      "Bash(node scripts/:*)",
+      "Bash(ffmpeg:*)",
+      "Bash(ffprobe:*)",
+      "Bash(rm:*)",
+      "Bash(mkdir:*)",
+      "Bash(cp:*)",
+      "Bash(mv:*)",
+      "Read",
+      "Edit",
+      "Write",
+      "Task"
+    ],
+    "defaultMode": "acceptEdits"
+  }
+}

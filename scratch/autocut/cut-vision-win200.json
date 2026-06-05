@@ -1,0 +1,12 @@
+{
+  "comment": "Opus 4.8 VISION picks for src 200-236s (from 5fps grids, +0.3s slide-shift except first-of-window). Independent beat selection, no backbone.",
+  "raw_slide_starts": [201.0, 206.6, 208.9, 215.6, 222.8, 235.0],
+  "segments": [
+    { "start": 201.0, "end": 203.2, "note": "card handling / first card of window (anchor, no shift)" },
+    { "start": 206.9, "end": 208.5, "note": "orange/red card presented" },
+    { "start": 209.2, "end": 211.2, "note": "red card re-presented" },
+    { "start": 215.9, "end": 220.0, "note": "silver refractor slides up + held high (feature)" },
+    { "start": 223.1, "end": 227.0, "note": "Bowman 'B' chrome card slides up + held (feature)" },
+    { "start": 235.3, "end": 237.2, "note": "new cards after dead-time gap" }
+  ]
+}

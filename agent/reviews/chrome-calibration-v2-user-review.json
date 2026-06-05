@@ -1,0 +1,78 @@
+{
+  "schema": "edithyper.reveal-review.v1",
+  "sourceReviewHtml": "scratch/reveal-detection-review/chrome-calibration-v2-missing-slides/review.html",
+  "frameReference": {
+    "candidateFrame": 33,
+    "fps": 8
+  },
+  "notes": [
+    "User frame calibration from chrome-calibration-v2-missing-slides.",
+    "Frame 33 is the detector/candidate time. Start frames mark first upward slide motion; settle frames mark readable/settled card.",
+    "card-003 is a manual exception because the numbered card was moved to the back with nonstandard motion."
+  ],
+  "reviews": [
+    {
+      "cardId": "card-003",
+      "action": "set_seconds",
+      "seconds": 136,
+      "revealEndSeconds": 140,
+      "note": "User: numbered Tre Harris card was put to the back; manual exception. Use source 2:16 to 2:20 for Tre Harris coming out."
+    },
+    {
+      "cardId": "card-006",
+      "action": "shift_to_frame",
+      "frame": 8,
+      "revealEndSeconds": 163.904,
+      "note": "User: start frame 8, settle frame 19."
+    },
+    {
+      "cardId": "card-012",
+      "action": "shift_to_frame",
+      "frame": 11,
+      "revealEndSeconds": 255.645,
+      "note": "User: start frame 11, settle frame 16."
+    },
+    {
+      "cardId": "card-017",
+      "action": "shift_to_frame",
+      "frame": 4,
+      "revealEndSeconds": 350.713,
+      "note": "User: start frame 4, settle frame 12."
+    },
+    {
+      "cardId": "card-023",
+      "action": "shift_to_frame",
+      "frame": 19,
+      "revealEndSeconds": 484.925,
+      "note": "User: start frame 19, settle frame 28."
+    },
+    {
+      "cardId": "card-024",
+      "action": "shift_to_frame",
+      "frame": 21,
+      "revealEndSeconds": 488.55,
+      "note": "User: start frame 21, settle frame 33."
+    },
+    {
+      "cardId": "card-026",
+      "action": "shift_to_frame",
+      "frame": 20,
+      "revealEndSeconds": 541.8,
+      "note": "User: start frame 20, settle frame 27."
+    },
+    {
+      "cardId": "card-033",
+      "action": "shift_to_frame",
+      "frame": 17,
+      "revealEndSeconds": 628.55,
+      "note": "User: start frame 17, settle frame 25."
+    },
+    {
+      "cardId": "card-042",
+      "action": "shift_to_frame",
+      "frame": 22,
+      "revealEndSeconds": 707.662,
+      "note": "User: start frame 22, settle frame 32."
+    }
+  ]
+}

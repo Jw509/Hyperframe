@@ -1,0 +1,11 @@
+{
+  "reviews": [
+    {
+      "cardId": "card-009",
+      "action": "set_seconds",
+      "seconds": 243.3,
+      "revealEndSeconds": 244.3,
+      "note": "Agent-reviewed wide source sheet: James Cook starts sliding up to reveal Art Monk around 4:03.3; fallback 4:04.55 was too late."
+    }
+  ]
+}

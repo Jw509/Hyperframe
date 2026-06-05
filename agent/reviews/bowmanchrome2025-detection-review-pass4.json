@@ -1,0 +1,49 @@
+{
+  "schema": "edithyper.reveal-review.v1",
+  "sourceReviewHtml": "scratch/reveal-detection-review/bowmanchrome2025-pass3-earlier-search/review.html",
+  "sourceReviewMarkdown": "scratch/reveal-detection-review/bowmanchrome2025-pass3-earlier-search/review.md",
+  "frameReference": {
+    "candidateFrame": 16,
+    "fps": 5,
+    "beforeSeconds": 3,
+    "note": "Pass 3 earlier-search sheet. Candidate is at frame 16 because the grid starts 3 seconds before candidate at 5 fps."
+  },
+  "reviews": [
+    {
+      "cardId": "card-010",
+      "action": "shift_to_frame",
+      "frame": 13,
+      "note": "User: frame 13 is where it should start."
+    },
+    {
+      "cardId": "card-018",
+      "action": "shift_to_frame",
+      "frame": 11,
+      "note": "User: frame 11 is where it should start."
+    },
+    {
+      "cardId": "card-035",
+      "action": "shift_to_frame",
+      "frame": 13,
+      "note": "User: frame 13 is where it should start."
+    },
+    {
+      "cardId": "card-067",
+      "action": "shift_to_frame",
+      "frame": 11,
+      "note": "User: frame 11 is where it should start."
+    },
+    {
+      "cardId": "card-074",
+      "action": "shift_to_frame",
+      "frame": 11,
+      "note": "User: frame 11 is where it should start."
+    },
+    {
+      "cardId": "card-076",
+      "action": "shift_to_frame",
+      "frame": 11,
+      "note": "User: frame 11 is where it should start."
+    }
+  ]
+}

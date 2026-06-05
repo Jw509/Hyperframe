@@ -1,0 +1,765 @@
+{
+  "comment": "Full cut v2 — APPROVED method (open/fan/card slide-onset+settle) across 20 pack windows. 152 beats.",
+  "segments": [
+    {
+      "start": 86.4,
+      "end": 87.6,
+      "note": "open: sealed pack held up to camera"
+    },
+    {
+      "start": 105,
+      "end": 106.4,
+      "note": "fan: cards fanned out (approved)"
+    },
+    {
+      "start": 107.3,
+      "end": 110.8,
+      "note": "card 1: chrome parallel slide-up + settle (approved)"
+    },
+    {
+      "start": 112,
+      "end": 114.7,
+      "note": "card 2: slide-up + settle (approved)"
+    },
+    {
+      "start": 116.5,
+      "end": 118,
+      "note": "card 3: slide-up + settle (approved)"
+    },
+    {
+      "start": 118.6,
+      "end": 120.4,
+      "note": "card 4: clean 3->4 slide, cut before comeback (approved)"
+    },
+    {
+      "start": 139,
+      "end": 140.2,
+      "note": "open: sealed Bowman Chrome pack held up to camera"
+    },
+    {
+      "start": 146,
+      "end": 148,
+      "note": "card: Tennessee QB orange base, first card slides up out of wrapper + settles"
+    },
+    {
+      "start": 161.9,
+      "end": 163.8,
+      "note": "card: Penn State Martin Jr navy/white, slides up + settles"
+    },
+    {
+      "start": 165.5,
+      "end": 167.4,
+      "note": "card: Cincinnati gold-sparkle refractor (white jersey), slides up + settles"
+    },
+    {
+      "start": 190,
+      "end": 191.6,
+      "note": "card: Michigan State Spartans #2, shown face-up in end flip (4th card of pack)"
+    },
+    {
+      "start": 200.6,
+      "end": 201.8,
+      "note": "open: pack A foil torn open"
+    },
+    {
+      "start": 207.2,
+      "end": 209.2,
+      "note": "card: A1 red player card slides up, settles"
+    },
+    {
+      "start": 214.9,
+      "end": 216.9,
+      "note": "card: A2 gold/yellow accent player card"
+    },
+    {
+      "start": 226.8,
+      "end": 228.8,
+      "note": "card: A3 purple/blue jersey player card"
+    },
+    {
+      "start": 235,
+      "end": 236.2,
+      "note": "open: pack B sealed pack held up, tear start"
+    },
+    {
+      "start": 240,
+      "end": 241.4,
+      "note": "fan: pack B cards fanned out"
+    },
+    {
+      "start": 244,
+      "end": 246,
+      "note": "card: B1 player white uniform slides up, settles"
+    },
+    {
+      "start": 249.3,
+      "end": 251.3,
+      "note": "card: B2 player with round medallion"
+    },
+    {
+      "start": 254.7,
+      "end": 256.7,
+      "note": "card: B3 navy jersey player card"
+    },
+    {
+      "start": 260.4,
+      "end": 262.4,
+      "note": "card: B4 player card"
+    },
+    {
+      "start": 263.7,
+      "end": 265.7,
+      "note": "card: B5 red-stripe parallel/refractor"
+    },
+    {
+      "start": 266.4,
+      "end": 268.4,
+      "note": "card: B6 player card (last of pack B)"
+    },
+    {
+      "start": 273.6,
+      "end": 274.6,
+      "note": "open: pack C foil appears, tear start (window edge)"
+    },
+    {
+      "start": 281,
+      "end": 282.3,
+      "note": "open: pack 1 foil tear, wrapper to camera"
+    },
+    {
+      "start": 284.6,
+      "end": 286.6,
+      "note": "card: pack1 #1 green/gold chrome, settles centered"
+    },
+    {
+      "start": 299.5,
+      "end": 301.4,
+      "note": "card: pack1 #2 orange player base, slide+settle"
+    },
+    {
+      "start": 304.67,
+      "end": 306.7,
+      "note": "card: pack1 #3 purple refractor, slide onset+settle"
+    },
+    {
+      "start": 313.9,
+      "end": 315.8,
+      "note": "card: pack1 #4 red/white player, slide+settle"
+    },
+    {
+      "start": 318.67,
+      "end": 320.7,
+      "note": "card: pack1 #5 purple chrome refractor (rainbow hit), slide+settle"
+    },
+    {
+      "start": 330.2,
+      "end": 331.5,
+      "note": "open: pack 2 foil tear"
+    },
+    {
+      "start": 334.3,
+      "end": 335.8,
+      "note": "fan: pack 2 cards fanned to camera"
+    },
+    {
+      "start": 337.7,
+      "end": 339.7,
+      "note": "card: pack2 #1 brown/purple chrome, slide+settle"
+    },
+    {
+      "start": 344.3,
+      "end": 346.2,
+      "note": "card: pack2 #2 purple-border player, slide+settle"
+    },
+    {
+      "start": 349.1,
+      "end": 351.2,
+      "note": "card: pack2 #3 orange/white player, slide+settle holds to end"
+    },
+    {
+      "start": 357.8,
+      "end": 359,
+      "note": "open: pack 1 foil rip"
+    },
+    {
+      "start": 363.6,
+      "end": 365,
+      "note": "fan: pack 1 cards pulled/fanned from wrapper"
+    },
+    {
+      "start": 368.87,
+      "end": 370.7,
+      "note": "card: pack1 #1 white-jersey base"
+    },
+    {
+      "start": 372.27,
+      "end": 374.1,
+      "note": "card: pack1 #2 orange-label card"
+    },
+    {
+      "start": 375.87,
+      "end": 377.8,
+      "note": "card: pack1 #3 white-jersey refractor"
+    },
+    {
+      "start": 385.6,
+      "end": 386.8,
+      "note": "open: pack 2 foil rip"
+    },
+    {
+      "start": 388,
+      "end": 389.4,
+      "note": "fan: pack 2 cards pulled/fanned from wrapper"
+    },
+    {
+      "start": 390,
+      "end": 391.9,
+      "note": "card: pack2 #1 gold-border dark card"
+    },
+    {
+      "start": 400.3,
+      "end": 402.2,
+      "note": "card: pack2 #2 white-jersey gold-accent"
+    },
+    {
+      "start": 411.93,
+      "end": 413.8,
+      "note": "card: pack2 #3 gold/yellow-accent card"
+    },
+    {
+      "start": 415.53,
+      "end": 417.5,
+      "note": "card: pack2 #4 MS 5 insert white-jersey"
+    },
+    {
+      "start": 430.5,
+      "end": 431.6,
+      "note": "fan: packA cards fanned out (window opens mid-pack)"
+    },
+    {
+      "start": 431.6,
+      "end": 433.6,
+      "note": "card: gold MS5 refractor slides up + settles"
+    },
+    {
+      "start": 440.3,
+      "end": 442.1,
+      "note": "card: white/red base card slides up + settles"
+    },
+    {
+      "start": 442.2,
+      "end": 444.2,
+      "note": "card: blue-jersey player card slides up + settles"
+    },
+    {
+      "start": 450.5,
+      "end": 452.5,
+      "note": "card: warm-tone player card (packA 4th) slides in + settles"
+    },
+    {
+      "start": 461,
+      "end": 462.1,
+      "note": "open: packB opened, cards emerge"
+    },
+    {
+      "start": 467.5,
+      "end": 468.8,
+      "note": "fan: packB cards fanned wide"
+    },
+    {
+      "start": 476.9,
+      "end": 479,
+      "note": "card: purple/silver refractor player card settles + holds"
+    },
+    {
+      "start": 479.5,
+      "end": 481.5,
+      "note": "card: orange player card slides up + settles"
+    },
+    {
+      "start": 483.7,
+      "end": 485.7,
+      "note": "card: GLORY gold insert slides up + holds to end"
+    },
+    {
+      "start": 487.8,
+      "end": 489.7,
+      "note": "card: white jersey card slides up + settles (slide already in progress at window start)"
+    },
+    {
+      "start": 490.47,
+      "end": 492.2,
+      "note": "card: next card slides up + settles centered"
+    },
+    {
+      "start": 496.27,
+      "end": 498.6,
+      "note": "card: gold/LA card slides up + settles, held"
+    },
+    {
+      "start": 552.5,
+      "end": 553.8,
+      "note": "open: sealed foil pack held up, clear tear"
+    },
+    {
+      "start": 558.7,
+      "end": 560.1,
+      "note": "fan: cards pulled out and fanned/spread"
+    },
+    {
+      "start": 567,
+      "end": 569,
+      "note": "card: #1 orange-jersey RC, slides up and settles"
+    },
+    {
+      "start": 574.6,
+      "end": 576,
+      "note": "card: #2 green refractor parallel"
+    },
+    {
+      "start": 577.9,
+      "end": 579.9,
+      "note": "card: #3 orange/blue RC slides up, settles"
+    },
+    {
+      "start": 583.9,
+      "end": 585.9,
+      "note": "card: #4 colorful refractor parallel, long admire"
+    },
+    {
+      "start": 598.4,
+      "end": 600.4,
+      "note": "card: #5 dark/sepia-tone RC slides up, settles"
+    },
+    {
+      "start": 604,
+      "end": 606,
+      "note": "card: #6 rainbow refractor, final card before mat empties"
+    },
+    {
+      "start": 612,
+      "end": 613.3,
+      "note": "open: pack 1 sealed foil held up to camera"
+    },
+    {
+      "start": 624.5,
+      "end": 626.1,
+      "note": "fan: pack 1 cards squared/fanned face-up in palm (fan clipped left)"
+    },
+    {
+      "start": 626.6,
+      "end": 628.9,
+      "note": "card: pack1 #1 slow slide up + settle"
+    },
+    {
+      "start": 629.9,
+      "end": 631.6,
+      "note": "card: pack1 #2 dark-jersey player"
+    },
+    {
+      "start": 633.4,
+      "end": 635.2,
+      "note": "card: pack1 #3 green-background player"
+    },
+    {
+      "start": 636.6,
+      "end": 638.6,
+      "note": "card: pack1 #4 red/white player"
+    },
+    {
+      "start": 645.5,
+      "end": 646.8,
+      "note": "open: pack 2 foil held up to camera"
+    },
+    {
+      "start": 657.7,
+      "end": 659.9,
+      "note": "card: pack2 #1 orange/white player"
+    },
+    {
+      "start": 662.5,
+      "end": 664.5,
+      "note": "card: pack2 #2 player figure"
+    },
+    {
+      "start": 666,
+      "end": 667.9,
+      "note": "card: pack2 #3 Alonzo Barnett III (Bowman B) settles, held to window end"
+    },
+    {
+      "start": 668,
+      "end": 669.3,
+      "note": "open: sealed P Bowman foil pack held up to camera"
+    },
+    {
+      "start": 670.9,
+      "end": 672.3,
+      "note": "fan: cards fanned out across mat (fan clipped left)"
+    },
+    {
+      "start": 699.07,
+      "end": 700.95,
+      "note": "card: blue/red player base card slides up and settles"
+    },
+    {
+      "start": 701.4,
+      "end": 703.3,
+      "note": "card: pink/colorful refractor slides up and settles"
+    },
+    {
+      "start": 707.33,
+      "end": 709,
+      "note": "card: orange/red player photo card slides up and settles"
+    },
+    {
+      "start": 709.2,
+      "end": 711.4,
+      "note": "card: holo/colorful refractor slides up and settles"
+    },
+    {
+      "start": 714.27,
+      "end": 716.27,
+      "note": "card: gold/yellow 1st refractor slides up and settles"
+    },
+    {
+      "start": 717.9,
+      "end": 719.9,
+      "note": "card: pink/purple refractor slides up and settles"
+    },
+    {
+      "start": 728.87,
+      "end": 730.1,
+      "note": "open: sealed pack grabbed and torn"
+    },
+    {
+      "start": 731,
+      "end": 732.5,
+      "note": "fan: cards fanned out"
+    },
+    {
+      "start": 735.5,
+      "end": 737.5,
+      "note": "card: Georgia #3 base, front of the fan"
+    },
+    {
+      "start": 739.9,
+      "end": 741.8,
+      "note": "card: Georgia #3 RB running pose, isolated"
+    },
+    {
+      "start": 743.1,
+      "end": 744.9,
+      "note": "card: Georgia #1 QB base"
+    },
+    {
+      "start": 746.9,
+      "end": 748.8,
+      "note": "card: SMU #92 (Maryland) base"
+    },
+    {
+      "start": 750.5,
+      "end": 752.7,
+      "note": "card: Oklahoma OU base"
+    },
+    {
+      "start": 755.7,
+      "end": 757.7,
+      "note": "card: Georgia #1 QB chrome"
+    },
+    {
+      "start": 762.3,
+      "end": 763.5,
+      "note": "open: sealed foil pack held up to camera before tear"
+    },
+    {
+      "start": 765.3,
+      "end": 766.8,
+      "note": "fan: cards fanned out across mat right after opening"
+    },
+    {
+      "start": 788.2,
+      "end": 790.2,
+      "note": "card: dark/gold player card slides up and settles (first card after sorting)"
+    },
+    {
+      "start": 796.5,
+      "end": 798.5,
+      "note": "card: red-top/yellow player card slides up and settles"
+    },
+    {
+      "start": 802.4,
+      "end": 804.4,
+      "note": "card: orange/cream player card slides up and settles"
+    },
+    {
+      "start": 808.7,
+      "end": 810.7,
+      "note": "card: orange/red player card slides up and settles (held through window end)"
+    },
+    {
+      "start": 819.4,
+      "end": 821.5,
+      "note": "card: orange/white base card already held at window start (mid-pack)"
+    },
+    {
+      "start": 822.2,
+      "end": 824.4,
+      "note": "card: purple/magenta parallel slides up and settles"
+    },
+    {
+      "start": 829,
+      "end": 830.7,
+      "note": "card: pink/light refractor parallel slides up and settles"
+    },
+    {
+      "start": 834,
+      "end": 836,
+      "note": "card: colorful sunburst holographic card slides up and settles"
+    },
+    {
+      "start": 854.2,
+      "end": 855.4,
+      "note": "open: sealed foil pack held up to camera"
+    },
+    {
+      "start": 862.4,
+      "end": 863.7,
+      "note": "fan: pulled cards revealed/squared in hand after tear"
+    },
+    {
+      "start": 873.7,
+      "end": 875.7,
+      "note": "card: red/pink floral parallel + player slides into centered hold"
+    },
+    {
+      "start": 880.7,
+      "end": 882.6,
+      "note": "card: white/light base + player"
+    },
+    {
+      "start": 883.2,
+      "end": 885.1,
+      "note": "card: orange/yellow design + player"
+    },
+    {
+      "start": 886.6,
+      "end": 888.6,
+      "note": "card: orange/purple colorful design + player"
+    },
+    {
+      "start": 889.4,
+      "end": 891,
+      "note": "card: white/silver RC-style + player"
+    },
+    {
+      "start": 891.9,
+      "end": 893.9,
+      "note": "card: green/dark design + player"
+    },
+    {
+      "start": 898.85,
+      "end": 900.85,
+      "note": "card: prev-pack stack lifted and shown as a group"
+    },
+    {
+      "start": 907.95,
+      "end": 909.2,
+      "note": "open: new foil wrapper torn open"
+    },
+    {
+      "start": 913.1,
+      "end": 914.7,
+      "note": "fan: new pack cards fanned out and settling"
+    },
+    {
+      "start": 919.1,
+      "end": 920.9,
+      "note": "card: first single card pulled and shown"
+    },
+    {
+      "start": 929.6,
+      "end": 931.6,
+      "note": "card: Bowman base player card settles into hold"
+    },
+    {
+      "start": 935.3,
+      "end": 937.3,
+      "note": "card: GLORY gold insert slides up and settles"
+    },
+    {
+      "start": 944.3,
+      "end": 946.3,
+      "note": "card: photo player card settles into still hold"
+    },
+    {
+      "start": 948.33,
+      "end": 950.9,
+      "note": "card: final card shown (still being shown at window end)"
+    },
+    {
+      "start": 950.9,
+      "end": 953.4,
+      "note": "card: prior-pack card already held at window open (chrome card w/ figure)"
+    },
+    {
+      "start": 953.47,
+      "end": 955.4,
+      "note": "card: slide onset 953.47, settles ~955 (prior pack)"
+    },
+    {
+      "start": 956.27,
+      "end": 958.3,
+      "note": "card: slide onset 956.27, settles ~958.3 (prior pack), then pulled away to dead mat"
+    },
+    {
+      "start": 968.6,
+      "end": 969.8,
+      "note": "open: foil pack tear begins ~968.6"
+    },
+    {
+      "start": 978.2,
+      "end": 979.7,
+      "note": "fan: cards pulled out and fanned/held in hand"
+    },
+    {
+      "start": 982.07,
+      "end": 984,
+      "note": "card: slide onset 982.07, settles ~983 (chrome card w/ purple corner), holds"
+    },
+    {
+      "start": 991.33,
+      "end": 993,
+      "note": "card: slide onset 991.33, settles ~991.7 (light/white card)"
+    },
+    {
+      "start": 994.4,
+      "end": 996.3,
+      "note": "card: slide onset 994.4, settles ~994.9 (light card)"
+    },
+    {
+      "start": 997.2,
+      "end": 999.1,
+      "note": "card: slide onset 997.2, settles ~998.5 (orange/red card), long still hold"
+    },
+    {
+      "start": 1001.67,
+      "end": 1003.6,
+      "note": "card: slide onset 1001.67, settles ~1002.2 (light card w/ figure), holds to window end"
+    },
+    {
+      "start": 1004.7,
+      "end": 1006.5,
+      "note": "card: prior-pack tail, white/grey player card held steady at window start"
+    },
+    {
+      "start": 1007.8,
+      "end": 1009.4,
+      "note": "card: prior-pack tail, red-bordered card shown alongside the white card"
+    },
+    {
+      "start": 1016,
+      "end": 1017.3,
+      "note": "open: sealed orange foil pack lifted up to camera"
+    },
+    {
+      "start": 1023.6,
+      "end": 1025.1,
+      "note": "fan: cards pulled from wrapper and spread/fanned in hand"
+    },
+    {
+      "start": 1026.2,
+      "end": 1028.1,
+      "note": "card: card 1, dark green card slides in as fan clears, green logo"
+    },
+    {
+      "start": 1048.6,
+      "end": 1050.6,
+      "note": "card: card 2, cream/tan player card slides up and settles"
+    },
+    {
+      "start": 1058.6,
+      "end": 1060.6,
+      "note": "card: card 3, ornate white/silver base card slides up to settle"
+    },
+    {
+      "start": 1075.4,
+      "end": 1077.4,
+      "note": "card: card 4, second ornate white base card slides up after card 3 set down"
+    },
+    {
+      "start": 1086.3,
+      "end": 1087.5,
+      "note": "open: sealed foil pack held up to camera, start of tear"
+    },
+    {
+      "start": 1092.8,
+      "end": 1094.2,
+      "note": "fan: cards pulled from wrapper and fanned out"
+    },
+    {
+      "start": 1099.5,
+      "end": 1101.4,
+      "note": "card: card 1 slides up and settles centered, white border"
+    },
+    {
+      "start": 1102.1,
+      "end": 1104,
+      "note": "card: card 2 slides up, settles held centered"
+    },
+    {
+      "start": 1107.6,
+      "end": 1109.5,
+      "note": "card: card 3 pitcher slides up, settles and held"
+    },
+    {
+      "start": 1109.8,
+      "end": 1111.7,
+      "note": "card: card 4 batter slides up, settles centered and held"
+    },
+    {
+      "start": 1113.7,
+      "end": 1115.6,
+      "note": "card: card 5 slides up, settles held"
+    },
+    {
+      "start": 1122.1,
+      "end": 1124.1,
+      "note": "card: final card slides up, settles centered and held readable"
+    },
+    {
+      "start": 1129.93,
+      "end": 1131.13,
+      "note": "open: sealed Bowman Chrome foil pack raised and held up to camera"
+    },
+    {
+      "start": 1142.7,
+      "end": 1144.7,
+      "note": "card: chrome football card (dark uniform QB, U logo) slides up and settles centered"
+    },
+    {
+      "start": 1154.1,
+      "end": 1156.1,
+      "note": "card: orange/white #2 QB chrome card slides up and settles centered"
+    },
+    {
+      "start": 1160.6,
+      "end": 1162.85,
+      "note": "card: portrait figure card held at window open (distinct card, settled hold)"
+    },
+    {
+      "start": 1163.67,
+      "end": 1166.95,
+      "note": "card: colorful red/orange multi-figure card slides up and settles ~1166.6"
+    },
+    {
+      "start": 1181.07,
+      "end": 1185.7,
+      "note": "card: gold/yellow refractor figure card slow reveal, settles ~1185.3"
+    },
+    {
+      "start": 1187.13,
+      "end": 1189.95,
+      "note": "card: final card - player in red uniform (#15 DESIO refractor), slides up at 1187.1 settles ~1188.7, held clean to window end"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "schema": "edithyper.reveal-review.v1",
+  "sourceReviewHtml": "scratch/reveal-detection-review/bowmanchrome2025-v12-corrected-transitions/review.html",
+  "frameReference": {
+    "candidateFrame": 5,
+    "fps": 10,
+    "beforeSeconds": 0.4,
+    "note": "v12 corrected-transition sheet. Candidate/cut point is frame 5 because the grid starts 0.4s before candidate at 10 fps."
+  },
+  "notes": [
+    "User reviewed v12 corrected-transition sheet and gave desired slide-start frames.",
+    "Card 51 frame 1 was already about 20% slid up, so move one unseen frame earlier than frame 1.",
+    "Card 63 should start at frame 1 or potentially one unseen frame earlier, so move one unseen frame earlier than frame 1 to preserve the beginning of the slide."
+  ],
+  "reviews": [
+    {
+      "cardId": "card-023",
+      "action": "shift_to_frame",
+      "frame": 6,
+      "note": "User: card 23 should start at frame 6."
+    },
+    {
+      "cardId": "card-034",
+      "action": "shift_to_frame",
+      "frame": 6,
+      "note": "User: card 34 should start at frame 6."
+    },
+    {
+      "cardId": "card-038",
+      "action": "shift_to_frame",
+      "frame": 4,
+      "note": "User: card 38 should start at frame 4."
+    },
+    {
+      "cardId": "card-039",
+      "action": "shift_to_frame",
+      "frame": 5,
+      "note": "User: card 39 should start at frame 5."
+    },
+    {
+      "cardId": "card-040",
+      "action": "shift_to_frame",
+      "frame": 5,
+      "note": "User: card 40 should start at frame 5."
+    },
+    {
+      "cardId": "card-046",
+      "action": "shift_to_frame",
+      "frame": 4,
+      "note": "User: card 46 should start at frame 4."
+    },
+    {
+      "cardId": "card-051",
+      "action": "shift_to_frame",
+      "frame": 0,
+      "note": "User: card 51 is too late; frame 1 is already about 20% slid up. Use one unseen frame earlier than frame 1."
+    },
+    {
+      "cardId": "card-052",
+      "action": "shift_to_frame",
+      "frame": 3,
+      "note": "User: card 52 should start at frame 3."
+    },
+    {
+      "cardId": "card-063",
+      "action": "shift_to_frame",
+      "frame": 0,
+      "note": "User: card 63 should start at frame 1 or potentially one frame earlier not shown. Use one unseen frame earlier than frame 1."
+    },
+    {
+      "cardId": "card-070",
+      "action": "shift_to_frame",
+      "frame": 8,
+      "revealEndSeconds": 1048.8,
+      "note": "User: card 70 should start at frame 8."
+    },
+    {
+      "cardId": "card-071",
+      "action": "shift_to_frame",
+      "frame": 2,
+      "note": "User: card 71 should start at frame 2."
+    },
+    {
+      "cardId": "card-074",
+      "action": "shift_to_frame",
+      "frame": 3,
+      "note": "User: card 74 should start at frame 3."
+    },
+    {
+      "cardId": "card-075",
+      "action": "shift_to_frame",
+      "frame": 4,
+      "note": "User: card 75 should start at frame 4."
+    }
+  ]
+}

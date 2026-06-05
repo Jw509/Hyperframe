@@ -1,0 +1,113 @@
+{
+  "schema": "edithyper.reveal-review.v1",
+  "sourceReviewHtml": "scratch/reveal-detection-review/bowmanchrome2025-v11-gate-blockers/review.html",
+  "sourceDebugSheets": [
+    "scratch/reveal-debug/card023-altmyer-window.jpg",
+    "scratch/reveal-debug/card034-035-window.jpg",
+    "scratch/reveal-debug/pack10-focused-window.jpg",
+    "scratch/reveal-debug/card046-window.jpg",
+    "scratch/reveal-debug/pack13-wide-window.jpg",
+    "scratch/reveal-debug/card063-window.jpg",
+    "scratch/reveal-debug/card070-072-window.jpg",
+    "scratch/reveal-debug/card074-076-window.jpg"
+  ],
+  "notes": [
+    "User reviewed v11 gate blockers and confirmed several raw detector/fallback windows were not actual card slides.",
+    "Harness fix before this pass: visual review sheets now prioritize reviewed revealStartSeconds/cutStartSeconds before raw revealStartCandidateSeconds.",
+    "Use wider source sheets as authority when user notes said the short review sheet contained no slide or only sorting."
+  ],
+  "reviews": [
+    {
+      "cardId": "card-023",
+      "action": "set_seconds",
+      "seconds": 349.1,
+      "revealEndSeconds": 349.9,
+      "note": "Luke Altmyer: v11 was still in the Van Buren/Houser area. Wide source sheet shows Houser -> Altmyer slide beginning around original 5:49.1."
+    },
+    {
+      "cardId": "card-034",
+      "action": "set_seconds",
+      "seconds": 581.0,
+      "revealEndSeconds": 581.8,
+      "note": "Troy Stellato: v11 fallback was all Stellato. Wide sheet shows Mauigoa -> Stellato slide beginning around original 9:41.0."
+    },
+    {
+      "cardId": "card-038",
+      "action": "set_seconds",
+      "seconds": 630.1,
+      "revealEndSeconds": 630.8,
+      "note": "Kaidon Salter: v11 fallback missed the slide. Focused pack 10 sheet shows Wysong -> Salter starting around original 10:30.1."
+    },
+    {
+      "cardId": "card-039",
+      "action": "set_seconds",
+      "seconds": 633.4,
+      "revealEndSeconds": 634.1,
+      "note": "Behren Morton: align with the first real Salter -> Morton upward slide in the focused pack 10 sheet."
+    },
+    {
+      "cardId": "card-040",
+      "action": "set_seconds",
+      "seconds": 636.6,
+      "revealEndSeconds": 637.3,
+      "note": "Danny O'Neil: final card in pack still needs a reveal start for Morton -> O'Neil; no following transition is needed after it."
+    },
+    {
+      "cardId": "card-046",
+      "action": "set_seconds",
+      "seconds": 697.6,
+      "revealEndSeconds": 698.4,
+      "note": "LeShon Williams: v11 fallback landed after the slide was mostly over. Wide source sheet shows Brendon Lewis -> Williams starting around original 11:37.6."
+    },
+    {
+      "cardId": "card-051",
+      "action": "set_seconds",
+      "seconds": 748.0,
+      "revealEndSeconds": 748.8,
+      "note": "RJ Maryland: pack 13 wide sheet showed the raw detector had drifted late; set the actual Talyn Taylor -> RJ Maryland reveal."
+    },
+    {
+      "cardId": "card-052",
+      "action": "set_seconds",
+      "seconds": 750.8,
+      "revealEndSeconds": 751.8,
+      "holdStartSeconds": 751.8,
+      "note": "Taylor Tatum: v11 window was sorting/holding multiple cards near 12:39. Wide pack 13 sheet and v12 spot-check show the RJ Maryland -> Taylor Tatum reveal beginning around original 12:30.8; hold from the clean post-reveal display."
+    },
+    {
+      "cardId": "card-063",
+      "action": "set_seconds",
+      "seconds": 936.4,
+      "revealEndSeconds": 937.3,
+      "note": "Quintrevion Wisner Path to Glory: v11 detection used the earlier Diego Pavia reveal. Wide sheet shows Pavia -> Wisner beginning around original 15:36.4."
+    },
+    {
+      "cardId": "card-070",
+      "action": "set_seconds",
+      "seconds": 1047.7,
+      "revealEndSeconds": 1048.5,
+      "note": "Malik Rutherford: v11 fallback was no-slide. Wide sheet shows Dante Moore -> Rutherford beginning around original 17:27.7."
+    },
+    {
+      "cardId": "card-071",
+      "action": "set_seconds",
+      "seconds": 1053.4,
+      "revealEndSeconds": 1054.2,
+      "note": "Jayden Virgin-Morgan: v11 detector did not land on the reveal. Wide sheet shows Rutherford -> Virgin-Morgan beginning around original 17:33.4."
+    },
+    {
+      "cardId": "card-074",
+      "action": "set_seconds",
+      "seconds": 1110.0,
+      "revealEndSeconds": 1110.8,
+      "note": "Jerrick Gibson: use the first visible Chase Sowell -> Gibson slide from the wide pack 19 sheet."
+    },
+    {
+      "cardId": "card-075",
+      "action": "set_seconds",
+      "seconds": 1113.4,
+      "revealEndSeconds": 1114.6,
+      "note": "Gunner Stockton Acropolis: v11 fallback had no slide. Wide pack 19 sheet and v12 spot-check show Gibson -> Stockton beginning around original 18:33.4."
+    }
+  ]
+}

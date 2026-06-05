@@ -1,0 +1,789 @@
+{
+  "comment": "Full auto-cut from 19 vision windows. SHIFT=0s (except first-of-pack gap>10s). 112 segments.",
+  "segments": [
+    {
+      "start": 26,
+      "end": 28.3,
+      "note": "Pack-rip moment: first Chrome foil pack held readable, then torn open (wrapper peels, white card stack slides out). Feature/rip beat; start at slide-up so the rip plays after the cut.",
+      "win": 1,
+      "firstOfPack": true
+    },
+    {
+      "start": 85,
+      "end": 87,
+      "note": "Second sealed Chrome pack raised and presented: slides up into frame, held high/centered/readable to camera before being taken down to rip. Start at the slide-up.",
+      "win": 1,
+      "firstOfPack": true
+    },
+    {
+      "start": 93.8,
+      "end": 98.3,
+      "note": "Pack 1 cards slid out of wrapper, fronts fanned and held readable (pack-open reveal, flowing)",
+      "win": 2,
+      "firstOfPack": false
+    },
+    {
+      "start": 109.4,
+      "end": 116.3,
+      "note": "Chrome parallel (red tab) slides up, examined, then swapped to chrome player card; fronts readable (flowing swap)",
+      "win": 2,
+      "firstOfPack": true
+    },
+    {
+      "start": 117.6,
+      "end": 126.5,
+      "note": "Blue vertical card slides up centered, then continuous in-hand swapping of remaining pack-1 fronts (flowing fan)",
+      "win": 2,
+      "firstOfPack": false
+    },
+    {
+      "start": 128.8,
+      "end": 130.7,
+      "note": "Last pack-1 cards flipped front-up once more before being set down",
+      "win": 2,
+      "firstOfPack": false
+    },
+    {
+      "start": 137.7,
+      "end": 141.5,
+      "note": "Pack 2 cards slid out of wrapper, fronts fanned and held readable (pack-open reveal, flowing)",
+      "win": 2,
+      "firstOfPack": false
+    },
+    {
+      "start": 142.2,
+      "end": 145.2,
+      "note": "Pack 2 cards held front-up and fanned to end of window (flowing)",
+      "win": 2,
+      "firstOfPack": false
+    },
+    {
+      "start": 147.7,
+      "end": 150,
+      "note": "Card slides up from bottom (~147.7), held & shown center - first clear reveal of the window.",
+      "win": 3,
+      "firstOfPack": false
+    },
+    {
+      "start": 158.5,
+      "end": 168.6,
+      "note": "New card pushed up (~158.5), settles ~158.9, held steady (gold/white player card) then starts to lower - flowing reveal+hold. | Continuous in-hand fan: dark chrome card rises from low (~162.6), then a yellow/gold-bordered insert/feature card comes up (~166.5) - kept as one flowing segment so it doesn't blink.",
+      "win": 3,
+      "firstOfPack": false
+    },
+    {
+      "start": 168.9,
+      "end": 192.7,
+      "note": "Continuous in-hand showing of the next several cards (white/silver player cards swapped in hand) - flowing segment. | Continuous showing including an orange/colored parallel that comes up (~177.6) and following chrome cards - flowing. | Continuous showing of dark chrome cards plus a bright-bordered card - flowing fan/swap. | Continuous showing of final cards including a red parallel (~190.4); ends when hands go empty/no card on screen.",
+      "win": 3,
+      "firstOfPack": false
+    },
+    {
+      "start": 199.6,
+      "end": 201.7,
+      "note": "pack 1 rip: hands grab dark foil pack and tear it open (rip moment)",
+      "win": 4,
+      "firstOfPack": false
+    },
+    {
+      "start": 202.2,
+      "end": 205,
+      "note": "cards pulled out of pack 1, pack-art card + first cards fanned in hand (flowing)",
+      "win": 4,
+      "firstOfPack": false
+    },
+    {
+      "start": 206.2,
+      "end": 221.5,
+      "note": "red/orange parallel card slides up into hand, held high and readable (flows into fan) | continuous in-hand fan/swap of pack-1 cards: red card re-gripped, red-top B card brought up (flowing) | yellow/gold-bottom card held high, readable (continuation of fan)",
+      "win": 4,
+      "firstOfPack": false
+    },
+    {
+      "start": 223.2,
+      "end": 226.2,
+      "note": "silver big-B logo Bowman base card slides up, held centered",
+      "win": 4,
+      "firstOfPack": false
+    },
+    {
+      "start": 228.5,
+      "end": 233.2,
+      "note": "purple/holo parallel player card shown then silver B re-shown, continuous in-hand swap (flowing)",
+      "win": 4,
+      "firstOfPack": false
+    },
+    {
+      "start": 234.6,
+      "end": 246.2,
+      "note": "pack 2 rip: new foil pack opened, pack-art card emerges (rip moment) | cards pulled from pack 2 and fanned/separated in hand (flowing) | sepia/cream player base card slides up, held high and readable",
+      "win": 4,
+      "firstOfPack": false
+    },
+    {
+      "start": 253.4,
+      "end": 257.6,
+      "note": "light cream player card re-gripped, then dark premium/insert card revealed and held (flowing; likely a hit)",
+      "win": 4,
+      "firstOfPack": false
+    },
+    {
+      "start": 262.7,
+      "end": 265.2,
+      "note": "silver/holo refractor player card (red corner accents) slides up, held high",
+      "win": 4,
+      "firstOfPack": false
+    },
+    {
+      "start": 266.6,
+      "end": 268.9,
+      "note": "sepia/cream player card with red accents held high, readable",
+      "win": 4,
+      "firstOfPack": false
+    },
+    {
+      "start": 281.6,
+      "end": 285.6,
+      "note": "Pack-rip moment: final tear of the foil wrapper, green card emerging from pack | First card reveal: green base/parallel slides up and is held centered (sits still long after)",
+      "win": 5,
+      "firstOfPack": true
+    },
+    {
+      "start": 300,
+      "end": 301.9,
+      "note": "Red/white card slides up into frame, held centered and readable",
+      "win": 5,
+      "firstOfPack": true
+    },
+    {
+      "start": 305.5,
+      "end": 307.5,
+      "note": "Purple parallel/refractor slides up, held centered (colored parallel)",
+      "win": 5,
+      "firstOfPack": false
+    },
+    {
+      "start": 309.6,
+      "end": 315.8,
+      "note": "Continuous fan: multiple colored parallels/refractors (purple, gold, blue) swapped in-hand — one flowing segment, not chopped",
+      "win": 5,
+      "firstOfPack": false
+    },
+    {
+      "start": 321.8,
+      "end": 324,
+      "note": "Purple parallel settles and is held very steady/centered — distinct feature reveal",
+      "win": 5,
+      "firstOfPack": false
+    },
+    {
+      "start": 335.6,
+      "end": 339.7,
+      "note": "Pack-rip moment: next foil pack torn open | Purple 'P' parallel slides up out of the pack, held centered and readable",
+      "win": 5,
+      "firstOfPack": true
+    },
+    {
+      "start": 344.5,
+      "end": 346.4,
+      "note": "Gold/yellow refractor parallel slides up, held centered",
+      "win": 5,
+      "firstOfPack": false
+    },
+    {
+      "start": 349.7,
+      "end": 351.6,
+      "note": "White refractor card with player (red accents) slides up, held centered and readable",
+      "win": 5,
+      "firstOfPack": false
+    },
+    {
+      "start": 352.3,
+      "end": 354.3,
+      "note": "Final card: yellow/gold-top parallel slides up, held centered before reaching for next",
+      "win": 5,
+      "firstOfPack": false
+    },
+    {
+      "start": 357.7,
+      "end": 359.9,
+      "note": "Pack-rip moment: hands grab pack and tear the wrapper open, cards inside revealed (dynamic ~2s).",
+      "win": 6,
+      "firstOfPack": false
+    },
+    {
+      "start": 367.3,
+      "end": 369,
+      "note": "Card 1 slides up from bottom: first card pulled from the pack (colored refractor/parallel), held centered.",
+      "win": 6,
+      "firstOfPack": false
+    },
+    {
+      "start": 370.5,
+      "end": 372.6,
+      "note": "Card 2 slides up: white-jersey parallel (later flipped to show its colored/refractor front) — slide-start at 370.5.",
+      "win": 6,
+      "firstOfPack": false
+    },
+    {
+      "start": 390,
+      "end": 392.3,
+      "note": "Feature chrome card slides up: shiny silver chrome card with yellow tab, the standout of this pack (examined at length) — ~2s hit hold.",
+      "win": 6,
+      "firstOfPack": true
+    },
+    {
+      "start": 402.3,
+      "end": 404.1,
+      "note": "Distinct player card brought to center: white-jersey player with red logo and yellow bottom border, readable.",
+      "win": 6,
+      "firstOfPack": false
+    },
+    {
+      "start": 416.4,
+      "end": 418.4,
+      "note": "Insert/hit slides up: 'MS 5' silver insert card, held high and readable — ~2s feature hold.",
+      "win": 6,
+      "firstOfPack": true
+    },
+    {
+      "start": 429.1,
+      "end": 430.5,
+      "note": "Window opens mid-hold: white checklist/paper cards held up steady and readable in left hand (carryover from prior pack).",
+      "win": 7,
+      "firstOfPack": true
+    },
+    {
+      "start": 431.4,
+      "end": 433.6,
+      "note": "Gold/orange 'MS' chrome refractor slides up from bottom and settles centered; creator held it ~8s so it's a feature card -> ~2s hold.",
+      "win": 7,
+      "firstOfPack": false
+    },
+    {
+      "start": 440.1,
+      "end": 445.3,
+      "note": "Continuous in-hand flow: a checklist card is shown then a fan of chrome player refractors (purple/yellow) is swapped in hand without putting down -> one flowing segment, ends as hand lowers.",
+      "win": 7,
+      "firstOfPack": false
+    },
+    {
+      "start": 449.4,
+      "end": 451.5,
+      "note": "Second gold 'MS' chrome refractor slides up and settles centered; again held very long by creator -> feature ~2s hold.",
+      "win": 7,
+      "firstOfPack": false
+    },
+    {
+      "start": 472.6,
+      "end": 477.7,
+      "note": "Final beat: magenta/purple chrome refractor player card slides up into hand and is shown/turned, held to window end. | Continuous fan/swap already in motion at window start: cards held high and shuffled, collapsing into one shown card. One flowing segment, ends as the card lowers before the next slide-up.",
+      "win": 7,
+      "firstOfPack": true
+    },
+    {
+      "start": 478.35,
+      "end": 482.6,
+      "note": "Card A (purple/white player base/refractor) slides up from bottom and is held centered, readable. | Card B (orange/white player) slides up and is held centered, readable; capped at ~2.5s (static over-hold after this trimmed).",
+      "win": 8,
+      "firstOfPack": false
+    },
+    {
+      "start": 483.9,
+      "end": 486.3,
+      "note": "GLORY gold insert (feature/hit) slides up and is held centered; given the longer feature hold. Held even longer on tape but trimmed to cap.",
+      "win": 8,
+      "firstOfPack": false
+    },
+    {
+      "start": 488.6,
+      "end": 491,
+      "note": "Card C (white/silver player) slides up and is held centered, readable. After this the mat goes to sorting/empty/pack-handling dead time through end of window.",
+      "win": 8,
+      "firstOfPack": false
+    },
+    {
+      "start": 552.6,
+      "end": 554.8,
+      "note": "pack-rip: foil pack/wrapper raised and held up to camera before opening",
+      "win": 9,
+      "firstOfPack": true
+    },
+    {
+      "start": 565.5,
+      "end": 567.9,
+      "note": "first card of pack slides up — orange player base/parallel, held centered",
+      "win": 9,
+      "firstOfPack": true
+    },
+    {
+      "start": 581.2,
+      "end": 583.6,
+      "note": "blue/grey chrome player card slides up, settled and readable",
+      "win": 9,
+      "firstOfPack": true
+    },
+    {
+      "start": 585.2,
+      "end": 587.6,
+      "note": "hit: teal/purple refractor card revealed and admired",
+      "win": 9,
+      "firstOfPack": false
+    },
+    {
+      "start": 599,
+      "end": 601.4,
+      "note": "hit: dark/gold ornate insert card raised and held",
+      "win": 9,
+      "firstOfPack": true
+    },
+    {
+      "start": 604.2,
+      "end": 605.7,
+      "note": "rainbow/prismatic refractor card slides up briefly near window end",
+      "win": 9,
+      "firstOfPack": false
+    },
+    {
+      "start": 623.4,
+      "end": 625.7,
+      "note": "card 1: chrome base, player on green/grass bg, first card pulled from pack",
+      "win": 10,
+      "firstOfPack": true
+    },
+    {
+      "start": 633.8,
+      "end": 635.9,
+      "note": "card 2: colored parallel, player in red on green refractor bg",
+      "win": 10,
+      "firstOfPack": false
+    },
+    {
+      "start": 653.4,
+      "end": 655.7,
+      "note": "card 3: chrome base, player in orange/white uniform, from freshly opened pack",
+      "win": 10,
+      "firstOfPack": true
+    },
+    {
+      "start": 663,
+      "end": 665,
+      "note": "card 4: chrome base, player in white/grey uniform",
+      "win": 10,
+      "firstOfPack": false
+    },
+    {
+      "start": 666.2,
+      "end": 668.2,
+      "note": "card 5: big silver/white B-logo Bowman design card",
+      "win": 10,
+      "firstOfPack": false
+    },
+    {
+      "start": 670.5,
+      "end": 672.6,
+      "note": "card 6: colored parallel, player in dark/maroon uniform",
+      "win": 10,
+      "firstOfPack": false
+    },
+    {
+      "start": 674.2,
+      "end": 675.7,
+      "note": "fan (clipped left): cards spread in-hand partly off the LEFT edge of frame, one flowing segment, re-crop later",
+      "win": 10,
+      "firstOfPack": false
+    },
+    {
+      "start": 677.5,
+      "end": 679.4,
+      "note": "pack-rip: Bowman Chrome pack held and torn open in frame",
+      "win": 11,
+      "firstOfPack": false
+    },
+    {
+      "start": 687.5,
+      "end": 689.3,
+      "note": "card 1 chrome base slides up from wrapper, held high & centered (silver/B back)",
+      "win": 11,
+      "firstOfPack": false
+    },
+    {
+      "start": 695.3,
+      "end": 721.6,
+      "note": "continuous in-hand show/swap of the stack: base then colored parallels (blue, gold, red) and sparkly refractors thumbed one after another without setting down, ending with a fan spread partly off the LEFT edge of frame (fan clipped left) before being lowered",
+      "win": 11,
+      "firstOfPack": false
+    },
+    {
+      "start": 729.5,
+      "end": 731.7,
+      "note": "pack-rip: hands grip and tear the pack, cards burst out (pack-rip moment)",
+      "win": 12,
+      "firstOfPack": false
+    },
+    {
+      "start": 734.4,
+      "end": 736.9,
+      "note": "red-jersey player card #1 settles into hand, held readable (long-held feature card)",
+      "win": 12,
+      "firstOfPack": false
+    },
+    {
+      "start": 748.07,
+      "end": 750,
+      "note": "white/light player card #2 up in hand, examined",
+      "win": 12,
+      "firstOfPack": true
+    },
+    {
+      "start": 751.67,
+      "end": 753.5,
+      "note": "dark parallel player card #3 held in hand",
+      "win": 12,
+      "firstOfPack": false
+    },
+    {
+      "start": 753.9,
+      "end": 756.4,
+      "note": "colorful refractor parallels fanned/swapped in hand (flowing)",
+      "win": 12,
+      "firstOfPack": false
+    },
+    {
+      "start": 756.9,
+      "end": 759,
+      "note": "red player card #4 settles in hand, held readable",
+      "win": 12,
+      "firstOfPack": false
+    },
+    {
+      "start": 763.97,
+      "end": 768.9,
+      "note": "continuous fan: card swaps into colorful/purple refractor parallels, shuffled in hand before set down (flowing)",
+      "win": 12,
+      "firstOfPack": false
+    },
+    {
+      "start": 773.2,
+      "end": 774.7,
+      "note": "pack-rip moment: orange Bowman wrapper/sealed cards shown at top, then torn open",
+      "win": 13,
+      "firstOfPack": false
+    },
+    {
+      "start": 778.4,
+      "end": 789,
+      "note": "first base card slides up (orange/white player), then continuous in-hand fan/swap of several Bowman base cards | FEATURE: dark yellow/gold parallel slides up and is held long & centered (the showcase card of this window)",
+      "win": 13,
+      "firstOfPack": false
+    },
+    {
+      "start": 797.6,
+      "end": 799.8,
+      "note": "second yellow/gold parallel (different player) slides up after the first is lowered",
+      "win": 13,
+      "firstOfPack": false
+    },
+    {
+      "start": 801.3,
+      "end": 803.5,
+      "note": "orange/white base card slides up, held centered/readable",
+      "win": 13,
+      "firstOfPack": false
+    },
+    {
+      "start": 807.4,
+      "end": 821.9,
+      "note": "silver/chrome base card slides up, held centered | orange/white base card slides up; held and lightly swapped in-hand (flowing) | orange/white base cards re-raised and fanned/swapped continuously to end of window (flowing) | Orange/silver player card already held high at window start (slide-start precedes window); centered and readable",
+      "win": 13,
+      "firstOfPack": false
+    },
+    {
+      "start": 822.73,
+      "end": 827,
+      "note": "Purple/colorful parallel slides UP from bottom, then continuous in-hand swap into a pink/orange refractor held high; flowing multi-card swap, no blink",
+      "win": 14,
+      "firstOfPack": false
+    },
+    {
+      "start": 829.5,
+      "end": 831.6,
+      "note": "Light pink/white Bowman card slides up and is held centered/readable",
+      "win": 14,
+      "firstOfPack": false
+    },
+    {
+      "start": 834.4,
+      "end": 836.9,
+      "note": "Vivid sunset/rainbow refractor (standout card) slides up and is held high; feature hold",
+      "win": 14,
+      "firstOfPack": false
+    },
+    {
+      "start": 855.4,
+      "end": 857.5,
+      "note": "Pack-rip: new Bowman Chrome foil pack brought in and torn open",
+      "win": 14,
+      "firstOfPack": true
+    },
+    {
+      "start": 874.4,
+      "end": 876.5,
+      "note": "Silver/gray card with red marks rotated up and presented flat, centered and readable",
+      "win": 14,
+      "firstOfPack": true
+    },
+    {
+      "start": 881,
+      "end": 883.2,
+      "note": "New white/silver player card swapped up in-hand and held high",
+      "win": 14,
+      "firstOfPack": false
+    },
+    {
+      "start": 884.4,
+      "end": 886.9,
+      "note": "Orange/colorful refractor card slides up and is held centered",
+      "win": 14,
+      "firstOfPack": false
+    },
+    {
+      "start": 887.3,
+      "end": 890.2,
+      "note": "Continuous in-hand fan/shuffle of several cards (orange/white/colorful spread); flowing fan, kept as one segment",
+      "win": 14,
+      "firstOfPack": false
+    },
+    {
+      "start": 892.7,
+      "end": 894,
+      "note": "Dark green-tinted foil/chrome card raised and briefly held high, readable",
+      "win": 14,
+      "firstOfPack": false
+    },
+    {
+      "start": 899,
+      "end": 901.4,
+      "note": "sealed Bowman pack lifted up and shown centered (pack-rip moment) before opening",
+      "win": 15,
+      "firstOfPack": false
+    },
+    {
+      "start": 910.7,
+      "end": 916,
+      "note": "colorful refractor/parallel cards from the opened pack brought up and swapped in-hand, continuous fan",
+      "win": 15,
+      "firstOfPack": false
+    },
+    {
+      "start": 919,
+      "end": 921.2,
+      "note": "blue/silver chrome card slides up and is held high, readable, then flipped/inspected (same card)",
+      "win": 15,
+      "firstOfPack": false
+    },
+    {
+      "start": 936.7,
+      "end": 939.2,
+      "note": "GOLD GLORY insert (hit) slides up and is held high, longer hold for the feature card",
+      "win": 15,
+      "firstOfPack": true
+    },
+    {
+      "start": 940.9,
+      "end": 943,
+      "note": "silver chrome vertical player card slides up and settles on display",
+      "win": 15,
+      "firstOfPack": false
+    },
+    {
+      "start": 951.01,
+      "end": 953.3,
+      "note": "B-logo chrome base card already held centered & readable at window start (revealed pre-window, no in-window slide); brief representative hold",
+      "win": 16,
+      "firstOfPack": false
+    },
+    {
+      "start": 969.6,
+      "end": 971.8,
+      "note": "pack-rip moment: colorful Bowman wrapper slides up into frame and is torn open",
+      "win": 16,
+      "firstOfPack": true
+    },
+    {
+      "start": 975.8,
+      "end": 978,
+      "note": "first chrome card pulled from wrapper, slides up from bottom and settles centered (purple accent)",
+      "win": 16,
+      "firstOfPack": false
+    },
+    {
+      "start": 983.8,
+      "end": 985.9,
+      "note": "swap to 2nd chrome card (purple accent): prior card lowered, new card slides up and is held",
+      "win": 16,
+      "firstOfPack": false
+    },
+    {
+      "start": 995,
+      "end": 997,
+      "note": "swap to silver/white B chrome card: slides up from low-left and held centered",
+      "win": 16,
+      "firstOfPack": false
+    },
+    {
+      "start": 997.4,
+      "end": 999.5,
+      "note": "swap to orange/red parallel card (number 40 visible): slides up as silver card lowers, held centered",
+      "win": 16,
+      "firstOfPack": false
+    },
+    {
+      "start": 1001.8,
+      "end": 1004,
+      "note": "final card: silver chrome player card slides up from below and held centered & readable to window end",
+      "win": 16,
+      "firstOfPack": false
+    },
+    {
+      "start": 1004.9,
+      "end": 1010.5,
+      "note": "Chrome card (dark figure, white-B jersey) already held up at window start; swapped in-hand to its red checklist back, then re-shown. Continuous in-hand handling, flowing (no slide-start within window).",
+      "win": 17,
+      "firstOfPack": false
+    },
+    {
+      "start": 1026.8,
+      "end": 1029,
+      "note": "Green-dot parallel chrome card slides up from the wrapper into hand (~1026.8) and is held centered/readable. Long static hold afterward trimmed.",
+      "win": 17,
+      "firstOfPack": true
+    },
+    {
+      "start": 1042.9,
+      "end": 1044.7,
+      "note": "Next chrome card slides up into hand and is held centered.",
+      "win": 17,
+      "firstOfPack": true
+    },
+    {
+      "start": 1046.9,
+      "end": 1051,
+      "note": "Chrome card slides up into hand, held centered/readable. | White-bordered chrome card slides up (held ~5.7s in source); kept ~2.2s, rest of static hold dropped.",
+      "win": 17,
+      "firstOfPack": false
+    },
+    {
+      "start": 1054.5,
+      "end": 1056.5,
+      "note": "White-bordered photo/refractor card slides up into hand, held centered.",
+      "win": 17,
+      "firstOfPack": false
+    },
+    {
+      "start": 1059.8,
+      "end": 1061.8,
+      "note": "Ornate white insert (orange dot, looks like a feature/hit) slides up into hand; longer ~2s hold.",
+      "win": 17,
+      "firstOfPack": false
+    },
+    {
+      "start": 1072.9,
+      "end": 1074.7,
+      "note": "White photo card slides up into hand, held centered/readable.",
+      "win": 17,
+      "firstOfPack": true
+    },
+    {
+      "start": 1076.4,
+      "end": 1078.6,
+      "note": "Card slides up then several white cards handled/fanned in-hand continuously; flowing segment, ends before empty-mat dead time.",
+      "win": 17,
+      "firstOfPack": false
+    },
+    {
+      "start": 1080,
+      "end": 1082.3,
+      "note": "Final ornate/photo card (orange dot) picked up and held centered/readable before window ends in empty mat.",
+      "win": 17,
+      "firstOfPack": false
+    },
+    {
+      "start": 1086.3,
+      "end": 1088.8,
+      "note": "Pack-rip: next sealed Bowman pack lifted into frame top-right and shown before opening",
+      "win": 18,
+      "firstOfPack": false
+    },
+    {
+      "start": 1097.8,
+      "end": 1102.2,
+      "note": "Card A reveal - red-accent chrome card slides up into hand, held and shown | Card B reveal - gold/yellow parallel slides up (in-hand swap right after card A)",
+      "win": 18,
+      "firstOfPack": false
+    },
+    {
+      "start": 1108.1,
+      "end": 1109.7,
+      "note": "Card C reveal - white-jersey player base card slides up after brief lowering",
+      "win": 18,
+      "firstOfPack": false
+    },
+    {
+      "start": 1115.1,
+      "end": 1116.7,
+      "note": "Card D reveal - orange-accent card slides up, held vertical",
+      "win": 18,
+      "firstOfPack": false
+    },
+    {
+      "start": 1120.5,
+      "end": 1122.1,
+      "note": "Card E reveal - refractor/parallel slides up, examined in-hand",
+      "win": 18,
+      "firstOfPack": false
+    },
+    {
+      "start": 1130.2,
+      "end": 1132.7,
+      "note": "Pack-rip: following sealed pack lifted into frame and shown (after empty-mat gap)",
+      "win": 18,
+      "firstOfPack": false
+    },
+    {
+      "start": 1143,
+      "end": 1145.4,
+      "note": "Card F reveal - dark player chrome card slides up out of the opened pack",
+      "win": 18,
+      "firstOfPack": true
+    },
+    {
+      "start": 1151.9,
+      "end": 1156.1,
+      "note": "Feature card reveal - dark player card with red accents slides up and is admired/held long (likely the hit); held to window end",
+      "win": 18,
+      "firstOfPack": false
+    },
+    {
+      "start": 1160.67,
+      "end": 1164.3,
+      "note": "Carryover card already held high/center & readable at window open (slide began before WIN_START); held then lowered ~1164.3.",
+      "win": 19,
+      "firstOfPack": false
+    },
+    {
+      "start": 1165.3,
+      "end": 1180,
+      "note": "Feature/hit hold: red+multicolor refractor slides up ~1165.3, settles ~1166.2, then continuously held and turned in-hand (one flowing examination) through ~1180.0 — no intermediate slide-up to cut on.",
+      "win": 19,
+      "firstOfPack": false
+    },
+    {
+      "start": 1180.4,
+      "end": 1190,
+      "note": "Continuous in-hand swap: white-jersey player card swapped in ~1180.4, then white logo/checklist card ~1181.9 held steady through ~1187.5; no empty frame between, so one flowing segment. | Final reveal of window: colorful refractor (player in red) slides in ~1187.6, settles ~1188.1, held centered & readable to window end.",
+      "win": 19,
+      "firstOfPack": false
+    }
+  ]
+}

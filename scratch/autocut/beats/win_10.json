@@ -1,0 +1,14 @@
+{
+  "window": 10,
+  "start": 609,
+  "end": 676.3,
+  "segments": [
+    { "start": 623.4, "end": 625.7, "note": "card 1: chrome base, player on green/grass bg, first card pulled from pack" },
+    { "start": 633.8, "end": 635.9, "note": "card 2: colored parallel, player in red on green refractor bg" },
+    { "start": 653.4, "end": 655.7, "note": "card 3: chrome base, player in orange/white uniform, from freshly opened pack" },
+    { "start": 663.0, "end": 665.0, "note": "card 4: chrome base, player in white/grey uniform" },
+    { "start": 666.2, "end": 668.2, "note": "card 5: big silver/white B-logo Bowman design card" },
+    { "start": 670.5, "end": 672.6, "note": "card 6: colored parallel, player in dark/maroon uniform" },
+    { "start": 674.2, "end": 675.7, "note": "fan (clipped left): cards spread in-hand partly off the LEFT edge of frame, one flowing segment, re-crop later" }
+  ]
+}

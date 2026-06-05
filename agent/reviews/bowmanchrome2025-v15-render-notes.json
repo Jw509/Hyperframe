@@ -1,0 +1,82 @@
+{
+  "schema": "edithyper.reveal-review.v1",
+  "sourceReviewHtml": "scratch/reveal-detection-review/bowmanchrome2025-v15-issue-source-check/review.html",
+  "notes": [
+    "User reviewed v14 render and gave sparse output-timestamp notes instead of full card review.",
+    "Mapped render timestamps to cut segments, then checked focused source sheets.",
+    "Most misses were pre-slide detector starts with default 0.65s tails ending before the actual slide; store explicit reveal windows so the render cannot snap over them."
+  ],
+  "frameReference": {
+    "candidateFrame": 7,
+    "fps": 10,
+    "beforeSeconds": 0.6,
+    "note": "Focused v15 issue sheet starts 0.6s before the current candidate, so the current candidate/cut point is frame 7."
+  },
+  "reviews": [
+    {
+      "cardId": "card-015",
+      "action": "set_seconds",
+      "seconds": 261.77,
+      "revealEndSeconds": 262.6,
+      "note": "28s render note: Pofele Ashlock into Jovantae Barnes was snapping because the previous window ended before the real slide. Start on the visible upward motion and carry through the settled Jovantae card."
+    },
+    {
+      "cardId": "card-018",
+      "action": "set_seconds",
+      "seconds": 299.22,
+      "revealEndSeconds": 300.05,
+      "note": "33s render note: Dawson Pendergrass into Gunner Stockton Playbook missed the reveal. Current start was pre-slide; use the actual upward motion and a full reveal tail."
+    },
+    {
+      "cardId": "card-035",
+      "action": "set_seconds",
+      "seconds": 584.15,
+      "revealEndSeconds": 585.15,
+      "note": "1:07 render note: Troy Stellato into KC Concepcion did not show enough slide reveal. Nudge to the active slide and extend the tail."
+    },
+    {
+      "cardId": "card-053",
+      "action": "set_hold",
+      "holdSeconds": 2.5,
+      "note": "1:44 render note: Mikey Keene felt skipped. Give the first card of pack 14 a longer clean hold before the Peyton Lewis reveal."
+    },
+    {
+      "cardId": "card-054",
+      "action": "set_seconds",
+      "seconds": 800.65,
+      "revealEndSeconds": 801.45,
+      "note": "1:44 render note: Peyton Lewis reveal point was almost two seconds late on the wide source sheet, causing Mikey Keene to get eaten. Move Peyton's reveal to the true slide window."
+    },
+    {
+      "cardId": "card-056",
+      "action": "set_seconds",
+      "seconds": 822.25,
+      "revealEndSeconds": 823.15,
+      "holdStartSeconds": 823.15,
+      "holdSeconds": 2.7,
+      "note": "1:53 render note: Gunner Stockton Dean's List hit did not land or hold long enough. Start on the actual reveal, play through the hit landing, then hold the settled hit longer."
+    },
+    {
+      "cardId": "card-062",
+      "action": "set_seconds",
+      "seconds": 929.15,
+      "revealEndSeconds": 930.15,
+      "note": "2:02 render note: Aidan Mizell into Diego Pavia blinked because the old reveal window ended before the slide began. Move to the actual slide and carry it through."
+    },
+    {
+      "cardId": "card-072",
+      "action": "set_seconds",
+      "seconds": 1056.887,
+      "revealEndSeconds": 1058,
+      "holdStartSeconds": 1058,
+      "note": "2:25 render note: Jayden Virgin-Morgan into Eric Singleton Jr. had a visible reveal but a rough tail/hold boundary. Keep the accepted start and extend through the settled card."
+    },
+    {
+      "cardId": "card-079",
+      "action": "set_seconds",
+      "seconds": 1164.9,
+      "revealEndSeconds": 1165.75,
+      "note": "2:38 render note: Harrison Wallace III into Ethan Vasko had no slide because the old segment ended before the slide started. Move to the actual upward motion and extend the reveal."
+    }
+  ]
+}

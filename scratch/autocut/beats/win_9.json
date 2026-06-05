@@ -1,0 +1,13 @@
+{
+  "window": 9,
+  "start": 521.67,
+  "end": 609,
+  "segments": [
+    { "start": 552.6, "end": 554.8, "note": "pack-rip: foil pack/wrapper raised and held up to camera before opening" },
+    { "start": 565.5, "end": 567.9, "note": "first card of pack slides up — orange player base/parallel, held centered" },
+    { "start": 581.2, "end": 583.6, "note": "blue/grey chrome player card slides up, settled and readable" },
+    { "start": 585.2, "end": 587.6, "note": "hit: teal/purple refractor card revealed and admired" },
+    { "start": 599.0, "end": 601.4, "note": "hit: dark/gold ornate insert card raised and held" },
+    { "start": 604.2, "end": 605.7, "note": "rainbow/prismatic refractor card slides up briefly near window end" }
+  ]
+}

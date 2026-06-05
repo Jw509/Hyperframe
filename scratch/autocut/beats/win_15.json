@@ -1,0 +1,12 @@
+{
+  "window": 15,
+  "start": 897.13,
+  "end": 951.01,
+  "segments": [
+    { "start": 899.0, "end": 901.4, "note": "sealed Bowman pack lifted up and shown centered (pack-rip moment) before opening" },
+    { "start": 910.7, "end": 916.0, "note": "colorful refractor/parallel cards from the opened pack brought up and swapped in-hand, continuous fan" },
+    { "start": 919.0, "end": 921.2, "note": "blue/silver chrome card slides up and is held high, readable, then flipped/inspected (same card)" },
+    { "start": 936.7, "end": 939.2, "note": "GOLD GLORY insert (hit) slides up and is held high, longer hold for the feature card" },
+    { "start": 940.9, "end": 943.0, "note": "silver chrome vertical player card slides up and settles on display" }
+  ]
+}

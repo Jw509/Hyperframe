@@ -1,0 +1,38 @@
+{
+  "schema": "edithyper.reveal-review.v1",
+  "sourceReviewHtml": "scratch/render-audit/bowman-v10-first20s-5fps.jpg",
+  "notes": [
+    "User reviewed v10: P1C1->P1C2 good; P1C2->P1C3 snaps; P1C3->P1C4 good.",
+    "User reviewed v10: P2C1->P2C2 snap-cuts without a fluid slide shot.",
+    "User reviewed v10: P3C1->P3C2 is almost correct but cuts a few frames too early; P3C2->P3C3 looks good despite odd source reveal; P3C3 hold should be slightly longer; P3C3->P3C4 and P3C4 hold are good."
+  ],
+  "reviews": [
+    {
+      "cardId": "card-003",
+      "action": "set_seconds",
+      "seconds": 112.8,
+      "revealEndSeconds": 113.8,
+      "note": "P1C2->P1C3: start closer to the real upward slide and extend through the full visible slide to avoid snapping into card 3."
+    },
+    {
+      "cardId": "card-006",
+      "action": "set_seconds",
+      "seconds": 163.4,
+      "revealEndSeconds": 164.6,
+      "note": "P2C1->P2C2: previous start ended before the fluid slide; use the real slide window from the source sheet."
+    },
+    {
+      "cardId": "card-010",
+      "action": "set_seconds",
+      "seconds": 216.1,
+      "revealEndSeconds": 216.8,
+      "note": "P3C1->P3C2: user said it cuts a few frames too early; nudge the reveal start later."
+    },
+    {
+      "cardId": "card-011",
+      "action": "set_hold",
+      "holdSeconds": 1.8,
+      "note": "P3C3 hold should be slightly longer while preserving the P3C3->P3C4 transition."
+    }
+  ]
+}

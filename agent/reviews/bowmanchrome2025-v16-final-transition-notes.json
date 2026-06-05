@@ -1,0 +1,41 @@
+{
+  "schema": "edithyper.reveal-review.v1",
+  "sourceReviewHtml": "scratch/reveal-detection-review/bowmanchrome2025-v16-source-check/review.html",
+  "notes": [
+    "User reviewed v15 render and reported four remaining transition issues.",
+    "Mapped the notes to card ids: card-072 Eric Singleton Jr. autograph hold, card-075 Gunner Stockton Acropolis reveal, card-076 Houston Clement reveal, and card-079 Ethan Vasko reveal.",
+    "Keep global pacing unchanged; apply only per-card reveal-tail/hold corrections."
+  ],
+  "reviews": [
+    {
+      "cardId": "card-072",
+      "action": "set_seconds",
+      "seconds": 1056.887,
+      "revealEndSeconds": 1058,
+      "holdStartSeconds": 1060.8,
+      "holdSeconds": 3,
+      "note": "V15 render note: after Malik/Jayden, the Eric Singleton Jr. autograph did not show as a clean hit. Keep the reviewed reveal start, then jump the final-card hold to the clean autograph display around 17:40.8 and hold it longer."
+    },
+    {
+      "cardId": "card-075",
+      "action": "set_seconds",
+      "seconds": 1113.5,
+      "revealEndSeconds": 1115.15,
+      "note": "V15 render note: Jerrick Gibson into Gunner Stockton Acropolis felt a little too fast. Preserve the reveal start but extend the tail until the Acropolis insert settles."
+    },
+    {
+      "cardId": "card-076",
+      "action": "set_seconds",
+      "seconds": 1120.55,
+      "revealEndSeconds": 1121.25,
+      "note": "V15 render note: Gunner Stockton Acropolis into Houston Clement felt too fast. The prior window ended before the visible slide; move to the actual upward motion and carry through the settled Houston card."
+    },
+    {
+      "cardId": "card-079",
+      "action": "set_seconds",
+      "seconds": 1164.9,
+      "revealEndSeconds": 1166.2,
+      "note": "V15 render note: Harrison Wallace III into Ethan Vasko was slightly too fast. Keep the reveal start and extend the landing by a few frames."
+    }
+  ]
+}

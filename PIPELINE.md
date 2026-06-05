@@ -8,6 +8,25 @@ Living doc for how the card-opening video pipeline is built and why. Updated as 
 
 ---
 
+## Current agentic harness state (2026-06-04)
+
+The active sports-card workflow is now catalog-first and harness-gated. If anything below conflicts with these files, treat these as the current authority:
+
+- `AGENTS.md`
+- `AGENT_HARNESS.md`
+- `agent/prompts/CLAUDE_CODE_RULES.md`
+- `agent/prompts/CARD_CATALOG_RULES.md`
+
+For in-progress projects, read the matching handoff before changing cuts:
+
+- Chrome v4: `agent/state/handoffs/chrome-v4-handoff.md`
+
+Current core rule: build/confirm a card catalog, detect/review slide-up reveal starts on the portrait/card-centered working source, build `hold-then-slide` cuts from reviewed catalog rows, run `short:gate`, then render from the same portrait source with `node agent/harness.mjs render --input portrait` or an explicit portrait source path.
+
+Do not render calibrated sports-card Shorts from raw landscape footage. Do not translate rendered-output timestamps by hand; use `short:map-output` first.
+
+---
+
 ## Setup (new machine)
 
 This repo holds the **pipeline code only** — the heavy source footage and renders are gitignored. After cloning, drop your own source video into the matching folders (`EditHyper/<slug>.mp4`, `cards/sources/<slug>/`).
@@ -22,6 +41,11 @@ This repo holds the **pipeline code only** — the heavy source footage and rend
 ### Agent skills
 
 The pipeline is driven by two Claude Code skill sets that install into `~/.claude/skills/` (global — intentionally not committed to this repo). Install both, then **restart Claude Code** so it discovers them.
+
+Canonical upstreams:
+
+- `browser-use/video-use`: https://github.com/browser-use/video-use
+- `heygen-com/hyperframes`: https://github.com/heygen-com/hyperframes
 
 **1. HeyGen Hyperframes** — title compositions, rendering, GSAP/Three/Lottie, etc.:
 
@@ -65,6 +89,27 @@ The fast-cut card-reveal rhythm, dialed in over bowmanchrome2025 and approved. *
 - Self-eval with ffmpeg `tile` frame grids (NOT `drawtext` — fontconfig segfaults in Git Bash; map grid cells by fixed fps/row math instead).
 
 **Reference output:** `cards/renders/bowmanchrome2025/full-stylecut-v3.mp4` (7:15, 86 cuts) — approved ("absolute cinema"); v1 was the approved base, v2/v3 added the static center-left fan fixes. Cut definition committed at `scratch/min3to5-edit/cut-FULL-v3.json` (renders themselves are gitignored — re-render with `render-cut-mixed.mjs`).
+
+---
+
+## AI auto-cut — retest + toolchain (2026-05-30, Opus 4.8)
+
+Re-attempt of the long-failed "AI picks the beats itself" goal. **Verdict: vision-based beat-picking WORKS; pure motion-signal detection still doesn't** (no signal feature predicts the editor's beats — placement is a taste call). The approved per-pack method and the full toolchain live in `scratch/autocut/` (scripts and cut JSON are tracked; frame dumps and rendered MP4s are gitignored).
+
+**Per-pack cut method (approved "perfect"):** ONE open beat (~1s, pack held up) → ONE fan beat (~1.3s, cards spread) → one beat per card, each cut at the **slide ONSET** (thumb starts pushing the card up) and held **through the settle** (~1.5–2s; hits 3–5s). Skip dead time; show every card.
+
+**Toolchain (`scratch/autocut/`):**
+- `motion.txt` — 60fps YAVG inter-frame-difference curve (regenerate per source via `ffmpeg ... tblend=difference,signalstats,metadata=print`).
+- `fine.mjs <a> <b>` / `onset.mjs <a> <b>` — frame-accurate slide-onset finder from the curve.
+- `find-packs.mjs` + `normalize-windows.mjs` — pack windowing from quiet motion gaps (landed exactly 20 windows = the 20-pack box).
+- `extract-grid.mjs <src> <start> <dur> <fps> <cols> <rows> <prefix>` — readable filmstrip grids (3 cols, positional time-map, no drawtext).
+- `map2.mjs <cut.json>` — output-timeline ↔ source-timeline map (resolves user "Video B" output-times to source).
+- **`audit2.mjs <cut.json>` — the GATE: flags NO-SWIPE (cut after slide peaked) + NO-FAN (open w/o following fan). Run before every render; clear every flag.**
+- `render-cut.mjs` (portrait) / `render-cut-mixed.mjs` (per-segment landscape recrop).
+
+**Time-reference rule:** user gives edits as "Video A" (original `Hobbybox/2026-05-23 19-15-10.mp4`; M:SS = source seconds 1:1) and "Video B" (the render attempt; M:SS = that render's OUTPUT time). Map B through `map2.mjs`. **Process rule: show the timestamp interpretation table for sign-off BEFORE rendering.**
+
+**Latest render:** `scratch/autocut/FULL-auto-v4.mp4` (4:12, 113 beats) — full user EDL applied, audit-gated.
 
 ---
 

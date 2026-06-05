@@ -1,0 +1,14 @@
+{
+  "window": 16,
+  "start": 951.01,
+  "end": 1004.9,
+  "segments": [
+    { "start": 951.01, "end": 953.3, "note": "B-logo chrome base card already held centered & readable at window start (revealed pre-window, no in-window slide); brief representative hold" },
+    { "start": 969.6, "end": 971.8, "note": "pack-rip moment: colorful Bowman wrapper slides up into frame and is torn open" },
+    { "start": 975.8, "end": 978.0, "note": "first chrome card pulled from wrapper, slides up from bottom and settles centered (purple accent)" },
+    { "start": 983.8, "end": 985.9, "note": "swap to 2nd chrome card (purple accent): prior card lowered, new card slides up and is held" },
+    { "start": 995.0, "end": 997.0, "note": "swap to silver/white B chrome card: slides up from low-left and held centered" },
+    { "start": 997.4, "end": 999.5, "note": "swap to orange/red parallel card (number 40 visible): slides up as silver card lowers, held centered" },
+    { "start": 1001.8, "end": 1004.0, "note": "final card: silver chrome player card slides up from below and held centered & readable to window end" }
+  ]
+}

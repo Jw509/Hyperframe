@@ -1,0 +1,555 @@
+{
+  "comment": "v4 — Video-A/B EDL applied + verified onsets. A=source sec, B=v3 output. Eased rapid cuts, added missing fans (P2/P3 first card/P6/cases), fixed no-swipe cuts to verified onsets, replaced messy regions with A-ranges, 2:13 fan landscape recrop track-left.",
+  "segments": [
+    {
+      "start": 86.4,
+      "end": 87.6,
+      "note": "P1 open"
+    },
+    {
+      "start": 105,
+      "end": 106.4,
+      "note": "P1 fan"
+    },
+    {
+      "start": 107.3,
+      "end": 110.8,
+      "note": "P1 card1"
+    },
+    {
+      "start": 112,
+      "end": 114.7,
+      "note": "P1 card2"
+    },
+    {
+      "start": 116.5,
+      "end": 118,
+      "note": "P1 card3"
+    },
+    {
+      "start": 118.6,
+      "end": 120.4,
+      "note": "P1 card4"
+    },
+    {
+      "start": 139,
+      "end": 140.2,
+      "note": "P2 open"
+    },
+    {
+      "start": 155,
+      "end": 157,
+      "note": "P2 fan (A 2:35-2:37) keep 0:13-0:15"
+    },
+    {
+      "start": 146,
+      "end": 148,
+      "note": "P2 card1 Tennessee QB"
+    },
+    {
+      "start": 161.9,
+      "end": 163.8,
+      "note": "P2 card2 Penn State (A-2:51 insert DROPPED: cut 0:15.5-0:20)"
+    },
+    {
+      "start": 165.5,
+      "end": 169.4,
+      "note": "P2 card3 ROYER HIT +1s (now 3.9s)"
+    },
+    {
+      "start": 190,
+      "end": 191.6,
+      "note": "P2 card4 Michigan State"
+    },
+    {
+      "start": 200.6,
+      "end": 201.8,
+      "note": "P3 open"
+    },
+    {
+      "start": 215,
+      "end": 217.5,
+      "note": "P3 card1 LUKE HASZ (A 3:35-3:37 clean hold; dropped backward-whip mess 0:27-0:31)"
+    },
+    {
+      "start": 217.5,
+      "end": 220.5,
+      "note": "P3 card2 KATIN HOUSER held"
+    },
+    {
+      "start": 224.5,
+      "end": 227,
+      "note": "P3 card3 HARRISON WALLACE III"
+    },
+    {
+      "start": 227,
+      "end": 231,
+      "note": "P3 card4 TREYDEZ GREEN LSU (A 3:47, slides up behind Wallace - the mandated 4th card)"
+    },
+    {
+      "start": 235,
+      "end": 236.2,
+      "note": "P4 open"
+    },
+    {
+      "start": 240,
+      "end": 241.4,
+      "note": "P4 fan"
+    },
+    {
+      "start": 244,
+      "end": 246.5,
+      "note": "P4 c1 EASED longer (was rapid at B1:04)"
+    },
+    {
+      "start": 249.3,
+      "end": 251.6,
+      "note": "P4 c2 EASED longer"
+    },
+    {
+      "start": 254.7,
+      "end": 256.7,
+      "note": "P4 c3"
+    },
+    {
+      "start": 260.4,
+      "end": 262.4,
+      "note": "P4 c4"
+    },
+    {
+      "start": 263.7,
+      "end": 265.7,
+      "note": "P4 c5"
+    },
+    {
+      "start": 266.4,
+      "end": 268.4,
+      "note": "P4 c6"
+    },
+    {
+      "start": 281,
+      "end": 282.3,
+      "note": "P5 open"
+    },
+    {
+      "start": 290,
+      "end": 292,
+      "note": "P5 fan (A 4:50)"
+    },
+    {
+      "start": 296,
+      "end": 299.4,
+      "note": "P5 card1 Dawson Pendergrass"
+    },
+    {
+      "start": 299.5,
+      "end": 301.4,
+      "note": "P5 card2 orange base"
+    },
+    {
+      "start": 304.7,
+      "end": 306.7,
+      "note": "P5 card3 purple refractor"
+    },
+    {
+      "start": 313.9,
+      "end": 315.8,
+      "note": "P5 card4 red/white"
+    },
+    {
+      "start": 318.7,
+      "end": 320.7,
+      "note": "P5 card5 purple chrome refractor"
+    },
+    {
+      "start": 330.2,
+      "end": 331.5,
+      "note": "P6 open"
+    },
+    {
+      "start": 334.3,
+      "end": 335.8,
+      "note": "P6 fan"
+    },
+    {
+      "start": 345,
+      "end": 347,
+      "note": "P6 card1 (A 5:46)"
+    },
+    {
+      "start": 349.13,
+      "end": 351,
+      "note": "P6 card2 (A 5:48, onset)"
+    },
+    {
+      "start": 351,
+      "end": 353,
+      "note": "P6 card3 (A 5:50, onset)"
+    },
+    {
+      "start": 370.13,
+      "end": 374,
+      "note": "P6 HIT shown (A 6:11-6:14, onset 370.13) replaces old B1:10"
+    },
+    {
+      "start": 385.6,
+      "end": 386.8,
+      "note": "P7 open"
+    },
+    {
+      "start": 394,
+      "end": 396,
+      "note": "P7 fan (A 6:34)"
+    },
+    {
+      "start": 390,
+      "end": 391.9,
+      "note": "P7 card1 gold-border"
+    },
+    {
+      "start": 400.3,
+      "end": 402.2,
+      "note": "P7 card2"
+    },
+    {
+      "start": 411.9,
+      "end": 413.8,
+      "note": "AUTO track-in: baked camera pan following gold card (A 6:51-6:54, v3's liked pan)"
+    },
+    {
+      "start": 415.5,
+      "end": 418,
+      "note": "AUTO pan continues, MS5/Kentucky lead (A 6:55-6:58)"
+    },
+    {
+      "start": 423,
+      "end": 429,
+      "note": "AUTO reveal Adrian Norton Akron #15 gold-sparkle AUTO, clean dead-still hold (A 7:03-7:09); borked shuffle 6:58-7:03 CUT, killed v4 1:27-1:39"
+    },
+    {
+      "start": 461,
+      "end": 462.1,
+      "note": "packB open"
+    },
+    {
+      "start": 467.5,
+      "end": 468.8,
+      "note": "packB fan"
+    },
+    {
+      "start": 476.9,
+      "end": 479,
+      "note": "purple/silver refractor"
+    },
+    {
+      "start": 479.73,
+      "end": 485.7,
+      "note": "GLORY gold insert onset 479.73 (more finger slide before cut, B1:36)"
+    },
+    {
+      "start": 552.5,
+      "end": 553.8,
+      "note": "open (B1:41-1:45 cut)"
+    },
+    {
+      "start": 558.7,
+      "end": 560.1,
+      "note": "fan"
+    },
+    {
+      "start": 567,
+      "end": 569,
+      "note": "card1 orange RC"
+    },
+    {
+      "start": 577.07,
+      "end": 579.9,
+      "note": "card2 SWIPE onset 577.07 (B1:51 was missing swipe)"
+    },
+    {
+      "start": 582.4,
+      "end": 585.9,
+      "note": "card3 onset 582.4"
+    },
+    {
+      "start": 598,
+      "end": 601.8,
+      "note": "card4 HIT longer 3.8s (B1:54 hit, shown longer)"
+    },
+    {
+      "start": 612,
+      "end": 613.3,
+      "note": "pack1 open"
+    },
+    {
+      "start": 624.5,
+      "end": 626.1,
+      "note": "pack1 fan"
+    },
+    {
+      "start": 626.6,
+      "end": 628.9,
+      "note": "p1c1"
+    },
+    {
+      "start": 629.9,
+      "end": 631.6,
+      "note": "p1c2"
+    },
+    {
+      "start": 633.4,
+      "end": 635.2,
+      "note": "p1c3"
+    },
+    {
+      "start": 636.6,
+      "end": 638.6,
+      "note": "p1c4"
+    },
+    {
+      "start": 645.5,
+      "end": 646.8,
+      "note": "pack2 open"
+    },
+    {
+      "start": 656,
+      "end": 657.7,
+      "note": "pack2 FAN (A 10:56, was missing - replaces bad 2:13 recrop)"
+    },
+    {
+      "start": 657.7,
+      "end": 659.9,
+      "note": "p2c1"
+    },
+    {
+      "start": 662.5,
+      "end": 664.5,
+      "note": "p2c2"
+    },
+    {
+      "start": 666,
+      "end": 667.9,
+      "note": "p2c3 Alonzo Barnett"
+    },
+    {
+      "start": 668.5,
+      "end": 671,
+      "note": "p2c4 B Bowman (was SKIPPED at B2:14)"
+    },
+    {
+      "start": 678,
+      "end": 679.3,
+      "note": "P open (A 11:18)"
+    },
+    {
+      "start": 697.5,
+      "end": 700.5,
+      "note": "P card1 onset 697.5"
+    },
+    {
+      "start": 701.4,
+      "end": 703.3,
+      "note": "card2 pink refractor"
+    },
+    {
+      "start": 707.3,
+      "end": 709,
+      "note": "card3 orange/red"
+    },
+    {
+      "start": 709.2,
+      "end": 711.4,
+      "note": "card4 holo refractor"
+    },
+    {
+      "start": 714.3,
+      "end": 716.3,
+      "note": "card5 gold 1st refractor"
+    },
+    {
+      "start": 717.9,
+      "end": 719.9,
+      "note": "card6 pink/purple refractor"
+    },
+    {
+      "start": 785,
+      "end": 787,
+      "note": "CASEHIT-PACK open (A 13:05)"
+    },
+    {
+      "start": 793,
+      "end": 794.5,
+      "note": "fan (A 13:13)"
+    },
+    {
+      "start": 799,
+      "end": 801,
+      "note": "card1 (A 13:19)"
+    },
+    {
+      "start": 804,
+      "end": 807,
+      "note": "card2 pull-from-back (A 13:24-13:27, replaces messy B2:38-2:41)"
+    },
+    {
+      "start": 822,
+      "end": 832,
+      "note": "CASE HIT Stockton (A 13:42-13:52, replaces B2:41-2:56) 10s"
+    },
+    {
+      "start": 872,
+      "end": 873.7,
+      "note": "P fan (A 14:32-14:34, replaces terrible B2:57 fan)"
+    },
+    {
+      "start": 873.7,
+      "end": 875.7,
+      "note": "card1"
+    },
+    {
+      "start": 880.7,
+      "end": 882.6,
+      "note": "card2"
+    },
+    {
+      "start": 883.2,
+      "end": 885.1,
+      "note": "card3"
+    },
+    {
+      "start": 888.6,
+      "end": 891.5,
+      "note": "card4 onset 888.6 (B3:02 more thumb slide before cut)"
+    },
+    {
+      "start": 908,
+      "end": 909.2,
+      "note": "open"
+    },
+    {
+      "start": 913.1,
+      "end": 915.1,
+      "note": "P fan (added, B3:10 had no fan)"
+    },
+    {
+      "start": 919.1,
+      "end": 921.6,
+      "note": "card1"
+    },
+    {
+      "start": 929.6,
+      "end": 931.6,
+      "note": "card2"
+    },
+    {
+      "start": 935.3,
+      "end": 937.3,
+      "note": "card3"
+    },
+    {
+      "start": 942.13,
+      "end": 946.8,
+      "note": "card4 onset 942.13 (B3:13 more finger swipe before cut)"
+    },
+    {
+      "start": 1016,
+      "end": 1017.3,
+      "note": "open"
+    },
+    {
+      "start": 1023.6,
+      "end": 1025.1,
+      "note": "fan"
+    },
+    {
+      "start": 1047,
+      "end": 1048.5,
+      "note": "card1 slide (A 17:27)"
+    },
+    {
+      "start": 1051,
+      "end": 1055,
+      "note": "card2 pull-from-back (A 17:31)"
+    },
+    {
+      "start": 1058.5,
+      "end": 1064,
+      "note": "AUTO reveal Singleton (A 17:38.5-17:44)"
+    },
+    {
+      "start": 1086.3,
+      "end": 1087.5,
+      "note": "open"
+    },
+    {
+      "start": 1092.8,
+      "end": 1094.2,
+      "note": "fan"
+    },
+    {
+      "start": 1099,
+      "end": 1101.4,
+      "note": "card1 onset 1099.0"
+    },
+    {
+      "start": 1102.1,
+      "end": 1104,
+      "note": "card2"
+    },
+    {
+      "start": 1107.6,
+      "end": 1109.5,
+      "note": "card3"
+    },
+    {
+      "start": 1119,
+      "end": 1121,
+      "note": "transition (A 18:39)"
+    },
+    {
+      "start": 1122.1,
+      "end": 1124.1,
+      "note": "card"
+    },
+    {
+      "start": 1129.9,
+      "end": 1131.1,
+      "note": "last pack open"
+    },
+    {
+      "start": 1141.33,
+      "end": 1144.7,
+      "note": "card1 onset 1141.33"
+    },
+    {
+      "start": 1154.1,
+      "end": 1156.1,
+      "note": "card2"
+    },
+    {
+      "start": 1160.6,
+      "end": 1162.8,
+      "note": "card3"
+    },
+    {
+      "start": 1163.7,
+      "end": 1167,
+      "note": "card4"
+    },
+    {
+      "start": 1178,
+      "end": 1180,
+      "note": "transition (A 19:38)"
+    },
+    {
+      "start": 1181.1,
+      "end": 1185.7,
+      "note": "gold refractor slow reveal"
+    },
+    {
+      "start": 1187.1,
+      "end": 1190,
+      "note": "final card"
+    }
+  ]
+}

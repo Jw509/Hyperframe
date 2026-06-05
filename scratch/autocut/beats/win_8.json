@@ -1,0 +1,12 @@
+{
+  "window": 8,
+  "start": 475.37,
+  "end": 521.67,
+  "segments": [
+    { "start": 475.37, "end": 477.7, "note": "Continuous fan/swap already in motion at window start: cards held high and shuffled, collapsing into one shown card. One flowing segment, ends as the card lowers before the next slide-up." },
+    { "start": 478.35, "end": 480.05, "note": "Card A (purple/white player base/refractor) slides up from bottom and is held centered, readable." },
+    { "start": 480.15, "end": 482.6, "note": "Card B (orange/white player) slides up and is held centered, readable; capped at ~2.5s (static over-hold after this trimmed)." },
+    { "start": 483.9, "end": 486.3, "note": "GLORY gold insert (feature/hit) slides up and is held centered; given the longer feature hold. Held even longer on tape but trimmed to cap." },
+    { "start": 488.6, "end": 491.0, "note": "Card C (white/silver player) slides up and is held centered, readable. After this the mat goes to sorting/empty/pack-handling dead time through end of window." }
+  ]
+}

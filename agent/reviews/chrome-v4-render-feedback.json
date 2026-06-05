@@ -1,0 +1,74 @@
+{
+  "schema": "edithyper.reveal-review.v1",
+  "sourceReviewHtml": "scratch/reveal-detection-review/chrome-v5-render-feedback-wide/review.html",
+  "notes": [
+    "User feedback from v4 full render: multiple slide/reveal transitions started at late shimmer/motion points or skipped the reveal.",
+    "Seconds are original portrait source seconds, selected from the wide review sheet sampled at 5 fps.",
+    "These set_seconds items intentionally override the v4 detector-accepted candidates."
+  ],
+  "reviews": [
+    {
+      "cardId": "card-018",
+      "action": "set_seconds",
+      "seconds": 371.254,
+      "revealEndSeconds": 371.854,
+      "note": "Mason Graham into Amon-Ra St. Brown: move start back to the visible slide."
+    },
+    {
+      "cardId": "card-021",
+      "action": "set_seconds",
+      "seconds": 469.737,
+      "revealEndSeconds": 470.937,
+      "note": "Brian Thomas Jr. into Drake Maye: detector was late; use actual reveal motion."
+    },
+    {
+      "cardId": "card-022",
+      "action": "set_seconds",
+      "seconds": 479.72,
+      "revealEndSeconds": 480.72,
+      "note": "Drake Maye into Kenny Clark: detector was late; use actual slide."
+    },
+    {
+      "cardId": "card-029",
+      "action": "set_seconds",
+      "seconds": 553.804,
+      "revealEndSeconds": 554.604,
+      "note": "Gunnar Helm into Princely Umanmielen: move from late shimmer to true reveal."
+    },
+    {
+      "cardId": "card-030",
+      "action": "set_seconds",
+      "seconds": 565.388,
+      "revealEndSeconds": 566.188,
+      "note": "Princely Umanmielen into T.J. Hockenson: move from late shimmer to true reveal."
+    },
+    {
+      "cardId": "card-032",
+      "action": "set_seconds",
+      "seconds": 623.854,
+      "revealEndSeconds": 624.854,
+      "note": "Lamar Jackson into Jake Browning: start a few frames earlier."
+    },
+    {
+      "cardId": "card-034",
+      "action": "set_seconds",
+      "seconds": 633.57,
+      "revealEndSeconds": 634.57,
+      "note": "Christian Kirk into Leonard Floyd: start at visible slide, not mid-motion."
+    },
+    {
+      "cardId": "card-035",
+      "action": "set_seconds",
+      "seconds": 635.887,
+      "revealEndSeconds": 636.887,
+      "note": "Leonard Floyd into Xavier Watts: current v4 nearly skips Xavier; use actual slide."
+    },
+    {
+      "cardId": "card-040",
+      "action": "set_seconds",
+      "seconds": 698.254,
+      "revealEndSeconds": 699.254,
+      "note": "Ashton Jeanty into Jared Verse: manual swipe correction."
+    }
+  ]
+}

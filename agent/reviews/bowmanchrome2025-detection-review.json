@@ -1,0 +1,142 @@
+{
+  "schema": "edithyper.reveal-review.v1",
+  "sourceReviewHtml": "scratch/reveal-detection-review/bowmanchrome2025-needs-review/review.html",
+  "sourceReviewMarkdown": "scratch/reveal-detection-review/bowmanchrome2025-needs-review/review.md",
+  "frameReference": {
+    "candidateFrame": 4,
+    "fps": 10,
+    "beforeSeconds": 0.25,
+    "note": "In the review grids, the proposed candidate is roughly frame 4. Shift decisions are relative to that frame."
+  },
+  "reviews": [
+    {
+      "cardId": "card-002",
+      "action": "accept",
+      "note": "User: starts sliding up at frame 4, good."
+    },
+    {
+      "cardId": "card-003",
+      "action": "shift_to_frame",
+      "frame": 7,
+      "note": "User: reveal is not happening until frame 7."
+    },
+    {
+      "cardId": "card-004",
+      "action": "accept_last_card",
+      "note": "User: fine because it is the last card, no next-card slide needed."
+    },
+    {
+      "cardId": "card-010",
+      "action": "needs_earlier",
+      "note": "User: already almost done sliding by frame 4; needs earlier start."
+    },
+    {
+      "cardId": "card-016",
+      "action": "shift_to_frame",
+      "frame": 5,
+      "note": "User: should start at frame 5."
+    },
+    {
+      "cardId": "card-018",
+      "action": "needs_earlier",
+      "note": "User: frame 1 already has the next card about 35% revealed."
+    },
+    {
+      "cardId": "card-022",
+      "action": "accept",
+      "note": "User: looks good."
+    },
+    {
+      "cardId": "card-024",
+      "action": "accept",
+      "note": "User: looks good."
+    },
+    {
+      "cardId": "card-028",
+      "action": "manual_exception",
+      "note": "User: weird flip reveal; do not use as detector training data, needs one-off edit."
+    },
+    {
+      "cardId": "card-030",
+      "action": "accept",
+      "note": "User: looks good."
+    },
+    {
+      "cardId": "card-031",
+      "action": "shift_to_frame",
+      "frame": 11,
+      "note": "User: too late in current grid; motion does not start until frame 11."
+    },
+    {
+      "cardId": "card-032",
+      "action": "shift_to_frame",
+      "frame": 10,
+      "note": "User: too late in current grid; motion does not start until frame 10."
+    },
+    {
+      "cardId": "card-034",
+      "action": "bad_detection",
+      "note": "User: bad detection; its frame should be frame 1 of card 35."
+    },
+    {
+      "cardId": "card-035",
+      "action": "needs_later",
+      "note": "User: too late; needs exact frame on another pass."
+    },
+    {
+      "cardId": "card-038",
+      "action": "bad_detection",
+      "note": "User: bad detection."
+    },
+    {
+      "cardId": "card-040",
+      "action": "bad_detection",
+      "note": "User: bad detection."
+    },
+    {
+      "cardId": "card-046",
+      "action": "bad_detection",
+      "note": "User: bad detection."
+    },
+    {
+      "cardId": "card-052",
+      "action": "bad_detection",
+      "note": "User: bad detection."
+    },
+    {
+      "cardId": "card-066",
+      "action": "accept",
+      "note": "User: looks good."
+    },
+    {
+      "cardId": "card-067",
+      "action": "needs_later",
+      "note": "User: too late; needs exact frame on another pass."
+    },
+    {
+      "cardId": "card-070",
+      "action": "needs_later",
+      "note": "User: too early; needs exact frame on another pass."
+    },
+    {
+      "cardId": "card-071",
+      "action": "needs_later",
+      "note": "User: too early; needs exact frame on another pass."
+    },
+    {
+      "cardId": "card-074",
+      "action": "needs_later",
+      "note": "User: too early; needs exact frame on another pass."
+    },
+    {
+      "cardId": "card-075",
+      "action": "bad_detection",
+      "note": "User: bad detection."
+    },
+    {
+      "cardId": "card-076",
+      "action": "needs_later",
+      "note": "User: too late; needs exact frame on another pass."
+    }
+  ]
+}

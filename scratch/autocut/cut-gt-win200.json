@@ -1,0 +1,11 @@
+{
+  "comment": "Approved-backbone subset for src 200-236s (ground truth, user's manual cut).",
+  "segments": [
+    { "start": 201.802, "end": 203.154 },
+    { "start": 206.132, "end": 207.238 },
+    { "start": 208.974, "end": 211.167 },
+    { "start": 215.497, "end": 224.259 },
+    { "start": 225.935, "end": 229.584 },
+    { "start": 235.645, "end": 237.439 }
+  ]
+}

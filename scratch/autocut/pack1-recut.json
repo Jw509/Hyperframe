@@ -1,0 +1,11 @@
+{
+  "comment": "Pack 1 v3 — fixes: (1) opening = pack held up to camera 86.4-87.6 (right shot, not the 90s lull). (2) fan 105.0-106.4 stays. (3) each card cut at the SLIDE ONSET (from full-res motion curve) and held THROUGH the settle, not cut mid-slide. card1 onset 107.3 settle~110.8; card2 onset 112.0 settle~114.7 (was missed entirely); card3 onset 116.5 settle~117.6; card4 onset 118.6 settle~120.2.",
+  "segments": [
+    { "start": 86.4,  "end": 87.6,  "note": "OPEN: sealed pack held up to camera (single beat, ~1.2s)" },
+    { "start": 105.0, "end": 106.4, "note": "FAN: cards fanned out (original 1:45-1:46.5) — not counted toward card 1" },
+    { "start": 107.3, "end": 110.8, "note": "card 1: slide onset 107.3, plays full slide-up + holds through settle ~110.8" },
+    { "start": 112.0, "end": 114.7, "note": "card 2 (was MISSED): slide onset 112.0, settles & holds ~114.7" },
+    { "start": 116.5, "end": 118.0, "note": "card 3: slide onset 116.5, settles ~117.4, hold" },
+    { "start": 118.6, "end": 120.4, "note": "card 4: slide onset 118.6, clean 3->4 slide, cut before previous-card comeback" }
+  ]
+}

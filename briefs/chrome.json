@@ -1,0 +1,18 @@
+{
+  "source": "chromepack.mp4",
+  "working_source": "chrome-portrait.mp4",
+  "short_render_source": "chrome-portrait.mp4",
+  "output_resolution": "1080p",
+  "output_aspect": "9:16",
+  "output_fps": 60,
+  "intro_end": "0:00",
+  "box_cost": "$0",
+  "expected_packs": 7,
+  "cards_per_pack": 6,
+  "current_handoff": "agent/state/handoffs/chrome-v4-handoff.md",
+  "current_catalog": "briefs/catalogs/chrome.portrait-reveal-calibrated-v4.json",
+  "current_cut": "briefs/cuts/chrome.portrait-calibrated-v4.json",
+  "current_render": "cards/sources/chrome/chrome-portrait-calibrated-v4-full.mp4",
+  "current_gate": "scratch/render-audit/chrome-portrait-calibrated-v4-full-gate.md",
+  "reveals": []
+}

@@ -1,0 +1,14 @@
+{
+  "window": 3,
+  "start": 145.3,
+  "end": 197.6,
+  "segments": [
+    { "start": 147.7, "end": 150.0, "note": "Card slides up from bottom (~147.7), held & shown center - first clear reveal of the window." },
+    { "start": 158.5, "end": 162.3, "note": "New card pushed up (~158.5), settles ~158.9, held steady (gold/white player card) then starts to lower - flowing reveal+hold." },
+    { "start": 162.6, "end": 168.6, "note": "Continuous in-hand fan: dark chrome card rises from low (~162.6), then a yellow/gold-bordered insert/feature card comes up (~166.5) - kept as one flowing segment so it doesn't blink." },
+    { "start": 168.9, "end": 175.1, "note": "Continuous in-hand showing of the next several cards (white/silver player cards swapped in hand) - flowing segment." },
+    { "start": 175.2, "end": 181.9, "note": "Continuous showing including an orange/colored parallel that comes up (~177.6) and following chrome cards - flowing." },
+    { "start": 182.0, "end": 188.0, "note": "Continuous showing of dark chrome cards plus a bright-bordered card - flowing fan/swap." },
+    { "start": 188.0, "end": 192.7, "note": "Continuous showing of final cards including a red parallel (~190.4); ends when hands go empty/no card on screen." }
+  ]
+}

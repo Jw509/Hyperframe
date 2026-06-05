@@ -1,0 +1,35 @@
+{
+  "schema": "edithyper.reveal-review.v1",
+  "sourceReviewHtml": "scratch/render-audit/source-bowman-pack1-1088-1138-10fps-pts.jpg",
+  "sourceReviewMarkdown": "scratch/render-audit/source-bowman-pack2-155-169-10fps-pts.jpg",
+  "notes": [
+    "Critical fixes after v8/v9 review: the prior cutStart values for the first pack were fallback/late card-visible moments, not slide-start moments.",
+    "Use absolute seconds from the original Bowman source video."
+  ],
+  "reviews": [
+    {
+      "cardId": "card-002",
+      "action": "set_seconds",
+      "seconds": 110.3,
+      "note": "Billy Edwards Jr. starts revealing under Junior Vandeross around original 1:50.3."
+    },
+    {
+      "cardId": "card-003",
+      "action": "set_seconds",
+      "seconds": 112.6,
+      "note": "Jovantae Barnes starts revealing under Billy Edwards Jr. around original 1:52.6."
+    },
+    {
+      "cardId": "card-004",
+      "action": "set_seconds",
+      "seconds": 117.3,
+      "note": "Jadan Baugh starts revealing under Jovantae Barnes around original 1:57.3."
+    },
+    {
+      "cardId": "card-006",
+      "action": "set_seconds",
+      "seconds": 162.4,
+      "note": "Move Quinton Martin Jr. reveal later; previous detected start was too early and made the second pack feel like it skipped the second card."
+    }
+  ]
+}

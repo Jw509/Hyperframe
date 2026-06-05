@@ -1,0 +1,43 @@
+{
+  "slug": "example-video",
+  "source": "example-video.mp4",
+  "schema": "edithyper.card-catalog.v1",
+  "status": "draft",
+  "createdAt": "YYYY-MM-DDTHH:mm:ss.sssZ",
+  "mode": "card-candidates",
+  "notes": [
+    "One row per distinct card/reveal. This is the shared reference for future cut changes."
+  ],
+  "cards": [
+    {
+      "id": "card-001",
+      "beatType": "card",
+      "pack": 1,
+      "cardInPack": 1,
+      "name": "Player Name",
+      "team": "Team",
+      "product": "2025 Bowman Chrome University",
+      "variant": "refractor/auto/insert/etc",
+      "isHit": false,
+      "sourceStart": 123.456,
+      "sourceEnd": 125.123,
+      "sourceRepresentative": 124,
+      "outputStart": 10,
+      "outputEnd": 11.667,
+      "cutSegmentIndex": 0,
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "type": "grid",
+          "path": "scratch/autocut/grids/pack01_01.png",
+          "cell": "row 1 col 2",
+          "time": 124
+        }
+      ],
+      "price": null,
+      "compImage": null,
+      "notes": "",
+      "locked": false
+    }
+  ]
+}

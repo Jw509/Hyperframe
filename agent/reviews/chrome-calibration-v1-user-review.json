@@ -1,0 +1,135 @@
+{
+  "schema": "edithyper.reveal-review.v1",
+  "sourceReviewHtml": "scratch/reveal-detection-review/chrome-calibration-v1/review.html",
+  "frameReference": {
+    "candidateFrame": 9,
+    "fps": 8
+  },
+  "notes": [
+    "User frame calibration from chrome-calibration-v1.",
+    "Frame 9 is the detector candidate. Start frames mark first upward slide motion; settle frames mark readable/settled card.",
+    "Bad/no-slide/manual rows are rejected so they do not train or authorize detector timings."
+  ],
+  "reviews": [
+    {
+      "cardId": "card-002",
+      "action": "shift_to_frame",
+      "frame": 4,
+      "revealEndSeconds": 123.979,
+      "note": "User: start frame 4, settle frame 10."
+    },
+    {
+      "cardId": "card-003",
+      "action": "bad_detection",
+      "note": "User: bad/no slide."
+    },
+    {
+      "cardId": "card-004",
+      "action": "shift_to_frame",
+      "frame": 3,
+      "revealEndSeconds": 145.679,
+      "note": "User: start frame 3, settle frame 10."
+    },
+    {
+      "cardId": "card-005",
+      "action": "shift_to_frame",
+      "frame": 5,
+      "revealEndSeconds": 150.97,
+      "note": "User: start frame 5, settle frame 9."
+    },
+    {
+      "cardId": "card-006",
+      "action": "bad_detection",
+      "note": "User: bad detection."
+    },
+    {
+      "cardId": "card-008",
+      "action": "shift_to_frame",
+      "frame": 4,
+      "revealEndSeconds": 241.55,
+      "note": "User: start frame 4, settle frame 9."
+    },
+    {
+      "cardId": "card-009",
+      "action": "set_seconds",
+      "seconds": 243.3,
+      "revealEndSeconds": 244.175,
+      "note": "User: start frame 1 but probably 2 frames earlier; set to candidate minus 1.25s. Settle frame 6."
+    },
+    {
+      "cardId": "card-010",
+      "action": "shift_to_frame",
+      "frame": 11,
+      "revealEndSeconds": 248.212,
+      "note": "User: start frame 11, settle frame 16."
+    },
+    {
+      "cardId": "card-011",
+      "action": "shift_to_frame",
+      "frame": 6,
+      "revealEndSeconds": 253.75,
+      "note": "User: start frame 6, settle frame 13/14; stored midpoint."
+    },
+    {
+      "cardId": "card-012",
+      "action": "bad_detection",
+      "note": "User: bad detection, no slide."
+    },
+    {
+      "cardId": "card-017",
+      "action": "bad_detection",
+      "note": "User: bad detection, no slide."
+    },
+    {
+      "cardId": "card-020",
+      "action": "shift_to_frame",
+      "frame": 5,
+      "revealEndSeconds": 461.729,
+      "note": "User: start frame 5, settle frame 12."
+    },
+    {
+      "cardId": "card-023",
+      "action": "bad_detection",
+      "note": "User: bad detection, no slide."
+    },
+    {
+      "cardId": "card-024",
+      "action": "needs_earlier",
+      "note": "User: slide has already started before frame 1; needs wider/earlier review."
+    },
+    {
+      "cardId": "card-026",
+      "action": "bad_detection",
+      "note": "User: no slide."
+    },
+    {
+      "cardId": "card-027",
+      "action": "shift_to_frame",
+      "frame": 21,
+      "revealEndSeconds": 548,
+      "note": "User: start frame 21, settle is not in this grid; using catalog visible time as temporary reveal end pending wider review."
+    },
+    {
+      "cardId": "card-033",
+      "action": "bad_detection",
+      "note": "User: no slide."
+    },
+    {
+      "cardId": "card-038",
+      "action": "shift_to_frame",
+      "frame": 6,
+      "revealEndSeconds": 686.287,
+      "note": "User: start frame 6, settle frame 13."
+    },
+    {
+      "cardId": "card-040",
+      "action": "manual_exception",
+      "note": "User: weird slide/manual; do not learn from this as normal reveal motion."
+    },
+    {
+      "cardId": "card-042",
+      "action": "bad_detection",
+      "note": "User: no slide, settle frame 6 only."
+    }
+  ]
+}

@@ -1,0 +1,412 @@
+{
+  "slug": "bowmanchrome2025",
+  "schema": "edithyper.user-confirmed-card-catalog.v1",
+  "status": "in_progress",
+  "source": "C:\\Users\\J\\Desktop\\Hobbybox\\2026-05-23 19-15-10.mp4",
+  "notes": [
+    "User-confirmed timestamps from direct review of the original Hobbybox source video.",
+    "Corrections provided on 2026-05-31 from review of cards/sources/bowmanchrome2025/bowmanchrome2025-portrait.mp4; this file is duration-aligned with the original source.",
+    "These entries override rough auto-catalog/window timestamps when there is a conflict.",
+    "Pack numbers are intentionally omitted until true pack-open order is rebuilt.",
+    "For card-overlay/cut timing, prefer the held-in-hand moment after the fan and right before the swipe/reveal, not the first glimpse while cards are pulled from the wrapper."
+  ],
+  "cards": [
+    {
+      "timestamp": "2:58",
+      "seconds": 178,
+      "name": "Aidan Chiles",
+      "notes": "Primary shot to use. The 3:10 appearance is the same card while sorting, not an extra card."
+    },
+    {
+      "timestamp": "3:10",
+      "seconds": 190,
+      "name": "Aidan Chiles",
+      "duplicateOfTimestamp": "2:58",
+      "countAsCard": false,
+      "notes": "Same card reappearing during sorting."
+    },
+    {
+      "timestamp": "4:13",
+      "seconds": 253,
+      "name": "LJ Martin"
+    },
+    {
+      "timestamp": "4:15",
+      "seconds": 255,
+      "name": "Pofele Ashlock"
+    },
+    {
+      "timestamp": "4:22",
+      "seconds": 262,
+      "name": "Jovantae Barnes",
+      "variant": "X-fractor"
+    },
+    {
+      "timestamp": "4:26",
+      "seconds": 266,
+      "name": "Mario Craver"
+    },
+    {
+      "timestamp": "4:57",
+      "seconds": 297,
+      "name": "Dawson Pendergrass"
+    },
+    {
+      "timestamp": "5:00",
+      "seconds": 300,
+      "name": "Gunner Stockton",
+      "variant": "College Rule Playbook insert"
+    },
+    {
+      "timestamp": "5:07",
+      "seconds": 307,
+      "name": "Michael Van Buren Jr.",
+      "notes": "Distinct card; he appears multiple times in the video on different cards."
+    },
+    {
+      "timestamp": "5:14",
+      "seconds": 314,
+      "name": "Jacory Barney Jr."
+    },
+    {
+      "timestamp": "5:42",
+      "seconds": 342,
+      "name": "Michael Van Buren Jr.",
+      "notes": "New/distinct card; same player as 5:07 but not the same physical card."
+    },
+    {
+      "timestamp": "5:47",
+      "seconds": 347,
+      "name": "Katin Houser",
+      "notes": "New/distinct card; same player as earlier Katin Houser but not the same physical card."
+    },
+    {
+      "timestamp": "5:49",
+      "seconds": 349,
+      "name": "Luke Altmyer",
+      "notes": "Correct primary timestamp; the 6:11 appearance is a re-look of this card."
+    },
+    {
+      "timestamp": "5:52",
+      "seconds": 352,
+      "name": "Eli Holstein"
+    },
+    {
+      "timestamp": "6:11",
+      "seconds": 371,
+      "name": "Luke Altmyer",
+      "duplicateOfTimestamp": "5:49",
+      "countAsCard": false,
+      "notes": "Same card being looked at again; do not count as another card."
+    },
+    {
+      "timestamp": "6:38",
+      "seconds": 398,
+      "name": "Kevin Coleman Jr."
+    },
+    {
+      "timestamp": "6:41",
+      "seconds": 401,
+      "name": "Kyson Brown"
+    },
+    {
+      "timestamp": "6:53",
+      "seconds": 413,
+      "name": "Jamarion Wilcox"
+    },
+    {
+      "timestamp": "6:58",
+      "seconds": 418,
+      "name": "Adrian Norton"
+    },
+    {
+      "timestamp": "7:24",
+      "seconds": 444,
+      "name": "Kyson Brown",
+      "duplicateOfTimestamp": "6:41",
+      "countAsCard": false,
+      "notes": "Same Kyson Brown card as before; drop from counted list."
+    },
+    {
+      "timestamp": "7:59",
+      "seconds": 479,
+      "name": "RJ Maryland"
+    },
+    {
+      "timestamp": "8:00",
+      "seconds": 480,
+      "name": "Anthony Hill Jr."
+    },
+    {
+      "timestamp": "8:03",
+      "seconds": 483,
+      "name": "Marcel Reed",
+      "variant": "Path to Glory"
+    },
+    {
+      "timestamp": "8:08",
+      "seconds": 488,
+      "name": "Michael Taaffe"
+    },
+    {
+      "timestamp": "9:39",
+      "seconds": 579,
+      "name": "Francis Mauigoa"
+    },
+    {
+      "timestamp": "9:43",
+      "seconds": 583,
+      "name": "Troy Stellato"
+    },
+    {
+      "timestamp": "9:45",
+      "seconds": 585,
+      "name": "KC Concepcion"
+    },
+    {
+      "timestamp": "9:58.8",
+      "seconds": 598.8,
+      "name": "Jykeem Williams",
+      "notes": "User described as 9:58 almost 9:59."
+    },
+    {
+      "timestamp": "10:28",
+      "seconds": 628,
+      "name": "Luke Wysong",
+      "notes": "Use held-in-hand shot after the fan, not first wrapper glimpse."
+    },
+    {
+      "timestamp": "10:32",
+      "seconds": 632,
+      "name": "Kaidon Salter"
+    },
+    {
+      "timestamp": "10:35",
+      "seconds": 635,
+      "name": "Behren Morton",
+      "variant": "green insert"
+    },
+    {
+      "timestamp": "10:39",
+      "seconds": 639,
+      "name": "Danny O'Neil"
+    },
+    {
+      "timestamp": "11:01",
+      "seconds": 661,
+      "name": "Chris Brazzell II"
+    },
+    {
+      "timestamp": "11:03",
+      "seconds": 663,
+      "name": "Quintrevion Wisner"
+    },
+    {
+      "timestamp": "11:08",
+      "seconds": 668,
+      "name": "Alonza Barnett III",
+      "variant": "Lettered Up insert"
+    },
+    {
+      "timestamp": "11:12",
+      "seconds": 672,
+      "name": "Trey White"
+    },
+    {
+      "timestamp": "11:36",
+      "seconds": 696,
+      "name": "Brendon Lewis",
+      "notes": "Corrected from Anderson Lewis."
+    },
+    {
+      "timestamp": "11:39",
+      "seconds": 699,
+      "name": "LeShon Williams"
+    },
+    {
+      "timestamp": "11:44",
+      "seconds": 704,
+      "name": "Jadan Baugh",
+      "variant": "X-fractor/checker"
+    },
+    {
+      "timestamp": "11:49",
+      "seconds": 709,
+      "name": "Jay Haynes"
+    },
+    {
+      "timestamp": "12:22",
+      "seconds": 742,
+      "name": "Nate Frazier"
+    },
+    {
+      "timestamp": "12:25",
+      "seconds": 745,
+      "name": "Talyn Taylor"
+    },
+    {
+      "timestamp": "12:31",
+      "seconds": 751,
+      "name": "RJ Maryland"
+    },
+    {
+      "timestamp": "12:39",
+      "seconds": 759,
+      "name": "Taylor Tatum"
+    },
+    {
+      "timestamp": "13:18",
+      "seconds": 798,
+      "name": "Mikey Keene"
+    },
+    {
+      "timestamp": "13:23",
+      "seconds": 803,
+      "name": "Peyton Lewis"
+    },
+    {
+      "timestamp": "13:28",
+      "seconds": 808,
+      "name": "Jovantae Barnes",
+      "notes": "Distinct from earlier Barnes cards."
+    },
+    {
+      "timestamp": "13:42",
+      "seconds": 822,
+      "name": "Gunner Stockton",
+      "variant": "Dean's List insert"
+    },
+    {
+      "timestamp": "14:39",
+      "seconds": 879,
+      "name": "Trech Kekahuna"
+    },
+    {
+      "timestamp": "14:41",
+      "seconds": 881,
+      "name": "LaNorris Sellers",
+      "variant": "College Rule Playbook insert"
+    },
+    {
+      "timestamp": "14:45",
+      "seconds": 885,
+      "name": "Anthony Hill Jr.",
+      "notes": "Distinct from earlier Hill card."
+    },
+    {
+      "timestamp": "14:47",
+      "seconds": 887,
+      "name": "Josh Cameron"
+    },
+    {
+      "timestamp": "15:27",
+      "seconds": 927,
+      "name": "Aidan Mizell"
+    },
+    {
+      "timestamp": "15:31",
+      "seconds": 931,
+      "name": "Diego Pavia"
+    },
+    {
+      "timestamp": "15:38",
+      "seconds": 938,
+      "name": "Quintrevion Wisner",
+      "variant": "Path to Glory insert"
+    },
+    {
+      "timestamp": "15:42",
+      "seconds": 942,
+      "name": "Darian Mensah"
+    },
+    {
+      "timestamp": "16:32",
+      "seconds": 992,
+      "name": "Avery Johnson"
+    },
+    {
+      "timestamp": "16:35",
+      "seconds": 995,
+      "name": "Haynes King"
+    },
+    {
+      "timestamp": "16:39",
+      "seconds": 999,
+      "name": "Luke Altmyer",
+      "variant": "orange/refractor version"
+    },
+    {
+      "timestamp": "16:43",
+      "seconds": 1003,
+      "name": "Boubacar Traore"
+    },
+    {
+      "timestamp": "17:26",
+      "seconds": 1046,
+      "name": "Dante Moore"
+    },
+    {
+      "timestamp": "17:27",
+      "seconds": 1047,
+      "name": "Malik Rutherford"
+    },
+    {
+      "timestamp": "17:34",
+      "seconds": 1054,
+      "name": "Jayden Virgin-Morgan"
+    },
+    {
+      "timestamp": "17:38",
+      "seconds": 1058,
+      "name": "Eric Singleton Jr.",
+      "variant": "autograph",
+      "technicalCardTimestamp": "17:41",
+      "technicalCardSeconds": 1061,
+      "notes": "Use 17:38 for adding the cut into the video."
+    },
+    {
+      "timestamp": "18:29",
+      "seconds": 1109,
+      "name": "Chase Sowell"
+    },
+    {
+      "timestamp": "18:31",
+      "seconds": 1111,
+      "name": "Jerrick Gibson"
+    },
+    {
+      "timestamp": "18:33",
+      "seconds": 1113,
+      "name": "Gunner Stockton",
+      "variant": "Acropolis insert"
+    },
+    {
+      "timestamp": "18:41",
+      "seconds": 1121,
+      "name": "Houston Clement"
+    },
+    {
+      "timestamp": "19:12",
+      "seconds": 1152,
+      "name": "Nate Johnson",
+      "notes": "Corrected from Jase Johnson."
+    },
+    {
+      "timestamp": "19:15",
+      "seconds": 1155,
+      "name": "Harrison Wallace III",
+      "notes": "Distinct from earlier Wallace insert."
+    },
+    {
+      "timestamp": "19:24",
+      "seconds": 1164,
+      "name": "Ethan Vasko",
+      "variant": "pink/refractor numbered 20/72"
+    },
+    {
+      "timestamp": "19:39",
+      "seconds": 1179,
+      "name": "Jaden Nixon"
+    }
+  ]
+}
