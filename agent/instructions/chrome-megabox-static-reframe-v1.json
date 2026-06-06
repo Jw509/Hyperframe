@@ -1,0 +1,42 @@
+{
+  "slug": "chrome-megabox-static-reframe-v1",
+  "defaultTimeline": "output",
+  "assumption": "The omitted timestamp in 'the pack at also' is interpreted as 1:30 because it is the only unmentioned pack sequence between 0:41 and 1:35.",
+  "instructions": [
+    {
+      "text": "At 0:40 change center so the full fan of cards is visible; use a hard framing change.",
+      "operation": "lock_segment",
+      "at": "0:40"
+    },
+    {
+      "text": "The pack at 0:41 also uses the changed center.",
+      "operation": "lock_segment",
+      "at": "0:41"
+    },
+    {
+      "text": "Inferred omitted note: the pack at 1:30 needs its centering changed.",
+      "operation": "lock_segment",
+      "at": "1:30"
+    },
+    {
+      "text": "The pack/card sequence at 1:35 needs its centering changed.",
+      "operation": "lock_segment",
+      "at": "1:35"
+    },
+    {
+      "text": "The fan of cards at 1:48 needs its centering changed.",
+      "operation": "lock_segment",
+      "at": "1:48"
+    },
+    {
+      "text": "The pack/card sequence at 1:50 needs its centering changed.",
+      "operation": "lock_segment",
+      "at": "1:50"
+    },
+    {
+      "text": "At 1:58 return to the existing correct static center.",
+      "operation": "lock_segment",
+      "at": "1:58.001"
+    }
+  ]
+}

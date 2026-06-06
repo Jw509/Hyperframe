@@ -1,0 +1,191 @@
+{
+ "reveals": [
+  {
+   "id": 1,
+   "player": "Pat Surtain II",
+   "price": 5,
+   "start": 11.6,
+   "end": 12.68,
+   "cum": 5.0
+  },
+  {
+   "id": 2,
+   "player": "Breece Hall",
+   "price": 1.69,
+   "start": 13.52,
+   "end": 16.17,
+   "cum": 6.69
+  },
+  {
+   "id": 3,
+   "player": "Tetairoa McMillan",
+   "price": 1.99,
+   "start": 16.55,
+   "end": 19.48,
+   "cum": 8.68
+  },
+  {
+   "id": 4,
+   "player": "Pat Bryant",
+   "price": 1.49,
+   "start": 19.65,
+   "end": 22,
+   "cum": 10.17
+  },
+  {
+   "id": 5,
+   "player": "Saquon Barkley",
+   "price": 0.99,
+   "start": 29.02,
+   "end": 32.07,
+   "cum": 11.16
+  },
+  {
+   "id": 6,
+   "player": "Romeo Doubs",
+   "price": 1.99,
+   "start": 32.22,
+   "end": 33.32,
+   "cum": 13.15
+  },
+  {
+   "id": 7,
+   "player": "David Montgomery",
+   "price": 1.79,
+   "start": 36.1,
+   "end": 37.05,
+   "cum": 14.94
+  },
+  {
+   "id": 8,
+   "player": "Xavier Legette",
+   "price": 1.49,
+   "start": 46.53,
+   "end": 50.12,
+   "cum": 16.43
+  },
+  {
+   "id": 9,
+   "player": "Mason Taylor",
+   "price": 1.99,
+   "start": 53.25,
+   "end": 55.83,
+   "cum": 18.42
+  },
+  {
+   "id": 10,
+   "player": "Puka Nacua",
+   "price": 1.65,
+   "start": 59.47,
+   "end": 61.23,
+   "cum": 20.07
+  },
+  {
+   "id": 11,
+   "player": "Chris Boswell",
+   "price": 1.27,
+   "start": 61.48,
+   "end": 63.8,
+   "cum": 21.34
+  },
+  {
+   "id": 12,
+   "player": "Tyler Warren",
+   "price": 2.25,
+   "start": 64.07,
+   "end": 66.4,
+   "cum": 23.59
+  },
+  {
+   "id": 13,
+   "player": "Tyler Shough",
+   "price": 1,
+   "start": 66.5,
+   "end": 69.47,
+   "cum": 24.59
+  },
+  {
+   "id": 14,
+   "player": "Walter Nolen",
+   "price": 1.59,
+   "start": 69.7,
+   "end": 71.33,
+   "cum": 26.18
+  },
+  {
+   "id": 15,
+   "player": "Brock Bowers",
+   "price": 2.99,
+   "start": 77.83,
+   "end": 80.63,
+   "cum": 29.17
+  },
+  {
+   "id": 16,
+   "player": "Isiah Pacheco",
+   "price": 1.75,
+   "start": 80.95,
+   "end": 84.82,
+   "cum": 30.92
+  },
+  {
+   "id": 17,
+   "player": "Harold Fannin Jr",
+   "price": 2,
+   "start": 88.3,
+   "end": 89.05,
+   "cum": 32.92
+  },
+  {
+   "id": 18,
+   "player": "Trevor Lawrence",
+   "price": 1.4,
+   "start": 100.57,
+   "end": 102.92,
+   "cum": 34.32
+  },
+  {
+   "id": 19,
+   "player": "RJ Harvey",
+   "price": 2.5,
+   "start": 105.23,
+   "end": 106.1,
+   "cum": 36.82
+  },
+  {
+   "id": 20,
+   "player": "Cam Ward",
+   "price": 1.29,
+   "start": 116.65,
+   "end": 119.15,
+   "cum": 38.11
+  },
+  {
+   "id": 21,
+   "player": "Jordan Davis",
+   "price": 1.79,
+   "start": 119.52,
+   "end": 122.65,
+   "cum": 39.9
+  },
+  {
+   "id": 22,
+   "player": "Luther Burden III",
+   "price": 0.99,
+   "start": 122.92,
+   "end": 126.9,
+   "cum": 40.89
+  },
+  {
+   "id": 23,
+   "player": "Quinshon Judkins",
+   "price": 2.8,
+   "start": 127.03,
+   "end": 133.27,
+   "cum": 43.69
+  }
+ ],
+ "total": 43.69,
+ "cost": 69.99,
+ "roi": -37.6
+}

@@ -1,0 +1,346 @@
+{
+  "comment": "First 85%-containment test: every clean card hold gets one locked horizontal/vertical reframe; no panning.",
+  "source": "cards/sources/chrome/CutdownChromeMegaBox.mp4",
+  "target": "youtube-short",
+  "referenceImage": "C:/Users/J/Pictures/Screenshots/Screenshot 2026-06-05 202819.png",
+  "referenceGuides": {
+    "left": 0.171,
+    "right": 0.821,
+    "top": 0.314,
+    "bottom": 0.813,
+    "cardCenterX": 0.496,
+    "cardCenterY": 0.564
+  },
+  "minimumCardContainment": 0.85,
+  "cropWidth": 1216,
+  "cropHeight": 2160,
+  "verticalPad": 700,
+  "verticalFillMode": "mirror",
+  "defaultCenterX": 1980,
+  "defaultCenterY": 1218,
+  "transitionStyle": "hard-cut",
+  "segments": [
+    {
+      "start": 0,
+      "end": 5.1499999999999995,
+      "centerX": 1980,
+      "centerY": 1218,
+      "note": "locked default framing"
+    },
+    {
+      "start": 5.1499999999999995,
+      "end": 9.700000000000001,
+      "centerX": 1870,
+      "centerY": 1324,
+      "note": "85%-containment card framing: Cedric Tillman"
+    },
+    {
+      "start": 9.700000000000001,
+      "end": 11.48,
+      "centerX": 2008,
+      "centerY": 1348,
+      "note": "85%-containment card framing: Brandon Aiyuk"
+    },
+    {
+      "start": 11.48,
+      "end": 13.4,
+      "centerX": 2060,
+      "centerY": 1392,
+      "note": "85%-containment card framing: Pat Surtain II"
+    },
+    {
+      "start": 13.4,
+      "end": 16.43,
+      "centerX": 1984,
+      "centerY": 1298,
+      "note": "85%-containment card framing: Breece Hall"
+    },
+    {
+      "start": 16.43,
+      "end": 19.529999999999998,
+      "centerX": 2144,
+      "centerY": 1152,
+      "note": "85%-containment card framing: Tetairoa McMillan"
+    },
+    {
+      "start": 19.529999999999998,
+      "end": 22.31,
+      "centerX": 2166,
+      "centerY": 1440,
+      "note": "85%-containment card framing: Pat Bryant"
+    },
+    {
+      "start": 22.31,
+      "end": 25.38,
+      "centerX": 1980,
+      "centerY": 1218,
+      "note": "wide fan/pack framing: (sealed pack)"
+    },
+    {
+      "start": 25.38,
+      "end": 26.349999999999998,
+      "centerX": 2150,
+      "centerY": 984,
+      "note": "85%-containment card framing: Christian Kirk"
+    },
+    {
+      "start": 26.349999999999998,
+      "end": 28.9,
+      "centerX": 2248,
+      "centerY": 1180,
+      "note": "85%-containment card framing: Josiah Downs"
+    },
+    {
+      "start": 28.9,
+      "end": 32.1,
+      "centerX": 2248,
+      "centerY": 1190,
+      "note": "85%-containment card framing: Saquon Barkley"
+    },
+    {
+      "start": 32.1,
+      "end": 33.56,
+      "centerX": 2182,
+      "centerY": 1210,
+      "note": "85%-containment card framing: Romeo Doubs"
+    },
+    {
+      "start": 33.56,
+      "end": 35.980000000000004,
+      "centerX": 2258,
+      "centerY": 1274,
+      "note": "85%-containment card framing: Quinn Ewers"
+    },
+    {
+      "start": 35.980000000000004,
+      "end": 39.43,
+      "centerX": 2274,
+      "centerY": 1354,
+      "note": "85%-containment card framing: David Montgomery"
+    },
+    {
+      "start": 39.43,
+      "end": 41.88,
+      "centerX": 1672,
+      "centerY": 1218,
+      "note": "approved 0:40 fan and 0:41 pack framing"
+    },
+    {
+      "start": 41.88,
+      "end": 44.25,
+      "centerX": 2020,
+      "centerY": 1204,
+      "note": "85%-containment card framing: Jalen Coker"
+    },
+    {
+      "start": 44.25,
+      "end": 46.410000000000004,
+      "centerX": 1964,
+      "centerY": 1292,
+      "note": "85%-containment card framing: Keenan Allen"
+    },
+    {
+      "start": 46.410000000000004,
+      "end": 50.25,
+      "centerX": 1728,
+      "centerY": 1038,
+      "note": "85%-containment card framing: Xavier Legette"
+    },
+    {
+      "start": 50.25,
+      "end": 53.13,
+      "centerX": 1986,
+      "centerY": 1024,
+      "note": "85%-containment card framing: Emery Jones Jr"
+    },
+    {
+      "start": 53.13,
+      "end": 56.03,
+      "centerX": 2060,
+      "centerY": 1586,
+      "note": "85%-containment card framing: Mason Taylor"
+    },
+    {
+      "start": 56.03,
+      "end": 59.35,
+      "centerX": 2102,
+      "centerY": 1128,
+      "note": "85%-containment card framing: Aaron Rodgers"
+    },
+    {
+      "start": 59.35,
+      "end": 61.36,
+      "centerX": 2122,
+      "centerY": 1028,
+      "note": "85%-containment card framing: Puka Nacua (Playoffs)"
+    },
+    {
+      "start": 61.36,
+      "end": 63.949999999999996,
+      "centerX": 1680,
+      "centerY": 1064,
+      "note": "85%-containment card framing: Chris Boswell"
+    },
+    {
+      "start": 63.949999999999996,
+      "end": 69.58,
+      "centerX": 2088,
+      "centerY": 1254,
+      "note": "85%-containment card framing: Tyler Warren"
+    },
+    {
+      "start": 69.58,
+      "end": 71.36,
+      "centerX": 1860,
+      "centerY": 1220,
+      "note": "85%-containment card framing: Walter Nolen"
+    },
+    {
+      "start": 71.36,
+      "end": 74.47999999999999,
+      "centerX": 1892,
+      "centerY": 818,
+      "note": "85%-containment card framing: D'Andre Swift"
+    },
+    {
+      "start": 74.47999999999999,
+      "end": 77.71,
+      "centerX": 1954,
+      "centerY": 996,
+      "note": "85%-containment card framing: Grant Delpit"
+    },
+    {
+      "start": 77.71,
+      "end": 80.83,
+      "centerX": 1936,
+      "centerY": 1192,
+      "note": "85%-containment card framing: Brock Bowers"
+    },
+    {
+      "start": 80.83,
+      "end": 85.05,
+      "centerX": 1962,
+      "centerY": 1240,
+      "note": "85%-containment card framing: Isiah Pacheco"
+    },
+    {
+      "start": 85.05,
+      "end": 88.17999999999999,
+      "centerX": 1966,
+      "centerY": 1266,
+      "note": "85%-containment card framing: Jets common"
+    },
+    {
+      "start": 88.17999999999999,
+      "end": 89.3,
+      "centerX": 1982,
+      "centerY": 1390,
+      "note": "85%-containment card framing: Harold Fannin Jr"
+    },
+    {
+      "start": 89.3,
+      "end": 92.44999999999999,
+      "centerX": 1750,
+      "centerY": 1218,
+      "note": "approved 1:30 and 1:35 pack framing"
+    },
+    {
+      "start": 92.44999999999999,
+      "end": 95.50999999999999,
+      "centerX": 1948,
+      "centerY": 898,
+      "note": "85%-containment card framing: Travis Etienne"
+    },
+    {
+      "start": 95.50999999999999,
+      "end": 97.44999999999999,
+      "centerX": 1528,
+      "centerY": 1076,
+      "note": "85%-containment card framing: Raheem Mostert"
+    },
+    {
+      "start": 97.44999999999999,
+      "end": 100.44999999999999,
+      "centerX": 1960,
+      "centerY": 800,
+      "note": "85%-containment card framing: Puka Nacua"
+    },
+    {
+      "start": 100.44999999999999,
+      "end": 103.11,
+      "centerX": 1960,
+      "centerY": 848,
+      "note": "85%-containment card framing: Trevor Lawrence"
+    },
+    {
+      "start": 103.11,
+      "end": 105.11,
+      "centerX": 1820,
+      "centerY": 1094,
+      "note": "85%-containment card framing: Savion Williams"
+    },
+    {
+      "start": 105.11,
+      "end": 107.75,
+      "centerX": 1630,
+      "centerY": 1160,
+      "note": "85%-containment card framing: RJ Harvey"
+    },
+    {
+      "start": 107.75,
+      "end": 110.75999999999999,
+      "centerX": 1800,
+      "centerY": 1218,
+      "note": "approved 1:48 fan and 1:50 pack framing"
+    },
+    {
+      "start": 110.75999999999999,
+      "end": 113.17999999999999,
+      "centerX": 2038,
+      "centerY": 978,
+      "note": "85%-containment card framing: Jeremy Ruckert"
+    },
+    {
+      "start": 113.17999999999999,
+      "end": 116.53,
+      "centerX": 2060,
+      "centerY": 1032,
+      "note": "85%-containment card framing: Mike Evans"
+    },
+    {
+      "start": 116.53,
+      "end": 118,
+      "centerX": 2172,
+      "centerY": 1218,
+      "note": "85%-containment card framing: Cam Ward"
+    },
+    {
+      "start": 118,
+      "end": 119.39999999999999,
+      "centerX": 1980,
+      "centerY": 1218,
+      "note": "approved return to correct framing at 1:58"
+    },
+    {
+      "start": 119.39999999999999,
+      "end": 122.8,
+      "centerX": 2136,
+      "centerY": 1348,
+      "note": "85%-containment card framing: Jordan Davis"
+    },
+    {
+      "start": 122.8,
+      "end": 126.91,
+      "centerX": 2184,
+      "centerY": 1316,
+      "note": "85%-containment card framing: Luther Burden III"
+    },
+    {
+      "start": 126.91,
+      "end": 133.29,
+      "centerX": 2102,
+      "centerY": 1132,
+      "note": "85%-containment card framing: Quinshon Judkins"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "comment": "Applied approved agent plan C:\\Users\\J\\Desktop\\EditHyper\\agent\\state\\plans\\chrome-megabox-static-reframe-v1.plan.json",
+  "source": "cards/sources/chrome/CutdownChromeMegaBox.mp4",
+  "target": "youtube-short",
+  "cropWidth": 1216,
+  "cropHeight": 2160,
+  "defaultCenterX": 1980,
+  "transitionStyle": "hard-cut",
+  "segments": [
+    {
+      "start": 0,
+      "end": 39.55,
+      "centerX": 1980,
+      "note": "locked default framing"
+    },
+    {
+      "start": 39.55,
+      "end": 42,
+      "centerX": 1672,
+      "note": "0:40 fan and 0:41 pack: shift left to show the full fan",
+      "locked": true,
+      "userSpecified": true
+    },
+    {
+      "start": 42,
+      "end": 89.3,
+      "centerX": 1980,
+      "note": "locked default framing"
+    },
+    {
+      "start": 89.3,
+      "end": 97.57,
+      "centerX": 1750,
+      "note": "inferred 1:30 pack plus 1:35 pack/card sequence: shift left",
+      "locked": true,
+      "userSpecified": true
+    },
+    {
+      "start": 97.57,
+      "end": 107.75,
+      "centerX": 1980,
+      "note": "locked default framing"
+    },
+    {
+      "start": 107.75,
+      "end": 118,
+      "centerX": 1800,
+      "note": "1:48 fan through 1:50 pack/card sequence: shift left",
+      "locked": true,
+      "userSpecified": true
+    },
+    {
+      "start": 118,
+      "end": 133.29,
+      "centerX": 1980,
+      "note": "return to user-confirmed correct framing at 1:58",
+      "locked": true,
+      "userSpecified": true
+    }
+  ]
+}

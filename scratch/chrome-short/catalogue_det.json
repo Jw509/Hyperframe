@@ -1,0 +1,447 @@
+{
+ "source": "cards/sources/chrome/CutdownChromeMegaBox.mp4",
+ "srcW": 3840,
+ "srcH": 2160,
+ "fps": 60,
+ "dur": 133.27,
+ "note": "cx reliable from vision pass; cy approximate (verify in preview). id=comp id from comps.json (null=common, no comp). price=0 for commons.",
+ "totalCompValue": 43.69,
+ "shots": [
+  {
+   "start": 5.27,
+   "end": 9.48,
+   "label": "Cedric Tillman",
+   "id": null,
+   "price": 0,
+   "cx": 1992,
+   "cy": 1324,
+   "detected": true
+  },
+  {
+   "start": 9.82,
+   "end": 11.27,
+   "label": "Brandon Aiyuk",
+   "id": null,
+   "price": 0,
+   "cx": 1976,
+   "cy": 1304,
+   "detected": true
+  },
+  {
+   "start": 11.6,
+   "end": 12.68,
+   "label": "Pat Surtain II",
+   "id": 1,
+   "price": 5.0,
+   "cx": 1880,
+   "cy": 1580,
+   "detected": true
+  },
+  {
+   "start": 13.52,
+   "end": 16.17,
+   "label": "Breece Hall",
+   "id": 2,
+   "price": 1.69,
+   "cx": 1776,
+   "cy": 1244,
+   "detected": true
+  },
+  {
+   "start": 16.55,
+   "end": 19.48,
+   "label": "Tetairoa McMillan",
+   "id": 3,
+   "price": 1.99,
+   "cx": 2708,
+   "cy": 1280,
+   "detected": true
+  },
+  {
+   "start": 19.65,
+   "end": 22.0,
+   "label": "Pat Bryant",
+   "id": 4,
+   "price": 1.49,
+   "cx": 3572,
+   "cy": 840,
+   "detected": true
+  },
+  {
+   "start": 22.43,
+   "end": 23.22,
+   "label": "(sealed pack)",
+   "id": null,
+   "price": 0,
+   "cx": 2064,
+   "cy": 688,
+   "detected": true
+  },
+  {
+   "start": 24.15,
+   "end": 25.4,
+   "label": "(stack fan)",
+   "id": null,
+   "price": 0,
+   "cx": 2224,
+   "cy": 968,
+   "detected": true
+  },
+  {
+   "start": 25.5,
+   "end": 26.15,
+   "label": "Christian Kirk",
+   "id": null,
+   "price": 0,
+   "cx": 1992,
+   "cy": 952,
+   "detected": true
+  },
+  {
+   "start": 26.47,
+   "end": 28.83,
+   "label": "Josiah Downs",
+   "id": null,
+   "price": 0,
+   "cx": 1980,
+   "cy": 984,
+   "detected": true
+  },
+  {
+   "start": 29.02,
+   "end": 32.07,
+   "label": "Saquon Barkley",
+   "id": 5,
+   "price": 0.99,
+   "cx": 2328,
+   "cy": 948,
+   "detected": true
+  },
+  {
+   "start": 32.22,
+   "end": 33.32,
+   "label": "Romeo Doubs",
+   "id": 6,
+   "price": 1.99,
+   "cx": 1912,
+   "cy": 1124,
+   "detected": true
+  },
+  {
+   "start": 33.68,
+   "end": 35.85,
+   "label": "Quinn Ewers",
+   "id": null,
+   "price": 0,
+   "cx": 2280,
+   "cy": 1156,
+   "detected": true
+  },
+  {
+   "start": 36.1,
+   "end": 37.05,
+   "label": "David Montgomery",
+   "id": 7,
+   "price": 1.79,
+   "cx": 2284,
+   "cy": 1244,
+   "detected": true
+  },
+  {
+   "start": 39.55,
+   "end": 41.25,
+   "label": "Kolton Miller",
+   "id": null,
+   "price": 0,
+   "cx": 1784,
+   "cy": 880,
+   "detected": true
+  },
+  {
+   "start": 42.0,
+   "end": 44.17,
+   "label": "Jalen Coker",
+   "id": null,
+   "price": 0,
+   "cx": 1748,
+   "cy": 988,
+   "detected": true
+  },
+  {
+   "start": 44.37,
+   "end": 46.37,
+   "label": "Keenan Allen",
+   "id": null,
+   "price": 0,
+   "cx": 1776,
+   "cy": 1132,
+   "detected": true
+  },
+  {
+   "start": 46.53,
+   "end": 50.12,
+   "label": "Xavier Legette",
+   "id": 8,
+   "price": 1.49,
+   "cx": 1688,
+   "cy": 1036,
+   "detected": true
+  },
+  {
+   "start": 50.37,
+   "end": 53.12,
+   "label": "Emery Jones Jr",
+   "id": null,
+   "price": 0,
+   "cx": 1780,
+   "cy": 1000,
+   "detected": true
+  },
+  {
+   "start": 53.25,
+   "end": 55.83,
+   "label": "Mason Taylor",
+   "id": 9,
+   "price": 1.99,
+   "cx": 1768,
+   "cy": 1396,
+   "detected": true
+  },
+  {
+   "start": 56.15,
+   "end": 59.13,
+   "label": "Aaron Rodgers",
+   "id": null,
+   "price": 0,
+   "cx": 2340,
+   "cy": 1092,
+   "detected": true
+  },
+  {
+   "start": 59.47,
+   "end": 61.23,
+   "label": "Puka Nacua (Playoffs)",
+   "id": null,
+   "price": 0,
+   "cx": 2008,
+   "cy": 968,
+   "detected": true
+  },
+  {
+   "start": 61.48,
+   "end": 63.8,
+   "label": "Chris Boswell",
+   "id": 11,
+   "price": 1.27,
+   "cx": 1828,
+   "cy": 1056,
+   "detected": true
+  },
+  {
+   "start": 64.07,
+   "end": 69.47,
+   "label": "Tyler Warren",
+   "id": 12,
+   "price": 2.25,
+   "cx": 1952,
+   "cy": 1144,
+   "twoUp": {
+    "id": 13,
+    "label": "Tyler Shough",
+    "price": 1.0,
+    "from": 66.5
+   },
+   "detected": true
+  },
+  {
+   "start": 69.7,
+   "end": 71.33,
+   "label": "Walter Nolen",
+   "id": 14,
+   "price": 1.59,
+   "cx": 2000,
+   "cy": 944,
+   "detected": true
+  },
+  {
+   "start": 71.48,
+   "end": 74.3,
+   "label": "D'Andre Swift",
+   "id": null,
+   "price": 0,
+   "cx": 2068,
+   "cy": 1084,
+   "detected": true
+  },
+  {
+   "start": 74.6,
+   "end": 77.7,
+   "label": "Grant Delpit",
+   "id": null,
+   "price": 0,
+   "cx": 3108,
+   "cy": 1096,
+   "detected": true
+  },
+  {
+   "start": 77.83,
+   "end": 80.63,
+   "label": "Brock Bowers",
+   "id": 15,
+   "price": 2.99,
+   "cx": 1736,
+   "cy": 1168,
+   "detected": true
+  },
+  {
+   "start": 80.95,
+   "end": 84.82,
+   "label": "Isiah Pacheco",
+   "id": 16,
+   "price": 1.75,
+   "cx": 3256,
+   "cy": 872,
+   "detected": true
+  },
+  {
+   "start": 85.17,
+   "end": 88.28,
+   "label": "Jets common",
+   "id": null,
+   "price": 0,
+   "cx": 1756,
+   "cy": 1116,
+   "detected": true
+  },
+  {
+   "start": 88.3,
+   "end": 89.05,
+   "label": "Harold Fannin Jr",
+   "id": 17,
+   "price": 2.0,
+   "cx": 2416,
+   "cy": 1088,
+   "detected": true
+  },
+  {
+   "start": 92.57,
+   "end": 95.55,
+   "label": "Travis Etienne",
+   "id": null,
+   "price": 0,
+   "cx": 2140,
+   "cy": 1020,
+   "detected": true
+  },
+  {
+   "start": 95.63,
+   "end": 97.02,
+   "label": "Raheem Mostert",
+   "id": null,
+   "price": 0,
+   "cx": 2004,
+   "cy": 780,
+   "detected": true
+  },
+  {
+   "start": 97.57,
+   "end": 100.32,
+   "label": "Puka Nacua",
+   "id": 10,
+   "price": 1.65,
+   "cx": 2460,
+   "cy": 692,
+   "detected": true
+  },
+  {
+   "start": 100.57,
+   "end": 102.92,
+   "label": "Trevor Lawrence",
+   "id": 18,
+   "price": 1.4,
+   "cx": 2752,
+   "cy": 1072,
+   "detected": true
+  },
+  {
+   "start": 103.23,
+   "end": 104.48,
+   "label": "Savion Williams",
+   "id": null,
+   "price": 0,
+   "cx": 2304,
+   "cy": 848,
+   "detected": true
+  },
+  {
+   "start": 105.23,
+   "end": 106.1,
+   "label": "RJ Harvey",
+   "id": 19,
+   "price": 2.5,
+   "cx": 2920,
+   "cy": 572,
+   "detected": true
+  },
+  {
+   "start": 110.88,
+   "end": 113.0,
+   "label": "Jeremy Ruckert",
+   "id": null,
+   "price": 0,
+   "cx": 1864,
+   "cy": 904,
+   "detected": true
+  },
+  {
+   "start": 113.3,
+   "end": 116.4,
+   "label": "Mike Evans",
+   "id": null,
+   "price": 0,
+   "cx": 3440,
+   "cy": 1516,
+   "detected": true
+  },
+  {
+   "start": 116.65,
+   "end": 119.15,
+   "label": "Cam Ward",
+   "id": 20,
+   "price": 1.29,
+   "cx": 3464,
+   "cy": 1636,
+   "detected": true
+  },
+  {
+   "start": 119.52,
+   "end": 122.65,
+   "label": "Jordan Davis",
+   "id": 21,
+   "price": 1.79,
+   "cx": 1992,
+   "cy": 1408,
+   "detected": true
+  },
+  {
+   "start": 122.92,
+   "end": 126.9,
+   "label": "Luther Burden III",
+   "id": 22,
+   "price": 0.99,
+   "cx": 2372,
+   "cy": 1476,
+   "detected": true
+  },
+  {
+   "start": 127.03,
+   "end": 133.27,
+   "label": "Quinshon Judkins",
+   "id": 23,
+   "price": 2.8,
+   "cx": 2096,
+   "cy": 988,
+   "detected": true
+  }
+ ]
+}

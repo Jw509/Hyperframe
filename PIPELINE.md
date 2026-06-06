@@ -27,6 +27,26 @@ Do not render calibrated sports-card Shorts from raw landscape footage. Do not t
 
 ---
 
+## Card centering — what works vs what failed (2026-06-05, Chrome Mega Box)
+
+**RULE: do NOT auto-center/track cards on busy-parallel card-opening footage. The USER reframes/tracks the cards himself and exports a card-centered portrait video; the AI's job is overlays only (comps, running total, ROI recap) + keeping the user's cut.**
+
+- **Reference for the correct "centered on the card" look:** `cards/sources/chrome/Choopedownportrait tracked2.mp4` (2160×3840, card centered + large, filling the frame). Use it as the target whenever the user asks to center on cards.
+- **MASTER card-location image (the centering target):** `briefs/catalogs/chrome-megabox-centering-master.png` — a frame from the user-tracked video with the target box + center crosshair drawn on. For this **"zoomed-in" YouTube-Short style**: card **centered horizontally (~49%)**, **vertical center ~52%**, card fills **~70% of frame width** (red box). Match new centering work to this image.
+- **Why auto-centering failed here:** the Mega Box host moves each card around (different spot AND distance per card, sometimes within a pack), plus busy refractor/X-fractor interiors, a parked card-stack in a corner, and two hands. Every detector (color-blob, hand-adjacency, sharpness, CSRT tracking, contour/rectangle) grabbed the wrong object; by-eye center reads drift ±150–200px. Per-frame tracking = nauseating; single static = cards off; per-card = "snapping". (Full post-mortem: `memory/lesson_card_centering.md` + `scratch/chrome-short/AUDIT.md` for the card list.)
+- **Contrast:** select / bowman / chrome-portrait worked with a single static `X(t)` offset because **those hosts held every card in the same spot**. Don't assume that holds for a new host — check, and if not, hand the centering back to the user.
+- **Resolution:** a 9:16 slice of 16:9 4K is ~1215px wide natively → export 1080×1920 (downscale, no upscale). Only output 2160×3840 when the user supplies a true 4K-portrait export to overlay on (as with `Choopedownportrait tracked2.mp4`).
+- **Also:** READ all of `AGENTS.md`, `AGENT_HARNESS.md`, the chrome handoff, and this file fully before starting — don't grep. The method was already documented.
+
+### Comp / overlay placement for the "zoomed-in" Short style (LOCKED 2026-06-05)
+When the card is centered + large (fills the frame, as in the master image above), the select-style right-mid sale card **clips the card's top-right corner**. Correct placement for this style:
+- **Comp chip → TOP-RIGHT CORNER**, raised, never covering the card. In the 1080-wide composition: `.sale-card { right: 6px; top: 132px; width: 202px; }` (lands in the clear mat to the right of the center-left card). On 2160×3840 these scale ×2.
+- **Running box-value tracker → top-left**; **recap (cost / value / profit-loss + ROI) → center** at the end.
+- Placement is footage-dependent: **big center-left cards → top-right corner; smaller/centered cards (select/bowman) → right-mid.** Always verify with a footprint mockup over several comped cards before rendering.
+- Build: `node scratch/chrome-short/gen_final_html.mjs` → `cards/compositions/final-chrome.html`; render `--resolution portrait-4k --fps 60 --quality high`. Overlay source must be an h264 transcode (`usertracked-h264.mp4`) — Chrome won't decode the HEVC export.
+
+---
+
 ## Setup (new machine)
 
 This repo holds the **pipeline code only** — the heavy source footage and renders are gitignored. After cloning, drop your own source video into the matching folders (`EditHyper/<slug>.mp4`, `cards/sources/<slug>/`).

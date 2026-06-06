@@ -1,0 +1,1 @@
+ffmpeg -y -i "cards/sources/chrome/CutdownChromeMegaBox.mp4" -vf "sendcmd=f='scratch/chrome-short/track_cmds.txt',crop=1216:2160:0:0,scale=2160:3840:flags=lanczos" -c:v libx264 -preset medium -crf 16 -pix_fmt yuv420p -movflags +faststart -an "cards/sources/chrome/chrome-tracked-4k.mp4"
