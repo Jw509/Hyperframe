@@ -233,6 +233,38 @@
         letter-spacing: -3px;
         text-shadow: 0 4px 24px rgba(74, 222, 128, 0.5);
       }
+
+      /* Full-frame black behind the recap (45s → end): sits above the footage
+         and below the recap card so the results card reads on clean black. */
+      .recap-blackout {
+        position: absolute;
+        inset: 0;
+        background: #000000;
+        opacity: 0;
+      }
+
+      /* Opening hook caption — bold white with a heavy black outline
+         (classic short-form caption look). Sits in the open upper area over
+         the intro so it clears the hands/pack. On screen for the first 3s.
+         Centered horizontally via GSAP xPercent (keeps the scale centered). */
+      .hook-caption {
+        position: absolute;
+        top: 300px;
+        left: 50%;
+        width: 880px;
+        text-align: center;
+        text-wrap: balance;
+        font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 800;
+        font-size: 82px;
+        line-height: 1.08;
+        letter-spacing: -1px;
+        color: #ffffff;
+        -webkit-text-stroke: 10px #000000;
+        paint-order: stroke fill;
+        text-shadow: 0 5px 14px rgba(0, 0, 0, 0.5);
+        opacity: 0;
+      }
     </style>
   </head>
   <body>
@@ -255,6 +287,9 @@
         src="../sources/selecthangerpack2024/selecthangerpack2024-cut.mp4"
       ></video>
 
+      <!-- Opening hook caption — first 3 seconds. -->
+      <div id="hook-caption" class="hook-caption clip" data-start="0" data-duration="3.0" data-track-index="13">Zebra Hit in Select 2024 Hanger?!?</div>
+
       <!-- Reveal 1: 0:17 → $3.25 / maye.png -->
       <div id="title-1-card" class="sale-card clip" data-start="5.80" data-duration="2.50" data-track-index="1">
         <div class="sale-card__comp">
@@ -264,8 +299,8 @@
         <div class="sale-card__value">$3.25</div>
       </div>
 
-      <!-- Reveal 2: 0:29 → $25 / pq.png (money shot, pan) -->
-      <div id="title-2-card" class="sale-card clip" data-start="10.70" data-duration="4.70" data-track-index="2" data-pan-y="80">
+      <!-- Reveal 2: 0:29 → $25 / pq.png (money shot) -->
+      <div id="title-2-card" class="sale-card clip" data-start="10.70" data-duration="4.70" data-track-index="2">
         <div class="sale-card__comp">
           <img src="../comps/selecthangerpack2024-trimmed/pq.png" alt="comp" />
         </div>
@@ -291,8 +326,8 @@
         <div class="sale-card__value">$1.89</div>
       </div>
 
-      <!-- Reveal 5: 1:17 → $1.89 / ba.png (severe — pan + shrink) -->
-      <div id="title-5-card" class="sale-card clip" data-start="24.90" data-duration="2.50" data-track-index="5" data-pan-y="80" data-shrink="0.75">
+      <!-- Reveal 5: 1:17 → $1.89 / ba.png (severe — shrink) -->
+      <div id="title-5-card" class="sale-card clip" data-start="24.90" data-duration="2.50" data-track-index="5" data-shrink="0.75">
         <div class="sale-card__comp">
           <img src="../comps/selecthangerpack2024-trimmed/ba.png" alt="comp" />
         </div>
@@ -309,8 +344,8 @@
         <div class="sale-card__value">$0.99</div>
       </div>
 
-      <!-- Reveal 7: 1:25 → $2.99 / pmo.png (severe — pan + shrink) -->
-      <div id="title-7-card" class="sale-card clip" data-start="29.80" data-duration="2.50" data-track-index="7" data-pan-y="80" data-shrink="0.75">
+      <!-- Reveal 7: 1:25 → $2.99 / pmo.png (severe — shrink) -->
+      <div id="title-7-card" class="sale-card clip" data-start="29.80" data-duration="2.50" data-track-index="7" data-shrink="0.75">
         <div class="sale-card__comp">
           <img src="../comps/selecthangerpack2024-trimmed/pmo.png" alt="comp" />
         </div>
@@ -318,8 +353,8 @@
         <div class="sale-card__value">$2.99</div>
       </div>
 
-      <!-- Reveal 8: 1:28 → $1.35 / bro.png (pan) -->
-      <div id="title-8-card" class="sale-card clip" data-start="32.10" data-duration="2.50" data-track-index="8" data-pan-y="80">
+      <!-- Reveal 8: 1:28 → $1.35 / bro.png -->
+      <div id="title-8-card" class="sale-card clip" data-start="32.10" data-duration="2.50" data-track-index="8">
         <div class="sale-card__comp">
           <img src="../comps/selecthangerpack2024-trimmed/bro.png" alt="comp" />
         </div>
@@ -360,9 +395,12 @@
         </div>
       </div>
 
-      <!-- End recap. Appears at cut t=55s — gives reveals 9/10 breathing room
-           after their overlays fade before the focus shifts here.
-           Holds until end of composition (62.00s). -->
+      <!-- Full-frame black behind the recap: fades in over 44.70→45.00, then
+           holds solid to the end. Above the footage, below the recap card. -->
+      <div id="recap-blackout" class="recap-blackout clip" data-start="44.70" data-duration="7.98" data-track-index="14"></div>
+
+      <!-- End recap. Fades/pops in at 45.0s on the black background and holds
+           to the end of the composition (52.68s). -->
       <div id="recap-card" class="recap-card clip" data-start="45.00" data-duration="7.68" data-track-index="12">
         <div class="recap-card__label">Pack cost</div>
         <div class="recap-card__value">$19.99</div>
@@ -374,27 +412,51 @@
         <div class="recap-card__profit" id="recap-profit">+$0.00</div>
       </div>
 
-      <!-- Source audio stripped from cut MP4 itself (cut-source.mjs --no-audio).
-           Cardswap SFX fires on each non-comp card flash. Music will be added
-           in post. -->
-      <audio id="sfx-cardswap-1" class="clip" data-start="8.20"  data-duration="0.53" data-track-index="13" src="../sounds/cardswap.m4a"></audio>
-      <audio id="sfx-cardswap-2" class="clip" data-start="8.80"  data-duration="0.53" data-track-index="14" src="../sounds/cardswap.m4a"></audio>
-      <audio id="sfx-cardswap-3" class="clip" data-start="42.70" data-duration="0.53" data-track-index="15" src="../sounds/cardswap.m4a"></audio>
-      <audio id="sfx-cardswap-4" class="clip" data-start="43.30" data-duration="0.53" data-track-index="16" src="../sounds/cardswap.m4a"></audio>
+      <!-- Source audio stripped from the cut MP4 (cut-source.mjs --no-audio).
+           SFX (comp cha-ching + pack-cost sting) are mixed in post via ffmpeg
+           onto the rendered master, so this composition renders silent. The
+           cardswap/swoosh SFX was removed per request. -->
 
       <script>
         (function () {
           const IN_DUR = 0.3;
           const OUT_DUR = 0.4;
-          const PAN_IN_DUR = 0.5;
-          const PAN_OUT_DUR = 0.5;
           const tl = gsap.timeline({ paused: true });
 
-          // Source video pre-zoomed for vertical pan room.
+          // Source video statically zoomed in 15% for tighter, consistent
+          // card framing. No motion — the footage stays fixed in position.
           gsap.set("#source-video", {
             scale: 1.15,
             transformOrigin: "center center",
           });
+
+          // Opening hook caption (0–3s): quick pop-in, hold, then fade out
+          // before the first reveal. Centered via xPercent so the scale-pop
+          // stays centered horizontally.
+          gsap.set("#hook-caption", {
+            xPercent: -50,
+            transformOrigin: "center center",
+          });
+          tl.fromTo(
+            "#hook-caption",
+            { opacity: 0, scale: 0.85 },
+            { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(1.5)" },
+            0.1,
+          );
+          tl.to(
+            "#hook-caption",
+            { opacity: 0, duration: 0.35, ease: "power2.in" },
+            2.65,
+          );
+
+          // Black behind the recap (45s → end): fade the footage out to black
+          // just before the recap pops in, then hold black to the end.
+          tl.fromTo(
+            "#recap-blackout",
+            { opacity: 0 },
+            { opacity: 1, duration: 0.3, ease: "power2.out" },
+            44.70,
+          );
 
           // Sale cards live at the right edge — no horizontal centering.
           // Scale-origin pinned to the top-right so data-shrink reduces
@@ -424,23 +486,6 @@
               el,
               { x: 320, opacity: 0, duration: OUT_DUR, ease: "power2.in" },
               start + IN_DUR + hold,
-            );
-          });
-
-          // Source-video pan keyframes for problem reveals.
-          document.querySelectorAll(".sale-card.clip[data-pan-y]").forEach((el) => {
-            const start = Number(el.getAttribute("data-start"));
-            const dur = Number(el.getAttribute("data-duration"));
-            const panY = Number(el.getAttribute("data-pan-y"));
-            tl.to(
-              "#source-video",
-              { y: panY, duration: PAN_IN_DUR, ease: "power2.inOut" },
-              Math.max(0, start - 0.3),
-            );
-            tl.to(
-              "#source-video",
-              { y: 0, duration: PAN_OUT_DUR, ease: "power2.inOut" },
-              start + dur + 0.1,
             );
           });
 

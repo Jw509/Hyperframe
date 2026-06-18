@@ -1,0 +1,28 @@
+{
+  "slug": "chrome-megabox-commons-1p5x-sfx-v3",
+  "timeline": "rendered-output",
+  "sourceRender": "cards/renders/chrome/final-comps-4k-commons-1p5x-sfx.mp4",
+  "outputRender": "cards/renders/chrome/final-comps-4k-commons-1p5x-sfx-v3.mp4",
+  "instructions": [
+    {
+      "operation": "set_sfx",
+      "sound": "cards/sounds/packcostsound.m4a",
+      "outputSeconds": 3.7,
+      "note": "Play when the Box cost overlay appears."
+    },
+    {
+      "operation": "replace_pack_transition_sfx",
+      "sound": "cards/sounds/cardswap.m4a",
+      "outputSeconds": [
+        7.554333,
+        23.554333,
+        37.171,
+        51.287667,
+        65.287667,
+        81.904333,
+        97.571
+      ],
+      "note": "Frame-reviewed: play on the first frame where the first card of each pack appears after the fan."
+    }
+  ]
+}

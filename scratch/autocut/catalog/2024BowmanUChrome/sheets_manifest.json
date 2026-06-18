@@ -1,0 +1,99 @@
+[
+  {
+    "sheet": 1,
+    "file": "scratch/autocut/catalog/2024BowmanUChrome/sheet_01.png",
+    "layout": "TL TR / BL BR",
+    "tiles": [
+      2.27,
+      3.93,
+      7.8,
+      9.2
+    ]
+  },
+  {
+    "sheet": 2,
+    "file": "scratch/autocut/catalog/2024BowmanUChrome/sheet_02.png",
+    "layout": "TL TR / BL BR",
+    "tiles": [
+      11.2,
+      12.13,
+      13.87,
+      17.4
+    ]
+  },
+  {
+    "sheet": 3,
+    "file": "scratch/autocut/catalog/2024BowmanUChrome/sheet_03.png",
+    "layout": "TL TR / BL BR",
+    "tiles": [
+      19.13,
+      21.2,
+      22.93,
+      25.87
+    ]
+  },
+  {
+    "sheet": 4,
+    "file": "scratch/autocut/catalog/2024BowmanUChrome/sheet_04.png",
+    "layout": "TL TR / BL BR",
+    "tiles": [
+      27.13,
+      28.27,
+      29.87,
+      31.13
+    ]
+  },
+  {
+    "sheet": 5,
+    "file": "scratch/autocut/catalog/2024BowmanUChrome/sheet_05.png",
+    "layout": "TL TR / BL BR",
+    "tiles": [
+      32.47,
+      34.47,
+      35.4,
+      36.33
+    ]
+  },
+  {
+    "sheet": 6,
+    "file": "scratch/autocut/catalog/2024BowmanUChrome/sheet_06.png",
+    "layout": "TL TR / BL BR",
+    "tiles": [
+      38.73,
+      41.67,
+      42.67,
+      43.93
+    ]
+  },
+  {
+    "sheet": 7,
+    "file": "scratch/autocut/catalog/2024BowmanUChrome/sheet_07.png",
+    "layout": "TL TR / BL BR",
+    "tiles": [
+      45.47,
+      49.33,
+      50.87,
+      53.33
+    ]
+  },
+  {
+    "sheet": 8,
+    "file": "scratch/autocut/catalog/2024BowmanUChrome/sheet_08.png",
+    "layout": "TL TR / BL BR",
+    "tiles": [
+      58.8,
+      59.67,
+      61.27,
+      62.93
+    ]
+  },
+  {
+    "sheet": 9,
+    "file": "scratch/autocut/catalog/2024BowmanUChrome/sheet_09.png",
+    "layout": "L->R",
+    "tiles": [
+      64.47,
+      66.47
+    ]
+  }
+]

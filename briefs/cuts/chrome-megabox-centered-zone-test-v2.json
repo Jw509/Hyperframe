@@ -1,0 +1,272 @@
+{
+  "comment": "Centered-zone test v2: visually curated card centers land at the red-box center, with reframes immediately before slide animations; no panning.",
+  "source": "cards/sources/chrome/CutdownChromeMegaBox.mp4",
+  "target": "youtube-short",
+  "referenceImage": "C:/Users/J/Pictures/Screenshots/Screenshot 2026-06-05 202819.png",
+  "referenceGuides": {
+    "left": 0.171,
+    "right": 0.821,
+    "top": 0.314,
+    "bottom": 0.813,
+    "cardCenterX": 0.496,
+    "cardCenterY": 0.564
+  },
+  "minimumCardContainment": 0.85,
+  "framingPriority": "card-center-first, then minimum containment",
+  "cardCenterSource": "scratch/chrome-short/catalogue_centered.json",
+  "reframeTiming": "immediately-before-slide",
+  "cropWidth": 1216,
+  "cropHeight": 2160,
+  "verticalPad": 700,
+  "verticalFillMode": "mirror",
+  "defaultCenterX": 1980,
+  "defaultCenterY": 1218,
+  "transitionStyle": "hard-cut",
+  "segments": [
+    {
+      "start": 0,
+      "end": 5.1499999999999995,
+      "centerX": 1980,
+      "centerY": 1218,
+      "note": "locked default framing"
+    },
+    {
+      "start": 5.1499999999999995,
+      "end": 9.4,
+      "centerX": 1720,
+      "centerY": 1050,
+      "note": "center-first card framing before slide: Cedric Tillman"
+    },
+    {
+      "start": 9.4,
+      "end": 11.19,
+      "centerX": 1800,
+      "centerY": 1050,
+      "note": "center-first card framing before slide: Brandon Aiyuk"
+    },
+    {
+      "start": 11.19,
+      "end": 12.6,
+      "centerX": 1820,
+      "centerY": 950,
+      "note": "center-first card framing before slide: Pat Surtain II"
+    },
+    {
+      "start": 12.6,
+      "end": 16.090000000000003,
+      "centerX": 1800,
+      "centerY": 1050,
+      "note": "center-first card framing before slide: Breece Hall"
+    },
+    {
+      "start": 16.090000000000003,
+      "end": 19.400000000000002,
+      "centerX": 1870,
+      "centerY": 1050,
+      "note": "center-first card framing before slide: Tetairoa McMillan"
+    },
+    {
+      "start": 19.400000000000002,
+      "end": 22.31,
+      "centerX": 1830,
+      "centerY": 1050,
+      "note": "center-first card framing before slide: Pat Bryant"
+    },
+    {
+      "start": 22.31,
+      "end": 25.38,
+      "centerX": 1980,
+      "centerY": 1218,
+      "note": "wide fan/pack framing: (sealed pack)"
+    },
+    {
+      "start": 25.38,
+      "end": 26.07,
+      "centerX": 1850,
+      "centerY": 1050,
+      "note": "center-first card framing before slide: Christian Kirk"
+    },
+    {
+      "start": 26.07,
+      "end": 33.24,
+      "centerX": 1800,
+      "centerY": 1050,
+      "note": "center-first card framing before slide: Josiah Downs"
+    },
+    {
+      "start": 33.24,
+      "end": 35.77,
+      "centerX": 1840,
+      "centerY": 1050,
+      "note": "center-first card framing before slide: Quinn Ewers"
+    },
+    {
+      "start": 35.77,
+      "end": 39.43,
+      "centerX": 1800,
+      "centerY": 1050,
+      "note": "center-first card framing before slide: David Montgomery"
+    },
+    {
+      "start": 39.43,
+      "end": 41.17,
+      "centerX": 1672,
+      "centerY": 1218,
+      "note": "approved 0:40 fan and 0:41 pack framing"
+    },
+    {
+      "start": 41.17,
+      "end": 44.09,
+      "centerX": 1860,
+      "centerY": 1050,
+      "note": "center-first card framing before slide: Jalen Coker"
+    },
+    {
+      "start": 44.09,
+      "end": 53.04,
+      "centerX": 1800,
+      "centerY": 1050,
+      "note": "center-first card framing before slide: Keenan Allen"
+    },
+    {
+      "start": 53.04,
+      "end": 55.75,
+      "centerX": 1690,
+      "centerY": 1050,
+      "note": "center-first card framing before slide: Mason Taylor"
+    },
+    {
+      "start": 55.75,
+      "end": 59.050000000000004,
+      "centerX": 1800,
+      "centerY": 1050,
+      "note": "center-first card framing before slide: Aaron Rodgers"
+    },
+    {
+      "start": 59.050000000000004,
+      "end": 61.15,
+      "centerX": 1870,
+      "centerY": 1050,
+      "note": "center-first card framing before slide: Puka Nacua (Playoffs)"
+    },
+    {
+      "start": 61.15,
+      "end": 69.39,
+      "centerX": 1800,
+      "centerY": 1050,
+      "note": "center-first card framing before slide: Chris Boswell"
+    },
+    {
+      "start": 69.39,
+      "end": 71.25,
+      "centerX": 1770,
+      "centerY": 1050,
+      "note": "center-first card framing before slide: Walter Nolen"
+    },
+    {
+      "start": 71.25,
+      "end": 84.74,
+      "centerX": 1800,
+      "centerY": 1050,
+      "note": "center-first card framing before slide: D'Andre Swift"
+    },
+    {
+      "start": 84.74,
+      "end": 88.2,
+      "centerX": 1870,
+      "centerY": 1050,
+      "note": "center-first card framing before slide: Jets common"
+    },
+    {
+      "start": 88.2,
+      "end": 89.3,
+      "centerX": 1800,
+      "centerY": 980,
+      "note": "center-first card framing before slide: Harold Fannin Jr"
+    },
+    {
+      "start": 89.3,
+      "end": 92.44999999999999,
+      "centerX": 1750,
+      "centerY": 1218,
+      "note": "approved 1:30 and 1:35 pack framing"
+    },
+    {
+      "start": 92.44999999999999,
+      "end": 95.47,
+      "centerX": 1870,
+      "centerY": 1050,
+      "note": "center-first card framing before slide: Travis Etienne"
+    },
+    {
+      "start": 95.47,
+      "end": 96.94,
+      "centerX": 1800,
+      "centerY": 1050,
+      "note": "center-first card framing before slide: Raheem Mostert"
+    },
+    {
+      "start": 96.94,
+      "end": 100.24,
+      "centerX": 1850,
+      "centerY": 1050,
+      "note": "center-first card framing before slide: Puka Nacua"
+    },
+    {
+      "start": 100.24,
+      "end": 102.84,
+      "centerX": 1870,
+      "centerY": 1050,
+      "note": "center-first card framing before slide: Trevor Lawrence"
+    },
+    {
+      "start": 102.84,
+      "end": 107.75,
+      "centerX": 1750,
+      "centerY": 1050,
+      "note": "center-first card framing before slide: Savion Williams"
+    },
+    {
+      "start": 107.75,
+      "end": 110.75999999999999,
+      "centerX": 1800,
+      "centerY": 1218,
+      "note": "approved 1:48 fan and 1:50 pack framing"
+    },
+    {
+      "start": 110.75999999999999,
+      "end": 112.92,
+      "centerX": 1800,
+      "centerY": 980,
+      "note": "center-first card framing before slide: Jeremy Ruckert"
+    },
+    {
+      "start": 112.92,
+      "end": 116.32000000000001,
+      "centerX": 1850,
+      "centerY": 980,
+      "note": "center-first card framing before slide: Mike Evans"
+    },
+    {
+      "start": 116.32000000000001,
+      "end": 118,
+      "centerX": 1800,
+      "centerY": 1050,
+      "note": "center-first card framing before slide: Cam Ward"
+    },
+    {
+      "start": 118,
+      "end": 119.07000000000001,
+      "centerX": 1980,
+      "centerY": 1218,
+      "note": "approved return to correct framing at 1:58"
+    },
+    {
+      "start": 119.07000000000001,
+      "end": 133.29,
+      "centerX": 1800,
+      "centerY": 1050,
+      "note": "center-first card framing before slide: Jordan Davis"
+    }
+  ]
+}

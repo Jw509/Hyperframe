@@ -1,0 +1,20 @@
+{
+  "slug": "chrome-megabox-commons-1p5x-sfx-v2",
+  "timeline": "rendered-output",
+  "sourceRender": "cards/renders/chrome/final-comps-4k-commons-1p5x-sfx.mp4",
+  "outputRender": "cards/renders/chrome/final-comps-4k-commons-1p5x-sfx-v2.mp4",
+  "instructions": [
+    {
+      "operation": "set_sfx",
+      "sound": "cards/sounds/packcostsound.m4a",
+      "outputSeconds": 3.7,
+      "note": "Play when the Box cost overlay appears."
+    },
+    {
+      "operation": "replace_pack_transition_sfx",
+      "sound": "cards/sounds/cardswap.m4a",
+      "outputSeconds": [7, 23, 37, 51, 65, 83, 97.54],
+      "note": "Play when transitioning from each card fan to the first card. Keep the already-correct pack-7 cue at approximately 1:37."
+    }
+  ]
+}

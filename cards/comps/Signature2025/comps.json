@@ -1,0 +1,19 @@
+{
+  "_comment": "Comp values read from the eBay sold-screenshots in this folder (2026-06-17). value = sold price. The CUT IS the pre-cut 54.03s portrait-4K source cards/sources/shatteredJtaylor/ShatteredJTaylor.mp4 (host's own edit, has quiet ambient audio). srcTime = on-screen time in that cut; chips fire just after each card lands. cardId maps to scratch/signature2025-card-positions.json and the catalogue scratch/autocut/catalog/Signature2025/MASTER.json. 7 of 26 card-shows have comps; the rest appear with no chip. Jonathan Taylor SHATTERED is held twice (17-20s & 23.5-26s) — chip placed on the FIRST reveal per user.",
+  "slug": "Signature2025",
+  "product": "2025 Topps Signature Class — 8-pack box (42 cards)",
+  "boxCost": 29.99,
+  "cardsValueTotal": 51.86,
+  "profit": 21.87,
+  "roiPct": 72.9,
+  "moneyShot": "Jonathan Taylor SHATTERED SP CASE HIT — $39.99",
+  "comps": [
+    { "file": "jtaylor-shattered.png", "cardId": "jtaylor",  "srcTime": 18.5,  "player": "Jonathan Taylor",             "team": "Colts",   "parallel": "Shattered SP (CASE HIT)", "serial": null, "value": 39.99, "soldDate": "2026-06-14", "hit": true, "money": true, "chipStartOutput": 19.0, "note": "#S-14; case hit; money-shot pop forced to 19.0s per user" },
+    { "file": "woodymarks.png",        "cardId": "woody",     "srcTime": 21.4,  "player": "Woody Marks",                "team": "Texans",  "parallel": "Green & Purple",          "serial": null, "value": 2.50,  "soldDate": "2026-06-05" },
+    { "file": "brashardsmith.png",     "cardId": "brashard",  "srcTime": 33.7,  "player": "Brashard Smith",             "team": "Chiefs",  "parallel": "Blue & Yellow (RC)",      "serial": null, "value": 2.50,  "soldDate": "2026-06-11", "note": "#202" },
+    { "file": "paramount.png",         "cardId": "paramount", "srcTime": 39.55, "player": "Caleb Williams / Rome Odunze","team": "Bears",   "parallel": "Paramount Pairings (dual)","serial": null, "value": 1.99,  "soldDate": "2026-06-15", "note": "#PP-1" },
+    { "file": "camward.png",           "cardId": "camward",   "srcTime": 51.6,  "player": "Cam Ward",                   "team": "Titans",  "parallel": "Class Action (RC)",       "serial": null, "value": 1.99,  "soldDate": "2026-06-15", "note": "#CA-25" },
+    { "file": "higgins.png",           "cardId": "higgins",   "srcTime": 31.45, "player": "Tee Higgins",                "team": "Bengals", "parallel": "The Pick (insert)",       "serial": null, "value": 1.49,  "soldDate": "2026-06-14", "note": "#TP-7" },
+    { "file": "walker.png",            "cardId": "walker",    "srcTime": 15.65, "player": "Jalon Walker",               "team": "Falcons", "parallel": "Class Icons",             "serial": null, "value": 1.40,  "soldDate": "2026-06-17", "note": "#CI-19" }
+  ]
+}

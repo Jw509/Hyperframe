@@ -1,0 +1,10 @@
+{
+  "_comment": "On-screen hold windows {s,e} for the 7 comped cards in the user's cut (cut == cards/sources/shatteredJtaylor/ShatteredJTaylor.mp4, 54.03s). Derived from the catalogue still-points (scratch/autocut/catalog/Signature2025). Drives comp-chip timing in scratch/gen-signature2025-overlays.mjs. Chip start = s + 0.12 unless a comp sets chipStartOutput. To retime a chip, shift BOTH s and e by the same delta. Jonathan Taylor: chip forced to 19.0s (comps.json chipStartOutput) on his FIRST hold; e padded to 21.0 so the $39.99 money-shot pop gets ~2s dwell (card actually leaves ~20.1, Woody enters ~20.9, JT reappears 23.5-26.2 left clean).",
+  "walker":    { "s": 14.7, "e": 16.7 },
+  "jtaylor":   { "s": 17.1, "e": 21.0 },
+  "woody":     { "s": 20.9, "e": 22.5 },
+  "higgins":   { "s": 30.4, "e": 32.5 },
+  "brashard":  { "s": 33.0, "e": 34.6 },
+  "paramount": { "s": 38.7, "e": 41.0 },
+  "camward":   { "s": 50.3, "e": 52.3 }
+}

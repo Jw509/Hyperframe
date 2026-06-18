@@ -1,0 +1,120 @@
+{
+  "comment": "v18 = v16 final + cold-open intro + per-hit on-screen-time extensions. Built NON-DESTRUCTIVELY by concat from the portrait working source + v16. Each insert goes at a v16 OUTPUT-timeline position that is a segment boundary BETWEEN two transitions, so both card slides stay 100% intact. Extension clips are pulled from the portrait source (same timeline as the 1080p the user references, but pre-cropped to 1080x1920 with baked pans = matches v16 framing).",
+  "base": "cards/sources/bowmanchrome2025/bowmanchrome2025-catalog-short-v16-final-transition-notes.mp4",
+  "portraitSource": "cards/sources/bowmanchrome2025/bowmanchrome2025-portrait.mp4",
+  "build": {
+    "output": "cards/sources/bowmanchrome2025/bowmanchrome2025-catalog-short-v18.mp4",
+    "generator": "scratch/gen-v18.mjs -> scratch/build-v18.sh",
+    "method": "Full reconstruction from the portrait source: rebuild every v16 segment from its cut.json src-window (so v16's own cuts/skips/slides are reproduced exactly), apply the 6 hit mods, prepend the 4 intro clips, concat-filter re-encode at 60fps. NO rendered-v16 extracts are used, so there is zero v16-OUT-time vs portrait-src-time drift anywhere (this is what caused the KC mid-slide glitch when mixing).",
+    "clips": 87,
+    "approxDuration": "3:38.6",
+    "modsApplied": "Royer ext after seg5; Altmyer ext after seg21; Norton ext after seg27; KC = replace seg33 with continuous Troy+ext (582.65-591); Gunner ext after seg55; Eric = replace seg70+seg71 with continuous Jayden+Eric (1055.387-1069)."
+  },
+  "speedPass": {
+    "reason": "Final must be UNDER 3:00 (YouTube Short). Full-speed v18 was 3:38.6.",
+    "rule": "1x (full speed) for: all 6 hits + every cardInPack===3. 1.5x for everything else (non-hit, non-3rd cards). Intro stays 1x (not a card).",
+    "note": "User assumed all hits are 3rd cards, but per catalog cardInPack: Norton(c4), Gunner(c4), Eric(c4) are 4th cards - kept 1x anyway because they are hits. KC's Troy clip (c2) is sped 1.5x and split from the KC ext (1x) at the reveal point 585.15 (same source pt, no skip). Eric merge stays 1x (Jayden is c3, Eric is hit).",
+    "generator": "scratch/gen-v18-speed.mjs -> scratch/build-v18-speed.sh",
+    "output": "cards/sources/bowmanchrome2025/bowmanchrome2025-catalog-short-v18-under3.mp4",
+    "projectedDuration": "2:59.29 (179.29s) before hit-shave; full-speed v18 retained for comparison",
+    "speedFilter": "per clip: setpts=(PTS-STARTPTS)/speed,fps=60,setsar=1 (drops frames to hold 60fps; no audio)",
+    "hitShave": "Trimmed the TAIL of each hit's extension to bank time for the end recap + pack-return room. Royer ext 174->172 (-2s total; the extra 1s lets the recap start at video-end so the final card Jaden Nixon is fully visible). Norton 424->423, KC 591->590, Gunner 842->841, Eric 1069->1068. Luke Altmyer NOT shaved. Under-3 cut now 2:53.29.",
+    "positionsExport": "gen-v18-speed.mjs also writes scratch/v18-card-positions.json from the SAME clip list it renders -> overlay chip timing always matches the cut (single source of truth)."
+  },
+  "render": { "fps": 60, "width": 1080, "height": 1920, "audio": false, "vcodec": "libx264", "crf": 18 },
+  "renderNotes": "DRIFT WARNING: do NOT splice the portrait source onto a v16 extract addressed by computed OUT-time in the MIDDLE of a slide motion — accumulated frame-rounding between v16's real frames and computed OUT-time causes a few-frame position jump (hit on KC at first pass). Where an extension is continuous with the transition-IN slide (Royer, KC), pull [transition-in card's whole segment + extension] as ONE continuous portrait extract so the slide->reveal->hold never crosses a splice. Held-to-held match cuts and hard cuts tolerate the drift fine. Cleanest full-v18 build = reconstruct entirely from the portrait source via the cut's segment src-times + extensions (avoid mixing rendered-v16 OUT-time with portrait src-time).",
+  "intro": [
+    { "src": [21, 23], "note": "sealed box held up" },
+    { "src": [26, 31], "note": "opening / cutting box (1:26-1:31, extended from 26-29)" },
+    { "src": [74, 77], "note": "packs spread out (1:14-1:17)" },
+    { "src": [85, 87], "note": "packs in hand (1:25-1:27)" }
+  ],
+  "overlays": {
+    "builtOn": "cards/sources/bowmanchrome2025/bowmanchrome2025-catalog-short-v18-under3.mp4 (the 2:54 speed cut)",
+    "composition": "cards/compositions/final-bowmanchrome2025.html",
+    "generator": "scratch/gen-bowman-overlays.mjs (adapts scratch/chrome-short/gen_final_html.mjs)",
+    "dataFiles": "cards/comps/bowmanchrome2025/comps.json (values+mapping), scratch/v18-card-positions.json (per-card output times)",
+    "render": "npx hyperframes render cards --composition compositions/final-bowmanchrome2025.html --resolution portrait --fps 60 --quality high (renders 180.000s). FINAL deliverable = that output trimmed (lossless -c copy) to 178.9s so it is UNDER 3:00 -> cards/renders/bowmanchrome2025/bowmanchrome2025-v18-final.mp4. NOTE: composition data-duration is 180.0; if re-rendering, set it to ~178.9 (or shift RECAP_START earlier ~171.5 for more recap hold) to land under 3:00 directly.",
+    "style": "Chrome pattern: per-card comp chip (eBay screenshot + bold value, NO 'Recent sale' label per screenshot-conveys-context rule) animating top-right; running box-value tracker top-left; center profit/loss recap at end. Money-shot (Gunner Dean's List $19.98) pops + gold value.",
+    "numbers": "23 comps, total $94.08 vs $209.99 = -$115.91 (-55.2% ROI = LOSS).",
+    "added2026-06-07b": "rjmar.png -> card-051 RJ Maryland Refractor (Sold $0.99, 1:47); ltb.png -> card-043 Alonza Barnett Lettered Up patch (Sold $1.75, 1:34). Wisner chip nudged earlier (chipStartOutput 135.1). Gunner card-018 reveal moved 0.5s earlier in the CUT (gen-v18-speed: Dawson seg16 hold trimmed -0.75s src + Gunner seg17 start extended -0.75s src; net 0 so Van Buren+after unchanged).",
+    "labels": "Per-comp optional 'label' field renders a small amber uppercase tag above the value. Used for barnesshimmer (card-003, 0:16 Barnes Shimmer Refractor) = 'Closest comp' because it's an eBay LISTING ($1.25 Buy-It-Now), not a confirmed sale. Sale comps have no label (the screenshot's 'Sold' conveys it). barnesxfractor (X-Fractor $0.99 sale) moved to card-015 (0:38 Barnes).",
+    "dupNote": "Duplicate-player comps placed per user review 2026-06-07: Baugh->card-047, Katin->card-022, Hill->card-059, Wisner->card-063; Gunner SWAP (Acropolis $3->card-075 @2:46, Playbook $0.99->card-018 @0:43). Most land on 3rd-card (1x) instances so the chip lingers. Total unaffected ($90.09).",
+    "ericChip": "Eric comp uses chipStartOutput=153.5 (2:33.5) so it pops on Eric, not the Jayden lead-in of the merged clip.",
+    "endScreen": "RECAP_START=173.28 = video end (after Royer's extra -1s) so Jaden Nixon (final card, 2:52.3-2:53.3) is fully visible before the black recap. Composition DURATION=178.9 (2:58.9, no trim needed).",
+    "placement": "chip right:12 top:92 width:230 (clears the centered cards - verified via ffmpeg footprint mockup before render, per PIPELINE rule)."
+  },
+  "sfx": {
+    "status": "LOCKED 2026-06-07",
+    "finalDeliverable": "cards/renders/bowmanchrome2025/bowmanchrome2025-v18-sfx.mp4 (cuts + overlays + SFX, 2:58.9, under 3:00)",
+    "method": "ffmpeg mix onto the silent overlay render (video stream copied). gen-sfx.mjs -> build-sfx.sh.",
+    "mapping": "cardswap swoosh ONLY on pack changes (cardInPack===1, ~20); cardmoneysound cha-ching on all 23 comp pops; packcostsound cost sting ONCE at the box-cost price-overlay entrance (10s). Recap silent.",
+    "levels": "swap 0.45, money 0.80, cost 0.85; alimiter 0.95",
+    "trackerMove": "box-cost tracker overlay moved 3.5s -> 10s (TRACK_START in gen-bowman-overlays.mjs) to sync with the cost sting; required an overlay re-render.",
+    "introReframe": "Intro 'packs spread' clip (output 7-10s) was framed too far left; re-cropped from the LANDSCAPE source (74-77s, scale=-2:1920 crop offset 1069) to center the box, spliced into the final 7-10s (video re-encoded crf18, audio copied; that region has no overlays/SFX so the splice is clean). Reproduce via scratch/build-reframe.sh. NOTE: post-render fix only - the cut and silent -final.mp4 still carry the old framing; if the full pipeline is re-rendered, re-run build-reframe.sh as the last step."
+  },
+  "inserts": [
+    {
+      "status": "locked",
+      "hit": "Joe Royer",
+      "cardId": "card-007",
+      "atV16Out": 12.950,
+      "between": ["Quinton Martin Jr. -> Joe Royer", "Joe Royer -> Aidan Chiles"],
+      "src": [168, 174],
+      "srcLabel": "2:48-2:54",
+      "note": "Royer gold sparkle refractor held; near-continuous with Quinton's reveal slide. Approved 2026-06-06."
+    },
+    {
+      "status": "locked",
+      "hit": "Luke Altmyer (image variation)",
+      "cardId": "card-023",
+      "atV16Out": 45.510,
+      "between": ["Katin Houser -> Luke Altmyer", "Luke Altmyer -> Eli Holstein"],
+      "src": [371, 377],
+      "srcLabel": "6:11-6:17",
+      "note": "Image-variation examination: front -> flip to back -> front, second gold card also in hand. Match-cut (footage is later in source than v16 clip)."
+    },
+    {
+      "status": "locked",
+      "hit": "Adrian Norton",
+      "cardId": "card-028",
+      "atV16Out": 57.110,
+      "between": ["Jamarion Wilcox -> Adrian Norton (NOT Kyson Brown -> Norton; Jamarion Wilcox is between Kyson Brown and Norton)", "Adrian Norton -> RJ Maryland (HARD CUT, not a slide; Norton seg27 is a plain hold)"],
+      "src": [420, 424],
+      "srcLabel": "6:59-7:04 (user said 419-424; trimmed to 420-424 to avoid 0.9s overlap with Norton's existing hold ending at src 419.93)",
+      "note": "Gold on-card autograph held steady. Inserted at seg27/28 boundary so it CONTINUES Norton's existing hold (418.43-419.93) -> one continuous ~5.5s shot, then hard cut to RJ Maryland. Both transitions intact."
+    },
+    {
+      "status": "locked",
+      "hit": "KC Concepcion",
+      "cardId": "card-035",
+      "atV16Out": 69.010,
+      "between": ["Troy Stellato -> KC Concepcion", "KC Concepcion -> Jykeem Williams (user wrote 'Hykeem'; cut/catalog spells it Jykeem)"],
+      "src": [585.15, 591],
+      "srcLabel": "9:45-9:51 (started at 585.15 = Troy's slide-end for seamless reveal continuity)",
+      "note": "KC Concepcion Texas A&M refractor. Inserted at KC seg34 start: continuous with Troy's reveal slide (Seam A), match-cut to seg34 (Seam B) - nameplates confirm SAME card both sides. Both transitions intact. Royer-pattern. RENDER: pull Troy seg33 + extension as ONE continuous portrait extract (582.65-591) to avoid mid-slide drift glitch."
+    },
+    {
+      "status": "locked",
+      "hit": "Gunner Stockton",
+      "cardId": "card-056",
+      "atV16Out": 117.010,
+      "between": ["Jovantae Barnes -> Gunner Stockton (NOT Peyton Lewis -> Gunner; Jovantae Barnes is between Peyton and Gunner)", "Gunner Stockton -> Trech Kekahuna (HARD CUT, not a slide; Gunner seg55 is a plain hold)"],
+      "src": [835, 842],
+      "srcLabel": "13:55-14:02",
+      "note": "Gunner Stockton Georgia refractor (3rd Gunner card in box = card-056). Inserted at seg55/56 boundary (after Gunner's hold, before the hard cut to Trech). ~9s gap from Gunner's v16 clip (ends src 825.85) -> held-to-held match cut, verified same card + similar position. Drift-safe (splice only at held moment + hard cut). Norton-pattern."
+    },
+    {
+      "status": "locked",
+      "hit": "Eric Singleton Jr.",
+      "cardId": "card-072",
+      "type": "REPLACE+FIX (not a simple insert)",
+      "replacesV16Out": [146.860, 152.473],
+      "between": ["Jayden Virgin-Morgan -> Eric Singleton Jr. (user said 'Malik Rutherford to Eric'; Jayden Virgin-Morgan is actually between Malik and Eric)", "Eric Singleton Jr. -> Chase Sowell (HARD CUT, unchanged)"],
+      "src": [1058, 1069],
+      "srcLabel": "17:38-17:49",
+      "action": "Replace v16's Jayden seg70 + Eric seg71 (OUT 146.860-152.473) with ONE continuous portrait extract 1055.387-1069. Jayden (1055.387-1058) is reproduced identically; the Jayden->Eric reveal then flows continuously into the extended Eric hold (1058-1069). Keep Dante->Malik before (v16) and hard-cut to Chase Sowell after (v16, unchanged).",
+      "note": "Fixes TWO problems at once: (1) the choppy reveal - v16 skipped 2.8s between Jayden's slide-reveal (src 1058) and Eric's hold clip (src 1060.8), making Eric jump in; now continuous. (2) Eric too short - was 3.0s hold, now ~11s. Pull Jayden+Eric continuous from portrait so the reveal never crosses a splice (drift-safe)."
+    }
+  ]
+}

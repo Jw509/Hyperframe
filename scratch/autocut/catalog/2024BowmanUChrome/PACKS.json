@@ -1,0 +1,49 @@
+{
+  "slug": "2024BowmanUChrome",
+  "structure": "4 cards x 7 packs = 28 (confirmed by user 2026-06-12)",
+  "hit": "Jaxson Dart (Ole Miss) RED refractor — pack 6 card 3, held ~52-58s",
+  "packs": [
+    { "pack": 1, "cards": [
+      { "cardInPack": 1, "name": "Jayden Maiava",     "school": "USC",            "time": 9.2,  "parallel": "base" },
+      { "cardInPack": 2, "name": "Ricardo Hallman",   "school": "Wisconsin",      "time": 11.2, "parallel": "base" },
+      { "cardInPack": 3, "name": "Luke Lachey",       "school": "Iowa",           "time": 13.9, "parallel": "gold-sparkle refractor" },
+      { "cardInPack": 4, "name": "DJ Lagway",         "school": "Florida",        "time": 15.5, "parallel": "base" }
+    ]},
+    { "pack": 2, "cards": [
+      { "cardInPack": 1, "name": "Quinshon Judkins",  "school": "Ohio State",     "time": 19.1, "parallel": "base" },
+      { "cardInPack": 2, "name": "Mitchell Evans",    "school": "Notre Dame",     "time": 21.2, "parallel": "base" },
+      { "cardInPack": 3, "name": "Deontae Lawson",    "school": "Alabama",        "time": 22.9, "parallel": "sparkle refractor" },
+      { "cardInPack": 4, "name": "Eugene Wilson III", "school": "Florida",        "time": 25.9, "parallel": "base" }
+    ]},
+    { "pack": 3, "cards": [
+      { "cardInPack": 1, "name": "Mason Graham",      "school": "Michigan",       "time": 28.3, "parallel": "gold-sparkle refractor" },
+      { "cardInPack": 2, "name": "Malachi Fields",    "school": "Virginia",       "time": 29.9, "parallel": "base" },
+      { "cardInPack": 3, "name": "Gavin Sawchuk",     "school": "Oklahoma",       "time": 31.1, "parallel": "base/insert" },
+      { "cardInPack": 4, "name": "Walker White",      "school": "Auburn",         "time": 32.5, "parallel": "base" }
+    ]},
+    { "pack": 4, "cards": [
+      { "cardInPack": 1, "name": "Justus Ross-Simmons", "school": "Syracuse",     "time": 35.4, "parallel": "base" },
+      { "cardInPack": 2, "name": "Jordan Hall",       "school": "Michigan State", "time": 36.3, "parallel": "base" },
+      { "cardInPack": 3, "name": "Path to Glory insert (unidentified)", "school": "?", "time": 38.0, "parallel": "Path to Glory insert", "no_comp": true },
+      { "cardInPack": 4, "name": "Amari Daniels",     "school": "Texas A&M",      "time": 38.7, "parallel": "base" }
+    ]},
+    { "pack": 5, "cards": [
+      { "cardInPack": 1, "name": "Samuel Brown",      "school": "Miami",          "time": 41.7, "parallel": "base" },
+      { "cardInPack": 2, "name": "Taurean York",      "school": "Texas A&M",      "time": 42.7, "parallel": "base" },
+      { "cardInPack": 3, "name": "CJ Donaldson Jr",   "school": "West Virginia",  "time": 43.9, "parallel": "refractor" },
+      { "cardInPack": 4, "name": "Ashton Jeanty",     "school": "Boise State",    "time": 45.5, "parallel": "base" }
+    ]},
+    { "pack": 6, "cards": [
+      { "cardInPack": 1, "name": "Treshaun Ward",     "school": "Boston College", "time": 49.3, "parallel": "base" },
+      { "cardInPack": 2, "name": "Xavier Restrepo",   "school": "Miami",          "time": 50.9, "parallel": "base" },
+      { "cardInPack": 3, "name": "Jaxson Dart",       "school": "Ole Miss",       "time": 53.3, "parallel": "RED refractor (HIT)", "hit": true },
+      { "cardInPack": 4, "name": "Dillon Thieneman",  "school": "Purdue",         "time": 58.8, "parallel": "base" }
+    ]},
+    { "pack": 7, "cards": [
+      { "cardInPack": 1, "name": "Harold Perkins Jr", "school": "LSU",            "time": 61.3, "parallel": "base" },
+      { "cardInPack": 2, "name": "Jalil Farooq",      "school": "Oklahoma",       "time": 62.9, "parallel": "base" },
+      { "cardInPack": 3, "name": "KJ Jefferson",      "school": "UCF",            "time": 64.5, "parallel": "pink refractor" },
+      { "cardInPack": 4, "name": "Evan Stewart",      "school": "Oregon",         "time": 66.5, "parallel": "gold-sparkle refractor" }
+    ]}
+  ]
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "sheet": "01",
+    "file": "scratch/autocut/catalog/Signature2025/cat_01.png",
+    "rows": [
+      "6s  |  7.25s",
+      "8.5s  |  9.75s",
+      "11s  |  12.25s"
+    ]
+  },
+  {
+    "sheet": "02",
+    "file": "scratch/autocut/catalog/Signature2025/cat_02.png",
+    "rows": [
+      "13.5s  |  14.75s",
+      "16s  |  17.25s",
+      "18.5s  |  19.75s"
+    ]
+  },
+  {
+    "sheet": "03",
+    "file": "scratch/autocut/catalog/Signature2025/cat_03.png",
+    "rows": [
+      "21s  |  22.25s",
+      "23.5s  |  24.75s",
+      "26s  |  27.25s"
+    ]
+  },
+  {
+    "sheet": "04",
+    "file": "scratch/autocut/catalog/Signature2025/cat_04.png",
+    "rows": [
+      "28.5s  |  29.75s",
+      "31s  |  32.25s",
+      "33.5s  |  34.75s"
+    ]
+  },
+  {
+    "sheet": "05",
+    "file": "scratch/autocut/catalog/Signature2025/cat_05.png",
+    "rows": [
+      "36s  |  37.25s",
+      "38.5s  |  39.75s",
+      "41s  |  42.25s"
+    ]
+  },
+  {
+    "sheet": "06",
+    "file": "scratch/autocut/catalog/Signature2025/cat_06.png",
+    "rows": [
+      "43.5s  |  44.75s",
+      "46s  |  47.25s",
+      "48.5s  |  49.75s"
+    ]
+  }
+]

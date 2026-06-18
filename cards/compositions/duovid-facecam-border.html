@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DuoVid Face-Cam Border — Chase Comet (cyan)</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      /* Transparent overlay — alpha render, composited over the footage in ffmpeg/Resolve. */
+      html, body { margin:0; padding:0; width:1920px; height:1080px; background:transparent; overflow:hidden; }
+      #root { position:relative; width:1920px; height:1080px; background:transparent; }
+
+      /* Face-cam PIP window: top-left corner.
+         Measured in the 4K source (3840x2160): x:[0,530] y:[0,460]
+         => 530/3840 = 13.802% wide, 460/2160 = 21.296% tall (resolution independent). */
+      #frame {
+        --scale: 1;                       /* 1 = 1080p preview, 2 = 4K final */
+        --t: calc(var(--scale) * 6px);    /* band thickness */
+        --r: calc(var(--scale) * 5px);    /* corner radius */
+        position:absolute; left:0; top:0;
+        width:13.802%; height:21.296%;
+        overflow:visible;                  /* always on; overlay is looped & gated in post */
+      }
+
+      /* A ring = border band only (transparent center) via the mask-composite recipe. */
+      .ring {
+        position:absolute; inset:0;
+        box-sizing:border-box;
+        border-radius: var(--r);
+        padding: var(--t);
+        -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+        -webkit-mask-composite: xor;
+        mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+        mask-composite: exclude;
+      }
+
+      /* Static cyan rail — the "track" the comet races on. SOLID. */
+      .rail { background: #2dcdff; }
+
+      /* Glow lives on a wrapper (overflow visible, no mask) so the bloom isn't clipped. */
+      .comet-wrap {
+        position:absolute; inset:0; overflow:visible;
+        filter: drop-shadow(0 0 calc(var(--t) * 1.4) rgba(0,229,255,0.95))
+                drop-shadow(0 0 calc(var(--t) * 3.2) rgba(0,190,255,0.55));
+      }
+      /* The comet: a bright head + fading tail, swept around by rotating --a. */
+      .comet {
+        --a: 0deg;
+        background: conic-gradient(from var(--a) at 50% 50%,
+          rgba(0,229,255,0)      0deg,
+          rgba(0,229,255,0)    250deg,
+          rgba(0,229,255,0.30) 300deg,
+          rgba(0,229,255,0.85) 340deg,
+          rgba(190,250,255,1)  354deg,
+          #ffffff              359deg,
+          rgba(0,229,255,0)    360deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="duovid-facecam-border" data-width="1920" data-height="1080" data-start="0" data-duration="25">
+      <div id="frame" class="clip" data-start="0" data-duration="25" data-track-index="1">
+        <div class="ring rail"></div>
+        <div class="comet-wrap"><div class="ring comet"></div></div>
+      </div>
+
+      <script>
+        (function () {
+          const tl = gsap.timeline({ paused: true });
+          const comet = document.querySelector(".comet");
+
+          const DUR = 25.0;     // composition duration = exactly ONE lap -> loops seamlessly
+          const LAP = 25.0;     // seconds per full lap of the comet (slow/ambient)
+
+          // No fade-in: this overlay is stream-looped across the whole video and gated
+          // off during fast-forwards in post, so it must wrap 0deg->360deg seamlessly.
+          // Chase: rotate the conic-gradient angle once over the duration (no repeat:-1).
+          const reps = Math.ceil(DUR / LAP) - 1;
+          const rot = { a: 0 };
+          tl.to(rot, {
+            a: 360, duration: LAP, ease: "none", repeat: reps,
+            onUpdate() { comet.style.setProperty("--a", rot.a + "deg"); }
+          }, 0);
+
+          window.__timelines = window.__timelines || {};
+          window.__timelines["duovid-facecam-border"] = tl;
+        })();
+      </script>
+    </div>
+  </body>
+</html>

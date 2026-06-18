@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title card - bowman chrome hobby box (4K)</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      html, body { margin:0; padding:0; width:2160px; height:3840px; background:transparent; overflow:hidden; font-family:"Arial Black","Helvetica Neue",Arial,sans-serif; -webkit-font-smoothing:antialiased; }
+      #root { position:relative; width:2160px; height:3840px; background:transparent; }
+
+      .title-card { position:absolute; left:50%; top:50%; width:1680px; padding:96px 88px 104px; border-radius:72px;
+        background:rgba(255,255,255,0.10); backdrop-filter:blur(60px) saturate(140%); -webkit-backdrop-filter:blur(60px) saturate(140%);
+        border:2px solid rgba(255,255,255,0.20); box-shadow:0 36px 88px rgba(0,0,0,0.38), inset 0 2px 0 rgba(255,255,255,0.24);
+        display:flex; flex-direction:column; align-items:center; opacity:0; }
+      .title-card__head { font-size:144px; font-weight:900; color:#ffffff; text-align:center; line-height:1.1; letter-spacing:-2px;
+        -webkit-text-stroke:14px #4fb0e6; paint-order:stroke fill; text-shadow:0 8px 36px rgba(0,0,0,0.5); }
+      .title-card__divider { width:62%; height:4px; background:rgba(255,255,255,0.22); margin:52px 0 48px; }
+      .title-card__sub { font-size:116px; font-weight:900; color:#ffffff; text-align:center; line-height:1.05;
+        -webkit-text-stroke:12px #4fb0e6; paint-order:stroke fill; text-shadow:0 6px 28px rgba(0,0,0,0.5); }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="title-card" data-width="2160" data-height="3840" data-start="0" data-duration="4">
+      <div id="title-card" class="title-card clip" data-start="0" data-duration="4" data-track-index="1">
+        <div class="title-card__head">Bowman Chrome 2025 Hobby Box</div>
+        <div class="title-card__divider"></div>
+        <div class="title-card__sub">Price Paid $209</div>
+      </div>
+      <script>
+        (function () {
+          const tl = gsap.timeline({ paused:true });
+          const card = document.getElementById("title-card");
+          gsap.set(card, { xPercent:-50, yPercent:-50, transformOrigin:"center center", scale:0.8, opacity:0 });
+          tl.to(card, { scale:1, opacity:1, duration:0.6, ease:"back.out(1.5)" }, 0);
+          tl.to(card, { opacity:0, scale:0.97, duration:0.45, ease:"power2.in" }, 3.55);
+          tl.set(card, { opacity:0 }, 4.0);
+          window.__timelines = window.__timelines || {};
+          window.__timelines["title-card"] = tl;
+        })();
+      </script>
+    </div>
+  </body>
+</html>

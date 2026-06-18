@@ -1,0 +1,17 @@
+{
+  "_comment": "On-screen hold windows {s,e} for the 14 comped cards in the user's cut (cut == cards/sources/2024BowmanChromeBlaster/2024BowmanUChrome.mp4, 66.56s). Derived from the card catalogue plateaus. Drives comp-chip timing in gen-2024bowmanu-overlays.mjs.",
+  "card-01": { "s": 9.1,  "e": 10.6 },
+  "card-04": { "s": 15.0, "e": 16.3 },
+  "card-05": { "s": 19.1, "e": 20.5 },
+  "card-07": { "s": 22.1, "e": 24.8 },
+  "card-09": { "s": 28.0, "e": 29.4 },
+  "card-10": { "s": 29.6, "e": 31.0 },
+  "card-14": { "s": 36.0, "e": 38.0 },
+  "card-17": { "s": 41.5, "e": 42.9 },
+  "card-20": { "s": 45.0, "e": 48.0 },
+  "card-22": { "s": 50.3, "e": 52.1 },
+  "card-23": { "s": 53.0, "e": 57.8 },
+  "card-24": { "s": 58.1, "e": 60.3 },
+  "card-26": { "s": 62.1, "e": 63.9 },
+  "card-28": { "s": 65.2, "e": 66.5 }
+}

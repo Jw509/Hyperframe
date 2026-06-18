@@ -1,0 +1,26 @@
+{
+  "_comment": "Comp values read from eBay sold-screenshots in this folder (2026-06-12). value = sold price. The CUT IS the 66s source file cards/sources/2024BowmanChromeBlaster/2024BowmanUChrome.mp4 (confirmed by user) — so srcTime = the on-screen time in the final cut; chips fire at these times. cardId maps to the catalogue card n in scratch/autocut/catalog/2024BowmanUChrome/PACKS.json. 14 of 28 cards have comps; the rest appear with no chip.",
+  "slug": "2024BowmanUChrome",
+  "product": "2024 Bowman Chrome University — blaster (4 cards x 7 packs = 28)",
+  "boxCost": 24.99,
+  "cardsValueTotal": 34.86,
+  "profit": 9.87,
+  "roiPct": 39.5,
+  "moneyShot": "Jaxson Dart Pink Lava Refractor — $15.00",
+  "comps": [
+    { "file": "dart-pinklava.png",        "cardId": "card-23", "srcTime": 53.3, "player": "Jaxson Dart",      "school": "Ole Miss",       "parallel": "Pink Lava Refractor", "serial": null, "value": 15.00, "soldDate": "2026-05-02", "hit": true, "money": true, "note": "'#6' in the title is the card number, NOT a serial (per user) — unnumbered Pink Lava" },
+    { "file": "lawson-bluerefractor.png", "cardId": "card-07", "srcTime": 22.9, "player": "Deontae Lawson",   "school": "Alabama",        "parallel": "Blue Refractor",      "serial": "/175", "value": 3.00, "soldDate": "2026-05-10", "label": "Closest comp", "note": "On-screen card is Blue Refractor /175; no /175 sale found, so using the /199 Blue Refractor sale ($3.00) as the closest comp (per user)." },
+    { "file": "maiava.png",               "cardId": "card-01", "srcTime": 9.2,  "player": "Jayden Maiava",    "school": "USC",            "parallel": "1st Bowman",          "serial": null, "value": 2.00, "soldDate": "2026-05-07" },
+    { "file": "jeanty.png",               "cardId": "card-20", "srcTime": 45.5, "player": "Ashton Jeanty",    "school": "Boise State",    "parallel": "1st Bowman",          "serial": null, "value": 1.99, "soldDate": "2026-06-10", "note": "marquee name" },
+    { "file": "lagway.png",               "cardId": "card-04", "srcTime": 15.5, "player": "DJ Lagway",        "school": "Florida",        "parallel": "1st Bowman #63",      "serial": null, "value": 1.95, "soldDate": "2026-05-16" },
+    { "file": "thieneman.png",            "cardId": "card-24", "srcTime": 58.8, "player": "Dillon Thieneman", "school": "Purdue",         "parallel": "1st Bowman #62",      "serial": null, "value": 1.65, "soldDate": "2026-06-05" },
+    { "file": "graham.png",               "cardId": "card-09", "srcTime": 28.3, "player": "Mason Graham",     "school": "Michigan",       "parallel": "base",                "serial": null, "value": 1.49, "soldDate": "2026-05-15", "note": "comp is base; on-screen looked gold-sparkle refractor — confirm" },
+    { "file": "stewart.png",              "cardId": "card-28", "srcTime": 66.5, "player": "Evan Stewart",     "school": "Oregon",         "parallel": "1st Bowman #75",      "serial": null, "value": 1.31, "soldDate": "2026-04-30", "note": "on-screen looked gold-sparkle; comp is base #75" },
+    { "file": "judkins.png",              "cardId": "card-05", "srcTime": 19.1, "player": "Quinshon Judkins", "school": "Ohio State",     "parallel": "1st Bowman #145",     "serial": null, "value": 1.25, "soldDate": "2026-05-20" },
+    { "file": "jordanhall.png",           "cardId": "card-14", "srcTime": 36.3, "player": "Jordan Hall",      "school": "Michigan State", "parallel": "1st Bowman #104",     "serial": null, "value": 1.25, "soldDate": "2026-05-02" },
+    { "file": "samuelbrown.png",          "cardId": "card-17", "srcTime": 41.7, "player": "Samuel Brown",     "school": "Miami",          "parallel": "1st Bowman #159",     "serial": null, "value": 1.00, "soldDate": "2026-06-07" },
+    { "file": "fields.png",               "cardId": "card-10", "srcTime": 29.9, "player": "Malachi Fields",   "school": "Virginia",       "parallel": "1st Bowman #124",     "serial": null, "value": 0.99, "soldDate": "2026-06-12" },
+    { "file": "restrepo-refractor.png",   "cardId": "card-22", "srcTime": 50.9, "player": "Xavier Restrepo",  "school": "Miami",          "parallel": "Refractor #187",      "serial": null, "value": 0.99, "soldDate": "2026-06-07" },
+    { "file": "farooq.png",               "cardId": "card-26", "srcTime": 62.9, "player": "Jalil Farooq",     "school": "Oklahoma",       "parallel": "insert (1-200)",      "serial": null, "value": 0.99, "soldDate": "2026-05-02" }
+  ]
+}

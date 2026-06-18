@@ -1,0 +1,488 @@
+{
+  "source": "cards/sources/chrome/usertracked-h264.mp4",
+  "output": "cards/sources/chrome/usertracked-h264-commons-1p5x.mp4",
+  "sourceDuration": 133.27,
+  "outputDuration": 118.25,
+  "commonSpeed": 1.5,
+  "spedShotCount": 19,
+  "spedShots": [
+    {
+      "label": "Cedric Tillman",
+      "sourceStart": 5.27,
+      "sourceEnd": 9.48,
+      "speed": 1.5,
+      "outputStart": 5.27,
+      "outputEnd": 8.076667
+    },
+    {
+      "label": "Brandon Aiyuk",
+      "sourceStart": 9.82,
+      "sourceEnd": 11.27,
+      "speed": 1.5,
+      "outputStart": 8.416667,
+      "outputEnd": 9.383333
+    },
+    {
+      "label": "Christian Kirk",
+      "sourceStart": 25.5,
+      "sourceEnd": 26.15,
+      "speed": 1.5,
+      "outputStart": 23.613333,
+      "outputEnd": 24.046667
+    },
+    {
+      "label": "Josiah Downs",
+      "sourceStart": 26.47,
+      "sourceEnd": 28.83,
+      "speed": 1.5,
+      "outputStart": 24.366667,
+      "outputEnd": 25.94
+    },
+    {
+      "label": "Quinn Ewers",
+      "sourceStart": 33.68,
+      "sourceEnd": 35.85,
+      "speed": 1.5,
+      "outputStart": 30.79,
+      "outputEnd": 32.236667
+    },
+    {
+      "label": "Kolton Miller",
+      "sourceStart": 39.55,
+      "sourceEnd": 41.25,
+      "speed": 1.5,
+      "outputStart": 35.936667,
+      "outputEnd": 37.07
+    },
+    {
+      "label": "Jalen Coker",
+      "sourceStart": 42,
+      "sourceEnd": 44.17,
+      "speed": 1.5,
+      "outputStart": 37.82,
+      "outputEnd": 39.266667
+    },
+    {
+      "label": "Keenan Allen",
+      "sourceStart": 44.37,
+      "sourceEnd": 46.37,
+      "speed": 1.5,
+      "outputStart": 39.466667,
+      "outputEnd": 40.8
+    },
+    {
+      "label": "Emery Jones Jr",
+      "sourceStart": 50.37,
+      "sourceEnd": 53.12,
+      "speed": 1.5,
+      "outputStart": 44.8,
+      "outputEnd": 46.633333
+    },
+    {
+      "label": "Aaron Rodgers",
+      "sourceStart": 56.15,
+      "sourceEnd": 59.13,
+      "speed": 1.5,
+      "outputStart": 49.663333,
+      "outputEnd": 51.65
+    },
+    {
+      "label": "D'Andre Swift",
+      "sourceStart": 71.48,
+      "sourceEnd": 74.3,
+      "speed": 1.5,
+      "outputStart": 64,
+      "outputEnd": 65.88
+    },
+    {
+      "label": "Grant Delpit",
+      "sourceStart": 74.6,
+      "sourceEnd": 77.7,
+      "speed": 1.5,
+      "outputStart": 66.18,
+      "outputEnd": 68.246667
+    },
+    {
+      "label": "Jets common",
+      "sourceStart": 85.17,
+      "sourceEnd": 88.28,
+      "speed": 1.5,
+      "outputStart": 75.716667,
+      "outputEnd": 77.79
+    },
+    {
+      "label": "Travis Etienne",
+      "sourceStart": 92.57,
+      "sourceEnd": 95.55,
+      "speed": 1.5,
+      "outputStart": 82.08,
+      "outputEnd": 84.066667
+    },
+    {
+      "label": "Raheem Mostert",
+      "sourceStart": 95.63,
+      "sourceEnd": 97.02,
+      "speed": 1.5,
+      "outputStart": 84.146667,
+      "outputEnd": 85.073333
+    },
+    {
+      "label": "Puka Nacua (gold, common)",
+      "sourceStart": 97.57,
+      "sourceEnd": 100.32,
+      "speed": 1.5,
+      "outputStart": 85.623333,
+      "outputEnd": 87.456667
+    },
+    {
+      "label": "Savion Williams",
+      "sourceStart": 103.23,
+      "sourceEnd": 104.48,
+      "speed": 1.5,
+      "outputStart": 90.366667,
+      "outputEnd": 91.2
+    },
+    {
+      "label": "Jeremy Ruckert",
+      "sourceStart": 110.88,
+      "sourceEnd": 113,
+      "speed": 1.5,
+      "outputStart": 97.6,
+      "outputEnd": 99.013333
+    },
+    {
+      "label": "Mike Evans",
+      "sourceStart": 113.3,
+      "sourceEnd": 116.4,
+      "speed": 1.5,
+      "outputStart": 99.313333,
+      "outputEnd": 101.38
+    }
+  ],
+  "packTransitions": [
+    {
+      "pack": 2,
+      "outputStart": 20,
+      "note": "last card to new pack"
+    },
+    {
+      "pack": 3,
+      "outputStart": 33.8,
+      "note": "last card to new pack"
+    },
+    {
+      "pack": 4,
+      "outputStart": 48,
+      "note": "last card to new pack"
+    },
+    {
+      "pack": 5,
+      "outputStart": 64,
+      "note": "moved 0.5 seconds later"
+    },
+    {
+      "pack": 6,
+      "outputStart": 79,
+      "note": "last card to new pack"
+    },
+    {
+      "pack": 7,
+      "outputStart": 92,
+      "note": "moved from about 1:35 to 1:32"
+    }
+  ],
+  "segments": [
+    {
+      "sourceStart": 0,
+      "sourceEnd": 5.27,
+      "speed": 1,
+      "outputStart": 0,
+      "outputEnd": 5.27
+    },
+    {
+      "sourceStart": 5.27,
+      "sourceEnd": 9.48,
+      "speed": 1.5,
+      "label": "Cedric Tillman",
+      "outputStart": 5.27,
+      "outputEnd": 8.076667
+    },
+    {
+      "sourceStart": 9.48,
+      "sourceEnd": 9.82,
+      "speed": 1,
+      "outputStart": 8.076667,
+      "outputEnd": 8.416667
+    },
+    {
+      "sourceStart": 9.82,
+      "sourceEnd": 11.27,
+      "speed": 1.5,
+      "label": "Brandon Aiyuk",
+      "outputStart": 8.416667,
+      "outputEnd": 9.383333
+    },
+    {
+      "sourceStart": 11.27,
+      "sourceEnd": 25.5,
+      "speed": 1,
+      "outputStart": 9.383333,
+      "outputEnd": 23.613333
+    },
+    {
+      "sourceStart": 25.5,
+      "sourceEnd": 26.15,
+      "speed": 1.5,
+      "label": "Christian Kirk",
+      "outputStart": 23.613333,
+      "outputEnd": 24.046667
+    },
+    {
+      "sourceStart": 26.15,
+      "sourceEnd": 26.47,
+      "speed": 1,
+      "outputStart": 24.046667,
+      "outputEnd": 24.366667
+    },
+    {
+      "sourceStart": 26.47,
+      "sourceEnd": 28.83,
+      "speed": 1.5,
+      "label": "Josiah Downs",
+      "outputStart": 24.366667,
+      "outputEnd": 25.94
+    },
+    {
+      "sourceStart": 28.83,
+      "sourceEnd": 33.68,
+      "speed": 1,
+      "outputStart": 25.94,
+      "outputEnd": 30.79
+    },
+    {
+      "sourceStart": 33.68,
+      "sourceEnd": 35.85,
+      "speed": 1.5,
+      "label": "Quinn Ewers",
+      "outputStart": 30.79,
+      "outputEnd": 32.236667
+    },
+    {
+      "sourceStart": 35.85,
+      "sourceEnd": 39.55,
+      "speed": 1,
+      "outputStart": 32.236667,
+      "outputEnd": 35.936667
+    },
+    {
+      "sourceStart": 39.55,
+      "sourceEnd": 41.25,
+      "speed": 1.5,
+      "label": "Kolton Miller",
+      "outputStart": 35.936667,
+      "outputEnd": 37.07
+    },
+    {
+      "sourceStart": 41.25,
+      "sourceEnd": 42,
+      "speed": 1,
+      "outputStart": 37.07,
+      "outputEnd": 37.82
+    },
+    {
+      "sourceStart": 42,
+      "sourceEnd": 44.17,
+      "speed": 1.5,
+      "label": "Jalen Coker",
+      "outputStart": 37.82,
+      "outputEnd": 39.266667
+    },
+    {
+      "sourceStart": 44.17,
+      "sourceEnd": 44.37,
+      "speed": 1,
+      "outputStart": 39.266667,
+      "outputEnd": 39.466667
+    },
+    {
+      "sourceStart": 44.37,
+      "sourceEnd": 46.37,
+      "speed": 1.5,
+      "label": "Keenan Allen",
+      "outputStart": 39.466667,
+      "outputEnd": 40.8
+    },
+    {
+      "sourceStart": 46.37,
+      "sourceEnd": 50.37,
+      "speed": 1,
+      "outputStart": 40.8,
+      "outputEnd": 44.8
+    },
+    {
+      "sourceStart": 50.37,
+      "sourceEnd": 53.12,
+      "speed": 1.5,
+      "label": "Emery Jones Jr",
+      "outputStart": 44.8,
+      "outputEnd": 46.633333
+    },
+    {
+      "sourceStart": 53.12,
+      "sourceEnd": 56.15,
+      "speed": 1,
+      "outputStart": 46.633333,
+      "outputEnd": 49.663333
+    },
+    {
+      "sourceStart": 56.15,
+      "sourceEnd": 59.13,
+      "speed": 1.5,
+      "label": "Aaron Rodgers",
+      "outputStart": 49.663333,
+      "outputEnd": 51.65
+    },
+    {
+      "sourceStart": 59.13,
+      "sourceEnd": 71.48,
+      "speed": 1,
+      "outputStart": 51.65,
+      "outputEnd": 64
+    },
+    {
+      "sourceStart": 71.48,
+      "sourceEnd": 74.3,
+      "speed": 1.5,
+      "label": "D'Andre Swift",
+      "outputStart": 64,
+      "outputEnd": 65.88
+    },
+    {
+      "sourceStart": 74.3,
+      "sourceEnd": 74.6,
+      "speed": 1,
+      "outputStart": 65.88,
+      "outputEnd": 66.18
+    },
+    {
+      "sourceStart": 74.6,
+      "sourceEnd": 77.7,
+      "speed": 1.5,
+      "label": "Grant Delpit",
+      "outputStart": 66.18,
+      "outputEnd": 68.246667
+    },
+    {
+      "sourceStart": 77.7,
+      "sourceEnd": 85.17,
+      "speed": 1,
+      "outputStart": 68.246667,
+      "outputEnd": 75.716667
+    },
+    {
+      "sourceStart": 85.17,
+      "sourceEnd": 88.28,
+      "speed": 1.5,
+      "label": "Jets common",
+      "outputStart": 75.716667,
+      "outputEnd": 77.79
+    },
+    {
+      "sourceStart": 88.28,
+      "sourceEnd": 92.57,
+      "speed": 1,
+      "outputStart": 77.79,
+      "outputEnd": 82.08
+    },
+    {
+      "sourceStart": 92.57,
+      "sourceEnd": 95.55,
+      "speed": 1.5,
+      "label": "Travis Etienne",
+      "outputStart": 82.08,
+      "outputEnd": 84.066667
+    },
+    {
+      "sourceStart": 95.55,
+      "sourceEnd": 95.63,
+      "speed": 1,
+      "outputStart": 84.066667,
+      "outputEnd": 84.146667
+    },
+    {
+      "sourceStart": 95.63,
+      "sourceEnd": 97.02,
+      "speed": 1.5,
+      "label": "Raheem Mostert",
+      "outputStart": 84.146667,
+      "outputEnd": 85.073333
+    },
+    {
+      "sourceStart": 97.02,
+      "sourceEnd": 97.57,
+      "speed": 1,
+      "outputStart": 85.073333,
+      "outputEnd": 85.623333
+    },
+    {
+      "sourceStart": 97.57,
+      "sourceEnd": 100.32,
+      "speed": 1.5,
+      "label": "Puka Nacua (gold, common)",
+      "outputStart": 85.623333,
+      "outputEnd": 87.456667
+    },
+    {
+      "sourceStart": 100.32,
+      "sourceEnd": 103.23,
+      "speed": 1,
+      "outputStart": 87.456667,
+      "outputEnd": 90.366667
+    },
+    {
+      "sourceStart": 103.23,
+      "sourceEnd": 104.48,
+      "speed": 1.5,
+      "label": "Savion Williams",
+      "outputStart": 90.366667,
+      "outputEnd": 91.2
+    },
+    {
+      "sourceStart": 104.48,
+      "sourceEnd": 110.88,
+      "speed": 1,
+      "outputStart": 91.2,
+      "outputEnd": 97.6
+    },
+    {
+      "sourceStart": 110.88,
+      "sourceEnd": 113,
+      "speed": 1.5,
+      "label": "Jeremy Ruckert",
+      "outputStart": 97.6,
+      "outputEnd": 99.013333
+    },
+    {
+      "sourceStart": 113,
+      "sourceEnd": 113.3,
+      "speed": 1,
+      "outputStart": 99.013333,
+      "outputEnd": 99.313333
+    },
+    {
+      "sourceStart": 113.3,
+      "sourceEnd": 116.4,
+      "speed": 1.5,
+      "label": "Mike Evans",
+      "outputStart": 99.313333,
+      "outputEnd": 101.38
+    },
+    {
+      "sourceStart": 116.4,
+      "sourceEnd": 133.27,
+      "speed": 1,
+      "outputStart": 101.38,
+      "outputEnd": 118.25
+    }
+  ]
+}

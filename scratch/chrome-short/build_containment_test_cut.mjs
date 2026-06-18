@@ -5,7 +5,7 @@ const catalogPath =
 const masterPath =
   process.argv[3] ?? "briefs/cuts/chrome-megabox-master-reference-v2.json";
 const outputPath =
-  process.argv[4] ?? "briefs/cuts/chrome-megabox-containment-test-v1.json";
+  process.argv[4] ?? "briefs/cuts/chrome-megabox-centered-zone-test-v3.json";
 
 const catalog = JSON.parse(fs.readFileSync(catalogPath, "utf8"));
 const master = JSON.parse(fs.readFileSync(masterPath, "utf8"));
@@ -26,7 +26,8 @@ const centerYOverrides = new Map([
 const targetCenterY = Math.round(
   master.referenceGuides.cardCenterY * master.cropHeight,
 );
-const preChangeLead = 0.12;
+const preSlideLead = 0.08;
+const preHoldLead = 0.12;
 
 const events = [
   {
@@ -69,8 +70,18 @@ const events = [
 for (const [zeroIndex, shot] of catalog.shots.entries()) {
   const shotNumber = zeroIndex + 1;
   const isWide = wideLabels.has(shot.label);
+  const previousShot = catalog.shots[zeroIndex - 1];
+  const shortCardTransition =
+    previousShot &&
+    !isWide &&
+    !wideLabels.has(previousShot.label) &&
+    shot.start - previousShot.end <= 0.9;
+  const activation = shortCardTransition
+    ? Math.max(0, previousShot.end - preSlideLead)
+    : Math.max(0, shot.start - preHoldLead);
+
   events.push({
-    time: Math.max(0, shot.start - preChangeLead),
+    time: activation,
     centerX: isWide
       ? master.defaultCenterX
       : centerXOverrides.get(shotNumber) ?? shot.cx,
@@ -79,7 +90,7 @@ for (const [zeroIndex, shot] of catalog.shots.entries()) {
       : centerYOverrides.get(shotNumber) ?? shot.cyTrack ?? shot.cy,
     note: isWide
       ? `wide fan/pack framing: ${shot.label}`
-      : `85%-containment card framing: ${shot.label}`,
+      : `center-first card framing before slide: ${shot.label}`,
     priority: isWide ? 3 : 2,
   });
 }
@@ -111,12 +122,15 @@ const segments = resolvedEvents
 
 const output = {
   comment:
-    "First 85%-containment test: every clean card hold gets one locked horizontal/vertical reframe; no panning.",
+    "Centered-zone test v3: visually corrected tracked card centers land at the red-box center, with reframes immediately before slide animations; no panning.",
   source: master.source,
   target: master.target,
   referenceImage: master.referenceImage,
   referenceGuides: master.referenceGuides,
   minimumCardContainment: 0.85,
+  framingPriority: "card-center-first, then minimum containment",
+  cardCenterSource: catalogPath,
+  reframeTiming: "immediately-before-slide",
   cropWidth: master.cropWidth,
   cropHeight: master.cropHeight,
   verticalPad: 700,

@@ -1,0 +1,397 @@
+{
+ "card-001": {
+  "s": 12,
+  "e": 13.3,
+  "name": "Junior Vandeross"
+ },
+ "card-002": {
+  "s": 13.3,
+  "e": 14.967,
+  "name": "Billy Edwards Jr."
+ },
+ "card-003": {
+  "s": 14.967,
+  "e": 17.117,
+  "name": "Jovantae Barnes"
+ },
+ "card-004": {
+  "s": 17.117,
+  "e": 18.117,
+  "name": "Jadan Baugh"
+ },
+ "card-005": {
+  "s": 18.117,
+  "e": 19.917,
+  "name": "DeSean Bishop"
+ },
+ "card-006": {
+  "s": 19.917,
+  "e": 21.35,
+  "name": "Quinton Martin Jr."
+ },
+ "card-007": {
+  "s": 21.35,
+  "e": 27.5,
+  "name": "Joe Royer"
+ },
+ "card-008": {
+  "s": 27.5,
+  "e": 28.5,
+  "name": "Aidan Chiles"
+ },
+ "card-009": {
+  "s": 28.5,
+  "e": 29.967,
+  "name": "Luke Hasz"
+ },
+ "card-010": {
+  "s": 29.967,
+  "e": 31.4,
+  "name": "Katin Houser"
+ },
+ "card-011": {
+  "s": 31.4,
+  "e": 33.85,
+  "name": "Harrison Wallace III"
+ },
+ "card-012": {
+  "s": 33.85,
+  "e": 34.85,
+  "name": "Trey'Dez Green"
+ },
+ "card-013": {
+  "s": 34.85,
+  "e": 36.283,
+  "name": "LJ Martin"
+ },
+ "card-014": {
+  "s": 36.283,
+  "e": 37.837,
+  "name": "Pofele Ashlock"
+ },
+ "card-015": {
+  "s": 37.837,
+  "e": 39.987,
+  "name": "Jovantae Barnes"
+ },
+ "card-016": {
+  "s": 39.987,
+  "e": 40.987,
+  "name": "Mario Craver"
+ },
+ "card-017": {
+  "s": 40.987,
+  "e": 42.04,
+  "name": "Dawson Pendergrass"
+ },
+ "card-018": {
+  "s": 42.04,
+  "e": 43.973,
+  "name": "Gunner Stockton"
+ },
+ "card-019": {
+  "s": 43.973,
+  "e": 46.123,
+  "name": "Michael Van Buren Jr."
+ },
+ "card-020": {
+  "s": 46.123,
+  "e": 47.123,
+  "name": "Jacory Barney Jr."
+ },
+ "card-021": {
+  "s": 47.123,
+  "e": 48.557,
+  "name": "Michael Van Buren Jr."
+ },
+ "card-022": {
+  "s": 48.557,
+  "e": 50.023,
+  "name": "Katin Houser"
+ },
+ "card-023": {
+  "s": 50.023,
+  "e": 58.173,
+  "name": "Luke Altmyer"
+ },
+ "card-024": {
+  "s": 58.173,
+  "e": 59.173,
+  "name": "Eli Holstein"
+ },
+ "card-025": {
+  "s": 59.173,
+  "e": 60.607,
+  "name": "Kevin Coleman Jr."
+ },
+ "card-026": {
+  "s": 60.607,
+  "e": 62.04,
+  "name": "Kyson Brown"
+ },
+ "card-027": {
+  "s": 62.04,
+  "e": 64.19,
+  "name": "Jamarion Wilcox"
+ },
+ "card-028": {
+  "s": 64.19,
+  "e": 68.69,
+  "name": "Adrian Norton"
+ },
+ "card-029": {
+  "s": 68.69,
+  "e": 69.623,
+  "name": "RJ Maryland"
+ },
+ "card-030": {
+  "s": 69.623,
+  "e": 71.057,
+  "name": "Anthony Hill Jr."
+ },
+ "card-031": {
+  "s": 71.057,
+  "e": 73.207,
+  "name": "Marcel Reed"
+ },
+ "card-032": {
+  "s": 73.207,
+  "e": 74.207,
+  "name": "Michael Taaffe"
+ },
+ "card-033": {
+  "s": 74.207,
+  "e": 75.673,
+  "name": "Francis Mauigoa"
+ },
+ "card-034": {
+  "s": 75.673,
+  "e": 77.34,
+  "name": "Troy Stellato"
+ },
+ "card-035": {
+  "s": 77.34,
+  "e": 84.34,
+  "name": "KC Concepcion"
+ },
+ "card-036": {
+  "s": 84.34,
+  "e": 85.34,
+  "name": "Jykeem Williams"
+ },
+ "card-037": {
+  "s": 85.34,
+  "e": 86.873,
+  "name": "Luke Wysong"
+ },
+ "card-038": {
+  "s": 86.873,
+  "e": 88.34,
+  "name": "Kaidon Salter"
+ },
+ "card-039": {
+  "s": 88.34,
+  "e": 90.54,
+  "name": "Behren Morton"
+ },
+ "card-040": {
+  "s": 90.54,
+  "e": 91.54,
+  "name": "Danny O'Neil"
+ },
+ "card-041": {
+  "s": 91.54,
+  "e": 92.973,
+  "name": "Chris Brazzell II"
+ },
+ "card-042": {
+  "s": 92.973,
+  "e": 94.407,
+  "name": "Quintrevion Wisner"
+ },
+ "card-043": {
+  "s": 94.407,
+  "e": 96.557,
+  "name": "Alonza Barnett III"
+ },
+ "card-044": {
+  "s": 96.557,
+  "e": 97.557,
+  "name": "Trey White"
+ },
+ "card-045": {
+  "s": 97.557,
+  "e": 99.157,
+  "name": "Brendon Lewis"
+ },
+ "card-046": {
+  "s": 99.157,
+  "e": 100.59,
+  "name": "LeShon Williams"
+ },
+ "card-047": {
+  "s": 100.59,
+  "e": 102.74,
+  "name": "Jadan Baugh"
+ },
+ "card-048": {
+  "s": 102.74,
+  "e": 103.74,
+  "name": "Jay Haynes"
+ },
+ "card-049": {
+  "s": 103.74,
+  "e": 105.173,
+  "name": "Nate Frazier"
+ },
+ "card-050": {
+  "s": 105.173,
+  "e": 107.24,
+  "name": "Talyn Taylor"
+ },
+ "card-051": {
+  "s": 107.24,
+  "e": 109.94,
+  "name": "RJ Maryland"
+ },
+ "card-052": {
+  "s": 109.94,
+  "e": 110.94,
+  "name": "Taylor Tatum"
+ },
+ "card-053": {
+  "s": 110.94,
+  "e": 113.14,
+  "name": "Mikey Keene"
+ },
+ "card-054": {
+  "s": 113.14,
+  "e": 114.573,
+  "name": "Peyton Lewis"
+ },
+ "card-055": {
+  "s": 114.573,
+  "e": 116.973,
+  "name": "Jovantae Barnes"
+ },
+ "card-056": {
+  "s": 116.973,
+  "e": 125.673,
+  "name": "Gunner Stockton"
+ },
+ "card-057": {
+  "s": 125.673,
+  "e": 127.107,
+  "name": "Trech Kekahuna"
+ },
+ "card-058": {
+  "s": 127.107,
+  "e": 128.54,
+  "name": "LaNorris Sellers"
+ },
+ "card-059": {
+  "s": 128.54,
+  "e": 130.69,
+  "name": "Anthony Hill Jr."
+ },
+ "card-060": {
+  "s": 130.69,
+  "e": 131.69,
+  "name": "Josh Cameron"
+ },
+ "card-061": {
+  "s": 131.69,
+  "e": 133.357,
+  "name": "Aidan Mizell"
+ },
+ "card-062": {
+  "s": 133.357,
+  "e": 135.29,
+  "name": "Diego Pavia"
+ },
+ "card-063": {
+  "s": 135.29,
+  "e": 137.44,
+  "name": "Quintrevion Wisner"
+ },
+ "card-064": {
+  "s": 137.44,
+  "e": 138.44,
+  "name": "Darian Mensah"
+ },
+ "card-065": {
+  "s": 138.44,
+  "e": 139.873,
+  "name": "Avery Johnson"
+ },
+ "card-066": {
+  "s": 139.873,
+  "e": 141.307,
+  "name": "Haynes King"
+ },
+ "card-067": {
+  "s": 141.307,
+  "e": 143.457,
+  "name": "Luke Altmyer"
+ },
+ "card-068": {
+  "s": 143.457,
+  "e": 144.457,
+  "name": "Boubacar Traore"
+ },
+ "card-069": {
+  "s": 144.457,
+  "e": 145.99,
+  "name": "Dante Moore"
+ },
+ "card-070": {
+  "s": 145.99,
+  "e": 147.723,
+  "name": "Malik Rutherford"
+ },
+ "card-072": {
+  "s": 147.723,
+  "e": 160.336,
+  "name": "Eric Singleton Jr."
+ },
+ "card-073": {
+  "s": 160.336,
+  "e": 161.536,
+  "name": "Chase Sowell"
+ },
+ "card-074": {
+  "s": 161.536,
+  "e": 163.636,
+  "name": "Jerrick Gibson"
+ },
+ "card-075": {
+  "s": 163.636,
+  "e": 165.836,
+  "name": "Gunner Stockton"
+ },
+ "card-076": {
+  "s": 165.836,
+  "e": 166.836,
+  "name": "Houston Clement"
+ },
+ "card-077": {
+  "s": 166.836,
+  "e": 168.27,
+  "name": "Nate Johnson"
+ },
+ "card-078": {
+  "s": 168.27,
+  "e": 170.136,
+  "name": "Harrison Wallace III"
+ },
+ "card-079": {
+  "s": 170.136,
+  "e": 172.286,
+  "name": "Ethan Vasko"
+ },
+ "card-080": {
+  "s": 172.286,
+  "e": 173.286,
+  "name": "Jaden Nixon"
+ }
+}

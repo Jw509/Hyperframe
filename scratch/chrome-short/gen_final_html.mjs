@@ -6,9 +6,31 @@ const COMPDIR = "cards/comps/Topps Chrome Short J1";
 const CLEAN = "cards/comps/chrome-short";
 fs.mkdirSync(CLEAN,{recursive:true});
 
+const speedCommons = process.argv.includes("--speed-commons");
+const speedTimeline = speedCommons
+  ? JSON.parse(fs.readFileSync("scratch/chrome-short/commons-1p5x-timeline.json", "utf8"))
+  : null;
+const mapSource = (seconds) => {
+  if (!speedTimeline) return seconds;
+  const segment =
+    speedTimeline.segments.find((item) => seconds >= item.sourceStart && seconds < item.sourceEnd) ??
+    speedTimeline.segments.at(-1);
+  return segment.outputStart + (seconds - segment.sourceStart) / segment.speed;
+};
+const round = (value) => +value.toFixed(2);
+const frameTime = (value) => +value.toFixed(6);
+const popupDelayById = new Map([[13, 0.5]]);
+
 const reveals = man.reveals;
 const COST = man.cost;            // 69.99
-const VIDEO = 133.27;
+const VIDEO = speedCommons ? speedTimeline.outputDuration : 133.27;
+const VIDEO_SOURCE = speedCommons
+  ? "../sources/chrome/usertracked-h264-commons-1p5x.mp4"
+  : "../sources/chrome/usertracked-h264.mp4";
+const COMPOSITION_ID = speedCommons ? "final-chrome-speed-commons" : "final-chrome";
+const OUTPUT_HTML = speedCommons
+  ? "cards/compositions/final-chrome-speed-commons.html"
+  : "cards/compositions/final-chrome.html";
 const fmt = v => "$" + v.toFixed(2);
 const moneyId = reveals.reduce((m,r)=> r.price>m.price?r:m, reveals[0]).id;  // highest comp = money shot
 
@@ -21,22 +43,37 @@ const cards = reveals.map((r,i)=>{
     img = `../comps/chrome-short/${dst}`;
   }
   const next = reveals[i+1];
-  const start = +(r.start + 0.18).toFixed(2);
-  let dur = r.end - r.start - 0.18;
+  const start = round(mapSource(r.start + 0.18) + (popupDelayById.get(r.id) ?? 0));
+  let dur = mapSource(r.end) - mapSource(r.start + 0.18);
   dur = Math.min(Math.max(dur, 1.3), 3.0);
-  if (next) dur = Math.min(dur, (next.start + 0.18) - start - 0.05);  // don't overlap next chip
+  if (next) dur = Math.min(dur, mapSource(next.start + 0.18) - start - 0.05);  // don't overlap next chip
   dur = +Math.max(dur, 1.0).toFixed(2);
   return { ...r, idx:i+1, img, start, dur, money: r.id===moneyId };
 });
 
-const RECAP_START = 130.0;
-const DURATION = 135.8;
+const TRACK_START = round(mapSource(3.7));
+const RECAP_START = round(mapSource(130.0));
+const DURATION = round(VIDEO + (135.8 - 133.27));
 const TRACK_FADE = RECAP_START - 0.4;
+const CARD_MONEY_DURATION = 0.683;
+const CARD_SWAP_DURATION = 0.521;
+const PACK_COST_DURATION = 1.171;
 
 const saleDivs = cards.map(c => `      <div id="title-${c.idx}-card" class="sale-card clip" data-start="${c.start}" data-duration="${c.dur}" data-track-index="${c.idx}"${c.money?' data-money-shot="true"':''}>
 ${c.img?`        <div class="sale-card__comp"><img src="${c.img}" alt="comp" crossorigin="anonymous" /></div>\n`:''}        <div class="sale-card__label">Recent sale</div>
         <div class="sale-card__value">${fmt(c.price)}</div>
       </div>`).join("\n");
+
+const cardMoneyAudio = speedCommons
+  ? cards.map((c, index) => `      <audio id="sfx-cardmoney-${index + 1}" class="clip" data-start="${c.start}" data-duration="${CARD_MONEY_DURATION}" data-track-index="${100 + index}" src="../sounds/cardmoneysound.m4a"></audio>`).join("\n")
+  : "";
+const cardSwapAudio = speedCommons
+  ? speedTimeline.packTransitions.map((transition, index) => `      <audio id="sfx-cardswap-pack-${transition.pack}" class="clip" data-start="${frameTime(transition.outputStart)}" data-duration="${CARD_SWAP_DURATION}" data-track-index="${200 + index}" src="../sounds/cardswap.m4a"></audio>`).join("\n")
+  : "";
+const packCostAudio = speedCommons
+  ? `      <audio id="sfx-packcost" class="clip" data-start="${TRACK_START.toFixed(2)}" data-duration="${PACK_COST_DURATION}" data-track-index="210" src="../sounds/packcostsound.m4a"></audio>`
+  : "";
+const audioDivs = [cardMoneyAudio, cardSwapAudio, packCostAudio].filter(Boolean).join("\n");
 
 const html = `<!doctype html>
 <html lang="en" data-resolution="portrait">
@@ -57,7 +94,7 @@ const html = `<!doctype html>
       .sale-card__comp img { width:100%; height:100%; object-fit:contain; display:block; }
       .sale-card__label { font-size:19px; font-weight:700; letter-spacing:4px; color:#fff; text-transform:uppercase; text-align:center; margin-top:2px; margin-bottom:8px; display:flex; align-items:center; justify-content:center; gap:7px; text-shadow:0 1px 7px rgba(0,0,0,0.55); }
       .sale-card__label::before { content:""; display:inline-block; width:7px; height:7px; border-radius:50%; background:#d4a017; box-shadow:0 0 9px rgba(212,160,23,0.75); }
-      .sale-card__value { font-size:56px; font-weight:800; color:#fff; line-height:1; letter-spacing:-2px; text-align:center; text-shadow:0 2px 12px rgba(0,0,0,0.45); }
+      .sale-card__value { font-size:56px; font-weight:800; color:#4ade80; line-height:1; letter-spacing:-2px; text-align:center; text-shadow:0 2px 12px rgba(0,0,0,0.45); }
 
       .box-tracker { position:absolute; left:40px; top:150px; width:210px; padding:14px 16px; border-radius:22px;
         background:rgba(255,255,255,0.08); backdrop-filter:blur(28px) saturate(140%); -webkit-backdrop-filter:blur(28px) saturate(140%);
@@ -82,12 +119,12 @@ const html = `<!doctype html>
     </style>
   </head>
   <body>
-    <div id="root" data-composition-id="final-chrome" data-width="1080" data-height="1920" data-start="0" data-duration="${DURATION}">
-      <video id="source-video" class="clip" data-start="0" data-duration="${VIDEO}" data-track-index="0" muted playsinline src="../sources/chrome/usertracked-h264.mp4"></video>
+    <div id="root" data-composition-id="${COMPOSITION_ID}" data-width="1080" data-height="1920" data-start="0" data-duration="${DURATION}">
+      <video id="source-video" class="clip" data-start="0" data-duration="${VIDEO}" data-track-index="0" muted playsinline src="${VIDEO_SOURCE}"></video>
 
 ${saleDivs}
 
-      <div id="box-tracker" class="box-tracker clip" data-start="3.70" data-duration="${(TRACK_FADE-3.7).toFixed(2)}" data-track-index="90">
+      <div id="box-tracker" class="box-tracker clip" data-start="${TRACK_START.toFixed(2)}" data-duration="${(TRACK_FADE-TRACK_START).toFixed(2)}" data-track-index="90">
         <div class="box-tracker__row"><div class="box-tracker__label">Box cost</div><div class="box-tracker__value box-tracker__value--cost">${fmt(COST)}</div></div>
         <div class="box-tracker__divider"></div>
         <div class="box-tracker__row"><div class="box-tracker__label">Cards pulled<br>total</div><div class="box-tracker__value box-tracker__value--total" id="box-tracker-total">$0.00</div></div>
@@ -104,6 +141,8 @@ ${saleDivs}
         <div class="recap-card__profit" id="recap-profit">+$0.00</div>
         <div class="recap-card__roi" id="recap-roi"></div>
       </div>
+
+${audioDivs}
 
       <script>
         (function () {
@@ -127,7 +166,7 @@ ${saleDivs}
 
           const tracker=document.getElementById("box-tracker");
           const totalEl=document.getElementById("box-tracker-total");
-          tl.fromTo(tracker,{x:-50,opacity:0},{x:0,opacity:1,duration:0.6,ease:"power3.out"},3.7);
+          tl.fromTo(tracker,{x:-50,opacity:0},{x:0,opacity:1,duration:0.6,ease:"power3.out"},${TRACK_START.toFixed(2)});
           const revs=Array.from(document.querySelectorAll(".sale-card.clip")).map(el=>({start:Number(el.getAttribute("data-start")),value:parseFloat(el.querySelector(".sale-card__value").textContent.replace(/[^0-9.]/g,""))||0})).sort((a,b)=>a.start-b.start);
           const cs={value:0}; let run=0;
           revs.forEach(({start,value})=>{ const nt=run+value; tl.to(cs,{value:nt,duration:0.6,ease:"power1.out",onUpdate:()=>{totalEl.textContent="$"+cs.value.toFixed(2);}},start); run=nt; });
@@ -155,13 +194,14 @@ ${saleDivs}
           rRoi.textContent=(roi>=0?"+":"")+roi.toFixed(1)+"% ROI";
 
           window.__timelines=window.__timelines||{};
-          window.__timelines["final-chrome"]=tl;
+          window.__timelines["${COMPOSITION_ID}"]=tl;
         })();
       </script>
     </div>
   </body>
 </html>
 `;
-fs.writeFileSync("cards/compositions/final-chrome.html", html);
-console.log(`wrote final-chrome.html : ${cards.length} sale cards, cost ${fmt(COST)}, total ${fmt(man.total)}, dur ${DURATION}s, money=${moneyId}`);
+fs.writeFileSync(OUTPUT_HTML, html);
+console.log(`wrote ${OUTPUT_HTML} : ${cards.length} sale cards, cost ${fmt(COST)}, total ${fmt(man.total)}, dur ${DURATION}s, money=${moneyId}`);
+if (speedCommons) console.log(`added ${cards.length} card-money cues, ${speedTimeline.packTransitions.length} pack-transition cues, and 1 pack-cost cue`);
 console.log("copied", fs.readdirSync(CLEAN).length, "comp pngs to", CLEAN);
