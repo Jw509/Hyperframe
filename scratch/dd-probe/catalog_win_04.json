@@ -1,0 +1,190 @@
+{
+  "window": "W04",
+  "sightings": [
+    {
+      "compId": "41",
+      "player": "Justin Herbert / Ladd McConkey",
+      "tStart": 180,
+      "tEnd": 182,
+      "tBest": 182,
+      "frames": ["f_0091", "f_0092"],
+      "parallelCue": "Paramount Pairings dual card, Chargers powder-blue/yellow, gold-foil bottom banner 'PARAMOUNT PAIRINGS', Topps C logo",
+      "confidence": "med",
+      "note": "Dual Chargers card; colors match Herbert/McConkey (#41) over Caleb Williams/Rome Odunze (#18). Left player QB, right player WR, both in Chargers uniforms. Alternative compId 18 if players are actually Bears."
+    },
+    {
+      "compId": "23",
+      "player": "Abdul Carter",
+      "tStart": 184,
+      "tEnd": 184,
+      "tBest": 184,
+      "frames": ["f_0093"],
+      "parallelCue": "NY Giants #51, 'ROUND 1 PICK 3', RC logo, red/maroon grayscale portrait on right half, blue/yellow left half",
+      "confidence": "med",
+      "note": "Giants #51 Round-1-Pick-3 = Abdul Carter (2025 3rd overall). This is a 'Round 1 Pick' insert, NOT the '#118 Blue & Yellow' base parallel of target 23 — parallel mismatch, but same player. Alternative compId null if we only want the exact #118 parallel."
+    },
+    {
+      "compId": null,
+      "player": "(Broncos rookie, Undrafted insert)",
+      "tStart": 186,
+      "tEnd": 186,
+      "tBest": 186,
+      "frames": ["f_0094"],
+      "parallelCue": "Denver Broncos #36, 'UNDRAFTED' insert, RC, white base design with sepia portrait",
+      "confidence": "low",
+      "note": "Broncos undrafted-rookie 'Undrafted' insert (#36). Not on target list."
+    },
+    {
+      "compId": "01",
+      "player": "Brock Bowers",
+      "tStart": 192,
+      "tEnd": 192,
+      "tBest": 192,
+      "frames": ["f_0097"],
+      "parallelCue": "PURPLE border, Raiders, 'ROUND 1 PICK 13', name 'BROCK BOWERS', serial numbered 074/100 bottom",
+      "confidence": "med",
+      "note": "Highest-value target ($10.99), likely money shot. Clearly purple-bordered Brock Bowers but this is the /100 'Round 1 Pick 13' purple, whereas target 01 reads 'Purple #34'. Same player + purple colorway; serial /100 differs from target's #34 — possible parallel mismatch but strongest available match."
+    },
+    {
+      "compId": null,
+      "player": "Sam Darnold (Seahawks)",
+      "tStart": 210,
+      "tEnd": 210,
+      "tBest": 210,
+      "frames": ["f_0106"],
+      "parallelCue": "Seattle Seahawks QB, green base design, white/green half-tone, green portrait right",
+      "confidence": "low",
+      "note": "Seahawks QB green base card (looks like Sam Darnold). Not on target list."
+    },
+    {
+      "compId": null,
+      "player": "Bo Nix (Broncos)",
+      "tStart": 212,
+      "tEnd": 212,
+      "tBest": 212,
+      "frames": ["f_0107"],
+      "parallelCue": "Denver Broncos QB, 'ROUND 1 PICK 12', white base, sepia portrait right",
+      "confidence": "low",
+      "note": "Bo Nix Broncos Round-1-Pick-12. Not on target list."
+    },
+    {
+      "compId": null,
+      "player": "Myles Garrett (Browns)",
+      "tStart": 214,
+      "tEnd": 214,
+      "tBest": 214,
+      "frames": ["f_0108"],
+      "parallelCue": "Cleveland Browns #95, white base, red/maroon portrait right",
+      "confidence": "low",
+      "note": "Browns #95 = Myles Garrett base. Not on target list."
+    },
+    {
+      "compId": null,
+      "player": "Marcus Mbow (Giants)",
+      "tStart": 216,
+      "tEnd": 218,
+      "tBest": 218,
+      "frames": ["f_0109", "f_0110"],
+      "parallelCue": "NY Giants #71 OL, 'ROUND 2 PICK 16', RC, white base, red portrait right",
+      "confidence": "low",
+      "note": "Marcus Mbow Giants Round-2-Pick RC. Not on target list. Held ~2 frames, clearest at f_0110."
+    },
+    {
+      "compId": null,
+      "player": "(Eagles rookie WR)",
+      "tStart": 220,
+      "tEnd": 222,
+      "tBest": 220,
+      "frames": ["f_0111", "f_0112"],
+      "parallelCue": "Philadelphia Eagles #12, 'ROUND 5 PICK 23', RC, white base, grayscale portrait right, name ends '...HARRISON JR'",
+      "confidence": "low",
+      "note": "Eagles #12 Round-5-Pick rookie. Not on target list."
+    },
+    {
+      "compId": null,
+      "player": "Garrett Wilson (Jets)",
+      "tStart": 226,
+      "tEnd": 226,
+      "tBest": 226,
+      "frames": ["f_0114"],
+      "parallelCue": "NY Jets #5/green, 'ROUND 1 PICK 10', name 'GARRETT WILSON', white base, green portrait right",
+      "confidence": "low",
+      "note": "Garrett Wilson Jets. Not on target list."
+    },
+    {
+      "compId": null,
+      "player": "Terry McLaurin (Commanders)",
+      "tStart": 228,
+      "tEnd": 228,
+      "tBest": 228,
+      "frames": ["f_0115"],
+      "parallelCue": "Washington Commanders #17, 'ROUND 3 PICK 12', name 'TERRY McLAURIN', white base with GOLD/YELLOW portrait right",
+      "confidence": "low",
+      "note": "Terry McLaurin Commanders. NOT target 38 (that is Trey Amos #156). Yellow portrait is just the standard base photo treatment, not a yellow parallel. Not on target list."
+    },
+    {
+      "compId": null,
+      "player": "(Panthers skill player)",
+      "tStart": 230,
+      "tEnd": 230,
+      "tBest": 230,
+      "frames": ["f_0116"],
+      "parallelCue": "Carolina Panthers, light-blue jersey, white base, TEAL/CYAN portrait right; name obscured by hand",
+      "confidence": "low",
+      "note": "Panthers base card, teal portrait. Could not read name (hand covered). No confident target match; teal portrait is base treatment not the 'Teal #147' Kyle Williams parallel (target 32) — different team."
+    },
+    {
+      "compId": null,
+      "player": "George Pickens (Cowboys)",
+      "tStart": 232,
+      "tEnd": 232,
+      "tBest": 232,
+      "frames": ["f_0117"],
+      "parallelCue": "Dallas Cowboys, white base, grayscale portrait right, name 'GEORGE PICK...' (Pickens)",
+      "confidence": "low",
+      "note": "George Pickens Cowboys. Not on target list."
+    },
+    {
+      "compId": "30",
+      "player": "Michael Pittman Jr.",
+      "tStart": 234,
+      "tEnd": 234,
+      "tBest": 234,
+      "frames": ["f_0118"],
+      "parallelCue": "Indianapolis Colts #11, 'ROUND 2 PICK 2', name 'MICHAEL PITTMAN JR.', white base design with grayscale portrait — NO visible chrome/refractor shine",
+      "confidence": "low",
+      "note": "Player is Michael Pittman Jr. (target 30 = 'Refractor #24'). BUT this looks like the plain white 'Round 2 Pick' base, not a refractor (no rainbow/chrome finish). Parallel mismatch — likely NOT the refractor target. Recorded as 30 by player only; alternative compId null."
+    },
+    {
+      "compId": "03",
+      "player": "Patrick Mahomes II",
+      "tStart": 236,
+      "tEnd": 236,
+      "tBest": 236,
+      "frames": ["f_0119"],
+      "parallelCue": "Kansas City Chiefs, 'TOTAL TOUCHDOWNS' insert, large '267' number, red banner, name 'PATRICK MAHOMES II'",
+      "confidence": "high",
+      "note": "Clear match to target 03 (Patrick Mahomes II - Total Touchdowns). 'Zone Out' in target name may be the specific parallel; base Total Touchdowns insert is what's visible. Held center single-hand."
+    },
+    {
+      "compId": "04",
+      "player": "Isaac TeSlaa",
+      "tStart": 238,
+      "tEnd": 238,
+      "tBest": 238,
+      "frames": ["f_0120"],
+      "parallelCue": "Detroit Lions, BLUE & YELLOW design, #16, 'ROUND 6 PICK 8', RC, name 'ISAAC TeSLAA', blue portrait right",
+      "confidence": "med",
+      "note": "Clear Blue & Yellow Isaac TeSlaa = target 04 player+colorway. Card shows 'Round 6 Pick 8' / #16 vs target's '#131' so the exact parallel/print may differ, but player + Blue&Yellow colorway match well."
+    }
+  ],
+  "boxOpens": [
+    {
+      "t": 194,
+      "type": "mega",
+      "evidence": "Fresh sealed box held up (f_0098-f_0099): 'Topps Signature CLASS football 2025', 'EXCLUSIVE PARALLELS', '10 PACKS / 8 CARDS PER PACK', '80 TOTAL CARDS'. Box then cut open with red box cutter at f_0100 and packs pulled out f_0103+. 10 packs/80 cards config indicates a Mega box (larger than blaster).",
+      "confidence": "med"
+    }
+  ],
+  "notes": "Box-open dominates t=194-206 (sealed box shown, cut open, first pack pulled and opened). A second pack from the SAME box is torn open at f_0113 (t=224) — pack-change, not a new box, so not logged as a boxOpen. Most cards in this window are non-target Topps Signature base / Round-Pick inserts (Darnold, Bo Nix, Myles Garrett, Mbow, Garrett Wilson, McLaurin, Pickens, plus an Eagles & a Panthers rookie). Confirmed/likely targets here: 01 Brock Bowers purple/100 (f_0097, but /100 not the '#34' parallel), 03 Mahomes Total Touchdowns (f_0119, strong), 04 Isaac TeSlaa Blue&Yellow (f_0120), 41 Herbert/McConkey Paramount Pairings (f_0091-92, color-based guess vs 18), 23 Abdul Carter (f_0093, but 'Round 1 Pick' insert not the #118 base parallel), 30 Michael Pittman Jr. (f_0118, but base-looking not refractor). Several target colored parallels (Mahomes Total TD 'Zone Out', Bowers 'Purple #34', TeSlaa '#131', Pittman 'Refractor #24') may be DIFFERENT prints than what was on screen — flagged per-sighting. No frames in 180-238s were card-flipped-away beyond normal shuffling; f_0095-0096 (t=188-190) are pure backdrop/talking with no card."
+}

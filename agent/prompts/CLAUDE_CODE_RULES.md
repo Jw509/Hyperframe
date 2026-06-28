@@ -38,3 +38,4 @@ Rules:
 - If the harness table does not match the user's intent, fix the instruction JSON and regenerate the plan.
 - Use video-use-style inspection/self-eval for cut quality, but use this harness for timestamp authority.
 - Use Hyperframes for overlays/counters/rendered composition work, after approved cuts are stable.
+- Overlay UI safe-zones (EVERY Short): keep the box-cost/total tracker's top edge at ~17% of frame height (1080-base `top:332px` / 4K `top:664px`), and inset comp chips so their right edge is ≤~90% width (1080-base `right:120px` / 4K `right:240px`). TikTok/Reels native UI covers the top ~10% and right ~10% — do NOT hug the top or right corners. Spec: `SHORTS_TEMPLATE.md` (step 5, OVERLAYS); reference generator `scratch/gen-signature2025-overlays.mjs`. (Older per-product generators e.g. `gen-bowman-overlays.mjs` still have the old corner positions — update them when revisited.)

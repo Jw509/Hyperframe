@@ -1,0 +1,212 @@
+{
+  "window": "W11",
+  "sightings": [
+    {
+      "compId": "43",
+      "player": "Trevor Lawrence",
+      "tStart": 608,
+      "tEnd": 612,
+      "tBest": 612,
+      "frames": ["f_0305", "f_0306", "f_0307"],
+      "parallelCue": "white/base border, teal Jaguars, 'TREVOR LAWRENCE / ROUND 1 PICK 1' on right panel; NO visible red&black or serial",
+      "confidence": "low",
+      "note": "Top card of freshly fanned 8-card stack, held single at t=612. Looks like a BASE Trevor Lawrence, not the target's Red & Black #26. Tentatively tagged compId 43 by player only; most likely compId null (base). Alt: null."
+    },
+    {
+      "compId": null,
+      "player": "Bears rookie (#9, white border)",
+      "tStart": 614,
+      "tEnd": 614,
+      "tBest": 614,
+      "frames": ["f_0308"],
+      "parallelCue": "white base border, Chicago Bears, 'ROUND 2 PICK 1'",
+      "confidence": "low",
+      "note": "Base Bears rookie WR/DB held single; no target matches a Bears Round 2 base. Player name not legible."
+    },
+    {
+      "compId": null,
+      "player": "Michael Penix Jr. (Falcons QB #2)",
+      "tStart": 616,
+      "tEnd": 616,
+      "tBest": 616,
+      "frames": ["f_0309"],
+      "parallelCue": "white base border, Atlanta Falcons QB #2",
+      "confidence": "low",
+      "note": "Base Falcons QB; no matching target."
+    },
+    {
+      "compId": null,
+      "player": "Brock Purdy (49ers QB #13)",
+      "tStart": 618,
+      "tEnd": 618,
+      "tBest": 618,
+      "frames": ["f_0310"],
+      "parallelCue": "white base border, San Francisco 49ers #13, 'ROUND 7 PICK 7'",
+      "confidence": "med",
+      "note": "Base Brock Purdy; no matching target."
+    },
+    {
+      "compId": "36",
+      "player": "Kyren Williams",
+      "tStart": 620,
+      "tEnd": 628,
+      "tBest": 624,
+      "frames": ["f_0311", "f_0313", "f_0314", "f_0315"],
+      "parallelCue": "front is shimmering checkerboard/x-fractor foil (Rams #23, red foil signature); BACK at f_0313 reads 'AFTER IMAGE / AI-17 / KYREN WILLIAMS / Los Angeles Rams'",
+      "confidence": "high",
+      "note": "After Image insert. Card back (f_0313) explicitly says AFTER IMAGE AI-17 Kyren Williams = compId 36. Front held f_0311/0314/0315."
+    },
+    {
+      "compId": "26",
+      "player": "Bryce Young",
+      "tStart": 622,
+      "tEnd": 626,
+      "tBest": 622,
+      "frames": ["f_0312", "f_0314", "f_0315"],
+      "parallelCue": "'Sunday Showcase' script across top, Carolina Panthers QB #9, gold base; insert design",
+      "confidence": "high",
+      "note": "Sunday Showcase insert = compId 26 (Bryce Young SS-23). Clearly held single at t=622."
+    },
+    {
+      "compId": "38",
+      "player": "Trey Amos",
+      "tStart": 630,
+      "tEnd": 630,
+      "tBest": 630,
+      "frames": ["f_0316"],
+      "parallelCue": "yellow & blue background parallel, 'RC', Washington Commanders #28, 'TREY AMOS / ROUND 2 PICK 29'",
+      "confidence": "high",
+      "note": "Yellow & Blue Commanders parallel matches compId 38 (Trey Amos Yellow & Blue #156). Held single at t=630."
+    },
+    {
+      "compId": null,
+      "player": "Jahmyr Gibbs (Lions RB)",
+      "tStart": 632,
+      "tEnd": 632,
+      "tBest": 632,
+      "frames": ["f_0317"],
+      "parallelCue": "white base border, Detroit Lions, 'JAHMYR GIBBS / ROUND 1 PICK 12'",
+      "confidence": "med",
+      "note": "Base Jahmyr Gibbs; no matching target."
+    },
+    {
+      "compId": null,
+      "player": "Quentin Johnston (Chargers WR)",
+      "tStart": 634,
+      "tEnd": 634,
+      "tBest": 634,
+      "frames": ["f_0318"],
+      "parallelCue": "white base border, LA Chargers, 'QUENTIN JOHNSTON / ROUND 1 PICK 21'",
+      "confidence": "med",
+      "note": "BASE Quentin Johnston. Target 12 is his After Image #AI-1 insert (different card), so not a match. compId null."
+    },
+    {
+      "compId": null,
+      "player": "Saquon Barkley (Eagles RB)",
+      "tStart": 636,
+      "tEnd": 636,
+      "tBest": 636,
+      "frames": ["f_0319"],
+      "parallelCue": "white base border, Philadelphia Eagles, 'SAQUON BARKLEY / ROUND 2 PICK'",
+      "confidence": "low",
+      "note": "Base Saquon Barkley, partially flipped/sliding; no matching target."
+    },
+    {
+      "compId": null,
+      "player": "Tony Pollard (Titans RB)",
+      "tStart": 638,
+      "tEnd": 640,
+      "tBest": 638,
+      "frames": ["f_0320", "f_0321"],
+      "parallelCue": "white base border, Titans/Oilers throwback #20, 'TONY POLLARD / ROUND 4 PICK 26'",
+      "confidence": "med",
+      "note": "Base Tony Pollard; no matching target."
+    },
+    {
+      "compId": null,
+      "player": "Lamar Jackson (Ravens QB)",
+      "tStart": 642,
+      "tEnd": 646,
+      "tBest": 642,
+      "frames": ["f_0322", "f_0324"],
+      "parallelCue": "gold/sepia toned face, white border, Baltimore Ravens #8, 'ROUND 1 PICK 32'",
+      "confidence": "med",
+      "note": "Lamar Jackson veteran card with gold-toned face (set's veteran subset look). Target 6 is a Rookie Refractor RC-LJ which Lamar is NOT, so not a match. compId null. Could conceivably be a gold/yellow parallel but no serial seen."
+    },
+    {
+      "compId": null,
+      "player": "Raiders rookie QB (red border)",
+      "tStart": 644,
+      "tEnd": 646,
+      "tBest": 644,
+      "frames": ["f_0323", "f_0324"],
+      "parallelCue": "RED & BLACK bordered parallel, Las Vegas Raiders QB, 'ROUND 2 PICK 7'; player name not legible",
+      "confidence": "low",
+      "note": "Clear Red & Black parallel but player is a Raiders Round 2 Pick 7, which matches NO red&black target (targets 34/43/47/48 are Loveland/Lawrence/Milroe/K.Williams). Reported as compId null colored parallel to catch a possible miss."
+    },
+    {
+      "compId": null,
+      "player": "Ravens rookie WR (#15?)",
+      "tStart": 646,
+      "tEnd": 646,
+      "tBest": 646,
+      "frames": ["f_0324"],
+      "parallelCue": "gold/base look, Baltimore Ravens, 'ROUND 2 PICK 27'",
+      "confidence": "low",
+      "note": "Base-looking Ravens rookie shown in a 3-card fan; name not legible. No matching target."
+    },
+    {
+      "compId": null,
+      "player": "Dolphins rookie WR (#5, teal)",
+      "tStart": 648,
+      "tEnd": 652,
+      "tBest": 652,
+      "frames": ["f_0325", "f_0326", "f_0327"],
+      "parallelCue": "white base border, Miami Dolphins teal #5, 'ROUND 1 PICK 5'",
+      "confidence": "low",
+      "note": "Base Dolphins rookie; shuffled then held single at t=652. Name not legible; no matching target."
+    },
+    {
+      "compId": null,
+      "player": "Caleb Williams (Bears QB #18)",
+      "tStart": 654,
+      "tEnd": 654,
+      "tBest": 654,
+      "frames": ["f_0328"],
+      "parallelCue": "white base border, Chicago Bears QB #18",
+      "confidence": "med",
+      "note": "BASE single Caleb Williams. Target 18 is the Caleb Williams/Rome Odunze Paramount Pairings DUAL insert, not this single base. compId null."
+    },
+    {
+      "compId": null,
+      "player": "Bengals rookie WR (#14)",
+      "tStart": 656,
+      "tEnd": 656,
+      "tBest": 656,
+      "frames": ["f_0329"],
+      "parallelCue": "white base border, Cincinnati Bengals #14, 'ROUND 2 PICK 8'",
+      "confidence": "low",
+      "note": "Base Bengals rookie WR; name not legible; no matching target."
+    },
+    {
+      "compId": null,
+      "player": "Drake London? (Falcons WR #5)",
+      "tStart": 658,
+      "tEnd": 658,
+      "tBest": 658,
+      "frames": ["f_0330"],
+      "parallelCue": "white base border, Atlanta Falcons black jersey #5",
+      "confidence": "low",
+      "note": "BASE Falcons WR (possibly Drake London). Target 9 is Drake London Class Icons insert, not this base. compId null."
+    }
+  ],
+  "boxOpens": [
+    {
+      "t": 602,
+      "type": "blaster",
+      "evidence": "Single sealed Topps Signature retail pack (black wrapper, red 'C' Signature logo, NFL/NFLPA marks) handled at f_0302, torn open at f_0303-0304; empty wrapper reads '8 CARDS'. A fresh 8-card stack is fanned starting f_0305. This is an individual pack open (blaster-pack sized).",
+      "confidence": "med"
+    }
+  ],
+  "notes": "Entire window (t=600-658) is ONE pack: a single sealed Topps Signature pack opened ~t=602-606, then its 8 cards reviewed one-by-one from t=608 onward. Could not see outer box/wrapper text saying 'BLASTER' or 'MEGA', so the blaster classification of the pack open is inferred (single 8-card pack) at med confidence. Confirmed inserts: Kyren Williams After Image AI-17 (compId 36, card BACK readable at f_0313), Bryce Young Sunday Showcase (compId 26, f_0312), Trey Amos Yellow & Blue Commanders (compId 38, f_0316). One clear RED & BLACK parallel of a Las Vegas Raiders QB (Round 2 Pick 7) at f_0323 does NOT match any red&black target -> flagged as compId null possible miss. Most other cards are BASE veteran/rookie cards whose targets (Quentin Johnston, Drake London, Caleb Williams) only exist as inserts/parallels in the list, so they are reported as null. Several base players' names were not legible at frame resolution."
+}

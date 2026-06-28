@@ -1,0 +1,19 @@
+{
+  "_comment": "Comp values read from the eBay sold-screenshots in this folder (2026-06-27). value = sold price. The CUT IS the pre-cut native-4K portrait source cards/sources/gibbsigg/Gibbsiggshort.mp4 (host's own edit, 2160x3840, 57.45s, has audio). srcTime = on-screen time in that cut; chips fire just after each card lands. cardId maps to scratch/gibbsigg-card-positions.json and the catalogue cards/comps/GibbSigg/card-catalogue.md. 10 of ~38 card-shows have comps; the rest appear with no chip (per user: getting all 10 comps placed is what matters). Breece Hall shown twice (35.0 & 48.5) -> chip on the SECOND (48.5) per user. Rashee Rice is ONE card. boxCost is a PLACEHOLDER until the user confirms what he paid.",
+  "slug": "GibbSigg",
+  "product": "2025 Topps Signature Class football — blaster (~5 packs)",
+  "boxCost": 29.99,
+  "moneyShot": "Jahmyr Gibbs / David Montgomery PARAMOUNT PAIRINGS /299 — $8.00",
+  "comps": [
+    { "file": "mikegreen-auto.png",             "cardId": "mikegreen",    "srcTime": 14.7,  "player": "Mike Green",                       "team": "Ravens",   "parallel": "RC On-Card Auto",          "serial": null, "value": 7.99, "soldDate": "2026-06-25", "hit": true, "note": "#155; Topps Certified Autograph Issue; R2 P27" },
+    { "file": "hutchinson-classicons.png",       "cardId": "hutchinson",   "srcTime": 16.2,  "player": "Aidan Hutchinson",                 "team": "Lions",    "parallel": "Class Icons (insert)",     "serial": null, "value": 1.75, "soldDate": "2026-06-20", "note": "#CI-7" },
+    { "file": "gibbs-montgomery-paramount.png",  "cardId": "paramount",    "srcTime": 17.6,  "player": "Jahmyr Gibbs / David Montgomery",  "team": "Lions",    "parallel": "Paramount Pairings (dual)","serial": "/299", "value": 8.00, "soldDate": "2026-06-21", "hit": true, "money": true, "note": "headliner; matches slug; money-shot gold pop" },
+    { "file": "rashee-thepick.png",              "cardId": "rashee",       "srcTime": 26.5,  "player": "Rashee Rice",                      "team": "Chiefs",   "parallel": "The Pick (insert)",        "serial": null, "value": 1.99, "soldDate": "2026-06-09", "note": "#TP-16" },
+    { "file": "maye-sundayshowcase.png",         "cardId": "maye-ss",      "srcTime": 36.0,  "player": "Drake Maye",                       "team": "Patriots", "parallel": "Sunday Showcase (insert)", "serial": null, "value": 3.00, "soldDate": "2026-06-26", "note": "#SS-9 (1st Maye card)" },
+    { "file": "goff.png",                        "cardId": "goff",         "srcTime": 37.5,  "player": "Jared Goff",                       "team": "Lions",    "parallel": "Blue & Yellow (R1 P1)",    "serial": null, "value": 0.99, "soldDate": "2026-06-20", "note": "base parallel" },
+    { "file": "mahomes-refractor.png",           "cardId": "mahomes",      "srcTime": 47.5,  "player": "Patrick Mahomes II",               "team": "Chiefs",   "parallel": "Refractor (R1 P10)",       "serial": null, "value": 3.75, "soldDate": "2026-06-27" },
+    { "file": "breecehall.png",                  "cardId": "breece",       "srcTime": 48.5,  "player": "Breece Hall",                      "team": "Jets",     "parallel": "Blue & Yellow (R1 P4)",    "serial": null, "value": 1.69, "soldDate": "2026-06-14", "note": "#92; chip on 2nd showing per user" },
+    { "file": "maye-classaction.png",            "cardId": "maye-ca",      "srcTime": 53.5,  "player": "Drake Maye",                       "team": "Patriots", "parallel": "Class Action (insert)",    "serial": null, "value": 3.50, "soldDate": "2026-06-25", "note": "#CA-22 (2nd Maye card)" },
+    { "file": "willcampbell.png",                "cardId": "willcampbell", "srcTime": 55.0,  "player": "Will Campbell",                    "team": "Patriots", "parallel": "Blue & Yellow (R1 P4, RC)","serial": null, "value": 2.49, "soldDate": "2026-06-27", "note": "#158" }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "window": "W09",
+  "sightings": [
+    {
+      "compId": null,
+      "player": "Puka Nacua",
+      "tStart": 480,
+      "tEnd": 480,
+      "tBest": 480,
+      "frames": ["f_0241"],
+      "parallelCue": "Rams WR #17 white jersey, navy right panel with headshot, 'Round 2 Pick' base design",
+      "confidence": "med",
+      "note": "Rams #17 = Puka Nacua, NOT Cooper Kupp (#10). This is a base Round 2 Pick design, not the Cooper Kupp 'Rounding Pick 6 #97' insert (compId 07). No target match."
+    },
+    {
+      "compId": "08",
+      "player": "Alfred Collins",
+      "tStart": 482,
+      "tEnd": 482,
+      "tBest": 482,
+      "frames": ["f_0242"],
+      "parallelCue": "49ers #95, red right panel headshot, 'ROUND 2 PICK', RC logo bottom-left",
+      "confidence": "high",
+      "note": "Held center one-handed. Matches target 08 Round 2 Pick 11 #196."
+    },
+    {
+      "compId": "31",
+      "player": "Maxx Crosby",
+      "tStart": 484,
+      "tEnd": 484,
+      "tBest": 484,
+      "frames": ["f_0243"],
+      "parallelCue": "Raiders #98, GREEN-to-PURPLE gradient border, black right panel, 'ROUND 4 PICK 4'",
+      "confidence": "high",
+      "note": "Green & Purple parallel matches target 31. Held center one-handed."
+    },
+    {
+      "compId": null,
+      "player": "Cam Ward",
+      "tStart": 486,
+      "tEnd": 486,
+      "tBest": 486,
+      "frames": ["f_0244"],
+      "parallelCue": "Titans #5 white jersey, RC logo, 'ROUND 4 PICK 84' base design, white/black border",
+      "confidence": "med",
+      "note": "Cam Ward base Round 4 Pick design. Target Cam Ward (compId 15) is a 'Sunday Showcase Inserts #SS-2', which this is NOT. So no match. A purple card is being set down in right hand same frame."
+    },
+    {
+      "compId": null,
+      "player": "Caleb Williams",
+      "tStart": 492,
+      "tEnd": 500,
+      "tBest": 500,
+      "frames": ["f_0247", "f_0248", "f_0249", "f_0250", "f_0251"],
+      "parallelCue": "Bears #2 white jersey, ornate white 'Chrome/Cooperstown' style border, orange-tint right panel headshot, 'ROUND 1 PICK 24'",
+      "confidence": "med",
+      "note": "Single-player Caleb Williams Round 1 Pick card. Target 18 is 'Caleb Williams / Rome Odunze Paramount Pairings' (a DUAL card) which this is NOT. No target match. Pulled from a freshly opened pack (~f_0245-0246), shuffled, then held up clearly at f_0248 and f_0251."
+    },
+    {
+      "compId": null,
+      "player": "Marvin Harrison Jr.",
+      "tStart": 502,
+      "tEnd": 502,
+      "tBest": 502,
+      "frames": ["f_0252"],
+      "parallelCue": "Cardinals #18 white jersey, dark-red right panel headshot, 'ROUND 1 PICK 4', RC",
+      "confidence": "med",
+      "note": "Not in target list. Held center one-handed."
+    },
+    {
+      "compId": null,
+      "player": "George Kittle",
+      "tStart": 504,
+      "tEnd": 504,
+      "tBest": 504,
+      "frames": ["f_0253"],
+      "parallelCue": "49ers #85 white jersey, dark-red right panel headshot, 'ROUND 2 PICK 2'",
+      "confidence": "med",
+      "note": "Not in target list. Held center one-handed."
+    },
+    {
+      "compId": null,
+      "player": "Aidan O'Connell",
+      "tStart": 506,
+      "tEnd": 506,
+      "tBest": 506,
+      "frames": ["f_0254"],
+      "parallelCue": "Raiders #4 white jersey, black/white border, dark right panel headshot, 'ROUND 2 PICK 7'",
+      "confidence": "low",
+      "note": "Raiders QB base Round 2 Pick design. Not in target list. Player name on side panel hard to read; #4 Raiders = Aidan O'Connell. Another red/dark card flicking in upper hand same frame."
+    },
+    {
+      "compId": "05",
+      "player": "Josh Allen",
+      "tStart": 508,
+      "tEnd": 510,
+      "tBest": 510,
+      "frames": ["f_0255", "f_0256"],
+      "parallelCue": "RED card, round inset photo of Bills #17, cursive 'Class Action' + 'WINNING STARTS HERE!', Bills logo, 'JOSH ALLEN QUARTERBACK'",
+      "confidence": "high",
+      "note": "Class Action insert. Matches target 05. Held center, best/full view at f_0256."
+    },
+    {
+      "compId": "20",
+      "player": "J.J. McCarthy",
+      "tStart": 512,
+      "tEnd": 520,
+      "tBest": 520,
+      "frames": ["f_0257", "f_0258", "f_0261"],
+      "parallelCue": "Vikings #9 purple jersey, YELLOW & BLUE gradient background, gold/yellow right panel headshot, 'J.J. McCarthy ROUND 1 PICK 10'",
+      "confidence": "med",
+      "note": "Yellow & Blue coloring -> best guess target 20 (Blue & Yellow). Card reads 'Round 1 Pick 10', so could be a base Round 1 Pick not in the list rather than the #37 Blue & Yellow; alternative is none. Best/full 2-handed view at f_0261 (t=520). Re-shuffled and re-shown across f_0259-0260."
+    },
+    {
+      "compId": null,
+      "player": "Tyler Lockett",
+      "tStart": 530,
+      "tEnd": 538,
+      "tBest": 538,
+      "frames": ["f_0266", "f_0267", "f_0268", "f_0269", "f_0270"],
+      "parallelCue": "Seahawks WR #16, GREEN foil border, green-tinted right panel headshot, 'ROUND ? PICK', Seahawks logo",
+      "confidence": "low",
+      "note": "Seahawks #16 green parallel pulled from a freshly opened pack (~f_0264-0265). No Seahawks #16 in target list, so no match. Player ID uncertain (name on side panel unreadable); #16 Seattle most likely Tyler Lockett. A small Bills-logo-looking mark bottom-right of f_0270 is likely a second card peeking, not part of this card. Held/shuffled f_0266-0270, clearest at f_0270."
+    }
+  ],
+  "boxOpens": [
+    {
+      "t": 488,
+      "type": "blaster",
+      "evidence": "Tearing cellophane on a black/silver foil Topps Signature retail pack (f_0245), then holding sealed pack with Topps 'C' logo + 'NFL'/'NFLPA' + '7 CARDS' (f_0246). Single 7-card retail pack consistent with blaster pack contents.",
+      "confidence": "med"
+    },
+    {
+      "t": 526,
+      "type": "blaster",
+      "evidence": "Opening a second black/silver foil Topps Signature pack (f_0264 tearing), holding sealed pack reading 'Topps' / 'C 2025' / 'NFL' / 'NFLPA' / '7 CARDS' (f_0265).",
+      "confidence": "med"
+    }
+  ],
+  "notes": "Window 480-538s. Two fresh 7-card Topps Signature packs opened (t~488 and t~526). Type marked 'blaster' as best guess for single retail 7-card packs (could be mega-box packs; packaging only says 'Topps Signature 2025 / 7 CARDS', no explicit BLASTER/MEGA text visible). CONFIRMED TARGET MATCHES: 08 (Alfred Collins), 31 (Maxx Crosby), 05 (Josh Allen Class Action), 20 (J.J. McCarthy Blue&Yellow, med confidence). Several clear cards matched NO target and are flagged compId:null - Puka Nacua (NOT Cooper Kupp - Rams #17), Cam Ward base (target is Sunday Showcase insert), Caleb Williams single Round 1 Pick (target is dual Paramount Pairings), Marvin Harrison Jr, George Kittle, Aidan O'Connell, Seahawks #16 green. Frames f_0259, f_0262, f_0263, f_0269 are mostly hands/shuffling/empty backdrop."
+}

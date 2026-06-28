@@ -37,8 +37,8 @@ modeled on `briefs/cuts/bowmanchrome2025.v18-inserts.json`.
 **4. COLD-OPEN INTRO** (prepend ~12s): sealed box → opening/cutting → packs spread → packs in hand.
 
 **5. OVERLAYS** (HyperFrames, "chrome" pattern):
-- Per-card **comp chip** (eBay sold screenshot + bold value) animating in top-right as each card shows.
-- Running **box-value tracker** ("price overlay") top-left: box cost (red) + cards-pulled total (green, counts up). Enters when you want it (synced to the cost sting).
+- Per-card **comp chip** (eBay sold screenshot + bold value) animating in top-right as each card shows. **Inset its right edge from the frame edge — keep right edge ≤~90% width (1080-base `right:120px` / 4K `right:240px`), NOT hugging the corner — TikTok/Reels action rail sits on the right ~10%.** (changed 2026-06-19)
+- Running **box-value tracker** ("price overlay") top-left: box cost (red) + cards-pulled total (green, counts up). Enters when you want it (synced to the cost sting). **Position its top edge at ~17% of frame height (1080-base `top:332px` / 4K `top:664px`), NOT up against the top corner — TikTok/Reels UI obstructs the top ~10%.** (changed 2026-06-18)
 - Center **profit/loss recap** at the end (box cost / cards value / profit-or-loss / ROI). Loss = red, profit = green.
 - **Money shot** = highest comp (memory: money_shot) → pop-in + gold value.
 - Comp values from `comps.json`. **No "Recent sale" label** — the screenshot conveys it (memory: feedback_subtitle). Use a **"Closest comp"** label only for an eBay *listing* (not a sale).

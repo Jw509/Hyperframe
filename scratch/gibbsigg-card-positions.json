@@ -1,0 +1,13 @@
+{
+  "_comment": "On-screen hold windows {s,e} for the 10 comped cards in the user's pre-cut (cut == cards/sources/gibbsigg/Gibbsiggshort.mp4, 2160x3840, 57.45s). Measured from the catalogue scan (cards/comps/GibbSigg/card-catalogue.md). Drives comp-chip timing in scratch/gen-gibbsigg-overlays.mjs. Chip start = s + delay unless a comp sets chipStartOutput. To retime a chip, shift BOTH s and e by the same delta. GROUND-TRUTH CORRECTED 2026-06-27: back-half + a few mid windows re-measured from full-res frame grids (scratchpad/bh, rc2) because the 2fps catalogue scan ran ~1s late where cuts are fast. Mahomes red-Chiefs lands 46.0-47.0 (was 47.5), Breece green-Jets lands 47.5-48.3 (was 48.5; this is the '47 seconds one' the user asked for), Rashee red-Chiefs 27.0-28.0, Maye-SS gold 36.2-37.2, Goff blue-Lions 37.7-38.4, Maye-CA red 53.7-54.7, Will blue/yellow#66 55.25-56.0. FAST CUTS: Maye-SS 36.2 -> Goff 37.7 ~1.5s stays tight so the generator uses snappier in/out + shorter floor. Breece Hall is shown twice (35.0 and 47.5); per user the chip goes on the SECOND (47.5) showing. Rashee Rice is ONE card.",
+  "mikegreen":   { "s": 14.7, "e": 15.9 },
+  "hutchinson":  { "s": 16.2, "e": 17.2 },
+  "paramount":   { "s": 17.6, "e": 20.3 },
+  "rashee":      { "s": 27.0, "e": 28.0 },
+  "maye-ss":     { "s": 36.2, "e": 37.2 },
+  "goff":        { "s": 37.7, "e": 38.4 },
+  "mahomes":     { "s": 46.0, "e": 47.0 },
+  "breece":      { "s": 47.5, "e": 48.3 },
+  "maye-ca":     { "s": 53.7, "e": 54.7 },
+  "willcampbell":{ "s": 55.25, "e": 56.0 }
+}

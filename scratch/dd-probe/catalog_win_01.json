@@ -1,0 +1,174 @@
+{
+  "window": "W01",
+  "sightings": [
+    {
+      "compId": "12",
+      "player": "Quentin Johnston",
+      "tStart": 24,
+      "tEnd": 30,
+      "tBest": 24,
+      "frames": ["f_0013", "f_0014", "f_0015", "f_0016"],
+      "parallelCue": "'AFTER IMAGE' insert; refractor/checkerboard front, Chargers #1; back reads 'AFTER IMAGE / QUENTIN JOHNSTON / LOS ANGELES CHARGERS', card # appears 'AI-16'",
+      "confidence": "high",
+      "note": "Chargers WR, held center 2-handed. Front (f_0013/f_0016) and back (f_0014/f_0015) both shown. Player + After Image set match target 12, but the readable back card number is 'AI-16' whereas target lists '#AI-1' — likely same card, flag number discrepancy."
+    },
+    {
+      "compId": "08",
+      "player": "Alfred Collins",
+      "tStart": 34,
+      "tEnd": 34,
+      "tBest": 34,
+      "frames": ["f_0018"],
+      "parallelCue": "base 'Round 2 Pick 11' design, 49ers #95, white 'C' Topps logo, RC",
+      "confidence": "high",
+      "note": "49ers DL #95, 'ROUND 2 PICK 11' side panel — matches target 08 (Round 2 Pick 11 #196)."
+    },
+    {
+      "compId": "39",
+      "player": "C.J. Stroud",
+      "tStart": 50,
+      "tEnd": 50,
+      "tBest": 50,
+      "frames": ["f_0026"],
+      "parallelCue": "'SUNDAY SHOWCASE' insert, gold/white foil, Texans QB",
+      "confidence": "high",
+      "note": "Texans QB on Sunday Showcase insert — matches target 39 (Sunday Showcase #SS-17)."
+    },
+    {
+      "compId": null,
+      "player": "George Kittle",
+      "tStart": 16,
+      "tEnd": 16,
+      "tBest": 16,
+      "frames": ["f_0009"],
+      "parallelCue": "base 'Round 2 Pick 5' design, 49ers #85, white 'C' logo",
+      "confidence": "med",
+      "note": "First card pulled from first pack. Base Round 2 Pick card, no target match (not in list)."
+    },
+    {
+      "compId": null,
+      "player": "Marvin Harrison Jr.",
+      "tStart": 18,
+      "tEnd": 18,
+      "tBest": 18,
+      "frames": ["f_0010"],
+      "parallelCue": "base 'Round 1 Pick 4' design, Cardinals #18, white 'C' logo",
+      "confidence": "med",
+      "note": "Held center-left while George Kittle card visible top-right. Base card, no target match."
+    },
+    {
+      "compId": null,
+      "player": "Caleb Williams",
+      "tStart": 20,
+      "tEnd": 20,
+      "tBest": 20,
+      "frames": ["f_0011"],
+      "parallelCue": "base 'Round 1 Pick 24' design, Bears #2, white 'C' logo",
+      "confidence": "med",
+      "note": "Bears QB #2 base 'Round 1 Pick 24'. Not a target match (target 18 Caleb Williams is a Paramount Pairings dual w/ Odunze; this is a single base)."
+    },
+    {
+      "compId": null,
+      "player": "Unknown WR (Rams/Chargers)",
+      "tStart": 22,
+      "tEnd": 22,
+      "tBest": 22,
+      "frames": ["f_0012"],
+      "parallelCue": "base 'Round ? Pick' design, blue/yellow jersey #17, refractor-ish",
+      "confidence": "low",
+      "note": "Jersey #17, Rams or Chargers colors. Could not read name. Possible Ladd McConkey/Puka but uncertain — flag as unconfirmed."
+    },
+    {
+      "compId": null,
+      "player": "Unknown DB (Eagles)",
+      "tStart": 32,
+      "tEnd": 32,
+      "tBest": 32,
+      "frames": ["f_0017"],
+      "parallelCue": "yellow & blue parallel, 'Round 2 Pick 32', Eagles #21, RC",
+      "confidence": "low",
+      "note": "Eagles rookie DB on a Yellow/Blue parallel. Could not read name; no confident target match."
+    },
+    {
+      "compId": null,
+      "player": "Unknown QB (Raiders)",
+      "tStart": 42,
+      "tEnd": 42,
+      "tBest": 42,
+      "frames": ["f_0020", "f_0021", "f_0022"],
+      "parallelCue": "base 'Round 2 Pick 7' design, Raiders white jersey #7",
+      "confidence": "low",
+      "note": "Raiders rookie #7, heavily hand-obscured across f_0020-f_0022. Base card, no target match."
+    },
+    {
+      "compId": null,
+      "player": "Unknown WR (Falcons)",
+      "tStart": 44,
+      "tEnd": 44,
+      "tBest": 44,
+      "frames": ["f_0023"],
+      "parallelCue": "green-tint right panel parallel, Falcons #18 white jersey",
+      "confidence": "low",
+      "note": "Falcons #18. Could not read name; no confident target match."
+    },
+    {
+      "compId": null,
+      "player": "Unknown (Bills)",
+      "tStart": 46,
+      "tEnd": 46,
+      "tBest": 46,
+      "frames": ["f_0024"],
+      "parallelCue": "base 'Round 1 Pick' design, Bills white jersey",
+      "confidence": "low",
+      "note": "Bills rookie. Possibly Maxwell Hairston (target 16) but appears base not Blue&Yellow #143 — left null, unconfirmed."
+    },
+    {
+      "compId": null,
+      "player": "Dak Prescott",
+      "tStart": 48,
+      "tEnd": 48,
+      "tBest": 48,
+      "frames": ["f_0025"],
+      "parallelCue": "base design, QB #4; frame overlaid with Cowboys 'DAK PRESCOTT QB 4' NBC pregame graphic transition",
+      "confidence": "low",
+      "note": "Card mostly washed out by a broadcast-graphic transition overlay. Base card, no target match."
+    },
+    {
+      "compId": null,
+      "player": "Chris Paul Jr.",
+      "tStart": 52,
+      "tEnd": 54,
+      "tBest": 52,
+      "frames": ["f_0027", "f_0028"],
+      "parallelCue": "yellow & blue parallel, Rams #41, 'Round 5 Pick 34', RC; side text appears 'CHRIS PAUL JR'",
+      "confidence": "low",
+      "note": "Rams RB/DB #41 on Yellow/Blue parallel 'Round 5 Pick'. Side text looks like 'Chris Paul Jr' but target 40 lists Chris Paul Jr as Bears #233 (Blue & Yellow) — team/number mismatch, so left null. Flag for review."
+    },
+    {
+      "compId": null,
+      "player": "Unknown (Packers)",
+      "tStart": 56,
+      "tEnd": 56,
+      "tBest": 56,
+      "frames": ["f_0029"],
+      "parallelCue": "base design, Packers green jersey #0, RC",
+      "confidence": "low",
+      "note": "Packers rookie #0. Could not read name; no target match."
+    }
+  ],
+  "boxOpens": [
+    {
+      "t": 0,
+      "type": "mega",
+      "evidence": "Two large sealed Topps Signature 2025 boxes shown front-and-center on the CHASE 4 THE CASE backdrop at video start (f_0001-f_0005). Packaging reads 'Topps Signature 2025 NFL', 'LOOK FOR EXCLUSIVE PARALLELS', '10 PACKS / 8 CARDS PER PACK / 80 TOTAL CARDS'. Host picks them up f_0003-f_0005.",
+      "confidence": "high"
+    },
+    {
+      "t": 12,
+      "type": "mega",
+      "evidence": "Host holds up a single sealed mega box (f_0007) then tears into a silver/black Topps Signature foil pack ('7 CARDS') at f_0008 — first pack of box #1 opened. First card pulled at f_0009.",
+      "confidence": "high"
+    }
+  ],
+  "notes": "Window START. Video opens on two sealed Topps Signature 2025 MEGA boxes (80 cards / 10 packs each) on the CHASE 4 THE CASE backdrop (f_0001-f_0006). First pack torn open at t=14 (f_0008). Cards then revealed one at a time, mostly held center/center-right in two hands against the backdrop. The vast majority pulled in this window are BASE 'Round X Pick Y' cards (George Kittle, Marvin Harrison Jr, Caleb Williams, Raiders #7, Falcons #18, Packers #0, Dak Prescott #4) which do NOT appear in the target list. Confirmed target hits: compId 12 (Quentin Johnston After Image, t24-30 — note back card # reads 'AI-16' vs target '#AI-1'), compId 08 (Alfred Collins Round 2 Pick 11, t34), compId 39 (CJ Stroud Sunday Showcase, t50). A second pack is opened around t=36 (f_0019). Possible-but-unconfirmed players: a Rams #41 'Chris Paul Jr' Yellow/Blue parallel at t52-54 (target 40 lists Chris Paul Jr as Bears #233, so team/number conflict — flagged null), and a Bills rookie at t46 (possible Maxwell Hairston target 16, but looks base). f_0025 has a broadcast graphic transition overlaid that obscures the Dak Prescott card. f_0030 is an empty-backdrop transition frame."
+}

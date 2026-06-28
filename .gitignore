@@ -31,7 +31,7 @@ scratch/*.mp4
 scratch/*.mov
 
 # ─── Local / machine-specific ───
-.claude/settings.local.json
+.claude/settings.local.json*
 agent/state/plans/*.json
 agent/state/plans/*.md
 

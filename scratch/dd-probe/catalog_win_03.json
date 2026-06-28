@@ -1,0 +1,135 @@
+{
+  "window": "W03",
+  "sightings": [
+    {
+      "compId": null,
+      "player": "Unknown Seahawks rookie (#11)",
+      "tStart": 122,
+      "tEnd": 122,
+      "tBest": 122,
+      "frames": ["f_0062"],
+      "parallelCue": "Round 1 Pick base, green-tinted right portrait panel, 'ROOKIE' vertical text, Seahawks WR #11, Topps logo top-left",
+      "confidence": "low",
+      "note": "Seattle Seahawks #11 rookie 'Round 1 Pick' base card. No matching target (no Seahawks WR in list). Held center, single clear frame before McCarthy."
+    },
+    {
+      "compId": "20",
+      "player": "J.J. McCarthy",
+      "tStart": 124,
+      "tEnd": 126,
+      "tBest": 124,
+      "frames": ["f_0063", "f_0064"],
+      "parallelCue": "Round 1 Pick 10, gold/yellow-tinted right portrait panel, Vikings QB #9, 'J.J. McCARTHY' vertical text, Vikings logo bottom",
+      "confidence": "low",
+      "note": "Vikings 'Round 1 Pick 10' card with yellow/gold panel. Could be the Blue & Yellow #37 (compId 20) given yellow tones, but more likely a base Round 1 Pick not in list. Alternative: compId 42 (Sunday Showcase) - but this is NOT a Sunday Showcase insert. Best-guess 20, low confidence."
+    },
+    {
+      "compId": null,
+      "player": "C.J. Stroud",
+      "tStart": 126,
+      "tEnd": 128,
+      "tBest": 128,
+      "frames": ["f_0064", "f_0065"],
+      "parallelCue": "Round 1 Pick 2, dark red/maroon-tinted right portrait panel, Texans QB throwing white/red, Texans logo bottom-right, Topps logo top-left",
+      "confidence": "med",
+      "note": "Texans 'Round 1 Pick 2' base/red card. Target #39 Stroud is Sunday Showcase #SS-17 - this is NOT that insert, so compId null. Clearly Stroud."
+    },
+    {
+      "compId": "01",
+      "player": "Brock Bowers",
+      "tStart": 130,
+      "tEnd": 156,
+      "tBest": 146,
+      "frames": ["f_0066", "f_0067", "f_0068", "f_0069", "f_0071", "f_0072", "f_0073", "f_0075", "f_0076", "f_0077", "f_0078"],
+      "parallelCue": "PURPLE border parallel, serial 074/100 bottom-right, 'BROCK BOWERS' + 'ROUND 1 PICK 13', Raiders #9 black uniform, B&W portrait right panel, Raiders shield bottom",
+      "confidence": "high",
+      "note": "Hero card of this stretch - Brock Bowers Purple /100 (compId 01, Purple #34). Shown repeatedly and re-stacked. Clearest single + dual view at f_0073/f_0076 (alongside Loveland). Picture-in-picture Raiders practice footage inset top-right f_0066-0070 (NOT a card). Held center."
+    },
+    {
+      "compId": "29",
+      "player": "Colston Loveland",
+      "tStart": 144,
+      "tEnd": 152,
+      "tBest": 152,
+      "frames": ["f_0072", "f_0073", "f_0075", "f_0076"],
+      "parallelCue": "'Class Icons' insert, ornate silver frame, 'LOVELAND' Bears jersey, RC rookie logo, Bears logo, '1ST ROUND / 10 PICK', 'COLSTON LOVELAND'",
+      "confidence": "high",
+      "note": "Colston Loveland Class Icons #CI-22 (compId 29). NOT the Red&Black parallel (compId 34) - this is the silver-framed Class Icons insert. Shown beside the Bowers Purple. Clearest full view f_0073 and f_0076."
+    },
+    {
+      "compId": null,
+      "player": "Unknown Bills DL (#98)",
+      "tStart": 148,
+      "tEnd": 148,
+      "tBest": 148,
+      "frames": ["f_0074"],
+      "parallelCue": "Round 1 Pick 7, green-tinted right portrait panel, RC logo, Bills #98 white/blue, Bills logo bottom",
+      "confidence": "low",
+      "note": "Buffalo Bills #98 'Round 1 Pick 7' base card (defensive player). No clear target match (Hairston target #16 is Blue&Yellow #143, not green Round 1 Pick). compId null. Briefly fanned then re-stacked."
+    },
+    {
+      "compId": null,
+      "player": "Cincinnati Bengals player (#1)",
+      "tStart": 168,
+      "tEnd": 170,
+      "tBest": 170,
+      "frames": ["f_0084", "f_0085"],
+      "parallelCue": "Round X Pick base, orange-tinted right portrait panel, Bengals #1 white/black, Bengals 'B' logo bottom-right, Topps logo top-left",
+      "confidence": "low",
+      "note": "First card from the newly opened pack. Bengals #1 'Round Pick' rookie-style base card. No matching Bengals target. compId null. Name not legible."
+    },
+    {
+      "compId": null,
+      "player": "Lamar Jackson",
+      "tStart": 172,
+      "tEnd": 172,
+      "tBest": 172,
+      "frames": ["f_0086"],
+      "parallelCue": "Round 1 Pick 32, gold/yellow-tinted right portrait panel, Ravens QB white/purple, 'LAMAR JACKSON' vertical text, Ravens logo bottom",
+      "confidence": "med",
+      "note": "Lamar Jackson 'Round 1 Pick 32' base/gold card. Target #06 Lamar is a Rookie Refractor #RC-LJ - this is NOT a refractor (it's a Round 1 Pick base), so compId null. Clearly Lamar Jackson."
+    },
+    {
+      "compId": "24",
+      "player": "Amon-Ra St. Brown",
+      "tStart": 174,
+      "tEnd": 176,
+      "tBest": 174,
+      "frames": ["f_0087", "f_0088"],
+      "parallelCue": "Round Pick base, blue-tinted right portrait panel, Lions #14 blue/white, 'AMON-RA ST. BROWN' vertical text, Lions logo bottom",
+      "confidence": "low",
+      "note": "Amon-Ra St. Brown Lions #14 'Round Pick 7' card with blue (team-color) panel. Target #24 is '#19 Parallel' - this could be it but looks like a base Round Pick rather than a distinct colored parallel. Best-guess compId 24, low confidence."
+    },
+    {
+      "compId": "19",
+      "player": "Jordan Love",
+      "tStart": 176,
+      "tEnd": 176,
+      "tBest": 176,
+      "frames": ["f_0088", "f_0089"],
+      "parallelCue": "Round Pick 2, gold/yellow-tinted right portrait panel, Packers QB #10 white/gold throwing, 'JORDAN LOVE' vertical text, Packers 'G' logo bottom",
+      "confidence": "low",
+      "note": "Jordan Love Packers 'Round Pick 2' card with gold/yellow panel. Target #19 is 'Yellow Blue Variant SP' - the yellow panel could match, but may be a base Round Pick. Best-guess compId 19, low confidence."
+    },
+    {
+      "compId": "41",
+      "player": "Justin Herbert / Ladd McConkey",
+      "tStart": 176,
+      "tEnd": 178,
+      "tBest": 178,
+      "frames": ["f_0089", "f_0090"],
+      "parallelCue": "'PARAMOUNT PAIRINGS' dual insert, two Chargers players (powder-blue/gold), QB left + WR right, Topps logo top-center, Chargers bolt logo",
+      "confidence": "high",
+      "note": "Paramount Pairings dual card, both Chargers = Justin Herbert / Ladd McConkey (compId 41). NOT compId 18 (Caleb Williams/Rome Odunze, who are Bears). Clearest full view f_0090. Last card in window."
+    }
+  ],
+  "boxOpens": [
+    {
+      "t": 158,
+      "type": "unknown",
+      "evidence": "Host tears cellophane/foil top off a single Topps Signature 2025 foil pack (silver wrapper reads 'Topps', Signature 'C 2025' logo, NFL+NFLPA logos, '7 CARDS'). Pack-open visible f_0079-f_0083 (t=158-166). No 'BLASTER'/'MEGA' text visible - this is an individual pack, could be from either a blaster or mega box.",
+      "confidence": "med"
+    }
+  ],
+  "notes": "Window t=120-178s. The first ~half (f_0061-0078) is the host reviewing/re-stacking previously pulled cards - the Brock Bowers Purple /100 (compId 01) is the recurring hero, shown repeatedly, often 2-3 cards on screen at once (f_0073/f_0074/f_0076 show Bowers + Loveland Class Icons + a green Bills card together). A new Topps Signature pack is opened around t=158 (f_0079-0083), then its cards are revealed one-by-one: Bengals (null), Lamar Jackson Round1Pick (null), Amon-Ra St.Brown (~24?), Jordan Love (~19?), and ends on the Herbert/McConkey Paramount Pairings (compId 41). MANY cards here are 'Round 1/X Pick' BASE inserts (gold/green/blue/maroon team-color portrait panels) that resemble target players but are NOT the specific parallels/inserts in the target list (e.g. Stroud, Lamar, the Seahawks/Bills/Bengals rookies) - flagged compId null. The uncertain matches (McCarthy 20, St.Brown 24, Love 19) are best-guesses where the target's described color/number could plausibly fit the team-tinted panel I saw, but I could not read serials/card-numbers to confirm; treat as low confidence."
+}

@@ -1,0 +1,146 @@
+{
+  "window": "W05",
+  "sightings": [
+    {
+      "compId": "02",
+      "player": "Kelvin Banks Jr.",
+      "tStart": 276,
+      "tEnd": 288,
+      "tBest": 278,
+      "frames": ["f_0139", "f_0140", "f_0141", "f_0144", "f_0145"],
+      "parallelCue": "on-card blue autograph, RC badge, 'ROUND 1 PICK 9' black-foil right rail, New Orleans Saints logo bottom",
+      "confidence": "high",
+      "note": "Saints OT rookie auto RC = target 02 (Football Auto RC). Held center; pulled fresh from the pack opened earlier this window. Re-shown at t=286-288 alongside a Dinosaurs 'HA HA HA [CRIES]' meme PIP. Same card also briefly back-shown.",
+      "altIds": []
+    },
+    {
+      "compId": null,
+      "player": "Marcus Mbow",
+      "tStart": 240,
+      "tEnd": 242,
+      "tBest": 242,
+      "frames": ["f_0121", "f_0122"],
+      "parallelCue": "f_0121 is card BACK (#244, 'NEW YORK GIANTS - OT'); f_0122 front is silver-foil 'ROUND 5 PICK 16' insert, NY Giants logo",
+      "confidence": "high",
+      "note": "Not in target list. Carryover card from prior window being flipped/back-shown then front at start of W05.",
+      "altIds": []
+    },
+    {
+      "compId": null,
+      "player": "Stefon Diggs",
+      "tStart": 260,
+      "tEnd": 260,
+      "tBest": 260,
+      "frames": ["f_0131"],
+      "parallelCue": "'ROUND 5 PICK 10' insert, New England Patriots, white #8 jersey",
+      "confidence": "high",
+      "note": "Not in target list.",
+      "altIds": []
+    },
+    {
+      "compId": null,
+      "player": "DK Metcalf",
+      "tStart": 262,
+      "tEnd": 262,
+      "tBest": 262,
+      "frames": ["f_0132"],
+      "parallelCue": "'ROUND 2 PICK 32' insert, Pittsburgh Steelers, black #4 jersey",
+      "confidence": "high",
+      "note": "Not in target list.",
+      "altIds": []
+    },
+    {
+      "compId": null,
+      "player": "Bucky Irving",
+      "tStart": 264,
+      "tEnd": 264,
+      "tBest": 264,
+      "frames": ["f_0133"],
+      "parallelCue": "'ROUND 4 PICK 25' insert, Tampa Bay Buccaneers, red jersey",
+      "confidence": "high",
+      "note": "Not in target list.",
+      "altIds": []
+    },
+    {
+      "compId": null,
+      "player": "Jaylen Warren",
+      "tStart": 266,
+      "tEnd": 274,
+      "tBest": 268,
+      "frames": ["f_0134", "f_0135", "f_0136", "f_0137", "f_0138"],
+      "parallelCue": "'UNDRAFTED' insert, Pittsburgh Steelers #30; f_0135 shows a blue on-card AUTOGRAPH with a serial bottom-right",
+      "confidence": "high",
+      "note": "Not in target list. Held/shuffled across several frames; the auto version is shown at t=268.",
+      "altIds": []
+    },
+    {
+      "compId": null,
+      "player": "Brady Cook",
+      "tStart": 282,
+      "tEnd": 284,
+      "tBest": 284,
+      "frames": ["f_0142", "f_0143"],
+      "parallelCue": "'UNDRAFTED' insert, New York Jets QB, green jersey, RC; f_0142 shows the back with a blue auto",
+      "confidence": "med",
+      "note": "Not in target list. Held in right hand / shown briefly while Kelvin Banks auto is in left hand.",
+      "altIds": []
+    },
+    {
+      "compId": null,
+      "player": "Savion Williams",
+      "tStart": 282,
+      "tEnd": 282,
+      "tBest": 282,
+      "frames": ["f_0142"],
+      "parallelCue": "card BACK only ('SAVION WILLIAMS', 'GREEN BAY PACKERS - WR', #144)",
+      "confidence": "high",
+      "note": "Not in target list. Only the back is shown (left hand) at t=282.",
+      "altIds": []
+    },
+    {
+      "compId": null,
+      "player": "Matthew Stafford",
+      "tStart": 292,
+      "tEnd": 294,
+      "tBest": 294,
+      "frames": ["f_0147", "f_0148"],
+      "parallelCue": "'ROUND 1 PICK 1' insert, Los Angeles Rams QB #9, blue/yellow uniform",
+      "confidence": "high",
+      "note": "Not in target list.",
+      "altIds": []
+    },
+    {
+      "compId": null,
+      "player": "Jacksonville Jaguars RB (unidentified)",
+      "tStart": 296,
+      "tEnd": 296,
+      "tBest": 296,
+      "frames": ["f_0149"],
+      "parallelCue": "'ROUND 1 PICK 23' black-foil insert, Jaguars logo, white away jersey",
+      "confidence": "low",
+      "note": "Not clearly any target. Player face partly obscured by thumb; Jaguars 'Round 1 Pick 23' insert. Possibly Travis Etienne style insert but NOT the Blue & Yellow #27 parallel of target 27. Flagging as a non-target insert.",
+      "altIds": []
+    },
+    {
+      "compId": null,
+      "player": "Michael Pittman Jr. (probable)",
+      "tStart": 298,
+      "tEnd": 298,
+      "tBest": 298,
+      "frames": ["f_0150"],
+      "parallelCue": "black-foil insert (right rail text ends '...UND'), Indianapolis Colts white #11 jersey, neon-green cleats",
+      "confidence": "low",
+      "note": "Colts #11 = likely Michael Pittman Jr. This is a black-foil insert, NOT the 'Refractor #24' parallel of target 30, so left as null. If the cataloguer wants a guess, alt target is 30 but the parallel does NOT match. Card enters frame at the very end of this window (t=298) and likely continues into W06.",
+      "altIds": ["30"]
+    }
+  ],
+  "boxOpens": [
+    {
+      "t": 246,
+      "type": "unknown",
+      "evidence": "Tearing open a single sealed silver-foil Topps Signature retail pack (front reads stylized 'C' / '2025' / '8 CARDS', NFL + NFLPA logos). Frames f_0124-f_0128 show cellophane tear and cards emerging. This is an individual pack, not a box; no 'BLASTER' or 'MEGA' box text is visible in this window.",
+      "confidence": "med"
+    }
+  ],
+  "notes": "Window t=240-298s. Only ONE target confirmed: compId 02 Kelvin Banks Jr. auto RC (Saints), clearly held t=276-288 and re-shown with a meme PIP. The rest of the cards pulled in this window (Marcus Mbow, Stefon Diggs, DK Metcalf, Bucky Irving, Jaylen Warren+auto, Brady Cook+auto, Savion Williams, Matthew Stafford, an unidentified Jaguars RB, and a probable Michael Pittman Jr.) are NOT on the target list -- this window is mostly a single Topps Signature pack break of non-target inserts/autos. Two cards (Jaguars RB f_0149, Colts #11 Pittman? f_0150) are low-confidence due to thumb occlusion / late entry and likely continue into the W06 window for a cleaner read. Several frames are just hands/talking (f_0123, f_0146) or pack-opening (f_0124-0130). No clearly-labeled blaster or mega BOX open occurs in this window -- only an individual pack."
+}

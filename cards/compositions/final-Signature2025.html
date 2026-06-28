@@ -9,7 +9,7 @@
       #root { position:relative; width:1080px; height:1920px; }
       #source-video { position:absolute; inset:0; width:1080px; height:1920px; object-fit:cover; object-position:center center; }
 
-      .sale-card { position:absolute; right:12px; top:92px; width:230px; padding:9px 9px 4px; border-radius:20px;
+      .sale-card { position:absolute; right:120px; top:92px; width:230px; padding:9px 9px 4px; border-radius:20px;
         background:rgba(255,255,255,0.10); backdrop-filter:blur(24px) saturate(140%); -webkit-backdrop-filter:blur(24px) saturate(140%);
         border:1px solid rgba(255,255,255,0.20); box-shadow:0 12px 28px rgba(0,0,0,0.32),inset 0 1px 0 rgba(255,255,255,0.24);
         display:flex; flex-direction:column; align-items:stretch; opacity:0; }
@@ -20,7 +20,7 @@
       .sale-card__label + .sale-card__value { margin-top:2px; }
       .sale-card[data-money-shot="true"] .sale-card__value { color:#ffd24a; text-shadow:0 2px 16px rgba(255,210,74,0.6); }
 
-      .box-tracker { position:absolute; left:36px; top:140px; width:212px; padding:14px 16px; border-radius:22px;
+      .box-tracker { position:absolute; left:36px; top:332px; width:212px; padding:14px 16px; border-radius:22px;
         background:rgba(255,255,255,0.08); backdrop-filter:blur(28px) saturate(140%); -webkit-backdrop-filter:blur(28px) saturate(140%);
         border:1px solid rgba(255,255,255,0.18); box-shadow:0 10px 24px rgba(0,0,0,0.28),inset 0 1px 0 rgba(255,255,255,0.22); opacity:0; }
       .box-tracker__label { font-size:12px; font-weight:600; letter-spacing:4px; color:rgba(255,255,255,0.7); text-transform:uppercase; margin-bottom:4px; line-height:1.25; }
@@ -94,6 +94,7 @@
 
       <script>
         (function () {
+          const SCL=1;
           const IN_DUR=0.3, OUT_DUR=0.4, POP_IN=0.7;
           const tl = gsap.timeline({ paused:true });
           gsap.set(".sale-card.clip", { transformOrigin:"100% 0%" });
@@ -124,8 +125,8 @@
           const rRoi=document.getElementById("recap-roi");
           const COST=29.99; const RS=54.03;
           const finalTotal=run; const profit=finalTotal-COST; const isLoss=profit<0; const roi=profit/COST*100;
-          if(isLoss){ rPro.style.color="#f87171"; rPro.style.textShadow="0 4px 24px rgba(248,113,113,0.45)"; rLab.style.color="#f87171"; rLab.textContent="Loss"; rRoi.style.color="#f87171"; }
-          else { rPro.style.color="#4ade80"; rPro.style.textShadow="0 4px 24px rgba(74,222,128,0.5)"; rRoi.style.color="#4ade80"; }
+          if(isLoss){ rPro.style.color="#f87171"; rPro.style.textShadow="0 "+(4*SCL)+"px "+(24*SCL)+"px rgba(248,113,113,0.45)"; rLab.style.color="#f87171"; rLab.textContent="Loss"; rRoi.style.color="#f87171"; }
+          else { rPro.style.color="#4ade80"; rPro.style.textShadow="0 "+(4*SCL)+"px "+(24*SCL)+"px rgba(74,222,128,0.5)"; rRoi.style.color="#4ade80"; }
           gsap.set(recap,{xPercent:-50,yPercent:-50,transformOrigin:"center center"});
           gsap.set([rLab,rPro,rRoi],{opacity:0,y:16});
           tl.fromTo(recap,{opacity:0,scale:0.88},{opacity:1,scale:1,duration:0.7,ease:"back.out(1.4)"},RS);

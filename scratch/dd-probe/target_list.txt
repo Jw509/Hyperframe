@@ -1,0 +1,49 @@
+01 | 134418 | Brock Bowers | Purple #34 | $10.99
+02 | 135439 | Kelvin Banks Jr. | Football Auto RC | $8.75
+03 | 135234 | Patrick Mahomes II | Total Touchdowns - Zone Out | $5.00
+04 | 135307 | Isaac TeSlaa | Blue & Yellow #131 | $3.99
+05 | 140840 | Josh Allen | Class Action | $3.00
+06 | 141459 | Lamar Jackson | Rookie Refractor #RC-LJ | $3.00
+07 | 134305 | Cooper Kupp | Rounding Pick 6 #97 | $2.99
+08 | 140618 | Alfred Collins | Round 2 Pick 11 #196 | $2.99
+09 | 141044 | Drake London | Class Icons #CI-13 | $2.99
+10 | 141547 | Ladd McConkey | Round 2 Pick - Teal #81 | $2.99
+11 | 140137 | Chris Olave | NFL In Session #IS-19 | $2.75
+12 | 133554 | Quentin Johnston | After Image #AI-1 | $2.69
+13 | 135707 | Brian Burns | Class Icons #CI-3 | $2.65
+14 | 134223 | Jordan Addison | Class Action #CA-21 | $2.25
+15 | 135556 | Cam Ward | Sunday Showcase Inserts RC #SS-2 | $2.25
+16 | 140048 | Maxwell Hairston | Blue & Yellow Rookie #143 | $2.25
+17 | 140404 | Trey McBride | Zone Out Insert ZO-24 | $2.25
+18 | 141921 | Caleb Williams / Rome Odunze | Paramount Pairings #PP-1 | $2.25
+19 | 140248 | Jordan Love | Yellow Blue Variant SP | $2.20
+20 | 140919 | J.J. McCarthy | Blue & Yellow #37 | $2.10
+21 | 142032 | Patrick Mahomes II | Class Actions Inserts #CA-16 | $2.05
+22 | 134007 | De'Von Achane | Purple | $1.99
+23 | 134848 | Abdul Carter | Blue & Yellow #118 | $1.99
+24 | 135120 | Amon-Ra St. Brown | #19 Parallel | $1.99
+25 | 140540 | Donte Thornton Jr. | Yellow/Blue #181 | $1.99
+26 | 141348 | Bryce Young | Sunday Showcase #SS-23 | $1.99
+27 | 142138 | Travis Etienne Jr. | Round 1 Pick - Blue & Yellow #27 | $1.99
+28 | 141705 | Derrick Harmon | Refractor | $1.75
+29 | 134448 | Colston Loveland | Class Icons #CI-22 | $1.50
+30 | 135206 | Michael Pittman Jr. | Refractor #24 | $1.50
+31 | 140647 | Maxx Crosby | Green & Purple | $1.50
+32 | 141014 | Kyle Williams | Teal #147 | $1.50
+33 | 141834 | Jordan James | Round 5 Pick - Yellow & Blue #170 | $1.50
+34 | 141953 | Colston Loveland | Red And Black Parallel RC | $1.50
+35 | 142316 | Jaydon Blue | Round 5 Pick - Yellow Foil #225 RC Rookie | $1.49
+36 | 141313 | Kyren Williams | After Image Insert #AI-17 | $1.40
+37 | 142229 | Jalon Walker | Class Icons #CI-19 | $1.40
+38 | 141419 | Trey Amos | Yellow & Blue Commanders #156 | $1.30
+39 | 133829 | CJ Stroud | Sunday Showcase #SS-17 | $1.25
+40 | 133856 | Chris Paul Jr. | Blue & Yellow #233 | $1.25
+41 | 134810 | Justin Herbert / Ladd McConkey | Paramount Pairings | $1.25
+42 | 140503 | J.J. McCarthy | Sunday Showcase #SS-20 | $1.25
+43 | 135633 | Trevor Lawrence | Red & Black #26 | $1.00
+44 | 133723 | Andrew Mukuba | Blue & Yellow Rookie #162 | $0.99
+45 | 133945 | Andrew Mukuba | Base #162 | $0.99
+46 | 135908 | Justin Jefferson | Yellow Blue Foil SP | $0.99
+47 | 141628 | Jalen Milroe | Round 2 Pick - Red & Black #151 (RC) | $0.99
+48 | 141745 | Kyle Williams | Round 3 Pick - Red & Black #147 RC Rookie | $0.99
+49 | 141858 | Walter Nolen | Round 1 Pick - Chrome Base #146 RC Rookie | $0.99

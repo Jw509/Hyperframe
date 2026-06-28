@@ -1,0 +1,113 @@
+{
+  "window": "W10",
+  "sightings": [
+    {
+      "compId": null,
+      "player": "Dak Prescott",
+      "tStart": 540,
+      "tEnd": 542,
+      "tBest": 542,
+      "frames": ["f_0271", "f_0272"],
+      "parallelCue": "Cowboys #4, 'ROUND 1 PICK 37', serial 116/225, teal/silver base with dark right panel, RC",
+      "confidence": "high",
+      "note": "Dak Prescott Cowboys QB held center 2-handed; NOT in target list (compId null). Same /225 serial as the Kyle Williams that follows."
+    },
+    {
+      "compId": "48",
+      "player": "Kyle Williams",
+      "tStart": 544,
+      "tEnd": 548,
+      "tBest": 544,
+      "frames": ["f_0273", "f_0274", "f_0275"],
+      "parallelCue": "Patriots #18, 'ROUND 3 PICK 5', RC, serial 116/225, red & black right panel",
+      "confidence": "high",
+      "note": "Matches compId 48 (Kyle Williams Round 3 Pick - Red & Black #147 RC). 'ROUND 3 PICK' text + red/black design + /225 serial fit the red&black parallel, not the Teal #147 (compId 32). Held center, face-cam visible f_0274."
+    },
+    {
+      "compId": "09",
+      "player": "Drake London",
+      "tStart": 550,
+      "tEnd": 550,
+      "tBest": 550,
+      "frames": ["f_0276"],
+      "parallelCue": "Falcons, ornate white 'Class Icons' insert frame, '1ST ROUND 8 PICK', Falcons logo, name 'DRAKE LONDON' bottom",
+      "confidence": "high",
+      "note": "Matches compId 09 (Drake London Class Icons #CI-13). Held center. Reappears in background top-right of f_0277/f_0278."
+    },
+    {
+      "compId": null,
+      "player": "Abdul Carter",
+      "tStart": 552,
+      "tEnd": 552,
+      "tBest": 552,
+      "frames": ["f_0277"],
+      "parallelCue": "Giants #71, 'ROUND 1 PICK 16', PURPLE/violet left border, RC",
+      "confidence": "med",
+      "note": "Player is Abdul Carter (in list as compId 23 Blue & Yellow #118) BUT this is a PURPLE border parallel, not blue&yellow, and pick/number differ. Recording compId null; possible alt = 23 if matching by player only. Held center."
+    },
+    {
+      "compId": null,
+      "player": "Ahmed Hassanein",
+      "tStart": 554,
+      "tEnd": 554,
+      "tBest": 554,
+      "frames": ["f_0278"],
+      "parallelCue": "Lions #51, 'ROUND 2 PICK 20', blue/black right panel, RC, name reads 'AHMED HASSANEIN'",
+      "confidence": "med",
+      "note": "Lions DE rookie Ahmed Hassanein; NOT in target list (do not confuse with Alfred Collins compId 08, who is Round 2 Pick 11 #196). compId null. Drake London Class Icons visible top-right."
+    },
+    {
+      "compId": null,
+      "player": "Patrick Mahomes II",
+      "tStart": 560,
+      "tEnd": 564,
+      "tBest": 564,
+      "frames": ["f_0281", "f_0282", "f_0283"],
+      "parallelCue": "Chiefs #15, 'ROUND 1' base/Chrome look, white base w/ red right panel screaming-Mahomes photo, Chiefs logo",
+      "confidence": "med",
+      "note": "Patrick Mahomes base 'Round 1 Pick' card. Mahomes targets are inserts only (compId 03 Total Touchdowns Zone Out, compId 21 Class Actions CA-16) - this base card matches NEITHER, so compId null. Partly finger-obscured f_0281-282, clearest f_0283."
+    },
+    {
+      "compId": null,
+      "player": "Jared Goff",
+      "tStart": 566,
+      "tEnd": 566,
+      "tBest": 566,
+      "frames": ["f_0284"],
+      "parallelCue": "Lions #16, 'ROUND 1 PICK 1', blue right panel, Lions logo",
+      "confidence": "high",
+      "note": "Jared Goff Lions QB; NOT in target list. compId null. A second card (Jalen Hurts Eagles) held in right hand, partially shown."
+    },
+    {
+      "compId": null,
+      "player": "Travis Kelce",
+      "tStart": 568,
+      "tEnd": 568,
+      "tBest": 568,
+      "frames": ["f_0285"],
+      "parallelCue": "Chiefs, 'ROUND 1 PICK 1', white base w/ dark right panel, Chiefs logo",
+      "confidence": "high",
+      "note": "Travis Kelce Chiefs TE; NOT in target list. compId null. Held center."
+    },
+    {
+      "compId": null,
+      "player": "Raheim Sanders",
+      "tStart": 570,
+      "tEnd": 576,
+      "tBest": 572,
+      "frames": ["f_0286", "f_0287", "f_0288", "f_0289"],
+      "parallelCue": "Chargers #35, 'UNDRAFTED', yellow/blue base, RC, name 'RAHEIM \"ROCKET\" SANDERS', Chargers bolt logo",
+      "confidence": "high",
+      "note": "Raheim Sanders Chargers RB; NOT in target list. compId null. Held center, shown clearly several seconds."
+    }
+  ],
+  "boxOpens": [
+    {
+      "t": 580,
+      "type": "mega",
+      "evidence": "Fresh sealed box held up: '2025 Topps Signature Class football', 'LOOK FOR EXCLUSIVE PARALLELS', '10 PACKS / 8 CARDS PER PACK, 80 TOTAL CARDS'. Cellophane removed f_0294-296, inner black tray slid out f_0299-300.",
+      "confidence": "high"
+    }
+  ],
+  "notes": "Frames f_0271-289: tail end of a pack break (loose single cards held one at a time over the C4TC backdrop). f_0279-280 = tearing/peeling a foil pack wrapper (not a new box). At t=580 a NEW SEALED 80-card Topps Signature box is presented and opened (cellophane off ~586-590, tray slid out 596-598) - this runs to the end of my window and continues past it. Classified 'mega' (80-card large box; '2 mega + 2 blaster' per task and this is the larger 80ct format - if blaster boxes here are also 80ct, treat type as low-confidence). Several non-target NFL veterans/rookies shown (Dak, Goff, Kelce, Mahomes base, Ahmed Hassanein, Raheim Sanders). Abdul Carter shown in a PURPLE parallel that doesn't match his blue&yellow target (compId 23) - flagged. No clean confirmed colored-parallel duplicates of the twice-listed players in this window."
+}

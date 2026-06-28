@@ -1,0 +1,163 @@
+{
+  "window": "W02",
+  "sightings": [
+    {
+      "compId": "03",
+      "player": "Patrick Mahomes II",
+      "tStart": 66,
+      "tEnd": 70,
+      "tBest": 68,
+      "frames": ["f_0034", "f_0035", "f_0036"],
+      "parallelCue": "Chiefs QB #15, white/base border, 'Round 1 Pick 10', sepia screaming-Mahomes panel on right",
+      "confidence": "low",
+      "note": "Mahomes Round 1 Pick 10 base insert-style card. Target 03 is 'Total Touchdowns - Zone Out' and target 21 is 'Class Actions CA-16' - this card matches NEITHER parallel cleanly (it is the base Round 1 Pick design). compId 03 is a weak guess only because it is the cheapest Mahomes; could be neither target. Held in left hand f_0036 while Hurts shown."
+    },
+    {
+      "compId": null,
+      "player": "Jalen Hurts",
+      "tStart": 70,
+      "tEnd": 70,
+      "tBest": 70,
+      "frames": ["f_0036"],
+      "parallelCue": "Eagles QB #1, white/base border, 'Round 2 Pick 22'",
+      "confidence": "med",
+      "note": "Jalen Hurts not in target list. Held center while Mahomes card in other hand."
+    },
+    {
+      "compId": null,
+      "player": "Jared Goff",
+      "tStart": 72,
+      "tEnd": 72,
+      "tBest": 72,
+      "frames": ["f_0037"],
+      "parallelCue": "Lions QB #16, white/base border, 'Round 1 Pick 1'",
+      "confidence": "med",
+      "note": "Jared Goff not in target list."
+    },
+    {
+      "compId": null,
+      "player": "Tee Higgins",
+      "tStart": 74,
+      "tEnd": 74,
+      "tBest": 74,
+      "frames": ["f_0038"],
+      "parallelCue": "Bengals WR #5, white/base border, 'Round 2 Pick 1'",
+      "confidence": "med",
+      "note": "Tee Higgins not in target list."
+    },
+    {
+      "compId": "45",
+      "player": "Andrew Mukuba",
+      "tStart": 76,
+      "tEnd": 78,
+      "tBest": 78,
+      "frames": ["f_0039", "f_0040"],
+      "parallelCue": "Eagles DB #22, RC logo, white/base border, sepia portrait panel, 'Round 2 Pick 32'",
+      "confidence": "med",
+      "note": "Andrew Mukuba base/white border = target 45 (Base #162). NOT blue & yellow, so this is the base not target 44. Alternative ID 44 if border read wrong. Held center 2-handed, very clear in f_0040."
+    },
+    {
+      "compId": "22",
+      "player": "De'Von Achane",
+      "tStart": 80,
+      "tEnd": 82,
+      "tBest": 82,
+      "frames": ["f_0041", "f_0042"],
+      "parallelCue": "Dolphins RB #22, PURPLE border on left/bottom, green-tinted portrait panel, 'Round 1 Pick 24'",
+      "confidence": "high",
+      "note": "Clear PURPLE parallel = target 22 (De'Von Achane Purple). Held center 2-handed."
+    },
+    {
+      "compId": null,
+      "player": "Travis Kelce",
+      "tStart": 86,
+      "tEnd": 94,
+      "tBest": 86,
+      "frames": ["f_0044", "f_0047", "f_0048"],
+      "parallelCue": "Chiefs TE #87, white/base border, sepia portrait panel, 'Round 1 Pick 1'",
+      "confidence": "med",
+      "note": "Travis Kelce not in target list. Shown at t=86 (f_0044), shuffled/covered t=88-90, re-shown t=92-94 (f_0047/48) with another card overlapping right."
+    },
+    {
+      "compId": null,
+      "player": "Jayden Daniels",
+      "tStart": 96,
+      "tEnd": 96,
+      "tBest": 96,
+      "frames": ["f_0049"],
+      "parallelCue": "Commanders QB, gold/sepia toned, 'Round 2 Pick 2'",
+      "confidence": "low",
+      "note": "Jayden Daniels (Commanders) not in target list. Held left hand while a second darker card (running back, possibly Saints) handled in right hand."
+    },
+    {
+      "compId": null,
+      "player": "Christian McCaffrey",
+      "tStart": 98,
+      "tEnd": 98,
+      "tBest": 98,
+      "frames": ["f_0050"],
+      "parallelCue": "49ers RB, white/base border, sepia portrait panel, 'Round 1 Pick 8'",
+      "confidence": "med",
+      "note": "Christian McCaffrey not in target list. Held center 1-handed, clear."
+    },
+    {
+      "compId": "14",
+      "player": "Jordan Addison",
+      "tStart": 100,
+      "tEnd": 100,
+      "tBest": 100,
+      "frames": ["f_0051"],
+      "parallelCue": "Vikings WR #3, GOLD 'Class Action' insert, 'WINNING STARTS HERE!', Vikings logo bottom-right",
+      "confidence": "high",
+      "note": "Clear 'Class Action' insert for Jordan Addison = target 14 (Class Action CA-21). Held center 2-handed."
+    },
+    {
+      "compId": null,
+      "player": "Cooper Kupp (uncertain)",
+      "tStart": 102,
+      "tEnd": 102,
+      "tBest": 102,
+      "frames": ["f_0052"],
+      "parallelCue": "Seahawks WR #18, YELLOW & BLUE border, yellow portrait panel, 'Round 3 Pick 5'",
+      "confidence": "low",
+      "note": "Yellow & blue parallel, Seahawks #18. Likely Cooper Kupp (now Seattle, #18) but name unreadable. Target 7 Cooper Kupp is 'Rounding Pick 6 #97' insert - does NOT match this yellow/blue base. Reporting as null/unmatched held card. Could also be a rookie WR."
+    },
+    {
+      "compId": "48",
+      "player": "Kyle Williams",
+      "tStart": 104,
+      "tEnd": 104,
+      "tBest": 104,
+      "frames": ["f_0053"],
+      "parallelCue": "Patriots WR #18, RC logo, white/base border, red/sepia portrait panel, 'Round 3 Pick 6'",
+      "confidence": "low",
+      "note": "Kyle Williams RC 'Round 3 Pick' subset = target 48 family (Round 3 Pick #147 RC), BUT this is the BASE white border, NOT the Red & Black parallel of target 48 and NOT the Teal of target 32. compId 48 as nearest subset match; flag as base parallel. Alternative ID 32."
+    },
+    {
+      "compId": null,
+      "player": "Jaxon Smith-Njigba",
+      "tStart": 114,
+      "tEnd": 118,
+      "tBest": 116,
+      "frames": ["f_0058", "f_0059", "f_0060"],
+      "parallelCue": "Seahawks WR #11, white/base border, green-tinted portrait panel, 'Round 1 Pick 20'",
+      "confidence": "med",
+      "note": "Jaxon Smith-Njigba not in target list. Clear at t=116 (f_0059); shuffled on top of stack at t=118 (f_0060)."
+    }
+  ],
+  "boxOpens": [
+    {
+      "t": 60,
+      "type": "blaster",
+      "evidence": "Hands cutting/tearing open a sealed pack at t=60 (f_0031), then at t=62-64 (f_0032/0033) a black & silver Topps Signature foil pack is opened. Part of the blaster-pack run that began earlier in the video; this is a pack-open, larger box context unclear.",
+      "confidence": "low"
+    },
+    {
+      "t": 108,
+      "type": "mega",
+      "evidence": "At t=108 (f_0055) hands tear open a dark pack with red 'MEGA' text visible on the wrapper; at t=110 (f_0056) a fresh silver Topps Signature '2026 / 7 CARDS' pack from the mega box is shown. This marks a transition to MEGA box packs.",
+      "confidence": "med"
+    }
+  ],
+  "notes": "Window covers t=60-118s (f_0031-f_0060). This is an active card-reveal stretch from a Topps Signature (2026) opening at the 'CHASE 4 THE CASE' backdrop. Cards held center / center-right, 1-2 handed, typically 2-6s each. Only 3 clean target matches in this window: 22 (De'Von Achane Purple, high conf), 14 (Jordan Addison Class Action, high conf), and 45 (Andrew Mukuba base, med conf). Many shown cards are NOT in the target list (Hurts, Goff, Higgins, Kelce, Jayden Daniels, McCaffrey, Jaxon Smith-Njigba) - reported as compId null to catch misses. Ambiguous/parallel-mismatch cards: f_0034-0036 Mahomes 'Round 1 Pick 10' base does not cleanly match target 03 or 21; f_0052 yellow/blue Seahawks #18 (likely Cooper Kupp) matches no target parallel; f_0053 Kyle Williams 'Round 3 Pick 6' is BASE not the Red&Black(48)/Teal(32) parallels. f_0043 (t=84) and f_0046 (t=90) are mid-shuffle/blurred; f_0054 (t=106) and f_0057 (t=112) show only backdrop or pack-back with no card face. Box-open at t=108 has visible 'MEGA' text; the t=60 open is a foil pack (box size not legible)."
+}

@@ -1,0 +1,249 @@
+{
+  "window": "W13",
+  "sightings": [
+    {
+      "compId": "46",
+      "player": "Justin Jefferson",
+      "tStart": 720,
+      "tEnd": 720,
+      "tBest": 720,
+      "frames": ["f_0361"],
+      "parallelCue": "white left / gold-foil right portrait side, 'ROUND 1 PICK 22', Vikings #18",
+      "confidence": "med",
+      "note": "Only Jefferson in target list is #46 (Yellow/Blue Foil SP). This card's foil side reads gold rather than clearly yellow-blue, so parallel match is uncertain; could be a base/gold variant. Held center-left single-handed, clear face."
+    },
+    {
+      "compId": null,
+      "player": "Steelers QB (Aaron Rodgers?)",
+      "tStart": 722,
+      "tEnd": 722,
+      "tBest": 722,
+      "frames": ["f_0362"],
+      "parallelCue": "Steelers black/gold, QB #8 throwing, 'ROUND 1 PICK 24', white/black border (refractor-ish)",
+      "confidence": "low",
+      "note": "Steelers QB card being shuffled, not held flat. No Steelers QB in target list; compId null."
+    },
+    {
+      "compId": "28",
+      "player": "Derrick Harmon",
+      "tStart": 724,
+      "tEnd": 724,
+      "tBest": 724,
+      "frames": ["f_0363"],
+      "parallelCue": "Steelers DL #99 screaming, holo/refractor sheen on card, 'ROUND 2 PICK ...', Steelers logo bottom",
+      "confidence": "med",
+      "note": "Matches #28 Derrick Harmon (Refractor) - Steelers rookie DL, RC mark visible. Card has refractor rainbow sheen. Held center, clear."
+    },
+    {
+      "compId": "48",
+      "player": "Kyle Williams",
+      "tStart": 726,
+      "tEnd": 730,
+      "tBest": 726,
+      "frames": ["f_0364", "f_0366"],
+      "parallelCue": "all-RED card, Patriots WR #18, 'KYLE WILLIAMS', 'ROUND 3 PICK ...', RC, Patriots logo, red & black",
+      "confidence": "high",
+      "note": "Matches #48 Kyle Williams (Round 3 Pick - Red & Black #147 RC). Clear at t=726; at t=730 (f_0366) it is being re-handled/obscured by fingers. Also note #32/#1014 is a different Kyle Williams (Teal) - this RED one is #48."
+    },
+    {
+      "compId": null,
+      "player": "Commanders player #27 (Jacory Croskey-Merritt?)",
+      "tStart": 728,
+      "tEnd": 728,
+      "tBest": 728,
+      "frames": ["f_0365"],
+      "parallelCue": "Commanders maroon/gold #27, white left / gold right, 'ROUND 7 PICK 28?', Washington 'W' logo bottom",
+      "confidence": "low",
+      "note": "Commanders Round 7 pick, base-look. No matching Commanders RB in target list; compId null."
+    },
+    {
+      "compId": null,
+      "player": "Ravens player #17",
+      "tStart": 732,
+      "tEnd": 732,
+      "tBest": 732,
+      "frames": ["f_0367"],
+      "parallelCue": "Ravens white jersey #17, white left / green-tinted right, 'ROUND 1 PICK 20?'",
+      "confidence": "low",
+      "note": "Ravens card, base-look, being shuffled with another card. No clear target match; compId null."
+    },
+    {
+      "compId": null,
+      "player": "C.J. Stroud (Texans QB)",
+      "tStart": 734,
+      "tEnd": 734,
+      "tBest": 734,
+      "frames": ["f_0368"],
+      "parallelCue": "Texans QB #7 white jersey throwing, white left / gold right, 'ROUND 1 PICK 2', Texans logo",
+      "confidence": "low",
+      "note": "Looks like a base/gold Texans QB (Stroud-style). Target #39 CJ Stroud is a 'Sunday Showcase #SS-17' insert, which this is NOT (this is a base Round-1-pick layout). Left as null; flag in case team wants it."
+    },
+    {
+      "compId": null,
+      "player": "Ja'Marr Chase (Bengals WR)",
+      "tStart": 736,
+      "tEnd": 736,
+      "tBest": 736,
+      "frames": ["f_0369"],
+      "parallelCue": "Bengals WR #1 white jersey, white left / brown-gold right, 'ROUND 1 PICK 5', Bengals logo",
+      "confidence": "low",
+      "note": "Base-look Ja'Marr Chase. No Chase in target list; compId null. Held center, clear."
+    },
+    {
+      "compId": null,
+      "player": "Lamar Jackson (Ravens QB)",
+      "tStart": 738,
+      "tEnd": 738,
+      "tBest": 738,
+      "frames": ["f_0370"],
+      "parallelCue": "Ravens QB #8 purple jersey throwing, gold portrait side, YELLOW+BLUE gradient strip along bottom edge, Ravens logo bottom-right, 49ers logo bottom-left",
+      "confidence": "low",
+      "note": "Lamar Jackson. Target #06 is 'Rookie Refractor #RC-LJ' which does NOT fit (Lamar is not a rookie and this is not a refractor). Left null. Yellow/blue bottom edge suggests a Blue&Yellow parallel not in list."
+    },
+    {
+      "compId": null,
+      "player": "Kimani Vidal (Chargers RB)",
+      "tStart": 740,
+      "tEnd": 740,
+      "tBest": 740,
+      "frames": ["f_0371"],
+      "parallelCue": "Chargers RB #35 white jersey, 'KIMANI \"ROCKET\" VIDAL', 'UNDRAFTED', RC, Chargers bolt logo",
+      "confidence": "low",
+      "note": "Undrafted Chargers RB. Not in target list; compId null. Held center, clear."
+    },
+    {
+      "compId": null,
+      "player": "Alec Pierce (Colts WR)",
+      "tStart": 744,
+      "tEnd": 744,
+      "tBest": 744,
+      "frames": ["f_0373"],
+      "parallelCue": "Colts #25 white jersey, 'ALEC PIERCE', 'ROUND 2 PICK 21', white left / black right, Colts logo",
+      "confidence": "low",
+      "note": "Alec Pierce Colts base-look. Not in target list; compId null."
+    },
+    {
+      "compId": "49",
+      "player": "Walter Nolen",
+      "tStart": 748,
+      "tEnd": 750,
+      "tBest": 748,
+      "frames": ["f_0375", "f_0376"],
+      "parallelCue": "Cardinals DL #97, 'WALTER NOLEN', 'ROUND 1 PICK 16', chrome/silver base sheen, RC, Cardinals logo bottom",
+      "confidence": "high",
+      "note": "Matches #49 Walter Nolen (Round 1 Pick - Chrome Base #146 RC). Clear chrome base, held center, RC mark visible."
+    },
+    {
+      "compId": "18",
+      "player": "Caleb Williams / Rome Odunze",
+      "tStart": 752,
+      "tEnd": 754,
+      "tBest": 752,
+      "frames": ["f_0377", "f_0378"],
+      "parallelCue": "DUAL card, Bears, 'CALEB WILLIAMS' + 'ROME ODUNZE', 'PARAMOUNT PAIRINGS' gold script, two Bears logos bottom corners",
+      "confidence": "high",
+      "note": "Matches #18 Caleb Williams / Rome Odunze (Paramount Pairings #PP-1). Held center 2-handed at t=752 fully readable; tilted at t=754. Also briefly resting on table top-right at f_0379 and f_0381 (not re-counted)."
+    },
+    {
+      "compId": "34",
+      "player": "Colston Loveland",
+      "tStart": 756,
+      "tEnd": 756,
+      "tBest": 756,
+      "frames": ["f_0379"],
+      "parallelCue": "all-RED & BLACK card, Bears TE #84, 'COLSTON LOVELAND', RC, Bears logo bottom",
+      "confidence": "high",
+      "note": "Matches #34 Colston Loveland (Red And Black Parallel RC) - the red/black version, NOT #29 (Class Icons). Held center; Paramount Pairings card resting top-right of frame."
+    },
+    {
+      "compId": null,
+      "player": "Vikings OL #74",
+      "tStart": 758,
+      "tEnd": 758,
+      "tBest": 758,
+      "frames": ["f_0380"],
+      "parallelCue": "Vikings white jersey #74 lineman, white left / gold right, RC, Vikings logo bottom",
+      "confidence": "low",
+      "note": "Vikings offensive lineman base-look, being shuffled. Not in target list; compId null. Colston Loveland red card visible top-right corner."
+    },
+    {
+      "compId": null,
+      "player": "Jared Goff (Lions QB)",
+      "tStart": 760,
+      "tEnd": 760,
+      "tBest": 760,
+      "frames": ["f_0381"],
+      "parallelCue": "Lions QB #16 white jersey, 'JARED GOFF', 'ROUND ...', Lions logo, white left / black right",
+      "confidence": "low",
+      "note": "Jared Goff, mostly covered by hand. Not in target list; compId null."
+    },
+    {
+      "compId": null,
+      "player": "Bengals QB #16 (Joe Burrow?)",
+      "tStart": 762,
+      "tEnd": 762,
+      "tBest": 762,
+      "frames": ["f_0382"],
+      "parallelCue": "Bengals white jersey #16 throwing, 'ROU.. PICK', Bengals 'B' logo bottom",
+      "confidence": "low",
+      "note": "Bengals QB card being shuffled, partly obscured. No matching Bengals QB in target list; compId null."
+    },
+    {
+      "compId": null,
+      "player": "Travis Kelce (Chiefs TE)",
+      "tStart": 764,
+      "tEnd": 764,
+      "tBest": 764,
+      "frames": ["f_0383"],
+      "parallelCue": "Chiefs TE #87 red jersey running, 'TRAVIS KELCE', 'ROUND 1 PICK 1', white left / brown-gold right, Chiefs logo",
+      "confidence": "low",
+      "note": "Travis Kelce base-look. Not in target list; compId null. Held center, clear."
+    },
+    {
+      "compId": null,
+      "player": "Jayden Daniels (Commanders QB)",
+      "tStart": 766,
+      "tEnd": 766,
+      "tBest": 766,
+      "frames": ["f_0384"],
+      "parallelCue": "Commanders QB #5 white jersey throwing, 'JAYDEN DANIELS', 'ROUND 1 PICK 2', white left / gold right, Washington 'W' logo",
+      "confidence": "low",
+      "note": "Jayden Daniels base-look; a Saints card being shuffled above it. Not in target list; compId null."
+    },
+    {
+      "compId": "21",
+      "player": "Patrick Mahomes II",
+      "tStart": 768,
+      "tEnd": 770,
+      "tBest": 770,
+      "frames": ["f_0385", "f_0386"],
+      "parallelCue": "GOLD/YELLOW insert, Chiefs #15 red jersey, 'Class Action - WINNING STARTS HERE!', 'PATRICK MAHOMES II QUARTERBACK', Topps + Chrome logos top",
+      "confidence": "med",
+      "note": "Class Action insert of Mahomes. Best target match is #21 Patrick Mahomes II 'Class Actions Inserts #CA-16'. (#03 is a different Mahomes 'Total Touchdowns - Zone Out'.) Held center both seconds, fully readable. Card then rests top-right at f_0387."
+    },
+    {
+      "compId": null,
+      "player": "Michael Pittman Jr.? (Colts WR #11)",
+      "tStart": 772,
+      "tEnd": 772,
+      "tBest": 772,
+      "frames": ["f_0387"],
+      "parallelCue": "Colts WR #11 white jersey, BLUE & YELLOW parallel (yellow portrait bg + blue/yellow bottom gradient), 'ROUND 2 PICK 2', Colts logo bottom",
+      "confidence": "low",
+      "note": "Colts #11 (likely Michael Pittman Jr.) in a Blue&Yellow parallel. Target #30 Pittman is a 'Refractor #24' which does NOT match this blue/yellow look, so left null. Flag for team. Mahomes Class Action card resting top-right."
+    },
+    {
+      "compId": null,
+      "player": "Tyreek Hill? (Dolphins, #...)",
+      "tStart": 778,
+      "tEnd": 778,
+      "tBest": 778,
+      "frames": ["f_0390"],
+      "parallelCue": "Dolphins white jersey running, name ends '...NL' (TYRE.. ?), 'ROUND 5 PICK 226', white left / green right, Dolphins logo bottom",
+      "confidence": "low",
+      "note": "Dolphins Round-5-pick base-look RB/WR. Name partially legible. No clear target match; compId null. Held center, clear."
+    }
+  ],
+  "boxOpens": [],
+  "notes": "Continuous single-card show throughout the window; host holds one card at a time center / center-left. No new sealed box or pack-tear seen in this window (t=720-778s) - boxOpens empty. Frames f_0388 (t=774s) and f_0389 (t=776s) are backdrop-only with hands moving off-frame (transition between cards). Several cards are base/gold 'Round X Pick' layouts that resemble targets by player but whose parallel does NOT match the comp's stated parallel (e.g. CJ Stroud base vs target Sunday Showcase #39; Lamar Jackson base vs target Rookie Refractor #06; Pittman blue/yellow vs target Refractor #30) - these were left compId:null to avoid false positives, but are flagged in notes. Confirmed matches: #28 Derrick Harmon (724s), #48 Kyle Williams Red&Black (726s), #49 Walter Nolen (748s), #18 Caleb Williams/Rome Odunze Paramount Pairings (752s), #34 Colston Loveland Red&Black (756s), #21 Patrick Mahomes Class Action (768-770s). Tentative: #46 Justin Jefferson (720s, parallel uncertain)."
+}

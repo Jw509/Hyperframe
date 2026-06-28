@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DoubleDouble — 2025 Signature Class (2 Mega + 2 Blaster) overlay 4K</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      html, body { margin:0; padding:0; width:3840px; height:2160px; background:transparent; overflow:hidden; font-family:"Helvetica Neue","Helvetica",Arial,sans-serif; -webkit-font-smoothing:antialiased; }
+      #root { position:relative; width:3840px; height:2160px; background:transparent; }
+      #source-video { position:absolute; inset:0; width:3840px; height:2160px; object-fit:cover; object-position:center center; }
+
+      /* Comp panel: floats ABOVE the held card, horizontally centered, fades in/out.
+         Kept SMALL and high so it never covers the card the host is holding. */
+      .comp { position:absolute; left:50%; top:36px; width:392px; transform:translateX(-50%);
+        display:flex; flex-direction:column; align-items:center; opacity:0; will-change:opacity,transform; }
+      .comp__img { width:100%; border-radius:22px; overflow:hidden; background:#fff;
+        box-shadow:0 16px 48px rgba(0,0,0,0.45), 0 4px 12px rgba(0,0,0,0.35); }
+      .comp__img img { width:100%; height:auto; display:block; }
+      .comp__tag { margin-top:16px; display:flex; align-items:center; gap:18px;
+        padding:10px 24px; border-radius:1998px; background:rgba(12,14,20,0.85);
+        backdrop-filter:blur(28px); -webkit-backdrop-filter:blur(28px);
+        border:2px solid rgba(255,255,255,0.16); box-shadow:0 12px 36px rgba(0,0,0,0.4); }
+      .comp__name { font-size:30px; font-weight:700; color:#fff; letter-spacing:0.4px; white-space:nowrap; text-shadow:0 2px 8px rgba(0,0,0,0.6); }
+      .comp__val { font-size:44px; font-weight:900; color:#4ade80; letter-spacing:-1px; line-height:1; font-variant-numeric:tabular-nums; text-shadow:0 2px 12px rgba(0,0,0,0.5); }
+      .comp[data-money-shot="true"] .comp__val { color:#ffd24a; }
+      .comp[data-money-shot="true"] .comp__img { box-shadow:0 24px 80px rgba(255,210,74,0.45), 0 0 0 4px rgba(255,210,74,0.7); }
+
+      /* Cost counter: top-left. Two columns (Boxes Cost | Cards Pulled) + per-box pips + live profit/loss. */
+      .cost { position:absolute; left:92px; top:88px; padding:32px 44px 30px; border-radius:44px;
+        background:rgba(12,14,20,0.74); backdrop-filter:blur(52px) saturate(140%); -webkit-backdrop-filter:blur(52px) saturate(140%);
+        border:2px solid rgba(255,255,255,0.16); box-shadow:0 24px 60px rgba(0,0,0,0.4), inset 0 2px 0 rgba(255,255,255,0.18); opacity:0; }
+      .cost__cols { display:flex; align-items:flex-start; gap:36px; }
+      .cost__col { display:flex; flex-direction:column; }
+      .cost__sep { width:2px; align-self:stretch; background:rgba(255,255,255,0.15); }
+      .cost__label { font-size:26px; font-weight:700; letter-spacing:6px; color:rgba(255,255,255,0.72); text-transform:uppercase; margin-bottom:10px; white-space:nowrap; }
+      .cost__value { font-size:76px; font-weight:900; line-height:1; letter-spacing:-3px; font-variant-numeric:tabular-nums; text-shadow:0 4px 20px rgba(0,0,0,0.5); }
+      .cost__value--cost { color:#fb6a5e; }
+      .cost__value--pull { color:#9fb3c8; }
+      .cost__pips { display:flex; gap:14px; margin-top:26px; }
+      .cost__pip { flex:1; height:14px; border-radius:1998px; background:rgba(255,255,255,0.16); position:relative; overflow:hidden; }
+      .cost__pip i { position:absolute; inset:0; transform:scaleX(0); transform-origin:left; border-radius:inherit; background:#9fb3c8; }
+      .cost__foot { font-size:23px; font-weight:600; letter-spacing:3px; color:rgba(255,255,255,0.55); text-transform:uppercase; margin-top:18px; }
+      .cost__pl { font-size:52px; font-weight:900; letter-spacing:-1px; line-height:1; margin-top:16px; font-variant-numeric:tabular-nums; text-shadow:0 2px 16px rgba(0,0,0,0.5); }
+
+      /* End payoff card — appears on black after the footage, reveals the loss. */
+      .recap { position:absolute; left:50%; top:50%; width:1120px; padding:76px 88px 84px; border-radius:56px;
+        background:rgba(18,20,28,0.92); backdrop-filter:blur(56px) saturate(140%); -webkit-backdrop-filter:blur(56px) saturate(140%);
+        border:2px solid rgba(255,255,255,0.16); box-shadow:0 36px 96px rgba(0,0,0,0.6), inset 0 2px 0 rgba(255,255,255,0.16);
+        display:flex; flex-direction:column; align-items:center; opacity:0; }
+      .recap__head { font-size:36px; font-weight:700; letter-spacing:8px; color:rgba(255,255,255,0.6); text-transform:uppercase; margin-bottom:44px; text-align:center; }
+      .recap__row { width:100%; display:flex; align-items:baseline; justify-content:space-between; margin:12px 0; }
+      .recap__k { font-size:44px; font-weight:600; letter-spacing:4px; color:rgba(255,255,255,0.72); text-transform:uppercase; }
+      .recap__v { font-size:80px; font-weight:800; line-height:1; letter-spacing:-2px; font-variant-numeric:tabular-nums; }
+      .recap__v--cost { color:#fb6a5e; }
+      .recap__v--pull { color:#9fb3c8; }
+      .recap__div { width:100%; height:2px; background:rgba(255,255,255,0.16); margin:40px 0 36px; }
+      .recap__lossk { font-size:40px; font-weight:800; letter-spacing:16px; text-transform:uppercase; margin-bottom:16px; }
+      .recap__loss { font-size:208px; font-weight:900; line-height:0.95; letter-spacing:-8px; font-variant-numeric:tabular-nums; }
+      .recap__roi { font-size:68px; font-weight:700; letter-spacing:2px; margin-top:28px; font-variant-numeric:tabular-nums; }
+
+      /* Intro banner: top-middle at the start — "totals shown at the end" + emoji to the right. */
+      .intro { position:absolute; left:50%; top:140px; display:flex; align-items:center; gap:36px;
+        padding:30px 48px; border-radius:40px; background:rgba(12,14,20,0.82);
+        backdrop-filter:blur(40px) saturate(140%); -webkit-backdrop-filter:blur(40px) saturate(140%);
+        border:2px solid rgba(255,255,255,0.18); box-shadow:0 24px 60px rgba(0,0,0,0.45); opacity:0; }
+      .intro__text { font-size:50px; font-weight:800; color:#fff; letter-spacing:0.4px; line-height:1.15; max-width:1120px; text-shadow:0 2px 12px rgba(0,0,0,0.6); }
+      .intro__img { height:208px; width:auto; display:block; flex-shrink:0; filter:drop-shadow(0 8px 20px rgba(0,0,0,0.5)); }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="final-DoubleDouble" data-width="3840" data-height="2160" data-start="0" data-duration="846.97">
+
+      <div id="chip-12" class="comp clip" data-start="24" data-duration="4.2" data-track-index="1" data-value="2.69">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 133554.png" alt="Quentin Johnston After Image #AI-1 $2.69" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">Quentin Johnston</span><span class="comp__val">$2.69</span></div>
+      </div>
+      <div id="chip-44" class="comp clip" data-start="32" data-duration="2.55" data-track-index="2" data-value="0.99">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 133723.png" alt="Andrew Mukuba Blue & Yellow Rookie #162 $0.99" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">Andrew Mukuba</span><span class="comp__val">$0.99</span></div>
+      </div>
+      <div id="chip-39" class="comp clip" data-start="50" data-duration="2.55" data-track-index="3" data-value="1.25">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 133829.png" alt="CJ Stroud Sunday Showcase #SS-17 $1.25" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">CJ Stroud</span><span class="comp__val">$1.25</span></div>
+      </div>
+      <div id="chip-40" class="comp clip" data-start="53" data-duration="2.55" data-track-index="4" data-value="1.25">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 133856.png" alt="Chris Paul Jr. Blue & Yellow #233 $1.25" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">Chris Paul Jr.</span><span class="comp__val">$1.25</span></div>
+      </div>
+      <div id="chip-45" class="comp clip" data-start="77" data-duration="2.55" data-track-index="5" data-value="0.99">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 133945.png" alt="Andrew Mukuba Base #162 $0.99" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">Andrew Mukuba</span><span class="comp__val">$0.99</span></div>
+      </div>
+      <div id="chip-22" class="comp clip" data-start="80" data-duration="2.55" data-track-index="6" data-value="1.99">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 134007.png" alt="De'Von Achane Purple $1.99" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">De'Von Achane</span><span class="comp__val">$1.99</span></div>
+      </div>
+      <div id="chip-14" class="comp clip" data-start="100" data-duration="2.55" data-track-index="7" data-value="2.25">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 134223.png" alt="Jordan Addison Class Action #CA-21 $2.25" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">Jordan Addison</span><span class="comp__val">$2.25</span></div>
+      </div>
+      <div id="chip-07" class="comp clip" data-start="103" data-duration="2.55" data-track-index="8" data-value="2.99">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 134305.png" alt="Cooper Kupp Rounding Pick 6 #97 $2.99" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">Cooper Kupp</span><span class="comp__val">$2.99</span></div>
+      </div>
+      <div id="chip-01" class="comp clip" data-start="130" data-duration="4.2" data-track-index="9" data-value="10.99" data-money-shot="true">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 134418.png" alt="Brock Bowers Purple #34 $10.99" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">Brock Bowers</span><span class="comp__val">$10.99</span></div>
+      </div>
+      <div id="chip-29" class="comp clip" data-start="144" data-duration="4.2" data-track-index="10" data-value="1.5">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 134448.png" alt="Colston Loveland Class Icons #CI-22 $1.50" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">Colston Loveland</span><span class="comp__val">$1.50</span></div>
+      </div>
+      <div id="chip-41" class="comp clip" data-start="177" data-duration="2.55" data-track-index="11" data-value="1.25">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 134810.png" alt="Justin Herbert / Ladd McConkey Paramount Pairings $1.25" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">Justin Herbert / Ladd McConkey</span><span class="comp__val">$1.25</span></div>
+      </div>
+      <div id="chip-23" class="comp clip" data-start="184" data-duration="2.55" data-track-index="12" data-value="1.99">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 134848.png" alt="Abdul Carter Blue & Yellow #118 $1.99" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">Abdul Carter</span><span class="comp__val">$1.99</span></div>
+      </div>
+      <div id="chip-24" class="comp clip" data-start="220" data-duration="2.55" data-track-index="13" data-value="1.99">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 135120.png" alt="Amon-Ra St. Brown #19 Parallel $1.99" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">Amon-Ra St. Brown</span><span class="comp__val">$1.99</span></div>
+      </div>
+      <div id="chip-30" class="comp clip" data-start="234" data-duration="2.5" data-track-index="14" data-value="1.5">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 135206.png" alt="Michael Pittman Jr. Refractor #24 $1.50" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">Michael Pittman Jr.</span><span class="comp__val">$1.50</span></div>
+      </div>
+      <div id="chip-03" class="comp clip" data-start="236.7" data-duration="2.5" data-track-index="15" data-value="5">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 135234.png" alt="Patrick Mahomes II Total Touchdowns - Zone Out $5.00" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">Patrick Mahomes II</span><span class="comp__val">$5.00</span></div>
+      </div>
+      <div id="chip-04" class="comp clip" data-start="239.4" data-duration="2.55" data-track-index="16" data-value="3.99">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 135307.png" alt="Isaac TeSlaa Blue & Yellow #131 $3.99" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">Isaac TeSlaa</span><span class="comp__val">$3.99</span></div>
+      </div>
+      <div id="chip-02" class="comp clip" data-start="276" data-duration="4.2" data-track-index="17" data-value="8.75">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 135439.png" alt="Kelvin Banks Jr. Football Auto RC $8.75" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">Kelvin Banks Jr.</span><span class="comp__val">$8.75</span></div>
+      </div>
+      <div id="chip-15" class="comp clip" data-start="303" data-duration="2.55" data-track-index="18" data-value="2.25">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 135556.png" alt="Cam Ward Sunday Showcase Inserts RC #SS-2 $2.25" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">Cam Ward</span><span class="comp__val">$2.25</span></div>
+      </div>
+      <div id="chip-43" class="comp clip" data-start="306" data-duration="2.55" data-track-index="19" data-value="1">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 135633.png" alt="Trevor Lawrence Red & Black #26 $1.00" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">Trevor Lawrence</span><span class="comp__val">$1.00</span></div>
+      </div>
+      <div id="chip-13" class="comp clip" data-start="321" data-duration="2.55" data-track-index="20" data-value="2.65">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 135707.png" alt="Brian Burns Class Icons #CI-3 $2.65" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">Brian Burns</span><span class="comp__val">$2.65</span></div>
+      </div>
+      <div id="chip-46" class="comp clip" data-start="344" data-duration="2.55" data-track-index="21" data-value="0.99">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 135908.png" alt="Justin Jefferson Yellow Blue Foil SP $0.99" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">Justin Jefferson</span><span class="comp__val">$0.99</span></div>
+      </div>
+      <div id="chip-16" class="comp clip" data-start="362" data-duration="4" data-track-index="22" data-value="2.25">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 140048.png" alt="Maxwell Hairston Blue & Yellow Rookie #143 $2.25" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">Maxwell Hairston</span><span class="comp__val">$2.25</span></div>
+      </div>
+      <div id="chip-11" class="comp clip" data-start="379" data-duration="2.55" data-track-index="23" data-value="2.75">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 140137.png" alt="Chris Olave NFL In Session #IS-19 $2.75" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">Chris Olave</span><span class="comp__val">$2.75</span></div>
+      </div>
+      <div id="chip-19" class="comp clip" data-start="401" data-duration="2.55" data-track-index="24" data-value="2.2">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 140248.png" alt="Jordan Love Yellow Blue Variant SP $2.20" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">Jordan Love</span><span class="comp__val">$2.20</span></div>
+      </div>
+      <div id="chip-14x2" class="comp clip" data-start="419" data-duration="2.55" data-track-index="25" data-value="2.25">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 134223.png" alt="Jordan Addison Class Action #CA-21 $2.25" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">Jordan Addison</span><span class="comp__val">$2.25</span></div>
+      </div>
+      <div id="chip-17" class="comp clip" data-start="440" data-duration="2.55" data-track-index="26" data-value="2.25">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 140404.png" alt="Trey McBride Zone Out Insert ZO-24 $2.25" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">Trey McBride</span><span class="comp__val">$2.25</span></div>
+      </div>
+      <div id="chip-42" class="comp clip" data-start="467.5" data-duration="2.5" data-track-index="27" data-value="1.25">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 140503.png" alt="J.J. McCarthy Sunday Showcase #SS-20 $1.25" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">J.J. McCarthy</span><span class="comp__val">$1.25</span></div>
+      </div>
+      <div id="chip-25" class="comp clip" data-start="470.2" data-duration="2.55" data-track-index="28" data-value="1.99">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 140540.png" alt="Donte Thornton Jr. Yellow/Blue #181 $1.99" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">Donte Thornton Jr.</span><span class="comp__val">$1.99</span></div>
+      </div>
+      <div id="chip-08" class="comp clip" data-start="482" data-duration="2.5" data-track-index="29" data-value="2.99">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 140618.png" alt="Alfred Collins Round 2 Pick 11 #196 $2.99" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">Alfred Collins</span><span class="comp__val">$2.99</span></div>
+      </div>
+      <div id="chip-31" class="comp clip" data-start="484.7" data-duration="2.55" data-track-index="30" data-value="1.5">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 140647.png" alt="Maxx Crosby Green & Purple $1.50" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">Maxx Crosby</span><span class="comp__val">$1.50</span></div>
+      </div>
+      <div id="chip-05" class="comp clip" data-start="509" data-duration="2.55" data-track-index="31" data-value="3">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 140840.png" alt="Josh Allen Class Action $3.00" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">Josh Allen</span><span class="comp__val">$3.00</span></div>
+      </div>
+      <div id="chip-20" class="comp clip" data-start="512" data-duration="4.2" data-track-index="32" data-value="2.1">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 140919.png" alt="J.J. McCarthy Blue & Yellow #37 $2.10" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">J.J. McCarthy</span><span class="comp__val">$2.10</span></div>
+      </div>
+      <div id="chip-32" class="comp clip" data-start="544" data-duration="2.55" data-track-index="33" data-value="1.5">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 141014.png" alt="Kyle Williams Teal #147 $1.50" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">Kyle Williams</span><span class="comp__val">$1.50</span></div>
+      </div>
+      <div id="chip-09" class="comp clip" data-start="550" data-duration="2.55" data-track-index="34" data-value="2.99">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 141044.png" alt="Drake London Class Icons #CI-13 $2.99" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">Drake London</span><span class="comp__val">$2.99</span></div>
+      </div>
+      <div id="chip-36" class="comp clip" data-start="620" data-duration="2.5" data-track-index="35" data-value="1.4">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 141313.png" alt="Kyren Williams After Image Insert #AI-17 $1.40" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">Kyren Williams</span><span class="comp__val">$1.40</span></div>
+      </div>
+      <div id="chip-26" class="comp clip" data-start="622.7" data-duration="4" data-track-index="36" data-value="1.99">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 141348.png" alt="Bryce Young Sunday Showcase #SS-23 $1.99" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">Bryce Young</span><span class="comp__val">$1.99</span></div>
+      </div>
+      <div id="chip-38" class="comp clip" data-start="627" data-duration="2.55" data-track-index="37" data-value="1.3">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 141419.png" alt="Trey Amos Yellow & Blue Commanders #156 $1.30" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">Trey Amos</span><span class="comp__val">$1.30</span></div>
+      </div>
+      <div id="chip-06" class="comp clip" data-start="642" data-duration="2.55" data-track-index="38" data-value="3">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 141459.png" alt="Lamar Jackson Rookie Refractor #RC-LJ $3.00" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">Lamar Jackson</span><span class="comp__val">$3.00</span></div>
+      </div>
+      <div id="chip-10" class="comp clip" data-start="670" data-duration="4.2" data-track-index="39" data-value="2.99">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 141547.png" alt="Ladd McConkey Round 2 Pick - Teal #81 $2.99" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">Ladd McConkey</span><span class="comp__val">$2.99</span></div>
+      </div>
+      <div id="chip-47" class="comp clip" data-start="699" data-duration="2.55" data-track-index="40" data-value="0.99">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 141628.png" alt="Jalen Milroe Round 2 Pick - Red & Black #151 (RC) $0.99" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">Jalen Milroe</span><span class="comp__val">$0.99</span></div>
+      </div>
+      <div id="chip-28" class="comp clip" data-start="725" data-duration="2.5" data-track-index="41" data-value="1.75">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 141705.png" alt="Derrick Harmon Refractor $1.75" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">Derrick Harmon</span><span class="comp__val">$1.75</span></div>
+      </div>
+      <div id="chip-48" class="comp clip" data-start="727.7" data-duration="2.55" data-track-index="42" data-value="0.99">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 141745.png" alt="Kyle Williams Round 3 Pick - Red & Black #147 RC Rookie $0.99" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">Kyle Williams</span><span class="comp__val">$0.99</span></div>
+      </div>
+      <div id="chip-33" class="comp clip" data-start="739" data-duration="2.55" data-track-index="43" data-value="1.5">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 141834.png" alt="Jordan James Round 5 Pick - Yellow & Blue #170 $1.50" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">Jordan James</span><span class="comp__val">$1.50</span></div>
+      </div>
+      <div id="chip-49" class="comp clip" data-start="749" data-duration="2.55" data-track-index="44" data-value="0.99">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 141858.png" alt="Walter Nolen Round 1 Pick - Chrome Base #146 RC Rookie $0.99" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">Walter Nolen</span><span class="comp__val">$0.99</span></div>
+      </div>
+      <div id="chip-18" class="comp clip" data-start="752" data-duration="2.55" data-track-index="45" data-value="2.25">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 141921.png" alt="Caleb Williams / Rome Odunze Paramount Pairings #PP-1 $2.25" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">Caleb Williams / Rome Odunze</span><span class="comp__val">$2.25</span></div>
+      </div>
+      <div id="chip-34" class="comp clip" data-start="756" data-duration="2.55" data-track-index="46" data-value="1.5">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 141953.png" alt="Colston Loveland Red And Black Parallel RC $1.50" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">Colston Loveland</span><span class="comp__val">$1.50</span></div>
+      </div>
+      <div id="chip-21" class="comp clip" data-start="769" data-duration="2.55" data-track-index="47" data-value="2.05">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 142032.png" alt="Patrick Mahomes II Class Actions Inserts #CA-16 $2.05" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">Patrick Mahomes II</span><span class="comp__val">$2.05</span></div>
+      </div>
+      <div id="chip-27" class="comp clip" data-start="785" data-duration="2.55" data-track-index="48" data-value="1.99">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 142138.png" alt="Travis Etienne Jr. Round 1 Pick - Blue & Yellow #27 $1.99" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">Travis Etienne Jr.</span><span class="comp__val">$1.99</span></div>
+      </div>
+      <div id="chip-37" class="comp clip" data-start="805" data-duration="2.5" data-track-index="49" data-value="1.4">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 142229.png" alt="Jalon Walker Class Icons #CI-19 $1.40" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">Jalon Walker</span><span class="comp__val">$1.40</span></div>
+      </div>
+      <div id="chip-35" class="comp clip" data-start="807.7" data-duration="2.55" data-track-index="50" data-value="1.49">
+        <div class="comp__img"><img src="../comps/25Signature2Mega2Blaster/Screenshot 2026-06-23 142316.png" alt="Jaydon Blue Round 5 Pick - Yellow Foil #225 RC Rookie $1.49" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">Jaydon Blue</span><span class="comp__val">$1.49</span></div>
+      </div>
+
+      <div id="cost" class="cost clip" data-start="12" data-duration="827.47" data-track-index="95">
+        <div class="cost__cols">
+          <div class="cost__col">
+            <div class="cost__label">Boxes Cost</div>
+            <div class="cost__value cost__value--cost" id="cost-value">$0.00</div>
+          </div>
+          <div class="cost__sep"></div>
+          <div class="cost__col">
+            <div class="cost__label">Cards Pulled</div>
+            <div class="cost__value cost__value--pull" id="pull-value">$0.00</div>
+          </div>
+        </div>
+        <div class="cost__pips">
+          <div class="cost__pip"><i id="pip-1"></i></div>
+          <div class="cost__pip"><i id="pip-2"></i></div>
+          <div class="cost__pip"><i id="pip-3"></i></div>
+          <div class="cost__pip"><i id="pip-4"></i></div>
+        </div>
+        <div class="cost__foot" id="cost-foot">2 Blaster &middot; 2 Mega</div>
+        <div class="cost__pl" id="cost-pl"></div>
+      </div>
+
+      <div id="intro" class="intro clip" data-start="0.8" data-duration="5.5" data-track-index="97">
+        <div class="intro__text">All price totals for profit/loss will be shown at the end</div>
+        <img class="intro__img" src="../comps/25Signature2Mega2Blaster/sunglasses-nobg.png" alt="" crossorigin="anonymous" />
+      </div>
+
+
+      <div id="recap" class="recap clip" data-start="839.47" data-duration="7.50" data-track-index="96">
+        <div class="recap__head">2 Blaster Boxes &mdash; $29.99 each<br>2 Mega Boxes &mdash; $65.99 each</div>
+        <div class="recap__row"><span class="recap__k">Boxes Cost</span><span class="recap__v recap__v--cost">$191.96</span></div>
+        <div class="recap__row"><span class="recap__k">Cards pulled</span><span class="recap__v recap__v--pull" id="recap-pull">$0.00</span></div>
+        <div class="recap__div"></div>
+        <div class="recap__lossk" id="recap-lossk">Loss</div>
+        <div class="recap__loss" id="recap-loss">-$0.00</div>
+        <div class="recap__roi" id="recap-roi"></div>
+      </div>
+
+
+      <script>
+        (function () {
+          const tl = gsap.timeline({ paused:true });
+
+          // ---- comp panels: fade in (rise) above the card, hold, fade out ----
+          document.querySelectorAll(".comp.clip").forEach((el)=>{
+            const start=Number(el.getAttribute("data-start"));
+            const show=Number(el.getAttribute("data-duration"));
+            const money=el.getAttribute("data-money-shot")==="true";
+            const inD=money?0.7:0.45;
+            const hold=Math.max(0.2, show-inD-0.5);
+            gsap.set(el,{transformOrigin:"50% 100%"});
+            if(money){ tl.fromTo(el,{opacity:0,scale:0.8,y:36},{opacity:1,scale:1,y:0,duration:0.7,ease:"back.out(1.5)",overwrite:"auto"},start); }
+            else { tl.fromTo(el,{opacity:0,y:52,scale:0.97},{opacity:1,y:0,scale:1,duration:0.45,ease:"power3.out",overwrite:"auto"},start); }
+            tl.to(el,{opacity:0,y:-28,duration:0.5,ease:"power2.in",overwrite:"auto"},start+inD+hold);
+            tl.set(el,{opacity:0},start+inD+hold+0.5);
+          });
+
+          // ---- PER-BOX counter: cost+pulled+P/L RESET each box; pip turns GREEN if that box profits, RED if not ----
+          const cost=document.getElementById("cost");
+          const cv=document.getElementById("cost-value");
+          const pullEl=document.getElementById("pull-value");
+          const plEl=document.getElementById("cost-pl");
+          const foot=document.getElementById("cost-foot");
+          const EVENTS=[{"t":12,"kind":"box","idx":1,"type":"blaster","cost":29.99,"pulled":0,"pl":-29.99},{"t":24,"kind":"comp","idx":1,"type":"blaster","cost":29.99,"pulled":2.69,"pl":-27.3},{"t":32,"kind":"comp","idx":1,"type":"blaster","cost":29.99,"pulled":3.68,"pl":-26.31},{"t":50,"kind":"comp","idx":1,"type":"blaster","cost":29.99,"pulled":4.93,"pl":-25.06},{"t":53,"kind":"comp","idx":1,"type":"blaster","cost":29.99,"pulled":6.18,"pl":-23.81},{"t":77,"kind":"comp","idx":1,"type":"blaster","cost":29.99,"pulled":7.17,"pl":-22.82},{"t":80,"kind":"comp","idx":1,"type":"blaster","cost":29.99,"pulled":9.16,"pl":-20.83},{"t":100,"kind":"comp","idx":1,"type":"blaster","cost":29.99,"pulled":11.41,"pl":-18.58},{"t":103,"kind":"comp","idx":1,"type":"blaster","cost":29.99,"pulled":14.4,"pl":-15.59},{"t":130,"kind":"comp","idx":1,"type":"blaster","cost":29.99,"pulled":25.39,"pl":-4.6},{"t":144,"kind":"comp","idx":1,"type":"blaster","cost":29.99,"pulled":26.89,"pl":-3.1},{"t":177,"kind":"comp","idx":1,"type":"blaster","cost":29.99,"pulled":28.14,"pl":-1.85},{"t":184,"kind":"comp","idx":1,"type":"blaster","cost":29.99,"pulled":30.13,"pl":0.14},{"t":194,"kind":"box","idx":2,"type":"mega","cost":65.99,"pulled":0,"pl":-65.99},{"t":220,"kind":"comp","idx":2,"type":"mega","cost":65.99,"pulled":1.99,"pl":-64},{"t":234,"kind":"comp","idx":2,"type":"mega","cost":65.99,"pulled":3.49,"pl":-62.5},{"t":236.7,"kind":"comp","idx":2,"type":"mega","cost":65.99,"pulled":8.49,"pl":-57.5},{"t":239.4,"kind":"comp","idx":2,"type":"mega","cost":65.99,"pulled":12.48,"pl":-53.51},{"t":276,"kind":"comp","idx":2,"type":"mega","cost":65.99,"pulled":21.23,"pl":-44.76},{"t":303,"kind":"comp","idx":2,"type":"mega","cost":65.99,"pulled":23.48,"pl":-42.51},{"t":306,"kind":"comp","idx":2,"type":"mega","cost":65.99,"pulled":24.48,"pl":-41.51},{"t":321,"kind":"comp","idx":2,"type":"mega","cost":65.99,"pulled":27.13,"pl":-38.86},{"t":344,"kind":"comp","idx":2,"type":"mega","cost":65.99,"pulled":28.12,"pl":-37.87},{"t":362,"kind":"comp","idx":2,"type":"mega","cost":65.99,"pulled":30.37,"pl":-35.62},{"t":379,"kind":"comp","idx":2,"type":"mega","cost":65.99,"pulled":33.12,"pl":-32.87},{"t":401,"kind":"comp","idx":2,"type":"mega","cost":65.99,"pulled":35.32,"pl":-30.67},{"t":419,"kind":"comp","idx":2,"type":"mega","cost":65.99,"pulled":37.57,"pl":-28.42},{"t":426,"kind":"box","idx":3,"type":"blaster","cost":29.99,"pulled":0,"pl":-29.99},{"t":440,"kind":"comp","idx":3,"type":"blaster","cost":29.99,"pulled":2.25,"pl":-27.74},{"t":467.5,"kind":"comp","idx":3,"type":"blaster","cost":29.99,"pulled":3.5,"pl":-26.49},{"t":470.2,"kind":"comp","idx":3,"type":"blaster","cost":29.99,"pulled":5.49,"pl":-24.5},{"t":482,"kind":"comp","idx":3,"type":"blaster","cost":29.99,"pulled":8.48,"pl":-21.51},{"t":484.7,"kind":"comp","idx":3,"type":"blaster","cost":29.99,"pulled":9.98,"pl":-20.01},{"t":509,"kind":"comp","idx":3,"type":"blaster","cost":29.99,"pulled":12.98,"pl":-17.01},{"t":512,"kind":"comp","idx":3,"type":"blaster","cost":29.99,"pulled":15.08,"pl":-14.91},{"t":544,"kind":"comp","idx":3,"type":"blaster","cost":29.99,"pulled":16.58,"pl":-13.41},{"t":550,"kind":"comp","idx":3,"type":"blaster","cost":29.99,"pulled":19.57,"pl":-10.42},{"t":580,"kind":"box","idx":4,"type":"mega","cost":65.99,"pulled":0,"pl":-65.99},{"t":620,"kind":"comp","idx":4,"type":"mega","cost":65.99,"pulled":1.4,"pl":-64.59},{"t":622.7,"kind":"comp","idx":4,"type":"mega","cost":65.99,"pulled":3.39,"pl":-62.6},{"t":627,"kind":"comp","idx":4,"type":"mega","cost":65.99,"pulled":4.69,"pl":-61.3},{"t":642,"kind":"comp","idx":4,"type":"mega","cost":65.99,"pulled":7.69,"pl":-58.3},{"t":670,"kind":"comp","idx":4,"type":"mega","cost":65.99,"pulled":10.68,"pl":-55.31},{"t":699,"kind":"comp","idx":4,"type":"mega","cost":65.99,"pulled":11.67,"pl":-54.32},{"t":725,"kind":"comp","idx":4,"type":"mega","cost":65.99,"pulled":13.42,"pl":-52.57},{"t":727.7,"kind":"comp","idx":4,"type":"mega","cost":65.99,"pulled":14.41,"pl":-51.58},{"t":739,"kind":"comp","idx":4,"type":"mega","cost":65.99,"pulled":15.91,"pl":-50.08},{"t":749,"kind":"comp","idx":4,"type":"mega","cost":65.99,"pulled":16.9,"pl":-49.09},{"t":752,"kind":"comp","idx":4,"type":"mega","cost":65.99,"pulled":19.15,"pl":-46.84},{"t":756,"kind":"comp","idx":4,"type":"mega","cost":65.99,"pulled":20.65,"pl":-45.34},{"t":769,"kind":"comp","idx":4,"type":"mega","cost":65.99,"pulled":22.7,"pl":-43.29},{"t":785,"kind":"comp","idx":4,"type":"mega","cost":65.99,"pulled":24.69,"pl":-41.3},{"t":805,"kind":"comp","idx":4,"type":"mega","cost":65.99,"pulled":26.09,"pl":-39.9},{"t":807.7,"kind":"comp","idx":4,"type":"mega","cost":65.99,"pulled":27.58,"pl":-38.41}];
+          const GREEN="#34d399", RED="#fb6a5e", BLUE="#5b9cff", NBOX=4;
+          tl.fromTo(cost,{x:-80,opacity:0},{x:0,opacity:1,duration:0.6,ease:"power3.out"},12);
+          const cs={v:0}, ps={v:0}, ls={v:0};
+          EVENTS.forEach((e)=>{
+            if(e.kind==="box"){
+              tl.to(cs,{v:e.cost,duration:0.4,ease:"power1.out",onUpdate:()=>{cv.textContent="$"+cs.v.toFixed(2);}},e.t);
+              tl.fromTo(cv,{scale:1.18},{scale:1,duration:0.5,ease:"back.out(2)",transformOrigin:"left center"},e.t);
+              tl.to(ps,{v:0,duration:0.3,ease:"power1.in",onUpdate:()=>{pullEl.textContent="$"+ps.v.toFixed(2);}},e.t);   // reset pulled
+              tl.to("#pip-"+e.idx,{scaleX:1,duration:0.45,ease:"power2.out"},e.t);
+              tl.call(()=>{ foot.textContent="Box "+e.idx+" / "+NBOX+"  \u00b7  "+e.type.toUpperCase(); }, null, e.t);
+            } else {
+              tl.to(ps,{v:e.pulled,duration:0.5,ease:"power1.out",onUpdate:()=>{pullEl.textContent="$"+ps.v.toFixed(2);}},e.t);
+              tl.fromTo(pullEl,{scale:1.14},{scale:1,duration:0.45,ease:"back.out(2)",transformOrigin:"left center"},e.t);
+            }
+            // this box's P/L (blue up / red down) and pip outcome color (green once profitable / red while down)
+            tl.to(ls,{v:e.pl,duration:0.45,ease:"power1.out",onUpdate:()=>{const v=ls.v;plEl.style.color=v<0?RED:BLUE;plEl.textContent=(v<0?"\u25bc −$":"\u25b2 +$")+Math.abs(v).toFixed(2);}},e.t);
+            tl.call(()=>{ const pip=document.getElementById("pip-"+e.idx); if(pip) pip.style.background=e.pl>=0?GREEN:RED; }, null, e.t);
+          });
+          tl.to(cost,{opacity:0,duration:0.5,ease:"power2.in"},838.97);
+
+          // ---- intro banner: pop in top-middle, hold, pop out ----
+          const intro=document.getElementById("intro");
+          gsap.set(intro,{xPercent:-50});
+          tl.fromTo(intro,{opacity:0,yPercent:-14,scale:0.96},{opacity:1,yPercent:0,scale:1,duration:0.55,ease:"back.out(1.4)"},0.8);
+          tl.to(intro,{opacity:0,yPercent:-10,duration:0.5,ease:"power2.in"},5.80);
+
+
+          // ---- end payoff card (loss-of-investment reveal) on black ----
+          const recap=document.getElementById("recap");
+          const rPull=document.getElementById("recap-pull");
+          const rLoss=document.getElementById("recap-loss");
+          const rLk=document.getElementById("recap-lossk");
+          const rRoi=document.getElementById("recap-roi");
+          const RS=839.47;
+          const CARDS=114.85, NET=-77.11, ROI=-40.2;
+          const isLoss=NET<0; const col=isLoss?"#fb6a5e":"#4ade80";
+          rLoss.style.color=col; rLk.style.color=col; rRoi.style.color=col; rLk.textContent=isLoss?"Loss":"Profit";
+          gsap.set(recap,{xPercent:-50,yPercent:-50,transformOrigin:"center center"});
+          gsap.set([rLk,rLoss,rRoi],{opacity:0,y:36});
+          tl.fromTo(recap,{opacity:0,scale:0.9},{opacity:1,scale:1,duration:0.6,ease:"back.out(1.5)"},RS+0.15);
+          const rcS={v:0};
+          tl.to(rcS,{v:CARDS,duration:1.3,ease:"power2.out",onUpdate:()=>{rPull.textContent="$"+rcS.v.toFixed(2);}},RS+0.5);
+          tl.to([rLk,rLoss,rRoi],{opacity:1,y:0,duration:0.5,ease:"power3.out",stagger:0.1},RS+2.1);
+          const rlS={v:0};
+          tl.to(rlS,{v:NET,duration:1.2,ease:"power2.out",onUpdate:()=>{const v=rlS.v;rLoss.textContent=(v<0?"-$":"+$")+Math.abs(v).toFixed(2);}},RS+2.3);
+          rRoi.textContent=(ROI>=0?"+":"")+ROI.toFixed(1)+"% ROI";
+
+          window.__timelines=window.__timelines||{};
+          window.__timelines["final-DoubleDouble"]=tl;
+        })();
+      </script>
+    </div>
+  </body>
+</html>

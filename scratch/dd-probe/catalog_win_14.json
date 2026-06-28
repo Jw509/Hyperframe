@@ -1,0 +1,157 @@
+{
+  "window": "W14",
+  "sightings": [
+    {
+      "compId": null,
+      "player": "Brock Purdy (apparent)",
+      "tStart": 780,
+      "tEnd": 780,
+      "tBest": 780,
+      "frames": ["f_0391"],
+      "parallelCue": "white/silver base, 49ers, #7 red jersey gold pants, 'After Image'-style B&W headshot panel on right",
+      "confidence": "low",
+      "note": "49ers QB held center 2-handed. No 49ers QB / Brock Purdy in target list -> null. Not Kyren Williams or Quentin Johnston AfterImage."
+    },
+    {
+      "compId": null,
+      "player": "Malik Nabers (apparent)",
+      "tStart": 782,
+      "tEnd": 782,
+      "tBest": 782,
+      "frames": ["f_0392"],
+      "parallelCue": "base white, NY Giants, 'ROUND 1 PICK 6', red right panel",
+      "confidence": "low",
+      "note": "Giants WR held center. Not in target list -> null."
+    },
+    {
+      "compId": null,
+      "player": "Raiders RB (Ashton Jeanty?)",
+      "tStart": 784,
+      "tEnd": 784,
+      "tBest": 784,
+      "frames": ["f_0393"],
+      "parallelCue": "Raiders black jersey, yellow/blue Jaguars-colored gradient bottom, B&W headshot panel",
+      "confidence": "low",
+      "note": "Being shuffled/half-turned, name not legible. No confident match -> null."
+    },
+    {
+      "compId": null,
+      "player": "Cowboys rookie #41 (Donovan Ezeiruaku?)",
+      "tStart": 786,
+      "tEnd": 786,
+      "tBest": 786,
+      "frames": ["f_0394"],
+      "parallelCue": "base white, Dallas Cowboys, '#41', 'ROUND 2 PICK 12', B&W headshot",
+      "confidence": "low",
+      "note": "Cowboys 2nd-round pick. Not clearly in target list -> null. Possibly same as the 150/275 Cowboys card seen fanned later (f_0408)."
+    },
+    {
+      "compId": "07",
+      "player": "Cooper Kupp",
+      "tStart": 794,
+      "tEnd": 796,
+      "tBest": 795,
+      "frames": ["f_0398", "f_0399", "f_0400"],
+      "parallelCue": "GREEN border/parallel, Seahawks (teal/green), 'ROUND 1 PICK', name reads COOPER KUPP, green B&W headshot panel",
+      "confidence": "med",
+      "note": "Only Cooper Kupp in list is compId 07 (Rounding Pick 6 #97). This is a GREEN parallel 'Round 1 Pick' look -> matched 07 as best guess; parallel/number may differ. Also reappears in corner of f_0400."
+    },
+    {
+      "compId": null,
+      "player": "Bills QB (Josh Allen / Keon Coleman?)",
+      "tStart": 798,
+      "tEnd": 798,
+      "tBest": 798,
+      "frames": ["f_0400"],
+      "parallelCue": "base white, Buffalo Bills (royal/red), 'ROUND 2', red B&W headshot panel",
+      "confidence": "low",
+      "note": "Bills card held center-left while Kupp card sits top-right. 'ROUND 2 PICK' look, not Josh Allen 'Class Action' (compId 05) -> null. Likely Bills rookie (Keon Coleman)."
+    },
+    {
+      "compId": null,
+      "player": "Patrick Mahomes II",
+      "tStart": 800,
+      "tEnd": 800,
+      "tBest": 800,
+      "frames": ["f_0401"],
+      "parallelCue": "base white, Chiefs red, 'ROUND 1 PICK 10', red B&W screaming headshot panel, Kansas state outline",
+      "confidence": "med",
+      "note": "Clearly Patrick Mahomes II, but this is a base 'Round 1 Pick' design, NOT compId 03 (Total Touchdowns Zone Out) nor compId 21 (Class Actions CA-16). Reporting as Mahomes base -> compId null. Alt IDs if forced: 21 or 03."
+    },
+    {
+      "compId": null,
+      "player": "Jalen Hurts",
+      "tStart": 802,
+      "tEnd": 802,
+      "tBest": 802,
+      "frames": ["f_0402"],
+      "parallelCue": "base white, Eagles #1, 'ROUND 2 PICK 21', B&W headshot panel",
+      "confidence": "low",
+      "note": "Eagles QB Jalen Hurts. Not in target list -> null."
+    },
+    {
+      "compId": "37",
+      "player": "Jalon Walker",
+      "tStart": 804,
+      "tEnd": 806,
+      "tBest": 806,
+      "frames": ["f_0403", "f_0404"],
+      "parallelCue": "'Class Icons' insert (ornate silver/B&W frame), '1ST ROUND 15 PICK', name JALON WALKER, Atlanta Falcons logo, draft-suit photo holding WALKER jersey",
+      "confidence": "high",
+      "note": "Clear Class Icons + 'Jalon Walker' text -> compId 37 (Class Icons #CI-19). f_0403 shows it angled; f_0404 fully to camera."
+    },
+    {
+      "compId": null,
+      "player": "Cardinals rookie #0 (Will Johnson?)",
+      "tStart": 808,
+      "tEnd": 808,
+      "tBest": 808,
+      "frames": ["f_0405"],
+      "parallelCue": "base white, Arizona Cardinals #0, 'ROUND 1 PICK 15', RC logo, red B&W headshot panel",
+      "confidence": "low",
+      "note": "Cardinals 1st-round rookie. Not a confident target match (Walter Nolen compId 49 is a Chrome Base, this is the base 'Round 1 Pick' design) -> null."
+    },
+    {
+      "compId": "01",
+      "player": "Brock Bowers",
+      "tStart": 812,
+      "tEnd": 826,
+      "tBest": 825,
+      "frames": ["f_0407", "f_0408", "f_0409", "f_0410", "f_0413", "f_0414"],
+      "parallelCue": "PURPLE parallel, serial-numbered '074/100' bottom-right, Las Vegas Raiders, 'ROUND 1 PICK 13', B&W headshot panel",
+      "confidence": "high",
+      "note": "Raiders TE Round 1 Pick 13 = Brock Bowers, purple /100 numbered. Matched compId 01 (Brock Bowers Purple). Held/shuffled f_0407-0410, then laid flat on mat fully visible f_0413-0414. (target says Purple #34; this is purple #/100 so verify exact parallel.)"
+    },
+    {
+      "compId": "39",
+      "player": "CJ Stroud",
+      "tStart": 812,
+      "tEnd": 838,
+      "tBest": 820,
+      "frames": ["f_0407", "f_0408", "f_0409", "f_0410", "f_0411", "f_0413", "f_0414", "f_0415", "f_0416", "f_0420"],
+      "parallelCue": "gold/cream 'Sunday Showcase' insert (gold wings/laurel), player in red & black (Texans) jersey, QB",
+      "confidence": "low",
+      "note": "A gold 'Sunday Showcase' card props on the left edge of the mat for most of the end sequence; the red-jersey Texans QB reads as CJ Stroud -> compId 39 (Sunday Showcase #SS-17). Name not fully legible. Also one of several Sunday Showcase cards fanned at f_0411."
+    },
+    {
+      "compId": "19",
+      "player": "Jordan Love",
+      "tStart": 828,
+      "tEnd": 838,
+      "tBest": 830,
+      "frames": ["f_0415", "f_0416", "f_0417", "f_0418", "f_0419", "f_0420"],
+      "parallelCue": "chrome/foil 'STARS' insert (silver bubble letters S-T-A-R-S + green Packers G star), Green Bay Packers #10, yellow/gold tones, in magnetic one-touch case",
+      "confidence": "med",
+      "note": "Big chase card of the break: cased and held to camera for the whole final 10s (END of video). Clearly Jordan Love (Packers QB #10). Only Jordan Love in list is compId 19 (Yellow Blue Variant SP) -> matched 19 as best guess, but design is a foil 'Stars' insert so confirm exact parallel."
+    }
+  ],
+  "boxOpens": [
+    {
+      "t": 788,
+      "type": "blaster",
+      "evidence": "Tearing open a single sealed Topps 'C' Signature 2025 foil pack; wrapper shows Topps logo, NFL/NFLPA, '2025', '8 CARDS' (f_0395, f_0396). This is a loose pack being opened, consistent with a blaster pack rather than first crack of a box; no 'MEGA'/'BLASTER' box text legible.",
+      "confidence": "med"
+    }
+  ],
+  "notes": "END OF VIDEO window (t=780-838). No on-screen recap/totals graphic appeared; the video ends on the cased Jordan Love 'Stars' card held to camera (f_0420 single-handed). A pack is torn open at f_0395-0397 (8-card Topps Signature 2025), so cards f_0398 onward are from that pack -> this is the final pack/box being emptied. Several non-target rookies appear (Malik Nabers, Jalen Hurts, Cardinals/Bills/Cowboys/Raiders RB rookies) reported as compId null. Multiple cards on screen simultaneously from ~t=812 on (purple Bowers /100 + gold Sunday Showcase prop + fanned stack). Mahomes (f_0401) and Cooper Kupp (f_0398) are base/green 'Round 1 Pick' designs that don't cleanly match their target parallels -> flagged. Adventure Time 'Jake' meme sticker overlay at f_0406 (editor graphic, no card)."
+}

@@ -15,8 +15,9 @@ const pos = JSON.parse(fs.readFileSync("scratch/signature2025-card-positions.jso
 const COST = comps.boxCost;            // 29.99
 const VIDEO = 54.03;                   // host's cut duration
 const PREVIEW = process.env.PREVIEW === "1";
+const BARE = process.env.BARE === "1";  // tracker-only render (omit comp chips) — e.g. cost-tracker position/UX check
 const RECAP_START = VIDEO;             // recap begins on black right after the last card (TJ Sanders)
-const DURATION = PREVIEW ? 22.0 : 60.5; // recap fills VIDEO..60.5 on black (~6.5s)
+const DURATION = process.env.DUR ? +process.env.DUR : (PREVIEW ? 22.0 : 60.5); // recap fills VIDEO..60.5 on black (~6.5s); DUR=<sec> trims (e.g. DUR=15 for a quick clip)
 const TRACK_FADE = RECAP_START - 0.4;
 const TRACK_START = 5.0;                // box-cost tracker enters as the first card shows (~5s, per user)
 const fmt = v => "$" + v.toFixed(2);
@@ -40,7 +41,7 @@ for (let i = 0; i < cards.length; i++) {
   c.dur = +Math.max(dur, 0.9).toFixed(2);
 }
 
-const saleDivs = cards.map((c, i) => `      <div id="chip-${c.cardId}" class="sale-card clip" data-start="${c.start}" data-duration="${c.dur}" data-track-index="${i + 1}" data-value="${c.value}"${c.money ? ' data-money-shot="true"' : ''}>
+const saleDivs = BARE ? "" : cards.map((c, i) => `      <div id="chip-${c.cardId}" class="sale-card clip" data-start="${c.start}" data-duration="${c.dur}" data-track-index="${i + 1}" data-value="${c.value}"${c.money ? ' data-money-shot="true"' : ''}>
         <div class="sale-card__comp"><img src="../comps/Signature2025/${c.file}" alt="${c.player} ${c.parallel} ${fmt(c.value)}" crossorigin="anonymous" /></div>
 ${c.label ? `        <div class="sale-card__label">${c.label}</div>\n` : ''}        <div class="sale-card__value">${fmt(c.value)}</div>
       </div>`).join("\n");
@@ -56,7 +57,7 @@ const html = `<!doctype html>
       #root { position:relative; width:${W}px; height:${H}px; }
       #source-video { position:absolute; inset:0; width:${W}px; height:${H}px; object-fit:cover; object-position:center center; }
 
-      .sale-card { position:absolute; right:${z(12)}px; top:${z(92)}px; width:${z(230)}px; padding:${z(9)}px ${z(9)}px ${z(4)}px; border-radius:${z(20)}px;
+      .sale-card { position:absolute; right:${z(120)}px; top:${z(92)}px; width:${z(230)}px; padding:${z(9)}px ${z(9)}px ${z(4)}px; border-radius:${z(20)}px;
         background:rgba(255,255,255,0.10); backdrop-filter:blur(${z(24)}px) saturate(140%); -webkit-backdrop-filter:blur(${z(24)}px) saturate(140%);
         border:${z(1)}px solid rgba(255,255,255,0.20); box-shadow:0 ${z(12)}px ${z(28)}px rgba(0,0,0,0.32),inset 0 ${z(1)}px 0 rgba(255,255,255,0.24);
         display:flex; flex-direction:column; align-items:stretch; opacity:0; }
@@ -67,7 +68,7 @@ const html = `<!doctype html>
       .sale-card__label + .sale-card__value { margin-top:${z(2)}px; }
       .sale-card[data-money-shot="true"] .sale-card__value { color:#ffd24a; text-shadow:0 ${z(2)}px ${z(16)}px rgba(255,210,74,0.6); }
 
-      .box-tracker { position:absolute; left:${z(36)}px; top:${z(140)}px; width:${z(212)}px; padding:${z(14)}px ${z(16)}px; border-radius:${z(22)}px;
+      .box-tracker { position:absolute; left:${z(36)}px; top:${z(332)}px; width:${z(212)}px; padding:${z(14)}px ${z(16)}px; border-radius:${z(22)}px;
         background:rgba(255,255,255,0.08); backdrop-filter:blur(${z(28)}px) saturate(140%); -webkit-backdrop-filter:blur(${z(28)}px) saturate(140%);
         border:${z(1)}px solid rgba(255,255,255,0.18); box-shadow:0 ${z(10)}px ${z(24)}px rgba(0,0,0,0.28),inset 0 ${z(1)}px 0 rgba(255,255,255,0.22); opacity:0; }
       .box-tracker__label { font-size:${z(12)}px; font-weight:600; letter-spacing:${z(4)}px; color:rgba(255,255,255,0.7); text-transform:uppercase; margin-bottom:${z(4)}px; line-height:1.25; }
@@ -94,13 +95,13 @@ const html = `<!doctype html>
 
 ${saleDivs}
 
-      <div id="box-tracker" class="box-tracker clip" data-start="${TRACK_START.toFixed(2)}" data-duration="${(TRACK_FADE - TRACK_START).toFixed(2)}" data-track-index="90">
+      <div id="box-tracker" class="box-tracker clip" data-start="${TRACK_START.toFixed(2)}" data-duration="${(Math.min(TRACK_FADE, DURATION) - TRACK_START).toFixed(2)}" data-track-index="90">
         <div class="box-tracker__label">Box cost</div><div class="box-tracker__value box-tracker__value--cost">${fmt(COST)}</div>
         <div class="box-tracker__divider"></div>
         <div class="box-tracker__label">Cards pulled<br>total</div><div class="box-tracker__value box-tracker__value--total" id="box-tracker-total">$0.00</div>
       </div>
 
-      <div id="recap-card" class="recap-card clip" data-start="${RECAP_START.toFixed(2)}" data-duration="${(DURATION - RECAP_START).toFixed(2)}" data-track-index="91">
+      <div id="recap-card" class="recap-card clip" data-start="${RECAP_START.toFixed(2)}" data-duration="${Math.max(0.1, DURATION - RECAP_START).toFixed(2)}" data-track-index="91">
         <div class="recap-card__label">Box cost</div>
         <div class="recap-card__value">${fmt(COST)}</div>
         <div class="recap-card__divider"></div>
@@ -166,6 +167,7 @@ ${saleDivs}
 </html>
 `;
 const OUT_HTML = PREVIEW ? "cards/compositions/final-Signature2025-preview.html"
+  : BARE ? `cards/compositions/final-Signature2025${S > 1 ? "-4k" : ""}-bare.html`
   : (S > 1 ? "cards/compositions/final-Signature2025-4k.html" : "cards/compositions/final-Signature2025.html");
 fs.writeFileSync(OUT_HTML, html);
 const tot = cards.reduce((s, c) => s + c.value, 0);

@@ -1,0 +1,168 @@
+{
+  "window": "W08",
+  "sightings": [
+    {
+      "compId": "14",
+      "player": "Jordan Addison",
+      "tStart": 420,
+      "tEnd": 420,
+      "tBest": 420,
+      "frames": ["f_0211"],
+      "parallelCue": "gold/yellow 'Class Action' insert, 'WINNING STARTS HERE', Vikings, player #3",
+      "confidence": "high",
+      "note": "Class Action insert clearly visible; matches target 14 (Jordan Addison Class Action #CA-21). Card moves to table edge in f_0212 (still partially visible at t=422)."
+    },
+    {
+      "compId": null,
+      "player": "Panthers rookie (#3, possibly T. McMillan)",
+      "tStart": 422,
+      "tEnd": 422,
+      "tBest": 422,
+      "frames": ["f_0212"],
+      "parallelCue": "'ROUND 2 PICK' draft card, white left + blue/black grayscale right panel, Panthers logo, player #3",
+      "confidence": "low",
+      "note": "Standard 'Round X Pick' draft base. Does NOT match Alfred Collins (target 08, who is 49ers DT). No clear target match."
+    },
+    {
+      "compId": null,
+      "player": "Tyreek Hill",
+      "tStart": 438,
+      "tEnd": 438,
+      "tBest": 438,
+      "frames": ["f_0220"],
+      "parallelCue": "'ROUND 5 PICK 26' draft base, white border + grayscale portrait, Dolphins",
+      "confidence": "med",
+      "note": "Tyreek Hill not in target list. Held up clearly center-right."
+    },
+    {
+      "compId": null,
+      "player": "Trey McBride",
+      "tStart": 440,
+      "tEnd": 442,
+      "tBest": 440,
+      "frames": ["f_0221", "f_0222"],
+      "parallelCue": "'TOTAL YARDS 3475' insert (red/grayscale), Cardinals #85",
+      "confidence": "high",
+      "note": "Trey McBride IS a target player (comp 17) but as 'Zone Out Insert ZO-24'. This is a different insert ('Total Yards'), so NOT a match to comp 17. Flagging McBride as on-screen in case the Zone Out version is elsewhere."
+    },
+    {
+      "compId": null,
+      "player": "Jaguars rookie (yellow/blue)",
+      "tStart": 442,
+      "tEnd": 442,
+      "tBest": 442,
+      "frames": ["f_0222"],
+      "parallelCue": "'Round X Pick' draft card, yellow/teal team treatment, Jaguars logo bottom",
+      "confidence": "low",
+      "note": "Underneath the McBride card. Jaguars (Etienne is target 27 Blue&Yellow, but player looks like a rookie, not Etienne). Could not read name clearly; no confident match."
+    },
+    {
+      "compId": null,
+      "player": "Patriots player (yellow/blue)",
+      "tStart": 444,
+      "tEnd": 444,
+      "tBest": 444,
+      "frames": ["f_0223"],
+      "parallelCue": "'ROUND 1 PICK' draft card, yellow/blue treatment, grayscale portrait, Patriots",
+      "confidence": "low",
+      "note": "Snoop Dogg PIP video inset on screen. No Patriots player in the yellow/blue target list. No match."
+    },
+    {
+      "compId": null,
+      "player": "Ricky Pearsall",
+      "tStart": 448,
+      "tEnd": 454,
+      "tBest": 454,
+      "frames": ["f_0225", "f_0226", "f_0227", "f_0228"],
+      "parallelCue": "'ROUND X PICK' draft base, white border, 49ers #1, two-player photo + grayscale; nameplate 'RICKY PEARSALL'",
+      "confidence": "med",
+      "note": "Name 'RICKY PEARSALL' readable in f_0228. 49ers. Not in target list."
+    },
+    {
+      "compId": null,
+      "player": "Breece Hall",
+      "tStart": 456,
+      "tEnd": 458,
+      "tBest": 458,
+      "frames": ["f_0229", "f_0230"],
+      "parallelCue": "'ROUND X PICK' draft base, green/black right panel, grayscale portrait, Jets #20",
+      "confidence": "med",
+      "note": "Name reads 'BRECE/BREECE HALL', Jets. Not in target list."
+    },
+    {
+      "compId": null,
+      "player": "Giants player (#1, possibly Malik Nabers)",
+      "tStart": 460,
+      "tEnd": 462,
+      "tBest": 460,
+      "frames": ["f_0231", "f_0232"],
+      "parallelCue": "'ROUND 1 PICK' draft base, blue/white, red/maroon grayscale right panel, NY Giants #1",
+      "confidence": "low",
+      "note": "Giants #1 (likely Malik Nabers). Not in target list. Two logos visible on right panel (ny + Bears) due to card behind it."
+    },
+    {
+      "compId": null,
+      "player": "Rome Odunze",
+      "tStart": 464,
+      "tEnd": 464,
+      "tBest": 464,
+      "frames": ["f_0233"],
+      "parallelCue": "'ROUND 1 PICK 9' draft base, white/gold, grayscale portrait, Bears #1",
+      "confidence": "med",
+      "note": "Rome Odunze single 'Round 1 Pick' base. Target 18 is Caleb Williams/Rome Odunze 'Paramount Pairings' DUAL card -- this is NOT that dual card. No match."
+    },
+    {
+      "compId": "42",
+      "player": "J.J. McCarthy",
+      "tStart": 466,
+      "tEnd": 472,
+      "tBest": 468,
+      "frames": ["f_0234", "f_0235", "f_0236"],
+      "parallelCue": "'SUNDAY SHOWCASE' insert, white/gold refractor look, gold nameplate 'J.J. McCarthy MINNESOTA VIKINGS', Vikings #9",
+      "confidence": "high",
+      "note": "Sunday Showcase text clearly readable. Matches target 42 (J.J. McCarthy Sunday Showcase #SS-20). Nameplate first peeks behind Odunze card in f_0234, full face in f_0235, still in fan in f_0236."
+    },
+    {
+      "compId": null,
+      "player": "Falcons player (#4, possibly Michael Penix Jr.)",
+      "tStart": 472,
+      "tEnd": 474,
+      "tBest": 472,
+      "frames": ["f_0237", "f_0238"],
+      "parallelCue": "'ROOKIE/ROUND' draft base, black/red, grayscale portrait, Falcons logo",
+      "confidence": "low",
+      "note": "Falcons player in the fan/stack, partly obscured by hand. Not in target list."
+    },
+    {
+      "compId": null,
+      "player": "Brock Purdy",
+      "tStart": 476,
+      "tEnd": 476,
+      "tBest": 476,
+      "frames": ["f_0239"],
+      "parallelCue": "'ROUND 7 PICK 41' draft base, red/white, grayscale portrait, 49ers #13",
+      "confidence": "med",
+      "note": "49ers QB #13 (Brock Purdy). Not in target list."
+    },
+    {
+      "compId": null,
+      "player": "Colts player (#1, Round 1 Pick 4)",
+      "tStart": 478,
+      "tEnd": 478,
+      "tBest": 478,
+      "frames": ["f_0240"],
+      "parallelCue": "'ROUND 1 PICK 4' draft base, blue/white, grayscale portrait, Colts #1",
+      "confidence": "low",
+      "note": "Colts player. Does NOT match Michael Pittman (target 30 is a Refractor #24). No match."
+    }
+  ],
+  "boxOpens": [
+    {
+      "t": 426,
+      "type": "unknown",
+      "evidence": "Fresh sealed box first appears at t=426 (f_0214) still in cellophane (f_0215). Front reads 'Topps Signature 2025 / NFL', 'LOOK FOR EXCLUSIVE PARALLELS', '100% FOIL'; back reads '42 TOTAL CARDS', '6 CARDS PER PACK', 'DRAFT DAY', '2025'. Cellophane torn and first 7-card foil pack pulled by f_0217-f_0218. No 'MEGA'/'BLASTER' word legible; compact two-hand retail box (42 cards / ~7 packs) -- leans blaster but unconfirmed.",
+      "confidence": "high"
+    }
+  ],
+  "notes": "Window covers the open of one fresh sealed Topps Signature 2025 box (t=426) then rapid hand-shuffling through its base 'Round X Pick' draft cards. Most cards are base draft cards shown for ~1 frame each while shuffling, several overlapping two-at-a-time (e.g. f_0222 McBride+Jaguars, f_0229 Pearsall+Hall, f_0234 Odunze+McCarthy). Only TWO confirmed target matches: comp 14 Jordan Addison Class Action (t=420) and comp 42 J.J. McCarthy Sunday Showcase (t=468). Trey McBride appears (t=440) but as a 'Total Yards' insert, NOT the 'Zone Out' target (comp 17) -- suspect comp 17 may surface in another window. Several yellow/blue 'Round X Pick' draft cards (f_0222 Jaguars, f_0223 Patriots) are team-color treatments, not the headline 'Blue & Yellow #NNN' parallel targets. A Snoop Dogg picture-in-picture clip is on screen around t=444 (f_0223)."
+}

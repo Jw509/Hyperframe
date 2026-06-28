@@ -1,0 +1,267 @@
+{
+  "window": "W06",
+  "sightings": [
+    {
+      "compId": null,
+      "player": "Michael Penix Jr. (uncertain)",
+      "tStart": 300,
+      "tEnd": 300,
+      "tBest": 300,
+      "frames": ["f_0151"],
+      "parallelCue": "white/light-blue uniform #9, b&w player portrait on right reading vertical, Atlanta Falcons logo bottom-right",
+      "confidence": "low",
+      "note": "QB #9 with Falcons logo, Topps Chrome-style insert. No Falcons #9 in target list; best guess Michael Penix Jr. Not a target match."
+    },
+    {
+      "compId": "15",
+      "player": "Cam Ward",
+      "tStart": 302,
+      "tEnd": 304,
+      "tBest": 302,
+      "frames": ["f_0152", "f_0153"],
+      "parallelCue": "gold 'Sunday Showcase' insert, white/light-blue throwing pose, Tennessee Titans, RC tag, gold nameplate 'CAM WARD'",
+      "confidence": "high",
+      "note": "Matches target 15 Cam Ward Sunday Showcase Inserts RC #SS-2. f_0153 also shows a non-card photo (person in safety vest) to the right."
+    },
+    {
+      "compId": "43",
+      "player": "Trevor Lawrence",
+      "tStart": 306,
+      "tEnd": 306,
+      "tBest": 306,
+      "frames": ["f_0154"],
+      "parallelCue": "RED bordered card, QB throwing in teal Jaguars uniform, b&w portrait right, Jaguars logo bottom",
+      "confidence": "med",
+      "note": "Red border matches target 43 Trevor Lawrence Red & Black #26. Could not read serial; player + red parallel align."
+    },
+    {
+      "compId": null,
+      "player": "Xavier Legette",
+      "tStart": 310,
+      "tEnd": 312,
+      "tBest": 312,
+      "frames": ["f_0156", "f_0157"],
+      "parallelCue": "#17 WR white Panthers uniform, b&w portrait, 'ROUND ... PICK' insert text, Carolina Panthers logo",
+      "confidence": "med",
+      "note": "Xavier Legette Round Pick rookie. No Xavier Legette in target list. f_0156 is the fanned stack with this card on top."
+    },
+    {
+      "compId": null,
+      "player": "Chris Olave (uncertain)",
+      "tStart": 314,
+      "tEnd": 314,
+      "tBest": 314,
+      "frames": ["f_0158"],
+      "parallelCue": "#12 white/gold New Orleans Saints uniform, b&w portrait right, Topps C-logo top-left, Saints fleur-de-lis bottom",
+      "confidence": "low",
+      "note": "Saints #12 likely Chris Olave, but this looks like a base/Round-Pick layout, not target 11 (Olave 'NFL In Session #IS-19' insert). Not counting as target match."
+    },
+    {
+      "compId": null,
+      "player": "Justin Herbert (uncertain)",
+      "tStart": 316,
+      "tEnd": 316,
+      "tBest": 316,
+      "frames": ["f_0159"],
+      "parallelCue": "#3 yellow/blue Chargers (powder-blue) uniform, b&w portrait right",
+      "confidence": "low",
+      "note": "Single card of a Chargers player ~#3, possibly Justin Herbert. Target 41 Herbert is a Paramount Pairings DUAL with Ladd McConkey; this is a single, so not that. No match."
+    },
+    {
+      "compId": null,
+      "player": "unknown Colts player",
+      "tStart": 318,
+      "tEnd": 318,
+      "tBest": 318,
+      "frames": ["f_0160"],
+      "parallelCue": "#28 white Indianapolis Colts uniform, b&w portrait right, Cincinnati Bengals logo bottom-right",
+      "confidence": "low",
+      "note": "Colts #28 with Bengals logo on a dual/showcase layout. Could not read name. No clear target match."
+    },
+    {
+      "compId": "13",
+      "player": "Brian Burns",
+      "tStart": 320,
+      "tEnd": 322,
+      "tBest": 322,
+      "frames": ["f_0161", "f_0162"],
+      "parallelCue": "'Class Icons' ornate card, '1ST ROUND 16 PICK', draft-day photo holding 'BURNS 1' jersey, Carolina Panthers logo, nameplate 'BRIAN BURNS'",
+      "confidence": "high",
+      "note": "Matches target 13 Brian Burns Class Icons #CI-3. f_0162 is the clean full-front view."
+    },
+    {
+      "compId": null,
+      "player": "Jaylin Lane",
+      "tStart": 324,
+      "tEnd": 324,
+      "tBest": 324,
+      "frames": ["f_0163"],
+      "parallelCue": "yellow/blue card #80 maroon/gold Washington Commanders uniform, b&w portrait, 'ROUND 4 PICK 26', 'JAYLIN LANE', W logo",
+      "confidence": "med",
+      "note": "Jaylin Lane Round 4 Pick (Yellow & Blue). No Jaylin Lane in target list."
+    },
+    {
+      "compId": null,
+      "player": "Elijah Arroyo",
+      "tStart": 326,
+      "tEnd": 328,
+      "tBest": 328,
+      "frames": ["f_0164", "f_0165"],
+      "parallelCue": "Seattle Seahawks TE; f_0164 is the card BACK (green strip, '#136 ELIJAH ARROYO Seattle Seahawks TE'); f_0165 front #18 navy uniform, green b&w portrait, 'ROUND 2 PICK 18'",
+      "confidence": "high",
+      "note": "Elijah Arroyo Round 2 Pick rookie. No Elijah Arroyo in target list. Card number 136 confirmed from back."
+    },
+    {
+      "compId": null,
+      "player": "unknown Ravens player",
+      "tStart": 332,
+      "tEnd": 332,
+      "tBest": 332,
+      "frames": ["f_0167"],
+      "parallelCue": "#2x white Baltimore Ravens uniform, b&w portrait right, Ravens + Miami Dolphins logos bottom",
+      "confidence": "low",
+      "note": "Ravens player ~#2x, name unreadable. No clear target match."
+    },
+    {
+      "compId": null,
+      "player": "unknown Dolphins player",
+      "tStart": 334,
+      "tEnd": 334,
+      "tBest": 334,
+      "frames": ["f_0168"],
+      "parallelCue": "#28 white Miami Dolphins uniform, b&w portrait right, 'ROUND ... PICK', Dolphins logo bottom",
+      "confidence": "low",
+      "note": "Dolphins #28 Round Pick rookie, name unreadable. De'Von Achane is Dolphins but target 22 (Achane Purple) is a Purple parallel, not this Round-Pick layout. No confident match."
+    },
+    {
+      "compId": null,
+      "player": "unknown Ravens player",
+      "tStart": 336,
+      "tEnd": 336,
+      "tBest": 336,
+      "frames": ["f_0169"],
+      "parallelCue": "#10 black Baltimore Ravens uniform, b&w portrait right, Ravens logo bottom",
+      "confidence": "low",
+      "note": "Ravens #10, name unreadable. No clear target match."
+    },
+    {
+      "compId": "17",
+      "player": "Trey McBride (uncertain)",
+      "tStart": 338,
+      "tEnd": 338,
+      "tBest": 338,
+      "frames": ["f_0170"],
+      "parallelCue": "#85 red Arizona Cardinals uniform, screaming b&w portrait right, Cardinals + Detroit Lions logos bottom",
+      "confidence": "low",
+      "note": "Cardinals #85 is Trey McBride. Best-guess match to target 17 (Trey McBride Zone Out Insert ZO-24) by player/team/number, BUT layout looks like a base/Sunday-Showcase dual, not clearly a 'Zone Out' insert, and McBride is not a rookie. Treat as tentative; could be no-match."
+    },
+    {
+      "compId": null,
+      "player": "unknown Lions player",
+      "tStart": 340,
+      "tEnd": 340,
+      "tBest": 340,
+      "frames": ["f_0171"],
+      "parallelCue": "#20 white Dallas Cowboys uniform, b&w portrait right, Detroit Lions logo bottom",
+      "confidence": "low",
+      "note": "Cowboys #20 with Lions logo, name unreadable. No clear target match."
+    },
+    {
+      "compId": null,
+      "player": "T.J. Sanders",
+      "tStart": 342,
+      "tEnd": 342,
+      "tBest": 342,
+      "frames": ["f_0172"],
+      "parallelCue": "#98 white/blue Buffalo Bills uniform, b&w portrait, 'ROUND 2 PICK 2', 'T.J. SANDERS', Bills logo, refractor/foil sheen",
+      "confidence": "med",
+      "note": "T.J. Sanders Round 2 Pick rookie. No T.J. Sanders in target list."
+    },
+    {
+      "compId": "46",
+      "player": "Justin Jefferson",
+      "tStart": 344,
+      "tEnd": 344,
+      "tBest": 344,
+      "frames": ["f_0173"],
+      "parallelCue": "#18 purple Minnesota Vikings uniform, YELLOW/BLUE foil background, b&w portrait, 'ROUND 1 PICK 22', 'JUSTIN JEFFERSON', Vikings logo",
+      "confidence": "med",
+      "note": "Matches target 46 Justin Jefferson Yellow Blue Foil SP — strong yellow/blue foil parallel cue. Could not read SP serial."
+    },
+    {
+      "compId": null,
+      "player": "Jalon Walker",
+      "tStart": 346,
+      "tEnd": 346,
+      "tBest": 346,
+      "frames": ["f_0174"],
+      "parallelCue": "black Atlanta Falcons uniform, b&w portrait right, 'ROUND 1 PICK 15', 'JALON WALKER', Falcons logo, RC",
+      "confidence": "med",
+      "note": "Jalon Walker but this is a ROUND 1 PICK card, NOT target 37 (Jalon Walker Class Icons #CI-19). Different parallel/card -> compId null. Alternative target if mis-IDed: 37."
+    },
+    {
+      "compId": null,
+      "player": "Saquon Barkley",
+      "tStart": 348,
+      "tEnd": 348,
+      "tBest": 348,
+      "frames": ["f_0175"],
+      "parallelCue": "#26 white Philadelphia Eagles uniform, b&w portrait, 'ROUND 1 PICK 2', 'SAQUON BARKLEY', Eagles logo",
+      "confidence": "med",
+      "note": "Saquon Barkley Round 1 Pick. No Saquon Barkley in target list."
+    },
+    {
+      "compId": null,
+      "player": "unknown Titans player",
+      "tStart": 350,
+      "tEnd": 350,
+      "tBest": 350,
+      "frames": ["f_0176"],
+      "parallelCue": "#28 white Houston-Oilers-throwback Titans uniform, b&w portrait, 'ROUND 4 PICK 25', Titans logo",
+      "confidence": "low",
+      "note": "Titans Round 4 Pick rookie, name unreadable. No clear target match."
+    },
+    {
+      "compId": null,
+      "player": "unknown Browns player",
+      "tStart": 352,
+      "tEnd": 352,
+      "tBest": 352,
+      "frames": ["f_0177"],
+      "parallelCue": "white Cleveland Browns uniform, b&w portrait, 'ROUND 1 PICK 33', Browns logo",
+      "confidence": "low",
+      "note": "Browns Round 1 Pick 33 rookie, name unreadable. No clear target match."
+    },
+    {
+      "compId": null,
+      "player": "unknown Dolphins player",
+      "tStart": 354,
+      "tEnd": 354,
+      "tBest": 354,
+      "frames": ["f_0178"],
+      "parallelCue": "white Miami Dolphins uniform, b&w portrait, 'ROUND 5 PICK 23', Dolphins logo",
+      "confidence": "low",
+      "note": "Dolphins Round 5 Pick rookie, name unreadable. No clear target match."
+    },
+    {
+      "compId": null,
+      "player": "Phil Mafah",
+      "tStart": 356,
+      "tEnd": 358,
+      "tBest": 356,
+      "frames": ["f_0179", "f_0180"],
+      "parallelCue": "#37 white Dallas Cowboys uniform, b&w portrait, 'ROUND 7 PICK 23', 'PHIL MAFAH', Cowboys star, serial '150/275' bottom-right",
+      "confidence": "med",
+      "note": "Phil Mafah Round 7 Pick rookie, numbered /275. No Phil Mafah in target list."
+    }
+  ],
+  "boxOpens": [
+    {
+      "t": 330,
+      "type": "unknown",
+      "evidence": "hands tearing/peeling a cellophane pack wrapper at center frame (f_0166); no box/packaging text legible",
+      "confidence": "low"
+    }
+  ],
+  "notes": "Window 300-358s. Host steadily working through a stack: most cards are 2025 Topps Signature Class 'Round X Pick' rookies and dual b&w-portrait layouts not on the target list. Confirmed target matches: 15 (Cam Ward Sunday Showcase, f_0152-153), 13 (Brian Burns Class Icons, f_0161-162), and probable 43 (Trevor Lawrence Red, f_0154) and 46 (Justin Jefferson yellow/blue foil, f_0173). f_0170 Cardinals #85 is likely Trey McBride (target 17) but parallel not confirmed -> low confidence. f_0174 Jalon Walker appears but as a Round 1 Pick, NOT the Class Icons target 37. f_0155 shows two cards mid-shuffle (a silver 'Round 2 Pick 32' Eagles card in hand + the red Trevor Lawrence card top-right). Several names (f_0167,0168,0169,0171,0176,0177,0178) were unreadable at this resolution; shell tools were unavailable to crop/zoom for finer OCR, so those are conservative low-confidence null entries."
+}

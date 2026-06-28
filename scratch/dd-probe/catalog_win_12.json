@@ -1,0 +1,128 @@
+{
+  "window": "W12",
+  "sightings": [
+    {
+      "compId": null,
+      "player": "Jayden Reed",
+      "tStart": 660,
+      "tEnd": 668,
+      "tBest": 668,
+      "frames": ["f_0331", "f_0332", "f_0333", "f_0334", "f_0335"],
+      "parallelCue": "white/dark Signature design, Packers #11, vertical text 'JAYDEN REED', 'ROUND 2 PICK 19', dark/red right panel",
+      "confidence": "high",
+      "note": "Green Bay Packers WR #11. Clearly reads JAYDEN REED, Round 2 Pick 19. NOT in target list -> null. Held center 2-handed, this is the first card unsleeved in the window."
+    },
+    {
+      "compId": "10",
+      "player": "Ladd McConkey",
+      "tStart": 670,
+      "tEnd": 686,
+      "tBest": 684,
+      "frames": ["f_0336", "f_0337", "f_0338", "f_0339", "f_0342", "f_0343", "f_0344"],
+      "parallelCue": "teal/green refractor sheen, Chargers #15, 'LADD McCONKEY', 'ROUND 2 PICK 2', serial '123/225' bottom",
+      "confidence": "med",
+      "note": "Chargers WR #15. Card reads ROUND 2 PICK 2 serial-numbered 123/225 with teal/green refractor border. Best guess for compId 10 (Ladd McConkey Round 2 Pick - Teal). PARALLEL MISMATCH: target 10 says '#81' but this card is the /225 Round 2 Pick 2 teal parallel, single-player (not the Paramount Pairings #41). Alt target if wrong: none other for solo McConkey. Held center, examined for a long stretch (set aside ~688s, frame f_0345 is just an arm)."
+    },
+    {
+      "compId": null,
+      "player": "Marcus (unreadable surname)",
+      "tStart": 678,
+      "tEnd": 680,
+      "tBest": 680,
+      "frames": ["f_0340", "f_0341"],
+      "parallelCue": "Blue & Yellow border, NY Giants, RC, 'ROUND' pick, vertical name starts 'MARCUS'",
+      "confidence": "low",
+      "note": "NY Giants player, blue/yellow border, RC rookie. Vertical name reads 'MARCUS ...' but surname unreadable. Held in left hand while Ladd McConkey card still in right. Does not match any target. Possibly Marcus Mbow (Giants OL) but uncertain -> null."
+    },
+    {
+      "compId": null,
+      "player": "Jaxson Dart",
+      "tStart": 680,
+      "tEnd": 680,
+      "tBest": 680,
+      "frames": ["f_0341"],
+      "parallelCue": "red/maroon border, NY Giants QB, RC, 'JAXSON DART', 'ROUND 1 PICK 25'",
+      "confidence": "high",
+      "note": "NY Giants QB, clearly reads JAXSON DART, Round 1 Pick 25, red/maroon Round-series border. NOT in target list -> null. Briefly held center alongside other cards."
+    },
+    {
+      "compId": null,
+      "player": "Puka Nacua",
+      "tStart": 692,
+      "tEnd": 692,
+      "tBest": 692,
+      "frames": ["f_0347"],
+      "parallelCue": "white/dark Signature design, LA Rams #17, black right panel with vertical text",
+      "confidence": "med",
+      "note": "LA Rams WR #17 = Puka Nacua. White/dark Signature design. NOT in target list -> null. Quick look, then set aside."
+    },
+    {
+      "compId": null,
+      "player": "Marvin Harrison Jr.",
+      "tStart": 694,
+      "tEnd": 694,
+      "tBest": 694,
+      "frames": ["f_0348"],
+      "parallelCue": "red/maroon border, Arizona Cardinals #18, 'MARVIN HARRISON JR.', 'ROUND 1 PICK 4'",
+      "confidence": "high",
+      "note": "Arizona Cardinals WR #18, clearly reads MARVIN HARRISON JR., Round 1 Pick 4, red/maroon border. NOT in target list -> null. Held center-left clearly."
+    },
+    {
+      "compId": null,
+      "player": "George Kittle",
+      "tStart": 696,
+      "tEnd": 696,
+      "tBest": 696,
+      "frames": ["f_0349"],
+      "parallelCue": "white/dark Signature design, SF 49ers #85, dark right panel with 'ROUND' pick text",
+      "confidence": "med",
+      "note": "SF 49ers TE #85 = George Kittle. White/dark Signature design. NOT in target list -> null. Brief center hold."
+    },
+    {
+      "compId": "47",
+      "player": "Jalen Milroe",
+      "tStart": 698,
+      "tEnd": 710,
+      "tBest": 708,
+      "frames": ["f_0350", "f_0351", "f_0353", "f_0354", "f_0355", "f_0356"],
+      "parallelCue": "solid RED left border + green-tinted portrait right, Seahawks #6, 'JALEN MILROE', 'ROUND 3 PICK 28' (approx), RC rookie",
+      "confidence": "med",
+      "note": "Seattle Seahawks QB #6, clearly JALEN MILROE, RC. Best guess compId 47 (only Milroe target). PARALLEL MISMATCH: target 47 says 'Round 2 Pick - Red & Black #151' but this card reads 'ROUND 3 PICK 28' with a solid red border. Likely a different Milroe parallel than the comp, but no other Milroe ID exists. Held center repeatedly over ~12s (set down briefly around f_0352 for a Titans card, then back up)."
+    },
+    {
+      "compId": null,
+      "player": "Mullings (unreadable first name, Titans #57)",
+      "tStart": 702,
+      "tEnd": 702,
+      "tBest": 702,
+      "frames": ["f_0352"],
+      "parallelCue": "white/dark Signature design, Tennessee Titans #57 (light blue), RC, 'ROUND 6 PICK 12' (approx), surname '...MULLINGS'",
+      "confidence": "low",
+      "note": "Tennessee Titans player #57, light blue jersey, RC. Surname reads '...MULLINGS', Round 6 Pick ~12. Does not match any target -> null. Quick interleaved look while Milroe card was set aside top-right."
+    },
+    {
+      "compId": "24",
+      "player": "Amon-Ra St. Brown",
+      "tStart": 716,
+      "tEnd": 716,
+      "tBest": 716,
+      "frames": ["f_0359"],
+      "parallelCue": "white/dark Signature design, Detroit Lions #14, dark right panel with Lions logo, no obvious colored border",
+      "confidence": "med",
+      "note": "Detroit Lions WR #14 = Amon-Ra St. Brown. Matches compId 24 (only Amon-Ra target). CAVEAT: appears to be the base/standard white-and-dark Signature design with no obvious colored parallel border; target 24 is '#19 Parallel'. Could be base rather than the parallel comp, but it is the same player. Just unsleeved and held center at end of window."
+    },
+    {
+      "compId": "19",
+      "player": "Jordan Love",
+      "tStart": 718,
+      "tEnd": 718,
+      "tBest": 718,
+      "frames": ["f_0360"],
+      "parallelCue": "GOLD/yellow foil right panel, Green Bay Packers QB (throwing pose, white/gold uni), Packers 'G' logo, vertical text",
+      "confidence": "med",
+      "note": "Green Bay Packers QB in throwing motion = Jordan Love. Distinct GOLD/yellow foil right panel. Best guess compId 19 (Jordan Love 'Yellow Blue Variant SP'); the gold/yellow foil supports a yellow variant. This is the LAST frame of the window (t=718s) so it likely continues into W13 - recommend W13 confirm the parallel/serial. Held center 2-handed."
+    }
+  ],
+  "boxOpens": [],
+  "notes": "No box opens in this window - continuous one-at-a-time card review at the CHASE 4 THE CASE backdrop, no sealed packaging shown. Cards are held center / center-left in hands. Two TARGET-list matches (both best-guess, parallel uncertain): compId 10 Ladd McConkey (Round 2 Pick 2 /225 teal, f_0336-0344) and compId 47 Jalen Milroe (Round 3 Pick red RC, f_0350-0356) - both show pick/parallel text that does NOT exactly match the target's stated parallel, flagged in notes. Two more probable matches at the window edges: compId 24 Amon-Ra St. Brown (f_0359, looks base) and compId 19 Jordan Love (f_0360, gold foil, last frame - bleeds into W13). Many non-target cards passed through: Jayden Reed, Jaxson Dart, Marvin Harrison Jr., George Kittle, Puka Nacua, an unread Colts card (sits on table right from ~f_0346 onward, never shown to camera face-on), a Giants 'Marcus' RC, and a Titans '...Mullings' RC. Frame f_0345 = just an arm; f_0357/f_0358 = no readable card face (card held edge-on / off to the side)."
+}

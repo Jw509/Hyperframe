@@ -1,0 +1,681 @@
+{
+  "10": {
+    "compId": "10",
+    "player": "Ladd McConkey",
+    "tStart": 670,
+    "tEnd": 686,
+    "tBest": 684,
+    "frames": [
+      "f_0336",
+      "f_0337",
+      "f_0338",
+      "f_0339",
+      "f_0342",
+      "f_0343",
+      "f_0344"
+    ],
+    "parallelCue": "teal/green refractor sheen, Chargers #15, 'LADD McCONKEY', 'ROUND 2 PICK 2', serial '123/225' bottom",
+    "confidence": "med",
+    "note": "Chargers WR #15. Card reads ROUND 2 PICK 2 serial-numbered 123/225 with teal/green refractor border. Best guess for compId 10 (Ladd McConkey Round 2 Pick - Teal). PARALLEL MISMATCH: target 10 says '#81' but this card is the /225 Round 2 Pick 2 teal parallel, single-player (not the Paramount Pairings #41). Alt target if wrong: none other for solo McConkey. Held center, examined for a long stretch (set aside ~688s, frame f_0345 is just an arm).",
+    "win": 12,
+    "_score": 216
+  },
+  "11": {
+    "compId": "11",
+    "player": "Chris Olave",
+    "tStart": 378,
+    "tEnd": 382,
+    "tBest": 378,
+    "frames": [
+      "f_0190",
+      "f_0191",
+      "f_0192"
+    ],
+    "parallelCue": "'IN SESSION' magazine-cover insert, on-card red autograph, Saints #12, 'CHRIS OLAVE WR-12 NEW ORLEANS SAINTS', barcode bottom",
+    "confidence": "high",
+    "note": "Matches target 11 (NFL In Session #IS-19). Auto present. Held center; video overlays tweets at f_0191-f_0192 but card stays visible.",
+    "win": 7,
+    "_score": 304
+  },
+  "12": {
+    "compId": "12",
+    "player": "Quentin Johnston",
+    "tStart": 24,
+    "tEnd": 30,
+    "tBest": 24,
+    "frames": [
+      "f_0013",
+      "f_0014",
+      "f_0015",
+      "f_0016"
+    ],
+    "parallelCue": "'AFTER IMAGE' insert; refractor/checkerboard front, Chargers #1; back reads 'AFTER IMAGE / QUENTIN JOHNSTON / LOS ANGELES CHARGERS', card # appears 'AI-16'",
+    "confidence": "high",
+    "note": "Chargers WR, held center 2-handed. Front (f_0013/f_0016) and back (f_0014/f_0015) both shown. Player + After Image set match target 12, but the readable back card number is 'AI-16' whereas target lists '#AI-1' — likely same card, flag number discrepancy.",
+    "win": 1,
+    "_score": 306
+  },
+  "13": {
+    "compId": "13",
+    "player": "Brian Burns",
+    "tStart": 320,
+    "tEnd": 322,
+    "tBest": 322,
+    "frames": [
+      "f_0161",
+      "f_0162"
+    ],
+    "parallelCue": "'Class Icons' ornate card, '1ST ROUND 16 PICK', draft-day photo holding 'BURNS 1' jersey, Carolina Panthers logo, nameplate 'BRIAN BURNS'",
+    "confidence": "high",
+    "note": "Matches target 13 Brian Burns Class Icons #CI-3. f_0162 is the clean full-front view.",
+    "win": 6,
+    "_score": 302
+  },
+  "14": {
+    "compId": "14",
+    "player": "Jordan Addison",
+    "tStart": 100,
+    "tEnd": 100,
+    "tBest": 100,
+    "frames": [
+      "f_0051"
+    ],
+    "parallelCue": "Vikings WR #3, GOLD 'Class Action' insert, 'WINNING STARTS HERE!', Vikings logo bottom-right",
+    "confidence": "high",
+    "note": "Clear 'Class Action' insert for Jordan Addison = target 14 (Class Action CA-21). Held center 2-handed.",
+    "win": 2,
+    "_score": 300
+  },
+  "15": {
+    "compId": "15",
+    "player": "Cam Ward",
+    "tStart": 302,
+    "tEnd": 304,
+    "tBest": 302,
+    "frames": [
+      "f_0152",
+      "f_0153"
+    ],
+    "parallelCue": "gold 'Sunday Showcase' insert, white/light-blue throwing pose, Tennessee Titans, RC tag, gold nameplate 'CAM WARD'",
+    "confidence": "high",
+    "note": "Matches target 15 Cam Ward Sunday Showcase Inserts RC #SS-2. f_0153 also shows a non-card photo (person in safety vest) to the right.",
+    "win": 6,
+    "_score": 302
+  },
+  "16": {
+    "compId": "16",
+    "player": "Maxwell Hairston",
+    "tStart": 362,
+    "tEnd": 366,
+    "tBest": 364,
+    "frames": [
+      "f_0182",
+      "f_0183",
+      "f_0184"
+    ],
+    "parallelCue": "Blue & Yellow rookie foil, RC logo, Bills, 'Round 2 Pick' on right panel; name 'MAXWELL HAIRSTON' on side",
+    "confidence": "high",
+    "note": "Matches target 16 (Blue & Yellow Rookie #143). Bills DB held center while Phil Mafah card sits at top of frame.",
+    "win": 7,
+    "_score": 304
+  },
+  "17": {
+    "compId": "17",
+    "player": "Trey McBride (uncertain)",
+    "tStart": 338,
+    "tEnd": 338,
+    "tBest": 338,
+    "frames": [
+      "f_0170"
+    ],
+    "parallelCue": "#85 red Arizona Cardinals uniform, screaming b&w portrait right, Cardinals + Detroit Lions logos bottom",
+    "confidence": "low",
+    "note": "Cardinals #85 is Trey McBride. Best-guess match to target 17 (Trey McBride Zone Out Insert ZO-24) by player/team/number, BUT layout looks like a base/Sunday-Showcase dual, not clearly a 'Zone Out' insert, and McBride is not a rookie. Treat as tentative; could be no-match.",
+    "win": 6,
+    "_score": 100
+  },
+  "18": {
+    "compId": "18",
+    "player": "Caleb Williams / Rome Odunze",
+    "tStart": 752,
+    "tEnd": 754,
+    "tBest": 752,
+    "frames": [
+      "f_0377",
+      "f_0378"
+    ],
+    "parallelCue": "DUAL card, Bears, 'CALEB WILLIAMS' + 'ROME ODUNZE', 'PARAMOUNT PAIRINGS' gold script, two Bears logos bottom corners",
+    "confidence": "high",
+    "note": "Matches #18 Caleb Williams / Rome Odunze (Paramount Pairings #PP-1). Held center 2-handed at t=752 fully readable; tilted at t=754. Also briefly resting on table top-right at f_0379 and f_0381 (not re-counted).",
+    "win": 13,
+    "_score": 302
+  },
+  "19": {
+    "compId": "19",
+    "player": "Jordan Love",
+    "tStart": 828,
+    "tEnd": 838,
+    "tBest": 830,
+    "frames": [
+      "f_0415",
+      "f_0416",
+      "f_0417",
+      "f_0418",
+      "f_0419",
+      "f_0420"
+    ],
+    "parallelCue": "chrome/foil 'STARS' insert (silver bubble letters S-T-A-R-S + green Packers G star), Green Bay Packers #10, yellow/gold tones, in magnetic one-touch case",
+    "confidence": "med",
+    "note": "Big chase card of the break: cased and held to camera for the whole final 10s (END of video). Clearly Jordan Love (Packers QB #10). Only Jordan Love in list is compId 19 (Yellow Blue Variant SP) -> matched 19 as best guess, but design is a foil 'Stars' insert so confirm exact parallel.",
+    "win": 14,
+    "_score": 210
+  },
+  "20": {
+    "compId": "20",
+    "player": "J.J. McCarthy",
+    "tStart": 512,
+    "tEnd": 520,
+    "tBest": 520,
+    "frames": [
+      "f_0257",
+      "f_0258",
+      "f_0261"
+    ],
+    "parallelCue": "Vikings #9 purple jersey, YELLOW & BLUE gradient background, gold/yellow right panel headshot, 'J.J. McCarthy ROUND 1 PICK 10'",
+    "confidence": "med",
+    "note": "Yellow & Blue coloring -> best guess target 20 (Blue & Yellow). Card reads 'Round 1 Pick 10', so could be a base Round 1 Pick not in the list rather than the #37 Blue & Yellow; alternative is none. Best/full 2-handed view at f_0261 (t=520). Re-shuffled and re-shown across f_0259-0260.",
+    "win": 9,
+    "_score": 208
+  },
+  "21": {
+    "compId": "21",
+    "player": "Patrick Mahomes II",
+    "tStart": 768,
+    "tEnd": 770,
+    "tBest": 770,
+    "frames": [
+      "f_0385",
+      "f_0386"
+    ],
+    "parallelCue": "GOLD/YELLOW insert, Chiefs #15 red jersey, 'Class Action - WINNING STARTS HERE!', 'PATRICK MAHOMES II QUARTERBACK', Topps + Chrome logos top",
+    "confidence": "med",
+    "note": "Class Action insert of Mahomes. Best target match is #21 Patrick Mahomes II 'Class Actions Inserts #CA-16'. (#03 is a different Mahomes 'Total Touchdowns - Zone Out'.) Held center both seconds, fully readable. Card then rests top-right at f_0387.",
+    "win": 13,
+    "_score": 202
+  },
+  "22": {
+    "compId": "22",
+    "player": "De'Von Achane",
+    "tStart": 80,
+    "tEnd": 82,
+    "tBest": 82,
+    "frames": [
+      "f_0041",
+      "f_0042"
+    ],
+    "parallelCue": "Dolphins RB #22, PURPLE border on left/bottom, green-tinted portrait panel, 'Round 1 Pick 24'",
+    "confidence": "high",
+    "note": "Clear PURPLE parallel = target 22 (De'Von Achane Purple). Held center 2-handed.",
+    "win": 2,
+    "_score": 302
+  },
+  "23": {
+    "compId": "23",
+    "player": "Abdul Carter",
+    "tStart": 184,
+    "tEnd": 184,
+    "tBest": 184,
+    "frames": [
+      "f_0093"
+    ],
+    "parallelCue": "NY Giants #51, 'ROUND 1 PICK 3', RC logo, red/maroon grayscale portrait on right half, blue/yellow left half",
+    "confidence": "med",
+    "note": "Giants #51 Round-1-Pick-3 = Abdul Carter (2025 3rd overall). This is a 'Round 1 Pick' insert, NOT the '#118 Blue & Yellow' base parallel of target 23 — parallel mismatch, but same player. Alternative compId null if we only want the exact #118 parallel.",
+    "win": 4,
+    "_score": 200
+  },
+  "24": {
+    "compId": "24",
+    "player": "Amon-Ra St. Brown",
+    "tStart": 716,
+    "tEnd": 716,
+    "tBest": 716,
+    "frames": [
+      "f_0359"
+    ],
+    "parallelCue": "white/dark Signature design, Detroit Lions #14, dark right panel with Lions logo, no obvious colored border",
+    "confidence": "med",
+    "note": "Detroit Lions WR #14 = Amon-Ra St. Brown. Matches compId 24 (only Amon-Ra target). CAVEAT: appears to be the base/standard white-and-dark Signature design with no obvious colored parallel border; target 24 is '#19 Parallel'. Could be base rather than the parallel comp, but it is the same player. Just unsleeved and held center at end of window.",
+    "win": 12,
+    "_score": 200
+  },
+  "26": {
+    "compId": "26",
+    "player": "Bryce Young",
+    "tStart": 622,
+    "tEnd": 626,
+    "tBest": 622,
+    "frames": [
+      "f_0312",
+      "f_0314",
+      "f_0315"
+    ],
+    "parallelCue": "'Sunday Showcase' script across top, Carolina Panthers QB #9, gold base; insert design",
+    "confidence": "high",
+    "note": "Sunday Showcase insert = compId 26 (Bryce Young SS-23). Clearly held single at t=622.",
+    "win": 11,
+    "_score": 304
+  },
+  "28": {
+    "compId": "28",
+    "player": "Derrick Harmon",
+    "tStart": 724,
+    "tEnd": 724,
+    "tBest": 724,
+    "frames": [
+      "f_0363"
+    ],
+    "parallelCue": "Steelers DL #99 screaming, holo/refractor sheen on card, 'ROUND 2 PICK ...', Steelers logo bottom",
+    "confidence": "med",
+    "note": "Matches #28 Derrick Harmon (Refractor) - Steelers rookie DL, RC mark visible. Card has refractor rainbow sheen. Held center, clear.",
+    "win": 13,
+    "_score": 200
+  },
+  "29": {
+    "compId": "29",
+    "player": "Colston Loveland",
+    "tStart": 144,
+    "tEnd": 152,
+    "tBest": 152,
+    "frames": [
+      "f_0072",
+      "f_0073",
+      "f_0075",
+      "f_0076"
+    ],
+    "parallelCue": "'Class Icons' insert, ornate silver frame, 'LOVELAND' Bears jersey, RC rookie logo, Bears logo, '1ST ROUND / 10 PICK', 'COLSTON LOVELAND'",
+    "confidence": "high",
+    "note": "Colston Loveland Class Icons #CI-22 (compId 29). NOT the Red&Black parallel (compId 34) - this is the silver-framed Class Icons insert. Shown beside the Bowers Purple. Clearest full view f_0073 and f_0076.",
+    "win": 3,
+    "_score": 308
+  },
+  "30": {
+    "compId": "30",
+    "player": "Michael Pittman Jr.",
+    "tStart": 234,
+    "tEnd": 234,
+    "tBest": 234,
+    "frames": [
+      "f_0118"
+    ],
+    "parallelCue": "Indianapolis Colts #11, 'ROUND 2 PICK 2', name 'MICHAEL PITTMAN JR.', white base design with grayscale portrait — NO visible chrome/refractor shine",
+    "confidence": "low",
+    "note": "Player is Michael Pittman Jr. (target 30 = 'Refractor #24'). BUT this looks like the plain white 'Round 2 Pick' base, not a refractor (no rainbow/chrome finish). Parallel mismatch — likely NOT the refractor target. Recorded as 30 by player only; alternative compId null.",
+    "win": 4,
+    "_score": 100
+  },
+  "31": {
+    "compId": "31",
+    "player": "Maxx Crosby",
+    "tStart": 484,
+    "tEnd": 484,
+    "tBest": 484,
+    "frames": [
+      "f_0243"
+    ],
+    "parallelCue": "Raiders #98, GREEN-to-PURPLE gradient border, black right panel, 'ROUND 4 PICK 4'",
+    "confidence": "high",
+    "note": "Green & Purple parallel matches target 31. Held center one-handed.",
+    "win": 9,
+    "_score": 300
+  },
+  "34": {
+    "compId": "34",
+    "player": "Colston Loveland",
+    "tStart": 756,
+    "tEnd": 756,
+    "tBest": 756,
+    "frames": [
+      "f_0379"
+    ],
+    "parallelCue": "all-RED & BLACK card, Bears TE #84, 'COLSTON LOVELAND', RC, Bears logo bottom",
+    "confidence": "high",
+    "note": "Matches #34 Colston Loveland (Red And Black Parallel RC) - the red/black version, NOT #29 (Class Icons). Held center; Paramount Pairings card resting top-right of frame.",
+    "win": 13,
+    "_score": 300
+  },
+  "36": {
+    "compId": "36",
+    "player": "Kyren Williams",
+    "tStart": 620,
+    "tEnd": 628,
+    "tBest": 624,
+    "frames": [
+      "f_0311",
+      "f_0313",
+      "f_0314",
+      "f_0315"
+    ],
+    "parallelCue": "front is shimmering checkerboard/x-fractor foil (Rams #23, red foil signature); BACK at f_0313 reads 'AFTER IMAGE / AI-17 / KYREN WILLIAMS / Los Angeles Rams'",
+    "confidence": "high",
+    "note": "After Image insert. Card back (f_0313) explicitly says AFTER IMAGE AI-17 Kyren Williams = compId 36. Front held f_0311/0314/0315.",
+    "win": 11,
+    "_score": 308
+  },
+  "37": {
+    "compId": "37",
+    "player": "Jalon Walker",
+    "tStart": 804,
+    "tEnd": 806,
+    "tBest": 806,
+    "frames": [
+      "f_0403",
+      "f_0404"
+    ],
+    "parallelCue": "'Class Icons' insert (ornate silver/B&W frame), '1ST ROUND 15 PICK', name JALON WALKER, Atlanta Falcons logo, draft-suit photo holding WALKER jersey",
+    "confidence": "high",
+    "note": "Clear Class Icons + 'Jalon Walker' text -> compId 37 (Class Icons #CI-19). f_0403 shows it angled; f_0404 fully to camera.",
+    "win": 14,
+    "_score": 302
+  },
+  "38": {
+    "compId": "38",
+    "player": "Trey Amos",
+    "tStart": 630,
+    "tEnd": 630,
+    "tBest": 630,
+    "frames": [
+      "f_0316"
+    ],
+    "parallelCue": "yellow & blue background parallel, 'RC', Washington Commanders #28, 'TREY AMOS / ROUND 2 PICK 29'",
+    "confidence": "high",
+    "note": "Yellow & Blue Commanders parallel matches compId 38 (Trey Amos Yellow & Blue #156). Held single at t=630.",
+    "win": 11,
+    "_score": 300
+  },
+  "39": {
+    "compId": "39",
+    "player": "C.J. Stroud",
+    "tStart": 50,
+    "tEnd": 50,
+    "tBest": 50,
+    "frames": [
+      "f_0026"
+    ],
+    "parallelCue": "'SUNDAY SHOWCASE' insert, gold/white foil, Texans QB",
+    "confidence": "high",
+    "note": "Texans QB on Sunday Showcase insert — matches target 39 (Sunday Showcase #SS-17).",
+    "win": 1,
+    "_score": 300
+  },
+  "41": {
+    "compId": "41",
+    "player": "Justin Herbert / Ladd McConkey",
+    "tStart": 176,
+    "tEnd": 178,
+    "tBest": 178,
+    "frames": [
+      "f_0089",
+      "f_0090"
+    ],
+    "parallelCue": "'PARAMOUNT PAIRINGS' dual insert, two Chargers players (powder-blue/gold), QB left + WR right, Topps logo top-center, Chargers bolt logo",
+    "confidence": "high",
+    "note": "Paramount Pairings dual card, both Chargers = Justin Herbert / Ladd McConkey (compId 41). NOT compId 18 (Caleb Williams/Rome Odunze, who are Bears). Clearest full view f_0090. Last card in window.",
+    "win": 3,
+    "_score": 302
+  },
+  "42": {
+    "compId": "42",
+    "player": "J.J. McCarthy",
+    "tStart": 466,
+    "tEnd": 472,
+    "tBest": 468,
+    "frames": [
+      "f_0234",
+      "f_0235",
+      "f_0236"
+    ],
+    "parallelCue": "'SUNDAY SHOWCASE' insert, white/gold refractor look, gold nameplate 'J.J. McCarthy MINNESOTA VIKINGS', Vikings #9",
+    "confidence": "high",
+    "note": "Sunday Showcase text clearly readable. Matches target 42 (J.J. McCarthy Sunday Showcase #SS-20). Nameplate first peeks behind Odunze card in f_0234, full face in f_0235, still in fan in f_0236.",
+    "win": 8,
+    "_score": 306
+  },
+  "43": {
+    "compId": "43",
+    "player": "Trevor Lawrence",
+    "tStart": 306,
+    "tEnd": 306,
+    "tBest": 306,
+    "frames": [
+      "f_0154"
+    ],
+    "parallelCue": "RED bordered card, QB throwing in teal Jaguars uniform, b&w portrait right, Jaguars logo bottom",
+    "confidence": "med",
+    "note": "Red border matches target 43 Trevor Lawrence Red & Black #26. Could not read serial; player + red parallel align.",
+    "win": 6,
+    "_score": 200
+  },
+  "45": {
+    "compId": "45",
+    "player": "Andrew Mukuba",
+    "tStart": 76,
+    "tEnd": 78,
+    "tBest": 78,
+    "frames": [
+      "f_0039",
+      "f_0040"
+    ],
+    "parallelCue": "Eagles DB #22, RC logo, white/base border, sepia portrait panel, 'Round 2 Pick 32'",
+    "confidence": "med",
+    "note": "Andrew Mukuba base/white border = target 45 (Base #162). NOT blue & yellow, so this is the base not target 44. Alternative ID 44 if border read wrong. Held center 2-handed, very clear in f_0040.",
+    "win": 2,
+    "_score": 202
+  },
+  "46": {
+    "compId": "46",
+    "player": "Justin Jefferson",
+    "tStart": 344,
+    "tEnd": 344,
+    "tBest": 344,
+    "frames": [
+      "f_0173"
+    ],
+    "parallelCue": "#18 purple Minnesota Vikings uniform, YELLOW/BLUE foil background, b&w portrait, 'ROUND 1 PICK 22', 'JUSTIN JEFFERSON', Vikings logo",
+    "confidence": "med",
+    "note": "Matches target 46 Justin Jefferson Yellow Blue Foil SP — strong yellow/blue foil parallel cue. Could not read SP serial.",
+    "win": 6,
+    "_score": 200
+  },
+  "47": {
+    "compId": "47",
+    "player": "Jalen Milroe",
+    "tStart": 698,
+    "tEnd": 710,
+    "tBest": 708,
+    "frames": [
+      "f_0350",
+      "f_0351",
+      "f_0353",
+      "f_0354",
+      "f_0355",
+      "f_0356"
+    ],
+    "parallelCue": "solid RED left border + green-tinted portrait right, Seahawks #6, 'JALEN MILROE', 'ROUND 3 PICK 28' (approx), RC rookie",
+    "confidence": "med",
+    "note": "Seattle Seahawks QB #6, clearly JALEN MILROE, RC. Best guess compId 47 (only Milroe target). PARALLEL MISMATCH: target 47 says 'Round 2 Pick - Red & Black #151' but this card reads 'ROUND 3 PICK 28' with a solid red border. Likely a different Milroe parallel than the comp, but no other Milroe ID exists. Held center repeatedly over ~12s (set down briefly around f_0352 for a Titans card, then back up).",
+    "win": 12,
+    "_score": 212
+  },
+  "48": {
+    "compId": "48",
+    "player": "Kyle Williams",
+    "tStart": 544,
+    "tEnd": 548,
+    "tBest": 544,
+    "frames": [
+      "f_0273",
+      "f_0274",
+      "f_0275"
+    ],
+    "parallelCue": "Patriots #18, 'ROUND 3 PICK 5', RC, serial 116/225, red & black right panel",
+    "confidence": "high",
+    "note": "Matches compId 48 (Kyle Williams Round 3 Pick - Red & Black #147 RC). 'ROUND 3 PICK' text + red/black design + /225 serial fit the red&black parallel, not the Teal #147 (compId 32). Held center, face-cam visible f_0274.",
+    "win": 10,
+    "_score": 304
+  },
+  "49": {
+    "compId": "49",
+    "player": "Walter Nolen",
+    "tStart": 748,
+    "tEnd": 750,
+    "tBest": 748,
+    "frames": [
+      "f_0375",
+      "f_0376"
+    ],
+    "parallelCue": "Cardinals DL #97, 'WALTER NOLEN', 'ROUND 1 PICK 16', chrome/silver base sheen, RC, Cardinals logo bottom",
+    "confidence": "high",
+    "note": "Matches #49 Walter Nolen (Round 1 Pick - Chrome Base #146 RC). Clear chrome base, held center, RC mark visible.",
+    "win": 13,
+    "_score": 302
+  },
+  "08": {
+    "compId": "08",
+    "player": "Alfred Collins",
+    "tStart": 34,
+    "tEnd": 34,
+    "tBest": 34,
+    "frames": [
+      "f_0018"
+    ],
+    "parallelCue": "base 'Round 2 Pick 11' design, 49ers #95, white 'C' Topps logo, RC",
+    "confidence": "high",
+    "note": "49ers DL #95, 'ROUND 2 PICK 11' side panel — matches target 08 (Round 2 Pick 11 #196).",
+    "win": 1,
+    "_score": 300
+  },
+  "03": {
+    "compId": "03",
+    "player": "Patrick Mahomes II",
+    "tStart": 236,
+    "tEnd": 236,
+    "tBest": 236,
+    "frames": [
+      "f_0119"
+    ],
+    "parallelCue": "Kansas City Chiefs, 'TOTAL TOUCHDOWNS' insert, large '267' number, red banner, name 'PATRICK MAHOMES II'",
+    "confidence": "high",
+    "note": "Clear match to target 03 (Patrick Mahomes II - Total Touchdowns). 'Zone Out' in target name may be the specific parallel; base Total Touchdowns insert is what's visible. Held center single-hand.",
+    "win": 4,
+    "_score": 300
+  },
+  "01": {
+    "compId": "01",
+    "player": "Brock Bowers",
+    "tStart": 130,
+    "tEnd": 156,
+    "tBest": 146,
+    "frames": [
+      "f_0066",
+      "f_0067",
+      "f_0068",
+      "f_0069",
+      "f_0071",
+      "f_0072",
+      "f_0073",
+      "f_0075",
+      "f_0076",
+      "f_0077",
+      "f_0078"
+    ],
+    "parallelCue": "PURPLE border parallel, serial 074/100 bottom-right, 'BROCK BOWERS' + 'ROUND 1 PICK 13', Raiders #9 black uniform, B&W portrait right panel, Raiders shield bottom",
+    "confidence": "high",
+    "note": "Hero card of this stretch - Brock Bowers Purple /100 (compId 01, Purple #34). Shown repeatedly and re-stacked. Clearest single + dual view at f_0073/f_0076 (alongside Loveland). Picture-in-picture Raiders practice footage inset top-right f_0066-0070 (NOT a card). Held center.",
+    "win": 3,
+    "_score": 326
+  },
+  "04": {
+    "compId": "04",
+    "player": "Isaac TeSlaa",
+    "tStart": 238,
+    "tEnd": 238,
+    "tBest": 238,
+    "frames": [
+      "f_0120"
+    ],
+    "parallelCue": "Detroit Lions, BLUE & YELLOW design, #16, 'ROUND 6 PICK 8', RC, name 'ISAAC TeSLAA', blue portrait right",
+    "confidence": "med",
+    "note": "Clear Blue & Yellow Isaac TeSlaa = target 04 player+colorway. Card shows 'Round 6 Pick 8' / #16 vs target's '#131' so the exact parallel/print may differ, but player + Blue&Yellow colorway match well.",
+    "win": 4,
+    "_score": 200
+  },
+  "02": {
+    "compId": "02",
+    "player": "Kelvin Banks Jr.",
+    "tStart": 276,
+    "tEnd": 288,
+    "tBest": 278,
+    "frames": [
+      "f_0139",
+      "f_0140",
+      "f_0141",
+      "f_0144",
+      "f_0145"
+    ],
+    "parallelCue": "on-card blue autograph, RC badge, 'ROUND 1 PICK 9' black-foil right rail, New Orleans Saints logo bottom",
+    "confidence": "high",
+    "note": "Saints OT rookie auto RC = target 02 (Football Auto RC). Held center; pulled fresh from the pack opened earlier this window. Re-shown at t=286-288 alongside a Dinosaurs 'HA HA HA [CRIES]' meme PIP. Same card also briefly back-shown.",
+    "altIds": [],
+    "win": 5,
+    "_score": 312
+  },
+  "05": {
+    "compId": "05",
+    "player": "Josh Allen",
+    "tStart": 508,
+    "tEnd": 510,
+    "tBest": 510,
+    "frames": [
+      "f_0255",
+      "f_0256"
+    ],
+    "parallelCue": "RED card, round inset photo of Bills #17, cursive 'Class Action' + 'WINNING STARTS HERE!', Bills logo, 'JOSH ALLEN QUARTERBACK'",
+    "confidence": "high",
+    "note": "Class Action insert. Matches target 05. Held center, best/full view at f_0256.",
+    "win": 9,
+    "_score": 302
+  },
+  "09": {
+    "compId": "09",
+    "player": "Drake London",
+    "tStart": 550,
+    "tEnd": 550,
+    "tBest": 550,
+    "frames": [
+      "f_0276"
+    ],
+    "parallelCue": "Falcons, ornate white 'Class Icons' insert frame, '1ST ROUND 8 PICK', Falcons logo, name 'DRAKE LONDON' bottom",
+    "confidence": "high",
+    "note": "Matches compId 09 (Drake London Class Icons #CI-13). Held center. Reappears in background top-right of f_0277/f_0278.",
+    "win": 10,
+    "_score": 300
+  },
+  "07": {
+    "compId": "07",
+    "player": "Cooper Kupp",
+    "tStart": 794,
+    "tEnd": 796,
+    "tBest": 795,
+    "frames": [
+      "f_0398",
+      "f_0399",
+      "f_0400"
+    ],
+    "parallelCue": "GREEN border/parallel, Seahawks (teal/green), 'ROUND 1 PICK', name reads COOPER KUPP, green B&W headshot panel",
+    "confidence": "med",
+    "note": "Only Cooper Kupp in list is compId 07 (Rounding Pick 6 #97). This is a GREEN parallel 'Round 1 Pick' look -> matched 07 as best guess; parallel/number may differ. Also reappears in corner of f_0400.",
+    "win": 14,
+    "_score": 202
+  }
+}

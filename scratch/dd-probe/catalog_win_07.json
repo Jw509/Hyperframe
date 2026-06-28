@@ -1,0 +1,212 @@
+{
+  "window": "W07",
+  "sightings": [
+    {
+      "compId": null,
+      "player": "Phil Mafah",
+      "tStart": 360,
+      "tEnd": 368,
+      "tBest": 368,
+      "frames": ["f_0181", "f_0182", "f_0183", "f_0184", "f_0185"],
+      "parallelCue": "silver/foil refractor, serial '150/275' bottom right, RC logo, Cowboys, 'Round 7 Pick 23'",
+      "confidence": "high",
+      "note": "Cowboys RB #87 held center 2-handed at f_0185; also visible top-of-frame f_0182-f_0184 while Hairston card is the focus. Not on target list."
+    },
+    {
+      "compId": "16",
+      "player": "Maxwell Hairston",
+      "tStart": 362,
+      "tEnd": 366,
+      "tBest": 364,
+      "frames": ["f_0182", "f_0183", "f_0184"],
+      "parallelCue": "Blue & Yellow rookie foil, RC logo, Bills, 'Round 2 Pick' on right panel; name 'MAXWELL HAIRSTON' on side",
+      "confidence": "high",
+      "note": "Matches target 16 (Blue & Yellow Rookie #143). Bills DB held center while Phil Mafah card sits at top of frame."
+    },
+    {
+      "compId": null,
+      "player": "Drake Maye",
+      "tStart": 370,
+      "tEnd": 372,
+      "tBest": 370,
+      "frames": ["f_0186", "f_0187"],
+      "parallelCue": "base/white card, Patriots, 'Round 1 Pick 3', name 'DRAKE MAYE' on right black panel",
+      "confidence": "high",
+      "note": "Patriots QB #10. Not on target list."
+    },
+    {
+      "compId": null,
+      "player": "Xavier Worthy",
+      "tStart": 374,
+      "tEnd": 374,
+      "tBest": 374,
+      "frames": ["f_0188"],
+      "parallelCue": "base/white card, Chiefs red jersey #1, 'Round 1 Pick 28'",
+      "confidence": "med",
+      "note": "Chiefs WR #1, Round 1 Pick 28 = Xavier Worthy. Not on target list."
+    },
+    {
+      "compId": null,
+      "player": "CeeDee Lamb",
+      "tStart": 376,
+      "tEnd": 376,
+      "tBest": 376,
+      "frames": ["f_0189"],
+      "parallelCue": "base/white card, Cowboys #88, 'Round 1 Pick 17', name on right panel",
+      "confidence": "high",
+      "note": "Cowboys WR CeeDee Lamb. Not on target list."
+    },
+    {
+      "compId": "11",
+      "player": "Chris Olave",
+      "tStart": 378,
+      "tEnd": 382,
+      "tBest": 378,
+      "frames": ["f_0190", "f_0191", "f_0192"],
+      "parallelCue": "'IN SESSION' magazine-cover insert, on-card red autograph, Saints #12, 'CHRIS OLAVE WR-12 NEW ORLEANS SAINTS', barcode bottom",
+      "confidence": "high",
+      "note": "Matches target 11 (NFL In Session #IS-19). Auto present. Held center; video overlays tweets at f_0191-f_0192 but card stays visible."
+    },
+    {
+      "compId": null,
+      "player": "Omarr Norman-Lott",
+      "tStart": 384,
+      "tEnd": 386,
+      "tBest": 384,
+      "frames": ["f_0193", "f_0194"],
+      "parallelCue": "gold/yellow border, RC logo, Chiefs #55, 'Round 2 Pick 31', name 'OMARR NORMAN-LOTT' on right",
+      "confidence": "high",
+      "note": "Chiefs LB/DL #55. Not on target list. At f_0194 shown alongside a Falcons #37 base card."
+    },
+    {
+      "compId": null,
+      "player": "unknown (Falcons #37)",
+      "tStart": 386,
+      "tEnd": 386,
+      "tBest": 386,
+      "frames": ["f_0194"],
+      "parallelCue": "base/silver card, RC logo, Falcons #37 DB, 'Round' insert text",
+      "confidence": "low",
+      "note": "Left card at f_0194, Falcons #37 defensive back, could not read name. No clear target match."
+    },
+    {
+      "compId": null,
+      "player": "Anthony Richardson",
+      "tStart": 388,
+      "tEnd": 390,
+      "tBest": 388,
+      "frames": ["f_0195", "f_0196"],
+      "parallelCue": "base/white card, Colts #17, 'Round Pick' on right panel",
+      "confidence": "med",
+      "note": "Colts QB #17 = Anthony Richardson; top card of a stack at f_0196. Not on target list."
+    },
+    {
+      "compId": null,
+      "player": "Cole Kmet",
+      "tStart": 394,
+      "tEnd": 394,
+      "tBest": 394,
+      "frames": ["f_0198"],
+      "parallelCue": "base/white card, Bears #85, 'Round 2 Pick 11', name 'COLE KMET' on right",
+      "confidence": "high",
+      "note": "Bears TE. NOTE: target 08 is Alfred Collins 'Round 2 Pick 11 #196' (49ers) - different player despite same pick text. This is Cole Kmet -> no match."
+    },
+    {
+      "compId": "46",
+      "player": "Justin Jefferson",
+      "tStart": 396,
+      "tEnd": 396,
+      "tBest": 396,
+      "frames": ["f_0199"],
+      "parallelCue": "yellow/blue foil (Chrome-style 'AOX' logo top-left), Vikings gold/white jersey, number reads '12'",
+      "confidence": "low",
+      "note": "Best-guess match to target 46 (Justin Jefferson Yellow Blue Foil SP) on the yellow/blue-foil + Vikings cues, BUT the jersey number reads #12 and Jefferson wears #18, so identity is uncertain - could be a different Vikings WR. Flagging for human review."
+    },
+    {
+      "compId": null,
+      "player": "DeVonta Smith",
+      "tStart": 398,
+      "tEnd": 398,
+      "tBest": 398,
+      "frames": ["f_0200"],
+      "parallelCue": "base/white card, Eagles #6, 'Round 1 Pick 10', name 'DEVONTA SMITH' on right",
+      "confidence": "high",
+      "note": "Eagles WR. Not on target list."
+    },
+    {
+      "compId": "19",
+      "player": "Jordan Love",
+      "tStart": 400,
+      "tEnd": 400,
+      "tBest": 400,
+      "frames": ["f_0201"],
+      "parallelCue": "gold/yellow foil border, Packers QB #10, 'Round Pick 25', name 'JORDAN LOVE' on right",
+      "confidence": "med",
+      "note": "Packers QB #10 = Jordan Love. Target 19 is 'Yellow Blue Variant SP'; this card shows a strong gold/yellow treatment so likely that SP, but could not confirm the blue accent. Held center."
+    },
+    {
+      "compId": null,
+      "player": "Tommy Mellott",
+      "tStart": 402,
+      "tEnd": 404,
+      "tBest": 404,
+      "frames": ["f_0202", "f_0203"],
+      "parallelCue": "yellow/blue foil front, Raiders #19, RC logo, 'Round 6 Pick 37', name 'TOMMY MELLOTT'; card back at f_0202 reads 'Raiders drafted Mellott in 2025'",
+      "confidence": "high",
+      "note": "Raiders QB rookie. f_0202 shows the card BACK (text confirms Tommy Mellott / Montana State); f_0203 shows the front. Not on target list."
+    },
+    {
+      "compId": null,
+      "player": "Javonte Williams",
+      "tStart": 412,
+      "tEnd": 412,
+      "tBest": 412,
+      "frames": ["f_0207"],
+      "parallelCue": "base/white card, Cowboys RB #33, 'Round 2 Pick 3', name 'JAVONTE WILLIAMS' on right",
+      "confidence": "med",
+      "note": "Cowboys RB #33. Not on target list."
+    },
+    {
+      "compId": null,
+      "player": "Marvin Mims Jr.",
+      "tStart": 414,
+      "tEnd": 414,
+      "tBest": 414,
+      "frames": ["f_0208"],
+      "parallelCue": "base/white card, Broncos #19, 'Round 2 Pick 32', name 'MARVIN MIMS JR.' on right",
+      "confidence": "high",
+      "note": "Broncos WR. Not on target list."
+    },
+    {
+      "compId": null,
+      "player": "unknown (Texans WR)",
+      "tStart": 416,
+      "tEnd": 416,
+      "tBest": 416,
+      "frames": ["f_0209"],
+      "parallelCue": "base/white card, Texans white jersey, 'Round 2' text on right panel",
+      "confidence": "low",
+      "note": "Texans receiver, white card; name not legible. No clear target match."
+    },
+    {
+      "compId": null,
+      "player": "Jordan Addison",
+      "tStart": 418,
+      "tEnd": 418,
+      "tBest": 418,
+      "frames": ["f_0210"],
+      "parallelCue": "'WINNING STARTS' gold-strip insert, Vikings, player photo #11, name 'JORDAN ADDISON WIDE RECEIVER' + Vikings logo bottom",
+      "confidence": "med",
+      "note": "Jordan Addison Vikings, but this is a 'Winning Starts' insert, NOT target 14 (Class Action #CA-21). No exact target match -> null. Listed in case it is a wanted insert."
+    }
+  ],
+  "boxOpens": [
+    {
+      "t": 406,
+      "type": "blaster",
+      "evidence": "Tearing open a small sealed foil retail pack/wrapper (cellophane being ripped) at f_0204-f_0205; a fresh fanned stack of new cards appears immediately after at f_0206 (t=410). Wrapper is pack-sized, not a large box, so blaster/retail pack rather than mega.",
+      "confidence": "med"
+    }
+  ],
+  "notes": "Window covers t=360-418s. Confirmed target matches: 16 (Maxwell Hairston, f_0182-0184), 11 (Chris Olave In Session auto, f_0190-0192). Lower-confidence target guesses: 19 (Jordan Love yellow/gold SP, f_0201) and 46 (Justin Jefferson yellow/blue foil, f_0199 - jersey #12 conflicts with Jefferson's #18, needs human review). Many non-target 'Round Pick' base cards held throughout (Phil Mafah #150/275 serial, Drake Maye, Xavier Worthy, CeeDee Lamb, Omarr Norman-Lott, Anthony Richardson, Cole Kmet, DeVonta Smith, Tommy Mellott, Javonte Williams, Marvin Mims Jr., Texans WR, Jordan Addison Winning-Starts insert). f_0197, f_0204, f_0205 = hands/pack-tearing only (no readable card). One pack-open event around t=406."
+}
