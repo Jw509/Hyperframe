@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>cbb-el-chip-04</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      html, body { margin:0; padding:0; width:800px; height:1320px; background:transparent; overflow:hidden; font-family:"Helvetica Neue","Helvetica",Arial,sans-serif; -webkit-font-smoothing:antialiased; }
+      #root { position:relative; width:800px; height:1320px; }
+
+      .sale-card { position:absolute; right:240px; top:160px; width:392px; padding:16px 16px 6px; border-radius:34px;
+        background:rgba(255,255,255,0.10); backdrop-filter:blur(48px) saturate(140%); -webkit-backdrop-filter:blur(48px) saturate(140%);
+        border:2px solid rgba(255,255,255,0.20); box-shadow:0 20px 48px rgba(0,0,0,0.32),inset 0 2px 0 rgba(255,255,255,0.24);
+        display:flex; flex-direction:column; align-items:stretch; opacity:0; }
+      .sale-card__comp { width:100%; border-radius:22px; overflow:hidden; background:#fff; box-shadow:0 8px 26px rgba(0,0,0,0.22); display:block; }
+      .sale-card__comp img { width:100%; height:auto; display:block; }
+      .sale-card__label { font-size:26px; font-weight:700; letter-spacing:5px; color:#ffd24a; text-transform:uppercase; text-align:center; margin-top:14px; text-shadow:0 2px 14px rgba(0,0,0,0.6); }
+      .sale-card__value { font-size:86px; font-weight:800; color:#fff; line-height:1; letter-spacing:-3.4px; text-align:center; margin-top:14px; text-shadow:0 4px 24px rgba(0,0,0,0.5); }
+      .sale-card__label + .sale-card__value { margin-top:4px; }
+      .sale-card[data-money-shot="true"] .sale-card__value { color:#ffd24a; text-shadow:0 4px 32px rgba(255,210,74,0.6); }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="cbb-el-chip-04" data-width="800" data-height="1320" data-start="0" data-duration="3.10">
+      <div id="chip" class="sale-card clip" data-start="0" data-duration="3" data-track-index="1" data-money-shot="true">
+        <div class="sale-card__comp"><img src="../comps/chromebball/04-stephon-castle.png" alt="Stephon Castle Rookie Refractor #122 $14.99" crossorigin="anonymous" /></div>
+        <div class="sale-card__value">$14.99</div>
+      </div>
+      <script>
+        (function () {
+          const tl = gsap.timeline({ paused:true });
+
+          const IN_DUR=0.3, OUT_DUR=0.4, POP_IN=0.7;
+          gsap.set(".sale-card.clip", { transformOrigin:"100% 0%" });
+          document.querySelectorAll(".sale-card.clip").forEach((el)=>{
+            const start=Number(el.getAttribute("data-start"));
+            const dur=Number(el.getAttribute("data-duration"));
+            const money=el.getAttribute("data-money-shot")==="true";
+            const inD=money?POP_IN:IN_DUR;
+            const hold=Math.max(0.2,dur-inD-OUT_DUR);
+            if(money){ tl.fromTo(el,{scale:0.7,opacity:0},{scale:1,opacity:1,duration:POP_IN,ease:"back.out(1.4)",overwrite:"auto"},start); }
+            else { tl.fromTo(el,{x:640,opacity:0},{x:0,opacity:1,duration:IN_DUR,ease:"power3.out",overwrite:"auto"},start); }
+            tl.to(el,{x:640,opacity:0,duration:OUT_DUR,ease:"power2.in",overwrite:"auto"},start+inD+hold);
+            tl.set(el,{opacity:0},start+inD+hold+OUT_DUR);
+          });
+          window.__timelines=window.__timelines||{};
+          window.__timelines["cbb-el-chip-04"]=tl;
+        })();
+      </script>
+    </div>
+  </body>
+</html>

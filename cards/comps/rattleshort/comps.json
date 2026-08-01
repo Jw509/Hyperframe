@@ -1,0 +1,17 @@
+{
+  "_comment": "Topps Signature Class 2025 blaster (Rattleshort2.mp4 re-timed cut, 93.06s native 4K portrait). 11 comped cards, eBay sold comps pulled 2026-07-09 — all MATCHED card sales per user (no 'Closest comp' labels; do not infer labels from serial numbers).",
+  "boxCost": 29.99,
+  "comps": [
+    { "file": "01-tyreek-hill.png",        "cardId": "tyreek",    "player": "Tyreek Hill",        "parallel": "/275",              "value": 5.00,  "hit": false, "money": false },
+    { "file": "02-nico-collins.png",       "cardId": "nico",      "player": "Nico Collins",       "parallel": "Class Icons",       "value": 2.25,  "hit": false, "money": false },
+    { "file": "03-harold-fannin.png",      "cardId": "fannin",    "player": "Harold Fannin Jr",   "parallel": "Green & Purple RC", "value": 3.25,  "hit": false, "money": false },
+    { "file": "04-josh-conerly.png",       "cardId": "conerly",   "player": "Josh Conerly Jr",    "parallel": "RC",                "value": 1.29,  "hit": false, "money": false },
+    { "file": "05-trevor-lawrence.png",    "cardId": "lawrence",  "player": "Trevor Lawrence",    "parallel": "In Session",        "value": 1.99,  "hit": false, "money": false },
+    { "file": "06-paramount-pairings.png", "cardId": "paramount", "player": "Nick Bosa / Fred Warner Paramount Pairings", "parallel": "", "value": 1.49, "hit": false, "money": false },
+    { "file": "07-david-njoku.png",        "cardId": "njoku",     "player": "David Njoku",        "parallel": "",                  "value": 1.00,  "hit": false, "money": false },
+    { "file": "08-tate-ratledge.png",      "cardId": "ratledge",  "player": "Tate Ratledge",      "parallel": "Auto RC /225",      "value": 15.00, "hit": true,  "money": true },
+    { "file": "09-jaxon-smith-njigba.png", "cardId": "jsn",       "player": "Jaxon Smith-Njigba", "parallel": "",                  "value": 1.50,  "hit": false, "money": false },
+    { "file": "10-breece-hall.png",        "cardId": "breece",    "player": "Breece Hall",        "parallel": "Class Action",      "value": 1.25,  "hit": false, "money": false },
+    { "file": "11-tyler-warren.png",       "cardId": "warren",    "player": "Tyler Warren",       "parallel": "RC",                "value": 0.99,  "hit": false, "money": false }
+  ]
+}

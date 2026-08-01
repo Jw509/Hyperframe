@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>sdblf-el-counter</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      html, body { margin:0; padding:0; width:1120px; height:1120px; background:transparent; overflow:hidden; font-family:"Helvetica Neue","Helvetica",Arial,sans-serif; -webkit-font-smoothing:antialiased; }
+      #root { position:relative; width:1120px; height:1120px; background:transparent; }
+      #source-video { position:absolute; inset:0; width:1120px; height:1120px; object-fit:cover; object-position:center center; }
+
+      .cost { position:absolute; left:92px; top:88px; padding:32px 44px 30px; border-radius:44px;
+        background:rgba(12,14,20,0.74); backdrop-filter:blur(52px) saturate(140%); -webkit-backdrop-filter:blur(52px) saturate(140%);
+        border:2px solid rgba(255,255,255,0.16); box-shadow:0 24px 60px rgba(0,0,0,0.4), inset 0 2px 0 rgba(255,255,255,0.18); opacity:0; }
+      .cost__cols { display:flex; align-items:flex-start; gap:36px; }
+      .cost__col { display:flex; flex-direction:column; }
+      .cost__sep { width:2px; align-self:stretch; background:rgba(255,255,255,0.15); }
+      .cost__label { font-size:26px; font-weight:700; letter-spacing:6px; color:rgba(255,255,255,0.72); text-transform:uppercase; margin-bottom:10px; white-space:nowrap; }
+      .cost__value { font-size:76px; font-weight:900; line-height:1; letter-spacing:-3px; font-variant-numeric:tabular-nums; text-shadow:0 4px 20px rgba(0,0,0,0.5); }
+      .cost__value--cost { color:#fb6a5e; }
+      .cost__value--pull { color:#9fb3c8; }
+      .cost__pips { display:flex; gap:14px; margin-top:26px; }
+      .cost__pip { flex:1; height:14px; border-radius:1998px; background:rgba(255,255,255,0.16); position:relative; overflow:hidden; }
+      .cost__pip i { position:absolute; inset:0; transform:scaleX(0); transform-origin:left; border-radius:inherit; background:#9fb3c8; }
+      .cost__foot { font-size:23px; font-weight:600; letter-spacing:3px; color:rgba(255,255,255,0.55); text-transform:uppercase; margin-top:18px; }
+      .cost__pl { font-size:52px; font-weight:900; letter-spacing:-1px; line-height:1; margin-top:16px; font-variant-numeric:tabular-nums; text-shadow:0 2px 16px rgba(0,0,0,0.5); }
+      /* NEW: pinned per-box results — a finished box keeps its final W/L on screen */
+      .cost__done { margin-top:16px; display:flex; flex-direction:column; gap:8px; }
+      .cost__donerow { display:flex; align-items:baseline; gap:20px; height:0; opacity:0; overflow:hidden; }
+      .cost__donek { font-size:23px; font-weight:700; letter-spacing:3px; color:rgba(255,255,255,0.55); text-transform:uppercase; }
+      .cost__donev { font-size:38px; font-weight:900; letter-spacing:-0.6px; font-variant-numeric:tabular-nums; text-shadow:0 2px 12px rgba(0,0,0,0.5); }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="sdblf-el-counter" data-width="1120" data-height="1120" data-start="0" data-duration="568.98">
+      <div id="cost" class="cost clip" data-start="12" data-duration="556.98" data-track-index="1">
+        <div class="cost__cols">
+          <div class="cost__col">
+            <div class="cost__label">Boxes Cost</div>
+            <div class="cost__value cost__value--cost" id="cost-value">$0.00</div>
+          </div>
+          <div class="cost__sep"></div>
+          <div class="cost__col">
+            <div class="cost__label">Cards Pulled</div>
+            <div class="cost__value cost__value--pull" id="pull-value">$0.00</div>
+          </div>
+        </div>
+        <div class="cost__pips">
+          <div class="cost__pip"><i id="pip-1"></i></div>
+          <div class="cost__pip"><i id="pip-2"></i></div>
+        </div>
+        <div class="cost__done">
+          <div class="cost__donerow" id="done-1"><span class="cost__donek">Box 1</span><span class="cost__donev" id="donev-1"></span></div>
+          <div class="cost__donerow" id="done-2"><span class="cost__donek">Box 2</span><span class="cost__donev" id="donev-2"></span></div>
+        </div>
+        <div class="cost__foot" id="cost-foot">2 Mega Boxes</div>
+        <div class="cost__pl" id="cost-pl"></div>
+      </div>
+      <script>
+        (function () {
+          const tl = gsap.timeline({ paused:true });
+
+          const cost=document.querySelector(".cost");
+          const cv=document.getElementById("cost-value");
+          const pullEl=document.getElementById("pull-value");
+          const plEl=document.getElementById("cost-pl");
+          const foot=document.getElementById("cost-foot");
+          const EVENTS=[{"t":12,"kind":"box","idx":1,"type":"mega","cost":65.99,"pulled":0,"pl":-65.99},{"t":42,"kind":"comp","idx":1,"type":"mega","cost":65.99,"pulled":2.25,"pl":-63.74},{"t":46,"kind":"comp","idx":1,"type":"mega","cost":65.99,"pulled":4.25,"pl":-61.74},{"t":50,"kind":"comp","idx":1,"type":"mega","cost":65.99,"pulled":6.24,"pl":-59.75},{"t":102,"kind":"comp","idx":1,"type":"mega","cost":65.99,"pulled":14.23,"pl":-51.76},{"t":110,"kind":"comp","idx":1,"type":"mega","cost":65.99,"pulled":16.72,"pl":-49.27},{"t":135,"kind":"comp","idx":1,"type":"mega","cost":65.99,"pulled":17.87,"pl":-48.12},{"t":162,"kind":"comp","idx":1,"type":"mega","cost":65.99,"pulled":19.36,"pl":-46.63},{"t":178,"kind":"comp","idx":1,"type":"mega","cost":65.99,"pulled":19.91,"pl":-46.08},{"t":195,"kind":"comp","idx":1,"type":"mega","cost":65.99,"pulled":21.1,"pl":-44.89},{"t":198,"kind":"comp","idx":1,"type":"mega","cost":65.99,"pulled":24.35,"pl":-41.64},{"t":200.7,"kind":"comp","idx":1,"type":"mega","cost":65.99,"pulled":25.6,"pl":-40.39},{"t":218,"kind":"comp","idx":1,"type":"mega","cost":65.99,"pulled":27.28,"pl":-38.71},{"t":220.7,"kind":"comp","idx":1,"type":"mega","cost":65.99,"pulled":29.27,"pl":-36.72},{"t":238,"kind":"comp","idx":1,"type":"mega","cost":65.99,"pulled":35.27,"pl":-30.72},{"t":243,"kind":"comp","idx":1,"type":"mega","cost":65.99,"pulled":35.89,"pl":-30.1},{"t":271,"kind":"comp","idx":1,"type":"mega","cost":65.99,"pulled":37.89,"pl":-28.1},{"t":273.7,"kind":"comp","idx":1,"type":"mega","cost":65.99,"pulled":39.89,"pl":-26.1},{"t":278,"kind":"box","idx":2,"type":"mega","cost":65.99,"pulled":0,"pl":-65.99},{"t":295.5,"kind":"comp","idx":2,"type":"mega","cost":65.99,"pulled":0.91,"pl":-65.08},{"t":309.5,"kind":"comp","idx":2,"type":"mega","cost":65.99,"pulled":2.9,"pl":-63.09},{"t":314,"kind":"comp","idx":2,"type":"mega","cost":65.99,"pulled":3.89,"pl":-62.1},{"t":316.7,"kind":"comp","idx":2,"type":"mega","cost":65.99,"pulled":5.18,"pl":-60.81},{"t":360,"kind":"comp","idx":2,"type":"mega","cost":65.99,"pulled":12.67,"pl":-53.32},{"t":369,"kind":"comp","idx":2,"type":"mega","cost":65.99,"pulled":14.96,"pl":-51.03},{"t":392,"kind":"comp","idx":2,"type":"mega","cost":65.99,"pulled":16.16,"pl":-49.83},{"t":417,"kind":"comp","idx":2,"type":"mega","cost":65.99,"pulled":18.15,"pl":-47.84},{"t":420,"kind":"comp","idx":2,"type":"mega","cost":65.99,"pulled":19.4,"pl":-46.59},{"t":438,"kind":"comp","idx":2,"type":"mega","cost":65.99,"pulled":20.6,"pl":-45.39},{"t":442,"kind":"comp","idx":2,"type":"mega","cost":65.99,"pulled":23.1,"pl":-42.89},{"t":460,"kind":"comp","idx":2,"type":"mega","cost":65.99,"pulled":24.59,"pl":-41.4},{"t":463,"kind":"comp","idx":2,"type":"mega","cost":65.99,"pulled":25.58,"pl":-40.41},{"t":486,"kind":"comp","idx":2,"type":"mega","cost":65.99,"pulled":28.57,"pl":-37.42},{"t":490,"kind":"comp","idx":2,"type":"mega","cost":65.99,"pulled":30.56,"pl":-35.43},{"t":528,"kind":"comp","idx":2,"type":"mega","cost":65.99,"pulled":37.56,"pl":-28.43},{"t":536,"kind":"comp","idx":2,"type":"mega","cost":65.99,"pulled":39.06,"pl":-26.93},{"t":538.7,"kind":"comp","idx":2,"type":"mega","cost":65.99,"pulled":42.05,"pl":-23.94}];
+          const BOX_FINAL=[{"idx":1,"type":"mega","pl":-26.1},{"idx":2,"type":"mega","pl":-23.94}];
+          const GREEN="#34d399", RED="#fb6a5e", BLUE="#5b9cff", NBOX=2, OFF=0;
+          tl.fromTo(cost,{x:-80,opacity:0},{x:0,opacity:1,duration:0.6,ease:"power3.out"},12-OFF);
+          const cs={v:0}, ps={v:0}, ls={v:0};
+          EVENTS.forEach((e)=>{
+            const at=e.t-OFF;
+            if(e.kind==="box"){
+              tl.to(cs,{v:e.cost,duration:0.4,ease:"power1.out",onUpdate:()=>{cv.textContent="$"+cs.v.toFixed(2);}},at);
+              tl.fromTo(cv,{scale:1.18},{scale:1,duration:0.5,ease:"back.out(2)",transformOrigin:"left center"},at);
+              tl.to(ps,{v:0,duration:0.3,ease:"power1.in",onUpdate:()=>{pullEl.textContent="$"+ps.v.toFixed(2);}},at);
+              tl.to("#pip-"+e.idx,{scaleX:1,duration:0.45,ease:"power2.out"},at);
+              tl.call(()=>{ foot.textContent="Box "+e.idx+" / "+NBOX+"  \u00b7  "+e.type.toUpperCase(); }, null, at);
+              // NEW: the box that just FINISHED gets its result pinned as a row that stays on screen
+              if(e.idx>1){
+                const fin=BOX_FINAL[e.idx-2];
+                const row=document.getElementById("done-"+fin.idx), val=document.getElementById("donev-"+fin.idx);
+                tl.call(()=>{ val.style.color=fin.pl>=0?GREEN:RED; val.textContent=(fin.pl<0?"\u25bc \u2212$":"\u25b2 +$")+Math.abs(fin.pl).toFixed(2); }, null, at);
+                tl.to(row,{height:"auto",opacity:1,duration:0.45,ease:"power2.out"},at+0.15);
+                tl.fromTo(val,{scale:1.25},{scale:1,duration:0.5,ease:"back.out(2)",transformOrigin:"left center"},at+0.3);
+              }
+            } else {
+              tl.to(ps,{v:e.pulled,duration:0.5,ease:"power1.out",onUpdate:()=>{pullEl.textContent="$"+ps.v.toFixed(2);}},at);
+              tl.fromTo(pullEl,{scale:1.14},{scale:1,duration:0.45,ease:"back.out(2)",transformOrigin:"left center"},at);
+            }
+            tl.to(ls,{v:e.pl,duration:0.45,ease:"power1.out",onUpdate:()=>{const v=ls.v;plEl.style.color=v<0?RED:BLUE;plEl.textContent=(v<0?"\u25bc \u2212$":"\u25b2 +$")+Math.abs(v).toFixed(2);}},e.t-OFF);
+            tl.call(()=>{ const pip=document.getElementById("pip-"+e.idx); if(pip) pip.style.background=e.pl>=0?GREEN:RED; }, null, e.t-OFF);
+          });
+          tl.to(cost,{opacity:0,duration:0.5,ease:"power2.in"},568.48-OFF);
+          window.__timelines=window.__timelines||{};
+          window.__timelines["sdblf-el-counter"]=tl;
+        })();
+      </script>
+    </div>
+  </body>
+</html>

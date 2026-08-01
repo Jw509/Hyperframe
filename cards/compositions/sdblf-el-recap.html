@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>sdblf-el-recap</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      html, body { margin:0; padding:0; width:1520px; height:1800px; background:transparent; overflow:hidden; font-family:"Helvetica Neue","Helvetica",Arial,sans-serif; -webkit-font-smoothing:antialiased; }
+      #root { position:relative; width:1520px; height:1800px; background:transparent; }
+      #source-video { position:absolute; inset:0; width:1520px; height:1800px; object-fit:cover; object-position:center center; }
+
+      .recap { position:absolute; left:50%; top:50%; width:1120px; padding:76px 88px 84px; border-radius:56px;
+        background:rgba(18,20,28,0.92); backdrop-filter:blur(56px) saturate(140%); -webkit-backdrop-filter:blur(56px) saturate(140%);
+        border:2px solid rgba(255,255,255,0.16); box-shadow:0 36px 96px rgba(0,0,0,0.6), inset 0 2px 0 rgba(255,255,255,0.16);
+        display:flex; flex-direction:column; align-items:center; opacity:0; }
+      .recap__head { font-size:36px; font-weight:700; letter-spacing:8px; color:rgba(255,255,255,0.6); text-transform:uppercase; margin-bottom:44px; text-align:center; }
+      .recap__row { width:100%; display:flex; align-items:baseline; justify-content:space-between; margin:12px 0; }
+      .recap__k { font-size:44px; font-weight:600; letter-spacing:4px; color:rgba(255,255,255,0.72); text-transform:uppercase; }
+      .recap__v { font-size:80px; font-weight:800; line-height:1; letter-spacing:-2px; font-variant-numeric:tabular-nums; }
+      .recap__v--cost { color:#fb6a5e; }
+      .recap__v--pull { color:#9fb3c8; }
+      .recap__krow { width:100%; display:flex; align-items:baseline; justify-content:space-between; margin:6px 0; }
+      .recap__bk { font-size:32px; font-weight:600; letter-spacing:4px; color:rgba(255,255,255,0.55); text-transform:uppercase; }
+      .recap__bv { font-size:52px; font-weight:800; line-height:1; letter-spacing:-1px; font-variant-numeric:tabular-nums; }
+      .recap__div { width:100%; height:2px; background:rgba(255,255,255,0.16); margin:40px 0 36px; }
+      .recap__lossk { font-size:40px; font-weight:800; letter-spacing:16px; text-transform:uppercase; margin-bottom:16px; }
+      .recap__loss { font-size:208px; font-weight:900; line-height:0.95; letter-spacing:-8px; font-variant-numeric:tabular-nums; }
+      .recap__roi { font-size:68px; font-weight:700; letter-spacing:2px; margin-top:28px; font-variant-numeric:tabular-nums; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="sdblf-el-recap" data-width="1520" data-height="1800" data-start="0" data-duration="7.5">
+      <div id="recap" class="recap clip" data-start="0" data-duration="7.5" data-track-index="1">
+        <div class="recap__head">2 Mega Boxes &mdash; $65.99 each</div>
+        <div class="recap__row"><span class="recap__k">Boxes Cost</span><span class="recap__v recap__v--cost">$131.98</span></div>
+        <div class="recap__row"><span class="recap__k">Cards pulled</span><span class="recap__v recap__v--pull" id="recap-pull">$0.00</span></div>
+        <div class="recap__krow"><span class="recap__bk">Box 1 &middot; mega</span><span class="recap__bv" id="recap-box-1" style="color:#fb6a5e">▼ −$26.10</span></div>
+        <div class="recap__krow"><span class="recap__bk">Box 2 &middot; mega</span><span class="recap__bv" id="recap-box-2" style="color:#fb6a5e">▼ −$23.94</span></div>
+        <div class="recap__div"></div>
+        <div class="recap__lossk" id="recap-lossk">Loss</div>
+        <div class="recap__loss" id="recap-loss">-$0.00</div>
+        <div class="recap__roi" id="recap-roi"></div>
+      </div>
+      <script>
+        (function () {
+          const tl = gsap.timeline({ paused:true });
+
+          const recap=document.querySelector(".recap");
+          const rPull=document.getElementById("recap-pull");
+          const rLoss=document.getElementById("recap-loss");
+          const rLk=document.getElementById("recap-lossk");
+          const rRoi=document.getElementById("recap-roi");
+          const RS=0;
+          const CARDS=81.94, NET=-50.04, ROI=-37.9;
+          const isLoss=NET<0; const col=isLoss?"#fb6a5e":"#4ade80";
+          rLoss.style.color=col; rLk.style.color=col; rRoi.style.color=col; rLk.textContent=isLoss?"Loss":"Profit";
+          gsap.set(recap,{xPercent:-50,yPercent:-50,transformOrigin:"center center"});
+          gsap.set([rLk,rLoss,rRoi],{opacity:0,y:36});
+          tl.fromTo(recap,{opacity:0,scale:0.9},{opacity:1,scale:1,duration:0.6,ease:"back.out(1.5)"},RS+0.15);
+          const rcS={v:0};
+          tl.to(rcS,{v:CARDS,duration:1.3,ease:"power2.out",onUpdate:()=>{rPull.textContent="$"+rcS.v.toFixed(2);}},RS+0.5);
+          tl.to([rLk,rLoss,rRoi],{opacity:1,y:0,duration:0.5,ease:"power3.out",stagger:0.1},RS+2.1);
+          const rlS={v:0};
+          tl.to(rlS,{v:NET,duration:1.2,ease:"power2.out",onUpdate:()=>{const v=rlS.v;rLoss.textContent=(v<0?"-$":"+$")+Math.abs(v).toFixed(2);}},RS+2.3);
+          rRoi.textContent=(ROI>=0?"+":"")+ROI.toFixed(1)+"% ROI";
+          window.__timelines=window.__timelines||{};
+          window.__timelines["sdblf-el-recap"]=tl;
+        })();
+      </script>
+    </div>
+  </body>
+</html>

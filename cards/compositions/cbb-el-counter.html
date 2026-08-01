@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>cbb-el-counter</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      html, body { margin:0; padding:0; width:640px; height:1150px; background:transparent; overflow:hidden; font-family:"Helvetica Neue","Helvetica",Arial,sans-serif; -webkit-font-smoothing:antialiased; }
+      #root { position:relative; width:640px; height:1150px; }
+
+      .box-tracker { position:absolute; left:72px; top:380px; width:424px; padding:28px 32px; border-radius:44px;
+        background:rgba(255,255,255,0.08); backdrop-filter:blur(56px) saturate(140%); -webkit-backdrop-filter:blur(56px) saturate(140%);
+        border:2px solid rgba(255,255,255,0.18); box-shadow:0 20px 48px rgba(0,0,0,0.28),inset 0 2px 0 rgba(255,255,255,0.22); opacity:0; }
+      .box-tracker__label { font-size:24px; font-weight:600; letter-spacing:8px; color:rgba(255,255,255,0.7); text-transform:uppercase; margin-bottom:8px; line-height:1.25; }
+      .box-tracker__value { font-size:64px; font-weight:800; letter-spacing:-2px; line-height:1; text-shadow:0 2px 16px rgba(0,0,0,0.5); font-variant-numeric:tabular-nums; }
+      .box-tracker__value--cost { color:#f87171; }
+      .box-tracker__value--total { color:#4ade80; }
+      .box-tracker__divider { height:2px; background:rgba(255,255,255,0.15); margin:20px 0; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="cbb-el-counter" data-width="640" data-height="1150" data-start="0" data-duration="91.48">
+      <div id="box-tracker" class="box-tracker clip" data-start="0" data-duration="91.48" data-track-index="90">
+        <div class="box-tracker__label">Box cost</div><div class="box-tracker__value box-tracker__value--cost">$29.99</div>
+        <div class="box-tracker__divider"></div>
+        <div class="box-tracker__label">Cards pulled<br>total</div><div class="box-tracker__value box-tracker__value--total" id="box-tracker-total">$0.00</div>
+      </div>
+      <script>
+        (function () {
+          const tl = gsap.timeline({ paused:true });
+
+          const tracker=document.getElementById("box-tracker");
+          const totalEl=document.getElementById("box-tracker-total");
+          tl.fromTo(tracker,{x:-100,opacity:0},{x:0,opacity:1,duration:0.6,ease:"power3.out"},0);
+          const revs=[{"t":0.17,"v":1.59},{"t":3.97,"v":1},{"t":8.47,"v":0.99},{"t":12.17,"v":14.99},{"t":24.62,"v":1.49},{"t":31.17,"v":0.99},{"t":35.32,"v":0.39},{"t":37.62,"v":1.5},{"t":42.22,"v":1.69},{"t":45.42,"v":1.5},{"t":47.42,"v":1.25},{"t":52.47,"v":0.99},{"t":68.82,"v":1.5},{"t":77.12,"v":1},{"t":83.07,"v":1.25},{"t":85.12,"v":2},{"t":87.92,"v":0.99}];
+          const cs={value:0}; let run=0;
+          revs.forEach(({t,v})=>{ const nt=run+v; tl.to(cs,{value:nt,duration:0.6,ease:"power1.out",onUpdate:()=>{totalEl.textContent="$"+cs.value.toFixed(2);}},t); run=nt; });
+          tl.to(tracker,{opacity:0,duration:0.4,ease:"power2.in"},90.98);
+          window.__timelines=window.__timelines||{};
+          window.__timelines["cbb-el-counter"]=tl;
+        })();
+      </script>
+    </div>
+  </body>
+</html>

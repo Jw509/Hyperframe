@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>sdblf-el-chip-36</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      html, body { margin:0; padding:0; width:560px; height:1280px; background:transparent; overflow:hidden; font-family:"Helvetica Neue","Helvetica",Arial,sans-serif; -webkit-font-smoothing:antialiased; }
+      #root { position:relative; width:560px; height:1280px; background:transparent; }
+      #source-video { position:absolute; inset:0; width:560px; height:1280px; object-fit:cover; object-position:center center; }
+
+      .comp { position:absolute; left:50%; top:36px; width:294px; transform:translateX(-50%);
+        display:flex; flex-direction:column; align-items:center; opacity:0; will-change:opacity,transform; }
+      .comp__img { width:100%; border-radius:16.5px; overflow:hidden; background:#fff;
+        box-shadow:0 12px 36px rgba(0,0,0,0.45), 0 3px 9px rgba(0,0,0,0.35); }
+      .comp__img img { width:100%; height:auto; display:block; }
+      .comp__tag { margin-top:12px; display:flex; align-items:center; gap:13.5px;
+        padding:7.5px 18px; border-radius:1998px; background:rgba(12,14,20,0.85);
+        backdrop-filter:blur(21px); -webkit-backdrop-filter:blur(21px);
+        border:2px solid rgba(255,255,255,0.16); box-shadow:0 9px 27px rgba(0,0,0,0.4); }
+      .comp__name { font-size:22.5px; font-weight:700; color:#fff; letter-spacing:0.3px; white-space:nowrap; text-shadow:0 2px 8px rgba(0,0,0,0.6); }
+      .comp__val { font-size:33px; font-weight:900; color:#4ade80; letter-spacing:-0.75px; line-height:1; font-variant-numeric:tabular-nums; text-shadow:0 2px 12px rgba(0,0,0,0.5); }
+      .comp[data-money-shot="true"] .comp__val { color:#ffd24a; }
+      .comp[data-money-shot="true"] .comp__img { box-shadow:0 24px 80px rgba(255,210,74,0.45), 0 0 0 4px rgba(255,210,74,0.7); }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="sdblf-el-chip-36" data-width="560" data-height="1280" data-start="0" data-duration="2.55">
+      <div id="chip" class="comp clip" data-start="0" data-duration="2.55" data-track-index="1">
+        <div class="comp__img"><img src="../comps/SDBLF/Screenshot 2026-07-11 152417.png" alt="Jaydon Blue $2.99" crossorigin="anonymous" /></div>
+        <div class="comp__tag"><span class="comp__name">Jaydon Blue</span><span class="comp__val">$2.99</span></div>
+      </div>
+      <script>
+        (function () {
+          const tl = gsap.timeline({ paused:true });
+          const el=document.getElementById("chip");
+          gsap.set(el,{transformOrigin:"50% 100%"});
+          tl.fromTo(el,{opacity:0,y:52,scale:0.97},{opacity:1,y:0,scale:1,duration:0.45,ease:"power3.out"},0);
+          tl.to(el,{opacity:0,y:-28,duration:0.5,ease:"power2.in"},2.050);
+          window.__timelines=window.__timelines||{};
+          window.__timelines["sdblf-el-chip-36"]=tl;
+        })();
+      </script>
+    </div>
+  </body>
+</html>

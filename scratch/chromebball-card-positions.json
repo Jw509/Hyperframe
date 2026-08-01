@@ -1,0 +1,23 @@
+{
+  "_comment": "On-screen hold windows (s,e) for ChromeBBall2425.mp4 (104.28s, native 2160x3840 portrait, silent). Catalogued 2026-07-24: 1fps full sweep (9 sheets) + 4fps refine tiles (refA..refJ) + cropped motion trace (scratch/chromebball-motion2.txt). s = card settled and readable, e = next card starts sliding over it. Chip start = s + 0.12. Video ends with Vince Carter on screen at 104.28; recap starts on black after that. RETIMED 2026-07-24 (user): on the three pack-openers where the host FANS the stack (edwards / chomche / bird) the motion-trace settle fired while the cards were still angled in a fan — s must be where the card lies FLAT and alone, 1-2s later. Check every pack's first card for this.",
+  "_packs": "8 packs x 4 cards = 32 cards. Pack starts (first card settle): p1 11.5, p2 20.0, p3 33.1, p4 43.9, p5 52.9, p6 64.1, p7 73.8, p8 94.5",
+  "_uncomped": "Hardaway, Dejounte Murray, Rob Dillingham, Lauri Markkanen, Jabari Walker (base), Ryan Dunn, Jonathan Mogbo, Jordan Hawkins, Jamal Murray, Jaylen Wells, Tristan da Silva, Jaylen Brown, Eric Gordon, Lenny Wilkens, Tristen Newton",
+
+  "djones":    { "s": 12.95,  "e": 14.50,  "name": "Derrick Jones Jr #177 (pack 1 c2)" },
+  "dcarter":   { "s": 16.75,  "e": 18.10,  "name": "Devin Carter RC #134 (pack 1 c4)" },
+  "edwards":   { "s": 21.25,  "e": 22.50,  "name": "Anthony Edwards Blue Refractor #77 (pack 2 c1) — was 20.00, still fanning; flat at 21.25" },
+  "castle":    { "s": 24.95,  "e": 28.25,  "name": "Stephon Castle Rookie Refractor #122 (pack 2 c3) — MONEY" },
+  "holmes":    { "s": 37.40,  "e": 39.25,  "name": "DaRon Holmes II Fresh Start #FS-12 (pack 3 c3)" },
+  "wade":      { "s": 43.95,  "e": 45.25,  "name": "Dwyane Wade #13 (pack 4 c1)" },
+  "westbrook": { "s": 48.10,  "e": 49.75,  "name": "Russell Westbrook #125 (pack 4 c3)" },
+  "nazreid":   { "s": 50.40,  "e": 51.20,  "name": "Naz Reid #43 (pack 4 c4) — SHORT hold 0.80s" },
+  "chomche":   { "s": 55.00,  "e": 55.75,  "name": "Ulrich Chomche RC (pack 5 c1) — was 52.90, still fanning; flat at 55.00" },
+  "embiid":    { "s": 58.20,  "e": 59.75,  "name": "Joel Embiid Show & Tell #ST-5 (pack 5 c3)" },
+  "watson":    { "s": 60.20,  "e": 61.15,  "name": "Anton Watson RC #107 (pack 5 c4) — SHORT hold 0.95s" },
+  "bird":      { "s": 65.25,  "e": 66.50,  "name": "Larry Bird #32 (pack 6 c1) — was 64.10, still fanning; flat at 65.25" },
+  "jwalker":   { "s": 81.60,  "e": 84.40,  "name": "Jabari Walker Chromographs Auto 41/55 (pack 7 c2) — HIT" },
+  "furphy":    { "s": 89.90,  "e": 91.15,  "name": "Johnny Furphy Refractor #139 (pack 7 c4)" },
+  "davis":     { "s": 95.85,  "e": 97.50,  "name": "Anthony Davis #86 (pack 8 c2)" },
+  "salaun":    { "s": 97.90,  "e": 100.00, "name": "Tidjane Salaun Countdown Complete (pack 8 c3)" },
+  "vcarter":   { "s": 100.70, "e": 104.28, "name": "Vince Carter #54 (pack 8 c4) — last card, runs to end" }
+}

@@ -1,0 +1,23 @@
+{
+  "_comment": "2024-25 Topps Chrome Basketball blaster (ChromeBBall2425.mp4 — user's pre-cut, 104.28s, native 2160x3840 portrait, silent). 8 packs x 4 cards = 32 cards catalogued; 17 comped. eBay sold comps pulled 2026-07-22 — MATCHED card sales per user, EXCEPT the Jabari Walker Chromographs auto 41/55: no actual sale found, so its chip carries an 'EST. COMP' label (user, 2026-07-24). Screenshot capture order == video order EXCEPT Stephon Castle, captured last but pulled 4th (money card).",
+  "boxCost": 29.99,
+  "comps": [
+    { "file": "01-derrick-jones-jr.png",  "cardId": "djones",   "player": "Derrick Jones Jr",  "parallel": "#177",                "value": 1.59,  "hit": false, "money": false },
+    { "file": "02-devin-carter.png",      "cardId": "dcarter",  "player": "Devin Carter",      "parallel": "RC #134",             "value": 1.00,  "hit": false, "money": false },
+    { "file": "03-anthony-edwards.png",   "cardId": "edwards",  "player": "Anthony Edwards",   "parallel": "Blue Refractor #77",  "value": 0.99,  "hit": false, "money": false },
+    { "file": "04-stephon-castle.png",    "cardId": "castle",   "player": "Stephon Castle",    "parallel": "Rookie Refractor #122","value": 14.99, "hit": true,  "money": true  },
+    { "file": "05-daron-holmes.png",      "cardId": "holmes",   "player": "DaRon Holmes II",   "parallel": "Fresh Start #FS-12",  "value": 1.49,  "hit": false, "money": false },
+    { "file": "06-dwyane-wade.png",       "cardId": "wade",     "player": "Dwyane Wade",       "parallel": "#13",                 "value": 0.99,  "hit": false, "money": false },
+    { "file": "07-russell-westbrook.png", "cardId": "westbrook","player": "Russell Westbrook", "parallel": "#125",                "value": 0.39,  "hit": false, "money": false },
+    { "file": "08-naz-reid.png",          "cardId": "nazreid",  "player": "Naz Reid",          "parallel": "#43",                 "value": 1.50,  "hit": false, "money": false },
+    { "file": "09-ulrich-chomche.png",    "cardId": "chomche",  "player": "Ulrich Chomche",    "parallel": "RC",                  "value": 1.69,  "hit": false, "money": false },
+    { "file": "10-joel-embiid.png",       "cardId": "embiid",   "player": "Joel Embiid",       "parallel": "Show & Tell #ST-5",   "value": 1.50,  "hit": false, "money": false },
+    { "file": "11-anton-watson.png",      "cardId": "watson",   "player": "Anton Watson",      "parallel": "RC #107",             "value": 1.25,  "hit": false, "money": false },
+    { "file": "12-larry-bird.png",        "cardId": "bird",     "player": "Larry Bird",        "parallel": "#32",                 "value": 0.99,  "hit": false, "money": false },
+    { "file": "13-jabari-walker-auto.png","cardId": "jwalker",  "player": "Jabari Walker",     "parallel": "Chromographs Auto 41/55", "value": 1.50, "hit": true, "money": false, "label": "Est. comp" },
+    { "file": "14-johnny-furphy.png",     "cardId": "furphy",   "player": "Johnny Furphy",     "parallel": "Refractor #139",      "value": 1.00,  "hit": false, "money": false },
+    { "file": "15-anthony-davis.png",     "cardId": "davis",    "player": "Anthony Davis",     "parallel": "#86",                 "value": 1.25,  "hit": false, "money": false },
+    { "file": "16-tidjane-salaun.png",    "cardId": "salaun",   "player": "Tidjane Salaun",    "parallel": "Countdown Complete",  "value": 2.00,  "hit": false, "money": false },
+    { "file": "17-vince-carter.png",      "cardId": "vcarter",  "player": "Vince Carter",      "parallel": "#54",                 "value": 0.99,  "hit": false, "money": false }
+  ]
+}

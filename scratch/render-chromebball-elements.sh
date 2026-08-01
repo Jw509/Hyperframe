@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# Render every chromebball overlay element (chips / counter / recap) to alpha ProRes 4444.
+# Decoupled pipeline: small canvases only — the 4K HEVC source never enters Chrome.
+# Run from repo root: bash scratch/render-chromebball-elements.sh
+set -u
+cd "$(dirname "$0")/../cards" || exit 1
+ok=0; fail=0; skip=0
+for f in compositions/cbb-el-*.html; do
+  base=$(basename "$f" .html)
+  out="renders/${base}.mov"
+  if [ -s "$out" ]; then
+    echo "SKIP $base (exists)"; skip=$((skip+1)); continue
+  fi
+  echo "=== RENDER $base ==="
+  npx --yes hyperframes@0.6.33 render . -c "$f" -o "$out" -q high --fps 60 --format mov --workers 14 > "renders/${base}.renderlog.txt" 2>&1
+  if [ $? -eq 0 ] && [ -s "$out" ]; then
+    echo "OK   $base"; ok=$((ok+1))
+  else
+    echo "FAIL $base (see renders/${base}.renderlog.txt)"; fail=$((fail+1))
+  fi
+done
+echo "DONE ok=$ok fail=$fail skip=$skip"

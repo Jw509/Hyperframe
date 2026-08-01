@@ -1,0 +1,14 @@
+{
+  "_comment": "Hold windows (s,e) for Rattleshort.mp4 (82.07s, native 2160x3840 portrait, silent). Catalogued 2026-07-09 from 2fps full sweep + 4fps refine tiles (ref-A..F). Video ends with uncomped Omarion Hampton RC on screen; recap starts on black at 82.07.",
+  "tyreek":    { "s": 19.0,  "e": 21.9,  "name": "Tyreek Hill /275 (pulled 264/275)" },
+  "nico":      { "s": 22.2,  "e": 23.4,  "name": "Nico Collins Class Icons 3rd Rd" },
+  "fannin":    { "s": 23.7,  "e": 24.6,  "name": "Harold Fannin Jr Green & Purple RC" },
+  "conerly":   { "s": 32.1,  "e": 33.2,  "name": "Josh Conerly Jr RC (yellow)" },
+  "lawrence":  { "s": 40.85, "e": 42.4,  "name": "Trevor Lawrence In Session" },
+  "paramount": { "s": 53.0,  "e": 54.1,  "name": "49ers Paramount Pairings 012/175 (sold)" },
+  "njoku":     { "s": 54.4,  "e": 55.4,  "name": "David Njoku (yellow)" },
+  "ratledge":  { "s": 62.5,  "e": 67.1,  "name": "Tate Ratledge Certified Auto RC 068/225 (MONEY)" },
+  "jsn":       { "s": 67.7,  "e": 69.4,  "name": "Jaxon Smith-Njigba" },
+  "breece":    { "s": 78.4,  "e": 79.1,  "name": "Breece Hall Class Action (quick flash)" },
+  "warren":    { "s": 79.5,  "e": 80.2,  "name": "Tyler Warren RC (yellow)" }
+}
